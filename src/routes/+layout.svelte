@@ -18,6 +18,6 @@
 
 <style>
   .page-content:not(.hero) {
-    padding-top: 72px; /* fixed navbar height */
+    padding-top: 110px; /* fixed navbar height */
   }
 </style>
