@@ -4,7 +4,7 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
-		"dev": "vite dev",
+		"dev": "NODE_OPTIONS=\"--inspect\" vite  dev",
 		"build": "vite build",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
@@ -23,7 +23,7 @@
 		"@libsql/client": "^0.15.15",
 		"@oslojs/crypto": "^1.0.1",
 		"@oslojs/encoding": "^1.1.0",
-		"@sveltejs/adapter-auto": "^7.0.0",
+		"@sveltejs/adapter-auto": "^7.0.1",
 		"@sveltejs/kit": "^2.49.1",
 		"@sveltejs/vite-plugin-svelte": "^6.2.1",
 		"@types/node": "^22",
