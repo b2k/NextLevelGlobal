@@ -7,7 +7,7 @@ export const groupMenu: MenuItem[] = [
 		children: [
 			{
 				title: '101',
-				path: 'men/101',
+				path: 'men/100/101',
 				children: [
 					{
 						title: 'Scripture Summaries & Questions',

@@ -1,6 +1,5 @@
 import { error } from '@sveltejs/kit';
 import { pageByPath } from '$lib/config/groups/pages';
-import { groupMenu } from '$lib/config/groups/menu';
 
 export function load({ params }) {
 	const path = (params.path?.split('/') ?? []).join('/');
@@ -17,7 +16,6 @@ export function load({ params }) {
 
 	return {
 		page,
-		menu: groupMenu,
 		path,
 		segments: path.split('/')
 	};

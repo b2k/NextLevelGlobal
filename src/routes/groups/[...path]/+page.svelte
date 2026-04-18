@@ -1,9 +1,24 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import GroupSection from '$lib/components/groups/GroupSection.svelte';
+	import { getTheme } from '$lib/config/groups/themes.js';
 	import { titleCase } from '$lib/utils/formatters.js';
 
 	let { data } = $props();
+
+	let pageTheme = $derived(data.page.theme ?? 'light');
+
+	const resolvedTheme = $derived(getTheme(pageTheme));
+
+	const style = $derived.by(
+		() => `
+		--section-bg: ${resolvedTheme.section.background};
+		--section-text: ${resolvedTheme.section.text};
+		--section-accent: ${resolvedTheme.section.accent};
+		--section-card-bg: ${resolvedTheme.section.cardBackground};
+		--section-card-border: ${resolvedTheme.section.cardBorder};
+	`
+	);
 
 	const calendarPath = $derived(`/groups/${data.path}/calendar.ics`);
 
@@ -14,61 +29,211 @@
 		}
 	});
 
-	const breadcrumbs = $derived(data.segments.map((segment: string, index: number) => ({
-		label: titleCase(segment),
-		href: data.segments.slice(0, index + 1).join('/')
-	})));
+	const breadcrumbs = $derived(
+		data.segments.map((segment: string, index: number) => ({
+			label: titleCase(segment),
+			href: data.segments.slice(0, index + 1).join('/')
+		}))
+	);
 </script>
 
 <svelte:head>
 	<title>{data.page.title} | Next Level Global</title>
 </svelte:head>
 
-<div class="mx-auto max-w-7xl px-4 py-8">
-	<nav class="mb-6 text-sm">
-		<ul class="breadcrumb flex flex-wrap items-center gap-2 text-slate-600">
-			<li><a href={resolve('/groups')} class="hover:underline">Groups</a></li>
-			{#each breadcrumbs as crumb, c (c)}
-				<li>/</li>
-				<li>
-					<a href={resolve('/groups/[...path]', { path: crumb.href })} class="hover:underline">{crumb.label}</a>
-				</li>
-			{/each}
-		</ul>
-	</nav>
+<div class="group-page {pageTheme}" {style}>
+	<div class="group-page__hero" style={`--hero-image: url('${data.page.heroImage ?? ''}')`}>
+		<div class="group-page__hero-overlay">
+			<div class="group-page__hero-inner">
+				<nav class="group-page__breadcrumbs text-sm" aria-label="Breadcrumb">
+					<ol class="breadcrumb">
+						<li><a href={resolve('/groups')}>Groups</a></li>
+						{#each breadcrumbs as crumb, c (c)}
+							<li class="breadcrumb__sep" aria-hidden="true">/</li>
+							<li>
+								<a href={resolve('/groups/[...path]', { path: crumb.href })}>{crumb.label}</a>
+							</li>
+						{/each}
+					</ol>
+				</nav>
 
-	<header class="mb-8">
-		<h1 class="text-4xl font-bold tracking-tight">{data.page.title}</h1>
+				<header class="group-page__header">
+					<h1>{data.page.title}</h1>
 
-		<div class="mt-4 flex flex-wrap gap-3">
-			{#if data.page.calendar}
-				<a href={calendarPath} class="inline-flex rounded-md bg-slate-900 px-4 py-2 text-white">
-					Download Calendar
-				</a>
+					{#if data.page.subtitle}
+						<p>{data.page.subtitle}</p>
+					{/if}
 
-				{#if subscribeUrl}
-					<a href={subscribeUrl} class="inline-flex rounded-md border border-slate-300 px-4 py-2">
-						Subscribe
-					</a>
-				{/if}
-			{/if}
+					{#if data.page.calendar}
+						<div class="group-page__actions">
+							<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+							<a href={calendarPath} class="btn btn--primary">Download Calendar</a>
+
+							{#if subscribeUrl}
+								<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+								<a href={subscribeUrl} class="btn btn--secondary">Subscribe</a>
+							{/if}
+						</div>
+					{/if}
+				</header>
+			</div>
 		</div>
-	</header>
+	</div>
 
-	<div class="space-y-8">
+	<div class="group-page__sections">
 		{#each data.page.sections as section, i (i)}
-			<GroupSection {section} />
+			<GroupSection {section} pageTheme={data.page.theme} />
 		{/each}
 	</div>
 </div>
+
 <style>
-.breadcrumb {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	gap: 0.5rem;
-}
+	.group-page {
+		background: var(--page-bg);
+		min-height: 100%;
+		color: var(--page-text);
+	}
+
+	.group-page__hero {
+		position: relative;
+		min-height: clamp(18rem, 34vw, 28rem);
+		background-color: #111;
+		background-image: var(--hero-image);
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		color: var(--hero-text, white);
+	}
+
+	.group-page__hero-overlay {
+		min-height: inherit;
+		background:
+			linear-gradient(to bottom, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35)),
+			linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+	}
+
+	.group-page__hero-inner {
+		min-height: inherit;
+		display: grid;
+		grid-template-rows: auto 1fr;
+		padding: 1rem 1.25rem 2rem;
+	}
+
+	.group-page__breadcrumbs {
+		align-self: start;
+	}
+
+	.breadcrumb {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.5rem;
+		color: rgba(255, 255, 255, 0.82);
+	}
+
+	.breadcrumb a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	.breadcrumb a:hover {
+		text-decoration: underline;
+	}
+
+	.breadcrumb__sep {
+		opacity: 0.65;
+	}
+
+	.group-page__header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		gap: 1rem;
+		min-height: 100%;
+		padding: 2rem 1rem;
+	}
+
+	.group-page__header h1 {
+		margin: 0;
+		font-size: clamp(2rem, 5vw, 4rem);
+		line-height: 1.05;
+		font-weight: 800;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
+	}
+
+	.group-page__header p {
+		margin: 0;
+		max-width: 52rem;
+		font-size: 1.05rem;
+		line-height: 1.7;
+		color: rgba(255, 255, 255, 0.9);
+		text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
+	}
+
+	.group-page__actions {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 0.75rem;
+		margin-top: 0.5rem;
+	}
+
+	.btn {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.8rem 1.2rem;
+		font-weight: 700;
+		text-decoration: none;
+		transition:
+			transform 0.15s ease,
+			background-color 0.15s ease,
+			color 0.15s ease,
+			border-color 0.15s ease;
+	}
+
+	.btn:hover {
+		transform: translateY(-1px);
+	}
+
+	.btn--primary {
+		background: var(--btn-primary-bg);
+		color: white;
+		border: 1px solid transparent;
+	}
+
+	.btn--primary:hover {
+		background: var(--btn-primary-hover-bg);
+	}
+
+	.btn--secondary {
+		border: 1px solid rgba(255, 255, 255, 0.7);
+		background: rgba(255, 255, 255, 0.08);
+		color: white;
+		backdrop-filter: blur(8px);
+	}
+
+	.btn--secondary:hover {
+		background: rgba(255, 255, 255, 0.16);
+	}
+
+	.group-page__sections {
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+		width: 100%;
+	}
+
+	@media (min-width: 768px) {
+		.group-page__hero-inner {
+			padding: 1.25rem 2rem 2.5rem;
+		}
+	}
 </style>

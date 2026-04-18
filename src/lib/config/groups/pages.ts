@@ -1,4 +1,6 @@
-import { men101 } from '../pages/men101';
+import { men } from './pages/men';
+import { men100 } from './pages/men100';
+import { men101 } from './pages/men101';
 import type { GroupPage } from './types';
 
 function definePage(path: string, page: Omit<GroupPage, 'path'>): [string, GroupPage] {
@@ -6,7 +8,9 @@ function definePage(path: string, page: Omit<GroupPage, 'path'>): [string, Group
 }
 
 export const pageByPath = new Map<string, GroupPage>([
-	definePage('men/101', men101),
+	definePage('men', men),
+	definePage('men/100', men100),
+	definePage('men/100/101', men101),
 
 	definePage('men/1011', {
 		id: 'men-1011',
@@ -14,22 +18,13 @@ export const pageByPath = new Map<string, GroupPage>([
 		menuTitle: 'Scripture Summaries & Questions',
 		parentPath: 'men/101',
 		order: 1,
+		theme: 'light',
 		sections: [
 			{
 				id: 'scripture-summaries',
 				title: 'Scripture Summaries & Questions',
 				subtitle: 'Download weekly summaries and discussion questions.',
-				theme: {
-					backgroundColor: '#f8fafc',
-					textColor: '#1e293b',
-					accentColor: '#2563eb',
-					backgroundImage: '/images/groups/scripture-summaries-bg.jpg',
-					backgroundPosition: 'center',
-					backgroundSize: 'cover',
-					backgroundRepeat: 'no-repeat',
-					overlayColor: '#ffffff',
-					overlayOpacity: 0.88
-				},
+				theme: 'light',
 				items: [
 					{
 						type: 'pdf',
@@ -57,17 +52,7 @@ export const pageByPath = new Map<string, GroupPage>([
 				id: 'scripture-memorization',
 				title: 'Scripture Memorization',
 				subtitle: 'Purchase the book and download the corresponding questions PDF.',
-				theme: {
-					backgroundColor: '#1e293b',
-					textColor: '#f8fafc',
-					accentColor: '#f59e0b',
-					backgroundImage: '/images/groups/scripture-memorization-bg.jpg',
-					backgroundPosition: 'center',
-					backgroundSize: 'cover',
-					backgroundRepeat: 'no-repeat',
-					overlayColor: '#0f172a',
-					overlayOpacity: 0.72
-				},
+				theme: 'dark',
 				items: [
 					{
 						type: 'book',
@@ -101,16 +86,12 @@ export const pageByPath = new Map<string, GroupPage>([
 		menuTitle: '401',
 		parentPath: 'women',
 		order: 1,
+		theme: 'dark',
 		sections: [
 			{
 				id: 'overview',
 				title: 'Women 401',
 				subtitle: 'Group overview and resources.',
-				theme: {
-					backgroundColor: '#fff7ed',
-					textColor: '#431407',
-					accentColor: '#c2410c'
-				},
 				items: []
 			}
 		],

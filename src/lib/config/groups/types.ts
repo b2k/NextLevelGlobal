@@ -1,14 +1,4 @@
-export interface SectionTheme {
-	backgroundColor?: string;
-	textColor?: string;
-	accentColor?: string;
-	backgroundImage?: string;
-	backgroundPosition?: string;
-	backgroundSize?: string;
-	backgroundRepeat?: string;
-	overlayColor?: string;
-	overlayOpacity?: number;
-}
+export type ThemeName = 'light' | 'dark';
 
 export type PageItem =
 	| {
@@ -32,13 +22,40 @@ export type PageItem =
 			description?: string;
 	  };
 
-export interface PageSection {
-	id: string;
+export type SectionItem =
+	| {
+			type: 'pdf';
+			title: string;
+			pdf: string;
+			description?: string;
+	  }
+	| {
+			type: 'book';
+			title: string;
+			buyUrl: string;
+			questionsPdf: string;
+			image?: string;
+			description?: string;
+	  }
+	| {
+			type: 'link';
+			title: string;
+			href: string;
+			description?: string;
+	  };
+
+export type SectionColumn = {
+	title?: string;
+	items: SectionItem[];
+};
+
+export type PageSection = {
 	title: string;
 	subtitle?: string;
-	theme?: SectionTheme;
-	items?: PageItem[];
-}
+	theme?: ThemeName;
+	items?: SectionItem[];
+	columns?: SectionColumn[];
+};
 
 export interface FloatingStartRule {
 	month: number; // 1-12
@@ -65,8 +82,10 @@ export interface GroupCalendar {
 export interface GroupPage {
 	id: string;
 	title: string;
+	subtitle?: string;
 	path?: string;
 	menuTitle?: string;
+	theme?: ThemeName;
 	parentPath?: string;
 	order?: number;
 	heroImage?: string;
