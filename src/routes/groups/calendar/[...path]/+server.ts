@@ -4,9 +4,13 @@ import { pageByPath } from '$lib/config/groups/pages';
 import { jsonClone } from '$lib/utils/jsonClone.js';
 
 export function GET({ params, url }) {
-	const path = params.path;
+	let path = params.path;
+	console.log('Calendar GET request for path:', path);
 	if (!path) {
 		throw error(404, 'Calendar not found');
+	}
+	if (path.endsWith('.ics')) {
+		path = path.slice(0, -4);
 	}
 
 	const page = jsonClone(pageByPath.get(path));

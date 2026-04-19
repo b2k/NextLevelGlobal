@@ -21,7 +21,7 @@
 	`
 	);
 
-	const calendarPath = $derived(`/groups/${data.path}/calendar.ics`);
+	const calendarPath = $derived(`/groups/calendar/${data.path}.ics?start-date=${data.page.calendar?.defaultStartDate ?? ''}`);
 
 	let subscribeUrl = $state('');
 	$effect(() => {
@@ -72,13 +72,13 @@
 	{#if data.page.calendar}
 		<div class="group-page__actions">
 			<!-- Calendar component will go here -->
-			<Calendar calendar={data?.page.calendar} startDate={data.page.calendar.defaultStartDate} />
+			<Calendar calendar={data?.page.calendar} />
 			<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-			<a href={calendarPath} class="btn btn--primary">Download Calendar</a>
+			<a href={calendarPath} class="btn btn--primary" data-sveltekit-reload>Download Calendar</a>
 
 			{#if subscribeUrl}
 				<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-				<a href={subscribeUrl} class="btn btn--secondary">Subscribe</a>
+				<a href={subscribeUrl} class="btn btn--secondary" data-sveltekit-reload>Subscribe</a>
 			{/if}
 		</div>
 	{/if}

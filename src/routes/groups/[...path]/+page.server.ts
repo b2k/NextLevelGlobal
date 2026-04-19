@@ -11,7 +11,7 @@ export function load({ url, params }) {
 		throw error(404, 'Page not found');
 	}
 
-	// Clone the page data to avoid mutating the 
+	// Clone the page data to avoid mutating the
 	// original config when we add calendar entries
 	const page = jsonClone(pageByPath.get(path));
 
@@ -23,19 +23,18 @@ export function load({ url, params }) {
 	if (page.calendar) {
 		startDate = resolveCalendarStartDate(
 			page.calendar?.defaultStartDate,
-			url.searchParams.get('start')
+			url.searchParams.get('start-date')
 		);
 
 		const entries = startDate ? generateCalendarEntries(page.calendar, startDate) : [];
 
-		if (page.calendar) {
-			page.calendar.entries = entries;
-		}
+		page.calendar.defaultStartDate = startDate ?? page.calendar.defaultStartDate;
+		page.calendar.entries = entries;
 	}
 
 	return {
 		page,
 		path,
-		segments: path.split('/'),
+		segments: path.split('/')
 	};
 }

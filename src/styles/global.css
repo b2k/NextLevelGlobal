@@ -50,45 +50,10 @@ h6 {
 	--btn-primary-bg: var(--color-primary);
 	--btn-primary-hover-bg: var(--color-primary-dark);
 }
-.light h1,
-.light h2,
-.light h3,
-.light h4,
-.light h5,
-.light h6,
-.group-section.light h1,
-.group-section.light h2,
-.group-section.light h3,
-.group-section.light h4,
-.group-section.light h5,
-.group-section.light h6 {
-	margin-top: 0;
-	line-height: 1.25;
-	font-weight: 600; /* Montserrat SemiBold */
-	letter-spacing: -0.01em; /* logo-like tightening */
-	color: var(--color-text-primary, black);
-}
+
 .dark {
 	--btn-primary-bg: var(--color-primary-light);
 	--btn-primary-hover-bg: var(--color-primary);
-}
-.dark h1,
-.dark h2,
-.dark h3,
-.dark h4,
-.dark h5,
-.dark h6,
-.group-section.dark h1,
-.group-section.dark h2,
-.group-section.dark h3,
-.group-section.dark h4,
-.group-section.dark h5,
-.group-section.dark h6 {
-	margin-top: 0;
-	line-height: 1.25;
-	font-weight: 600; /* Montserrat SemiBold */
-	letter-spacing: -0.01em; /* logo-like tightening */
-	color: var(--color-text-light, white);
 }
 
 h1 {

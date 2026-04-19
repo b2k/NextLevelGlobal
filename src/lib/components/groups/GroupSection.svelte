@@ -1,21 +1,20 @@
 <script lang="ts">
-/* eslint-disable svelte/no-navigation-without-resolve */
+	/* eslint-disable svelte/no-navigation-without-resolve */
 	import { resolve } from '$app/paths';
 	import { getTheme } from '$lib/config/groups/themes';
 	import type { PageSection, ThemeName, SectionItem } from '$lib/config/groups/types';
 
-	let {
-		section,
-		pageTheme = 'light'
-	} = $props<{ section: PageSection; pageTheme?: ThemeName }>();
+	let { section, pageTheme = 'light' } = $props<{ section: PageSection; pageTheme?: ThemeName }>();
 
 	const resolvedTheme = $derived(getTheme(section.theme ?? pageTheme));
 
-	const style = $derived.by(() => `
+	const style = $derived.by(
+		() => `
 		--section-bg: ${resolvedTheme.section.background};
 		--section-text: ${resolvedTheme.section.text};
 		--section-accent: ${resolvedTheme.section.accent};
-	`);
+	`
+	);
 
 	function itemHref(item: SectionItem) {
 		if (item.type === 'pdf') return item.pdf;
@@ -28,7 +27,7 @@
 	}
 </script>
 
-<section class="group-section {section.theme ?? pageTheme}" style={style}>
+<section class="group-section {section.theme ?? pageTheme}" {style}>
 	<div class="group-section__inner">
 		<header class="group-section__header">
 			<h2 class="group-section__title">{section.title}</h2>
@@ -75,12 +74,7 @@
 										</a>
 									</article>
 								{:else}
-									<a
-										class="group-tile"
-										href={itemHref(item)}
-										target="_blank"
-										rel="noopener"
-									>
+									<a class="group-tile" href={itemHref(item)} target="_blank" rel="noopener">
 										{item.title}
 									</a>
 								{/if}
@@ -107,7 +101,12 @@
 							{/if}
 
 							<div class="group-card__actions">
-								<a class="group-tile group-tile--primary" href={item.buyUrl} target="_blank" rel="noopener">
+								<a
+									class="group-tile group-tile--primary"
+									href={item.buyUrl}
+									target="_blank"
+									rel="noopener"
+								>
 									Purchase
 								</a>
 								<a
@@ -121,12 +120,7 @@
 							</div>
 						</article>
 					{:else}
-						<a
-							class="group-tile"
-							href={itemHref(item)}
-							target="_blank"
-							rel="noopener"
-						>
+						<a class="group-tile" href={itemHref(item)} target="_blank" rel="noopener">
 							{item.title}
 						</a>
 					{/if}
@@ -152,12 +146,16 @@
 	.group-section__header {
 		text-align: center;
 		margin-bottom: 2.5rem;
+		color: var(--section-text);
 	}
 
 	.group-section__title {
 		margin: 0;
 		font-size: clamp(1.75rem, 2.6vw, 2.5rem);
 		font-weight: 800;
+		line-height: 1.25;
+		letter-spacing: -0.01em;
+		color: var(--section-text);
 	}
 
 	.group-section__subtitle {
@@ -165,6 +163,7 @@
 		max-width: 44rem;
 		line-height: 1.6;
 		opacity: 0.9;
+		color: var(--section-text);
 	}
 
 	.group-section__grid {
@@ -191,8 +190,27 @@
 	.group-column__title {
 		margin: 0 0 1.75rem;
 		font-size: clamp(1.4rem, 2vw, 2.1rem);
-		font-weight: 400;
-		letter-spacing: 0.02em;
+		font-weight: 600;
+		line-height: 1.25;
+		letter-spacing: -0.01em;
+		color: var(--section-text);
+	}
+
+	.group-card {
+		text-align: center;
+		color: var(--section-text);
+	}
+
+	.group-card h3 {
+		margin-top: 0;
+		line-height: 1.25;
+		font-weight: 600;
+		letter-spacing: -0.01em;
+		color: var(--section-text);
+	}
+
+	.group-card p {
+		color: var(--section-text);
 	}
 
 	.group-column__items {
@@ -201,10 +219,6 @@
 		align-items: center;
 		gap: 1.1rem;
 		width: 100%;
-	}
-
-	.group-card {
-		text-align: center;
 	}
 
 	.group-card--book {

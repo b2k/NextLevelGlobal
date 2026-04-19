@@ -4,7 +4,6 @@
 
 	type Props = {
 		calendar: GroupCalendarConfig;
-		startDate?: string | Date;
 		currentDate?: string | Date;
 		selectedDate?: string | Date | null;
 		onselect?: (date: Date) => void;
@@ -12,7 +11,6 @@
 
 	let {
 		calendar,
-		startDate = calendar.defaultStartDate ?? new SvelteDate(),
 		currentDate = new SvelteDate(),
 		selectedDate = $bindable<Date | null>(null),
 		onselect
@@ -92,8 +90,64 @@
 	});
 
 	let today = $derived(parseDate(currentDate) ?? stripTime(new SvelteDate()));
+	function monthKey(date: Date): number {
+		return date.getFullYear() * 12 + date.getMonth();
+	}
+
+	function clampMonth(date: Date, min: Date, max: Date): Date {
+		const key = monthKey(date);
+		const minKey = monthKey(min);
+		const maxKey = monthKey(max);
+
+		if (key < minKey) return startOfMonth(min);
+		if (key > maxKey) return startOfMonth(max);
+		return startOfMonth(date);
+	}
+
+	let minVisibleMonth = $derived.by(() => {
+		const configured = parseDate((calendar as { startDate?: string | Date }).startDate);
+		if (configured) return startOfMonth(configured);
+
+		const firstEntry = normalizedEntries[0]?.date;
+		return firstEntry ? startOfMonth(firstEntry) : startOfMonth(today);
+	});
+
+	let maxVisibleMonth = $derived.by(() => {
+		const configured = parseDate((calendar as { endDate?: string | Date }).endDate);
+		if (configured) return startOfMonth(configured);
+
+		const lastEntry = normalizedEntries[normalizedEntries.length - 1]?.date;
+		return lastEntry ? startOfMonth(lastEntry) : startOfMonth(today);
+	});
+
 	let visibleMonth = $state(startOfMonth(stripTime(new SvelteDate())));
 
+	let canGoPrevious = $derived(monthKey(visibleMonth) > monthKey(minVisibleMonth));
+	let canGoNext = $derived(monthKey(visibleMonth) < monthKey(maxVisibleMonth));
+	let canGoToday = $derived(monthKey(minVisibleMonth) <= monthKey(today) && monthKey(today) <= monthKey(maxVisibleMonth));
+
+	function previousMonth() {
+		if (!canGoPrevious) return;
+		visibleMonth = addMonths(visibleMonth, -1);
+	}
+
+	function nextMonth() {
+		if (!canGoNext) return;
+		visibleMonth = addMonths(visibleMonth, 1);
+	}
+
+	function goToToday() {
+		const target = clampMonth(startOfMonth(today), minVisibleMonth, maxVisibleMonth);
+		visibleMonth = target;
+
+		if (
+			today >= minVisibleMonth &&
+			today <= endOfMonth(maxVisibleMonth)
+		) {
+			selectedDate = today;
+			onselect?.(today);
+		}
+	}
 	type DayCell = {
 		date: Date;
 		inMonth: boolean;
@@ -135,38 +189,27 @@
 		onselect?.(date);
 	}
 
-	function previousMonth() {
-		visibleMonth = addMonths(visibleMonth, -1);
-	}
-
-	function nextMonth() {
-		visibleMonth = addMonths(visibleMonth, 1);
-	}
-
-	function goToToday() {
-		visibleMonth = startOfMonth(today);
-		selectedDate = today;
-		onselect?.(today);
-	}
 </script>
 
 <div class="calendar">
 	<div class="calendar-toolbar">
 		<div class="calendar-toolbar-left">
-			<button type="button" class="toolbar-btn today-btn" onclick={goToToday}>Today</button>
+			<button type="button" class={`toolbar-btn today-btn ${!canGoToday ? 'disabled' : ''}`} onclick={goToToday} disabled={!canGoToday}>Today</button>
 			<div class="month-nav">
 				<button
 					type="button"
-					class="toolbar-btn nav-btn"
+					class={`toolbar-btn nav-btn ${!canGoPrevious ? 'disabled' : ''}`}
 					onclick={previousMonth}
+                    disabled={!canGoPrevious}
 					aria-label="Previous month"
 				>
 					‹
 				</button>
 				<button
 					type="button"
-					class="toolbar-btn nav-btn"
+					class={`toolbar-btn nav-btn ${!canGoNext ? 'disabled' : ''}`}
 					onclick={nextMonth}
+                    disabled={!canGoNext}
 					aria-label="Next month"
 				>
 					›
@@ -208,6 +251,10 @@
 </div>
 
 <style>
+    button.disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
 	.calendar {
 		width: 100%;
 		background: #fff;
