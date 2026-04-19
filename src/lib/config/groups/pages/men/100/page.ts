@@ -1,9 +1,9 @@
-import type { GroupPage } from '../types';
+import type { GroupPage } from '$lib/config/groups/types';
 
-export const men100: GroupPage = {
+export const page: GroupPage = {
 	id: 'men-100',
 	title: "Men's 100-Level Groups",
-	menuTitle: "100-Level",
+	menuTitle: '100-Level',
 	parentPath: 'men',
 	order: 1,
 	heroImage: '/groups/men/100/hero.jpg',
@@ -17,24 +17,24 @@ export const men100: GroupPage = {
 				{
 					type: 'link',
 					title: '101',
-					href: '/groups/men/100/101',
+					href: '/groups/men/100/101'
 				},
 				{
 					type: 'link',
 					title: '102',
-					href: '/groups/men/100/102',
+					href: '/groups/men/100/102'
 				},
 				{
 					type: 'link',
 					title: '102',
-					href: '/groups/men/100/102',
+					href: '/groups/men/100/102'
 				},
 				{
 					type: 'link',
 					title: '103',
-					href: '/groups/men/100/103',
-				},
+					href: '/groups/men/100/103'
+				}
 			]
 		}
-	],
+	]
 };

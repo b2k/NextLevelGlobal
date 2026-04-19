@@ -1,15 +1,15 @@
 import { error } from '@sveltejs/kit';
-import { pageByPath } from '$lib/config/groups/pageByPath';
 import { buildCalendarIcs } from '$lib/config/groups/calendar';
+import { pageByPath } from '$lib/config/groups/pages';
+import { jsonClone } from '$lib/utils/jsonClone.js';
 
 export function GET({ params, url }) {
-	const path = (params.path ?? []).join('/');
-
+	const path = params.path;
 	if (!path) {
 		throw error(404, 'Calendar not found');
 	}
 
-	const page = pageByPath.get(path);
+	const page = jsonClone(pageByPath.get(path));
 
 	if (!page?.calendar) {
 		throw error(404, `Calendar not found: ${path}`);
@@ -18,10 +18,13 @@ export function GET({ params, url }) {
 	const startDate = url.searchParams.get('start-date');
 
 	const ics = buildCalendarIcs({
-		name: page.calendar.name,
+		name: page.calendar.title,
 		description: page.calendar.description,
-		events: page.calendar.events,
-		startDateOverride: startDate
+		events: page.calendar.entries.map((entry, i) => ({
+			uid: `${entry.title.replaceAll(' ', '-')}-${i}`,
+			...entry
+		})),
+		startDateOverride: startDate ?? undefined
 	});
 
 	return new Response(ics, {

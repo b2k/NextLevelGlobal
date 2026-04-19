@@ -1,3 +1,5 @@
+import type { GroupCalendarConfig } from '../calendars/groupCalendars';
+
 export type ThemeName = 'light' | 'dark';
 
 export type PageItem =
@@ -50,6 +52,7 @@ export type SectionColumn = {
 };
 
 export type PageSection = {
+	id?: string;
 	title: string;
 	subtitle?: string;
 	theme?: ThemeName;
@@ -73,12 +76,6 @@ export interface CalendarEventEntry {
 	startRule?: FloatingStartRule;
 }
 
-export interface GroupCalendar {
-	name: string;
-	description?: string;
-	events: CalendarEventEntry[];
-}
-
 export interface GroupPage {
 	id: string;
 	title: string;
@@ -90,7 +87,7 @@ export interface GroupPage {
 	order?: number;
 	heroImage?: string;
 	sections: PageSection[];
-	calendar?: GroupCalendar;
+	calendar?: GroupCalendarConfig;
 }
 
 export interface MenuItem {

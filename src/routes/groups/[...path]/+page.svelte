@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
+	import Calendar from '$lib/components/groups/Calendar.svelte';
 	import GroupSection from '$lib/components/groups/GroupSection.svelte';
 	import { getTheme } from '$lib/config/groups/themes.js';
 	import { titleCase } from '$lib/utils/formatters.js';
@@ -63,22 +64,23 @@
 					{#if data.page.subtitle}
 						<p>{data.page.subtitle}</p>
 					{/if}
-
-					{#if data.page.calendar}
-						<div class="group-page__actions">
-							<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-							<a href={calendarPath} class="btn btn--primary">Download Calendar</a>
-
-							{#if subscribeUrl}
-								<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-								<a href={subscribeUrl} class="btn btn--secondary">Subscribe</a>
-							{/if}
-						</div>
-					{/if}
 				</header>
 			</div>
 		</div>
 	</div>
+
+	{#if data.page.calendar}
+		<div class="group-page__actions">
+			<Calendar calendar={data?.page.calendar} startDate={data.page.calendar.defaultStartDate} />
+			<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+			<a href={calendarPath} class="btn btn--primary">Download Calendar</a>
+
+			{#if subscribeUrl}
+				<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+				<a href={subscribeUrl} class="btn btn--secondary">Subscribe</a>
+			{/if}
+		</div>
+	{/if}
 
 	<div class="group-page__sections">
 		{#each data.page.sections as section, i (i)}

@@ -1,84 +1,30 @@
-import { men } from './pages/men';
-import { men100 } from './pages/men100';
-import { men101 } from './pages/men101';
+import type { CalendarEntry } from '../calendars/groupCalendars';
 import type { GroupPage } from './types';
+
+function normalizePath(file: string): string {
+	return file
+		.replace('./pages/', '')
+		.replace(/\/page\.(ts|js)$/, '');
+}
 
 function definePage(path: string, page: Omit<GroupPage, 'path'>): [string, GroupPage] {
 	return [path, { ...page, path }];
 }
 
-export const pageByPath = new Map<string, GroupPage>([
-	definePage('men', men),
-	definePage('men/100', men100),
-	definePage('men/100/101', men101),
+const modules = import.meta.glob('./pages/**/page.ts', { eager: true });
 
-	definePage('men/1011', {
-		id: 'men-1011',
-		title: 'Scripture Summaries & Questions',
-		menuTitle: 'Scripture Summaries & Questions',
-		parentPath: 'men/101',
-		order: 1,
-		theme: 'light',
-		sections: [
-			{
-				id: 'scripture-summaries',
-				title: 'Scripture Summaries & Questions',
-				subtitle: 'Download weekly summaries and discussion questions.',
-				theme: 'light',
-				items: [
-					{
-						type: 'pdf',
-						title: 'Week 1-2',
-						pdf: '/pdf/groups/men/101/week-1-2.pdf'
-					},
-					{
-						type: 'pdf',
-						title: 'Week 3-6',
-						pdf: '/pdf/groups/men/101/week-3-6.pdf'
-					},
-					{
-						type: 'pdf',
-						title: 'Week 7-10',
-						pdf: '/pdf/groups/men/101/week-7-10.pdf'
-					},
-					{
-						type: 'pdf',
-						title: 'Week 11-13',
-						pdf: '/pdf/groups/men/101/week-11-13.pdf'
-					}
-				]
-			},
-			{
-				id: 'scripture-memorization',
-				title: 'Scripture Memorization',
-				subtitle: 'Purchase the book and download the corresponding questions PDF.',
-				theme: 'dark',
-				items: [
-					{
-						type: 'book',
-						title: 'ESV',
-						buyUrl: 'https://www.crossway.org/bibles/',
-						questionsPdf: '/pdf/groups/men/101/esv-questions.pdf',
-						image: '/images/books/esv.jpg'
-					},
-					{
-						type: 'book',
-						title: 'Colossians',
-						buyUrl: 'https://www.amazon.com/',
-						questionsPdf: '/pdf/groups/men/101/colossians-questions.pdf',
-						image: '/images/books/colossians.jpg'
-					},
-					{
-						type: 'book',
-						title: '1 Thessalonians & Romans Road',
-						buyUrl: 'https://www.amazon.com/',
-						questionsPdf: '/pdf/groups/men/101/1-thessalonians-romans-road-questions.pdf',
-						image: '/images/books/1-thessalonians-romans-road.jpg'
-					}
-				]
-			}
-		]
-	}),
+export const pageByPath = new Map<string, GroupPage>(
+	Object.entries(modules).map(([file, mod]) => {
+		const path = normalizePath(file);
+		const page = (mod as { page: Omit<GroupPage, 'path'> }).page;
+		return definePage(path, page);
+	})
+);
+
+export const oldPageByPath = new Map<string, GroupPage>([
+	// definePage('men', men),
+	// definePage('men/100', men100),
+	// definePage('men/100/101', men101),
 
 	definePage('women/401', {
 		id: 'women-401',
@@ -96,22 +42,10 @@ export const pageByPath = new Map<string, GroupPage>([
 			}
 		],
 		calendar: {
-			name: 'Women 401 Schedule',
+			title: 'Women 401 Schedule',
 			description: 'Recurring schedule for Women 401',
-			events: [
-				{
-					uid: 'women-401-start@nextlevelglobal.org',
-					title: 'Women 401 Begins',
-					description: 'Opening week for Women 401',
-					allDay: true,
-					durationDays: 1,
-					startRule: {
-						month: 9,
-						weekday: 0,
-						occurrence: 2
-					}
-				}
-			]
+			defaultStartDate: '2024-01-01',
+			entries: [] as CalendarEntry[]
 		}
 	})
 ]);

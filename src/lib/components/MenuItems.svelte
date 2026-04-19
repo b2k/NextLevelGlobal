@@ -1,8 +1,8 @@
 <script lang="ts">
+	/* eslint-disable svelte/no-navigation-without-resolve */
 	import MenuItems from './MenuItems.svelte';
 	import type { NavLinkItem } from '$lib/config/navigation';
 	import { page } from '$app/state';
-	import { resolve } from '$app/paths';
 
 	interface Props {
 		items: NavLinkItem[];
@@ -26,9 +26,8 @@
 		return !!item.items?.some((child) => isActive(child) || hasActiveChild(child));
 	}
 
-
 	function resolveWrapper(href: string | undefined): string | null | undefined {
-		return href ? resolve(href): null;
+		return href;
 	}
 </script>
 

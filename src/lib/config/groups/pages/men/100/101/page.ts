@@ -1,6 +1,7 @@
-import type { GroupPage } from '../types';
+import type { GroupPage } from '$lib/config/groups/types';
+import { calendar } from './calendar';
 
-export const men101: GroupPage = {
+export const page: GroupPage = {
 	id: 'men-101',
 	title: 'Men 101',
 	menuTitle: '101',
@@ -54,22 +55,5 @@ export const men101: GroupPage = {
 			]
 		}
 	],
-	calendar: {
-		name: 'Men 101 Schedule',
-		description: 'Recurring schedule for Men 101',
-		events: [
-			{
-				uid: 'men-101-start@nextlevelglobal.org',
-				title: 'Men 101 Begins',
-				description: 'Opening week for Men 101',
-				allDay: true,
-				durationDays: 1,
-				startRule: {
-					month: 1,
-					weekday: 0,
-					occurrence: 3
-				}
-			}
-		]
-	}
+	calendar: calendar
 };

@@ -1,4 +1,5 @@
 <script lang="ts">
+	/* eslint-disable svelte/no-navigation-without-resolve */
 	import {
 		Collapse,
 		NavbarToggler,
@@ -67,11 +68,7 @@
 		<Nav class="ms-auto" navbar>
 			{#each topNavLinks as link (link.href)}
 				<NavItem>
-					<NavLink
-						href={link.href}
-						onclick={closeMenu}
-						class={isActive(link) ? 'active' : ''}
-					>
+					<NavLink href={link.href} onclick={closeMenu} class={isActive(link) ? 'active' : ''}>
 						{link.label}
 					</NavLink>
 				</NavItem>
