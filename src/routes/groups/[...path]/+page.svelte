@@ -71,6 +71,7 @@
 
 	{#if data.page.calendar}
 		<div class="group-page__actions">
+			<!-- Calendar component will go here -->
 			<Calendar calendar={data?.page.calendar} startDate={data.page.calendar.defaultStartDate} />
 			<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
 			<a href={calendarPath} class="btn btn--primary">Download Calendar</a>
@@ -185,6 +186,7 @@
 		justify-content: center;
 		gap: 0.75rem;
 		margin-top: 0.5rem;
+		padding: 0 1rem 1rem;
 	}
 
 	.btn {
@@ -194,6 +196,7 @@
 		padding: 0.8rem 1.2rem;
 		font-weight: 700;
 		text-decoration: none;
+		border-radius: 0.5rem;
 		transition:
 			transform 0.15s ease,
 			background-color 0.15s ease,
@@ -206,24 +209,26 @@
 	}
 
 	.btn--primary {
-		background: var(--btn-primary-bg);
-		color: white;
+		background: var(--btn-primary-bg, #1d4ed8);
+		color: var(--btn-primary-text, #fff);
 		border: 1px solid transparent;
 	}
 
 	.btn--primary:hover {
-		background: var(--btn-primary-hover-bg);
+		background: var(--btn-primary-hover-bg, #1e40af);
+		color: var(--btn-primary-text, #fff);
 	}
 
 	.btn--secondary {
-		border: 1px solid rgba(255, 255, 255, 0.7);
-		background: rgba(255, 255, 255, 0.08);
-		color: white;
-		backdrop-filter: blur(8px);
+		background: var(--btn-secondary-bg, #fff);
+		color: var(--btn-secondary-text, #1f2937);
+		border: 1px solid var(--btn-secondary-border, #cbd5e1);
 	}
 
 	.btn--secondary:hover {
-		background: rgba(255, 255, 255, 0.16);
+		background: var(--btn-secondary-hover-bg, #f8fafc);
+		color: var(--btn-secondary-text, #1f2937);
+		border-color: var(--btn-secondary-border, #94a3b8);
 	}
 
 	.group-page__sections {
