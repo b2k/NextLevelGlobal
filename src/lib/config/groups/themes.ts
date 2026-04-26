@@ -23,6 +23,8 @@ export interface ThemeDefinition {
 		accent: string;
 		cardBackground: string;
 		cardBorder: string;
+		buttonPrimaryBg: string;
+		buttonPrimaryText: string;
 	};
 }
 

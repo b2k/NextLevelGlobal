@@ -1,11 +1,14 @@
 <script lang="ts">
 	import type { CalendarEntry, GroupCalendarConfig } from '$lib/config/calendars/groupCalendars';
 	import { SvelteDate } from 'svelte/reactivity';
+	import { browser } from '$app/environment';
+	import { onMount } from 'svelte';
 
 	type Props = {
 		calendar: GroupCalendarConfig;
 		currentDate?: string | Date;
 		selectedDate?: string | Date | null;
+		path: string;
 		onselect?: (date: Date) => void;
 	};
 
@@ -13,9 +16,11 @@
 		calendar,
 		currentDate = new SvelteDate(),
 		selectedDate = $bindable<Date | null>(null),
+		path,
 		onselect
 	}: Props = $props();
 
+	const cookieName = $derived(`customStartDate:${path}`);
 	const weekdayLabels = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 	function stripTime(date: Date): Date {
@@ -124,8 +129,41 @@
 
 	let canGoPrevious = $derived(monthKey(visibleMonth) > monthKey(minVisibleMonth));
 	let canGoNext = $derived(monthKey(visibleMonth) < monthKey(maxVisibleMonth));
-	let canGoToday = $derived(monthKey(minVisibleMonth) <= monthKey(today) && monthKey(today) <= monthKey(maxVisibleMonth));
+	let canGoToday = $derived(
+		monthKey(minVisibleMonth) <= monthKey(today) && monthKey(today) <= monthKey(maxVisibleMonth)
+	);
+	const customStartDateCookie = 'customStartDate';
 
+	let customStartDate = $state('');
+
+	function readCookie(name: string): string {
+		if (!browser) return '';
+
+		const match = document.cookie.match(new RegExp(`(?:^|; )${name}=([^;]*)`));
+		return match ? decodeURIComponent(match[1]) : '';
+	}
+
+	function writeCookie(name: string, value: string) {
+		document.cookie = `${name}=${encodeURIComponent(value)}; path=/; max-age=${60 * 60 * 24 * 365}; SameSite=Lax`;
+	}
+
+	function deleteCookie(name: string) {
+		document.cookie = `${name}=; path=/; max-age=0; SameSite=Lax`;
+	}
+
+	onMount(() => {
+		customStartDate = readCookie(cookieName);
+	});
+
+	async function handleCustomStartDateChange() {
+		if (customStartDate) {
+			writeCookie(cookieName, customStartDate);
+		} else {
+			deleteCookie(cookieName);
+		}
+
+		location.reload();
+	}
 	function previousMonth() {
 		if (!canGoPrevious) return;
 		visibleMonth = addMonths(visibleMonth, -1);
@@ -140,10 +178,7 @@
 		const target = clampMonth(startOfMonth(today), minVisibleMonth, maxVisibleMonth);
 		visibleMonth = target;
 
-		if (
-			today >= minVisibleMonth &&
-			today <= endOfMonth(maxVisibleMonth)
-		) {
+		if (today >= minVisibleMonth && today <= endOfMonth(maxVisibleMonth)) {
 			selectedDate = today;
 			onselect?.(today);
 		}
@@ -188,19 +223,23 @@
 		selectedDate = date;
 		onselect?.(date);
 	}
-
 </script>
 
 <div class="calendar">
 	<div class="calendar-toolbar">
 		<div class="calendar-toolbar-left">
-			<button type="button" class={`toolbar-btn today-btn ${!canGoToday ? 'disabled' : ''}`} onclick={goToToday} disabled={!canGoToday}>Today</button>
+			<button
+				type="button"
+				class={`toolbar-btn today-btn ${!canGoToday ? 'disabled' : ''}`}
+				onclick={goToToday}
+				disabled={!canGoToday}>Today</button
+			>
 			<div class="month-nav">
 				<button
 					type="button"
 					class={`toolbar-btn nav-btn ${!canGoPrevious ? 'disabled' : ''}`}
 					onclick={previousMonth}
-                    disabled={!canGoPrevious}
+					disabled={!canGoPrevious}
 					aria-label="Previous month"
 				>
 					‹
@@ -209,13 +248,25 @@
 					type="button"
 					class={`toolbar-btn nav-btn ${!canGoNext ? 'disabled' : ''}`}
 					onclick={nextMonth}
-                    disabled={!canGoNext}
+					disabled={!canGoNext}
 					aria-label="Next month"
 				>
 					›
 				</button>
 			</div>
 			<h3 class="calendar-title">{formatMonth(visibleMonth)}</h3>
+		</div>
+		<div class="calendar-toolbar-right">
+			<label for="custom-start-date" class="custom-start-date-label"> Custom Start Date </label>
+
+			<input
+				id="custom-start-date"
+				type="date"
+				class="custom-start-date"
+				bind:value={customStartDate}
+				aria-describedby="custom-start-date-help"
+				onchange={handleCustomStartDateChange}
+			/>
 		</div>
 	</div>
 
@@ -251,10 +302,10 @@
 </div>
 
 <style>
-    button.disabled {
-        opacity: 0.5;
-        cursor: not-allowed;
-    }
+	button.disabled {
+		opacity: 0.5;
+		cursor: not-allowed;
+	}
 	.calendar {
 		width: 100%;
 		background: #fff;
@@ -408,6 +459,58 @@
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
+	}
+
+	.calendar-toolbar-right {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+	}
+
+	.custom-start-date {
+		border: 1px solid #cfd6e0;
+		background: #fff;
+		color: #243247;
+		border-radius: 999px;
+		padding: 0.55rem 0.9rem;
+		font: inherit;
+		min-width: 11.5rem;
+	}
+
+	.custom-start-date:hover,
+	.custom-start-date:focus {
+		background: #f9fbfd;
+		outline: none;
+		border-color: #9fb0c6;
+	}
+	.calendar-toolbar-right {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		margin-left: auto;
+	}
+
+	.custom-start-date-label {
+		font-size: 0.85rem;
+		font-weight: 500;
+		color: #243247;
+		white-space: nowrap;
+	}
+	@media (max-width: 700px) {
+		.calendar-toolbar {
+			align-items: flex-start;
+			gap: 0.75rem;
+			flex-direction: column;
+		}
+
+		.calendar-toolbar-right {
+			width: 100%;
+			margin-left: 0;
+		}
+
+		.custom-start-date {
+			width: 100%;
+		}
 	}
 
 	@media (max-width: 900px) {

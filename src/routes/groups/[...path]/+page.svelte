@@ -5,7 +5,7 @@
 	import { getTheme } from '$lib/config/groups/themes.js';
 	import { titleCase } from '$lib/utils/formatters.js';
 
-	let { data } = $props();
+	let { data, params } = $props();
 
 	let pageTheme = $derived(data.page.theme ?? 'light');
 
@@ -75,7 +75,7 @@
 	{#if data.page.calendar}
 		<div class="group-page__actions">
 			<!-- Calendar component will go here -->
-			<Calendar calendar={data?.page.calendar} />
+			<Calendar calendar={data?.page.calendar} path={params.path} />
 			<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
 			<a href={calendarPath} class="btn btn--primary" data-sveltekit-reload>Download Calendar</a>
 
