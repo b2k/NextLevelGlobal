@@ -86,6 +86,7 @@ export interface GroupPage {
 	parentPath?: string;
 	order?: number;
 	heroImage?: string;
+	heroTextColor?: string;
 	sections: PageSection[];
 	calendar?: GroupCalendarConfig;
 }

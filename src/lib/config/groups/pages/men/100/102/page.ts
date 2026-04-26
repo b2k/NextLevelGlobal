@@ -2,12 +2,12 @@ import type { GroupPage } from '$lib/config/groups/types';
 import { calendar } from './calendar';
 
 export const page: GroupPage = {
-	id: 'men-101',
-	title: 'Men 101',
-	menuTitle: '101',
+	id: 'men-102',
+	title: 'Men 102',
+	menuTitle: '102',
 	parentPath: 'men',
-	order: 1,
-	heroImage: '/groups/men/100/101/hero.jpg',
+	order: 2,
+	heroImage: '/groups/men/100/102/hero.jpg',
 	heroTextColor: 'white',
 	theme: 'dark',
 	sections: [
@@ -18,11 +18,11 @@ export const page: GroupPage = {
 			items: [
 				{
 					type: 'book',
-					title: 'Man Code Questions',
+					title: 'Fight Like a Man',
 					buyUrl:
-						'https://www.christianbook.com/man-code-priorities-every-needs-know/9780736990035/pd/990037?event=ESRCG',
-					questionsPdf: '/groups/men/100/101/the_man_code_by_mark_henry_questions.pdf',
-					image: '/groups/men/100/101/the_man_code.jpg',
+						'https://www.christianbook.com/fight-biblical-battle-plan-personal-purity/emeal-e-z-zwayne/9781424568550/pd/568551?event=ESRCQ%7CPSEN',
+					questionsPdf: '/groups/men/100/102/fight-like-a-man.pdf',
+					image: '/groups/men/100/102/fight-like-a-man.jpg',
 					description: 'Download the weekly discussion questions PDF.'
 				}
 			]
@@ -35,24 +35,14 @@ export const page: GroupPage = {
 			items: [
 				{
 					type: 'pdf',
-					title: 'Week 1-2',
-					pdf: '/groups/men/100/101/nlgw1-2.pdf'
+					title: 'Week 14-18',
+					pdf: '/groups/men/100/102/nlgw14-18.pdf'
 				},
 				{
 					type: 'pdf',
-					title: 'Week 3-6',
-					pdf: '/groups/men/100/101/nlgw3-6.pdf'
+					title: 'Week 19-23',
+					pdf: '/groups/men/100/102/nlgw19-23.pdf'
 				},
-				{
-					type: 'pdf',
-					title: 'Week 7-10',
-					pdf: '/groups/men/100/101/nlgw7-10.pdf'
-				},
-				{
-					type: 'pdf',
-					title: 'Week 11-13',
-					pdf: '/groups/men/100/101/nlgw11-13.pdf'
-				}
 			]
 		},
 		{
@@ -121,9 +111,9 @@ export const page: GroupPage = {
 						}
 					]
 				},
-			]
+            ]
 		},
-		{
+        		{
 			id: 'additional-resources',
 			title: 'Additional Resources',
 			theme: 'light',
@@ -147,5 +137,5 @@ export const page: GroupPage = {
 
 		}
 	],
-	calendar: calendar
+    calendar
 };

@@ -50,7 +50,9 @@ export const themes: Record<ThemeName, ThemeDefinition> = {
 			text: '#0f172a',
 			accent: '#2563eb',
 			cardBackground: 'rgba(255, 255, 255, 0.72)',
-			cardBorder: 'rgba(148, 163, 184, 0.3)'
+			cardBorder: 'rgba(148, 163, 184, 0.3)',
+			buttonPrimaryBg: '#0f172a',
+			buttonPrimaryText: '#fff'
 		}
 	},
 	dark: {
@@ -76,7 +78,9 @@ export const themes: Record<ThemeName, ThemeDefinition> = {
 			text: '#f8fafc',
 			accent: '#60a5fa',
 			cardBackground: 'rgba(15, 23, 42, 0.72)',
-			cardBorder: 'rgba(255, 255, 255, 0.12)'
+			cardBorder: 'rgba(255, 255, 255, 0.12)',
+			buttonPrimaryBg: '#f8fafc',
+			buttonPrimaryText: '#111827'
 		}
 	}
 };

@@ -18,6 +18,9 @@
 		--section-accent: ${resolvedTheme.section.accent};
 		--section-card-bg: ${resolvedTheme.section.cardBackground};
 		--section-card-border: ${resolvedTheme.section.cardBorder};
+		--section-button-bg: ${resolvedTheme.section.buttonPrimaryBg};
+		--section-button-text: ${resolvedTheme.section.buttonPrimaryText};
+		--hero-text: ${data.page.heroTextColor ?? resolvedTheme.page.heroText};
 	`
 	);
 
@@ -43,7 +46,7 @@
 </svelte:head>
 
 <div class="group-page {pageTheme}" {style}>
-	<div class="group-page__hero" style={`--hero-image: url('${data.page.heroImage ?? ''}')`}>
+	<div class={`group-page__hero ${data.page.heroImage ? 'hero-image' : ''}`} style={`--hero-image: url('${data.page.heroImage ?? ''}')`}>
 		<div class="group-page__hero-overlay">
 			<div class="group-page__hero-inner">
 				<nav class="group-page__breadcrumbs text-sm" aria-label="Breadcrumb">
@@ -107,7 +110,13 @@
 		background-repeat: no-repeat;
 		color: var(--hero-text, white);
 	}
-
+	.group-page__hero.hero-image {
+		background-image: var(--hero-image);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
 	.group-page__hero-overlay {
 		min-height: inherit;
 		background:
@@ -170,6 +179,10 @@
 		text-transform: uppercase;
 		text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
 	}
+	.hero-image h1 {
+		color: var(--hero-text, var(--color-text-primary));
+	}
+
 
 	.group-page__header p {
 		margin: 0;
@@ -241,6 +254,11 @@
 	@media (min-width: 768px) {
 		.group-page__hero-inner {
 			padding: 1.25rem 2rem 2.5rem;
+		}
+	}
+	@media (max-width: 768px) {
+		.group-page__hero.hero-image {
+			background-attachment: scroll;
 		}
 	}
 </style>

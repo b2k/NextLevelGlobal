@@ -13,6 +13,8 @@
 		--section-bg: ${resolvedTheme.section.background};
 		--section-text: ${resolvedTheme.section.text};
 		--section-accent: ${resolvedTheme.section.accent};
+		--section-button-bg: ${resolvedTheme.section.buttonPrimaryBg};
+		--section-button-text: ${resolvedTheme.section.buttonPrimaryText};
 	`
 	);
 
@@ -90,11 +92,16 @@
 						<article class="group-card group-card--book">
 							{#if item.image}
 								<div class="group-card__image-wrap">
-									<img src={item.image} alt={item.title} class="group-card__image" />
+									<a href={item.buyUrl}
+										target="_blank"
+										rel="noopener"
+									>
+										<img src={item.image} alt={item.title} class="group-card__image" />
+									</a>
 								</div>
-							{/if}
-
+								{:else}
 							<h3>{item.title}</h3>
+							{/if}
 
 							{#if item.description}
 								<p>{item.description}</p>
@@ -248,6 +255,11 @@
 		gap: 0.75rem;
 		margin-top: 1rem;
 	}
+	.group-section .btn,
+.group-section button {
+	background-color: var(--section-button-bg);
+	color: var(--section-button-text);
+}
 
 	.group-tile {
 		display: inline-flex;
@@ -256,9 +268,9 @@
 		min-height: 4.5rem;
 		min-width: 16rem;
 		padding: 0.9rem 1.5rem;
-		background: white;
+		background-color: var(--section-button-bg);
 		border: 1px solid rgba(0, 0, 0, 0.15);
-		color: #111;
+		color: var(--section-button-text);
 		text-decoration: none;
 		text-transform: uppercase;
 		font-size: 0.95rem;
