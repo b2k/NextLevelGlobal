@@ -3,6 +3,7 @@ import type { GroupCalendarConfig } from "$lib/config/calendars/groupCalendars";
 export const calendar: GroupCalendarConfig = {
     title: "Next Level 10",
     defaultStartDate: "2025-01-12",
+    startingWeek: 1,
     description: "Draft normalized from legacy ics: Sunday weekly track plus daily John reading track.",
     entries: [
       {

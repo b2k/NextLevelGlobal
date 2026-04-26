@@ -35,22 +35,90 @@ export const page: GroupPage = {
 				{
 					type: 'pdf',
 					title: 'Week 1-2',
-					pdf: '/groups/men/101/week-1-2.pdf'
+					pdf: '/groups/men/101/nlgw1-2.pdf'
 				},
 				{
 					type: 'pdf',
 					title: 'Week 3-6',
-					pdf: '/groups/men/101/week-3-6.pdf'
+					pdf: '/groups/men/101/nlgw3-6.pdf'
 				},
 				{
 					type: 'pdf',
 					title: 'Week 7-10',
-					pdf: '/groups/men/101/week-7-10.pdf'
+					pdf: '/groups/men/101/nlgw7-10.pdf'
 				},
 				{
 					type: 'pdf',
 					title: 'Week 11-13',
-					pdf: '/groups/men/101/week-11-13.pdf'
+					pdf: '/groups/men/101/nlgw11-13.pdf'
+				}
+			]
+		},
+		{
+			id: 'memory-verses',
+			title: 'Memory Verses',
+			subtitle: 'Download the memory verse cards.',
+			theme: 'dark',
+			columns: [
+				{
+					title: 'ESV',
+					items: [
+						{
+							type: 'pdf',
+							title: 'Colossians',
+							pdf: '/groups/men/101/lcv-esv-colossians.pdf'
+						},
+						{
+							type: 'pdf',
+							title: '1 Thessalonians & Romans Road',
+							pdf: '/groups/men/101/lcv-esv-1-thessalonians-romans-road.pdf'
+						},
+						{
+							type: 'pdf',
+							title: 'Ephesians',
+							pdf: '/groups/men/101/lcv-esv-ephesians.pdf'
+						}
+					]
+				},
+				{
+					title: 'NIV',
+					items: [
+						{
+							type: 'pdf',
+							title: 'Colossians',
+							pdf: '/groups/men/101/lcv-niv-colossians.pdf'
+						},
+						{
+							type: 'pdf',
+							title: '1 Thessalonians & Romans Road',
+							pdf: '/groups/men/101/lcv-niv-1-thessalonians-romans-road.pdf'
+						},
+						{
+							type: 'pdf',
+							title: 'Ephesians',
+							pdf: '/groups/men/101/lcv-niv-ephesians.pdf'
+						}
+					]
+				},
+				{
+					title: 'NKJV',
+					items: [
+						{
+							type: 'pdf',
+							title: 'Colossians',
+							pdf: '/groups/men/101/lcv-kjv-colossians.pdf'
+						},
+						{
+							type: 'pdf',
+							title: '1 Thessalonians & Romans Road',
+							pdf: '/groups/men/101/lcv-kjv-1-thessalonians-romans-road.pdf'
+						},
+						{
+							type: 'pdf',
+							title: 'Ephesians',
+							pdf: '/groups/men/101/lcv-kjv-ephesians.pdf'
+						}
+					]
 				}
 			]
 		}

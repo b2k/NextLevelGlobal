@@ -3,6 +3,7 @@ import type { GroupCalendarConfig } from '$lib/config/calendars/groupCalendars';
 export const calendar: GroupCalendarConfig = {
 	title: 'Next Level 101',
 	defaultStartDate: '2022-01-09',
+	startingWeek: 1,
 	description:
 		'Draft normalized from legacy ics using the 2022 Matthew/Genesis + Psalm + LCV + Ortberg cycle.',
 	entries: [

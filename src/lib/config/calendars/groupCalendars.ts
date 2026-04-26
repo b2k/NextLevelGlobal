@@ -14,6 +14,7 @@ export type CalendarEntry = {
 export type GroupCalendarConfig = {
   title: string;
   defaultStartDate: string;
+  startingWeek: number;
   description?: string;	allDay?: boolean;
 
   entries: CalendarEntry[];
