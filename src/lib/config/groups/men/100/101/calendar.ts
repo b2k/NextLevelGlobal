@@ -35,7 +35,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 1,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Ortberg: Int/CH 1'
+			title: 'Man Code CH 1'
 		},
 		{
 			week: 1,
@@ -54,6 +54,12 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 4,
 			kind: 'reading',
 			title: 'Matthew 4'
+		},
+		{
+			week: 1,
+			dayOfWeek: 4,
+			kind: 'book',
+			title: 'Man Code CH 2'
 		},
 		{
 			week: 1,
@@ -95,7 +101,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 2,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Ortberg: CH 2'
+			title: 'Man Code CH 3'
 		},
 		{
 			week: 2,
@@ -114,6 +120,12 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 4,
 			kind: 'reading',
 			title: 'Matthew 10'
+		},
+		{
+			week: 1,
+			dayOfWeek: 4,
+			kind: 'book',
+			title: 'Man Code CH 4'
 		},
 		{
 			week: 2,
@@ -155,7 +167,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 3,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Ortberg: CH 3'
+			title: 'Man Code CH 5'
 		},
 		{
 			week: 3,
@@ -171,6 +183,12 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 3,
+			dayOfWeek: 3,
+			kind: 'book',
+			title: 'Man Code CH 6'
+		},
+		{
+			week: 3,
 			dayOfWeek: 4,
 			kind: 'reading',
 			title: 'Matthew 16'
@@ -180,6 +198,12 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 5,
 			kind: 'reading',
 			title: 'Matthew 17'
+		},
+		{
+			week: 3,
+			dayOfWeek: 5,
+			kind: 'book',
+			title: 'Man Code CH 7'
 		},
 		{
 			week: 3,
@@ -215,7 +239,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 4,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Ortberg: CH 4'
+			title: 'Man Code CH 8'
 		},
 		{
 			week: 4,
@@ -234,6 +258,12 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 4,
 			kind: 'reading',
 			title: 'Matthew 22'
+		},
+		{
+			week: 4,
+			dayOfWeek: 4,
+			kind: 'book',
+			title: 'Man Code CH 9'
 		},
 		{
 			week: 4,
@@ -275,7 +305,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 5,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Ortberg: CH 5'
+			title: 'Man Code CH 10'
 		},
 		{
 			week: 5,
@@ -294,6 +324,12 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 4,
 			kind: 'reading',
 			title: 'Matthew 28'
+		},
+		{
+			week: 5,
+			dayOfWeek: 4,
+			kind: 'book',
+			title: 'Man Code CH 11'
 		},
 		{
 			week: 5,
@@ -335,7 +371,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 6,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Ortberg: CH 6'
+			title: 'Man Code CH 12'
 		},
 		{
 			week: 6,
@@ -354,6 +390,12 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 4,
 			kind: 'reading',
 			title: 'Genesis 6'
+		},
+		{
+			week: 6,
+			dayOfWeek: 4,
+			kind: 'book',
+			title: 'Man Code CH 13'
 		},
 		{
 			week: 6,
@@ -395,7 +437,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 7,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Ortberg:Life: CH 7'
+			title: 'Man Code CH 14'
 		},
 		{
 			week: 7,
@@ -411,6 +453,12 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 7,
+			dayOfWeek: 3,
+			kind: 'book',
+			title: 'Man Code CH 15'
+		},
+		{
+			week: 7,
 			dayOfWeek: 4,
 			kind: 'reading',
 			title: 'Genesis 12'
@@ -420,6 +468,12 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 5,
 			kind: 'reading',
 			title: 'Genesis 13'
+		},
+		{
+			week: 7,
+			dayOfWeek: 5,
+			kind: 'book',
+			title: 'Man Code CH 16'
 		},
 		{
 			week: 7,
@@ -455,7 +509,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 8,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Ortberg: CH 8'
+			title: 'Man Code CH 17'
 		},
 		{
 			week: 8,
@@ -474,6 +528,12 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 4,
 			kind: 'reading',
 			title: 'Genesis 18'
+		},
+		{
+			week: 8,
+			dayOfWeek: 4,
+			kind: 'book',
+			title: 'Man Code CH 18'
 		},
 		{
 			week: 8,
@@ -515,7 +575,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 9,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Ortberg: CH 9'
+			title: 'Man Code CH 19'
 		},
 		{
 			week: 9,
@@ -531,6 +591,12 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 9,
+			dayOfWeek: 3,
+			kind: 'book',
+			title: 'Man Code CH 20'
+		},
+		{
+			week: 9,
 			dayOfWeek: 4,
 			kind: 'reading',
 			title: 'Genesis 24'
@@ -540,6 +606,12 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 5,
 			kind: 'reading',
 			title: 'Genesis 25'
+		},
+		{
+			week: 9,
+			dayOfWeek: 5,
+			kind: 'book',
+			title: 'Man Code CH 21'
 		},
 		{
 			week: 9,
@@ -575,7 +647,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 10,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Ortberg:Life: CH 10'
+			title: 'Man Code CH 22'
 		},
 		{
 			week: 10,
@@ -591,6 +663,12 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 10,
+			dayOfWeek: 3,
+			kind: 'book',
+			title: 'Man Code CH 23'
+		},
+		{
+			week: 10,
 			dayOfWeek: 4,
 			kind: 'reading',
 			title: 'Genesis 30'
@@ -600,6 +678,12 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 5,
 			kind: 'reading',
 			title: 'Genesis 31'
+		},
+		{
+			week: 10,
+			dayOfWeek: 5,
+			kind: 'book',
+			title: 'Man Code CH 24'
 		},
 		{
 			week: 10,
@@ -635,7 +719,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 11,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Ortberg:Life: CH 11'
+			title: 'Man Code CH 25'
 		},
 		{
 			week: 11,
@@ -651,6 +735,12 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 11,
+			dayOfWeek: 3,
+			kind: 'book',
+			title: 'Man Code CH 26'
+		},
+		{
+			week: 11,
 			dayOfWeek: 4,
 			kind: 'reading',
 			title: 'Genesis 36'
@@ -660,6 +750,12 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 5,
 			kind: 'reading',
 			title: 'Genesis 37'
+		},
+		{
+			week: 11,
+			dayOfWeek: 5,
+			kind: 'book',
+			title: 'Man Code CH 27'
 		},
 		{
 			week: 11,
@@ -695,7 +791,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 12,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Ortberg:Life: CH 12'
+			title: 'Man Code CH 28'
 		},
 		{
 			week: 12,
@@ -711,6 +807,12 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 12,
+			dayOfWeek: 3,
+			kind: 'book',
+			title: 'Man Code CH 29'
+		},
+		{
+			week: 12,
 			dayOfWeek: 4,
 			kind: 'reading',
 			title: 'Genesis 42'
@@ -720,6 +822,12 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 5,
 			kind: 'reading',
 			title: 'Genesis 43'
+		},
+		{
+			week: 12,
+			dayOfWeek: 5,
+			kind: 'book',
+			title: 'Man Code CH 30'
 		},
 		{
 			week: 12,
@@ -755,7 +863,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 13,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Ortberg:Life: CH 13'
+			title: 'Man Code CH 31'
 		},
 		{
 			week: 13,
@@ -771,6 +879,12 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 13,
+			dayOfWeek: 3,
+			kind: 'book',
+			title: 'Man Code CH 32'
+		},
+		{
+			week: 13,
 			dayOfWeek: 4,
 			kind: 'reading',
 			title: 'Genesis 48'
@@ -780,6 +894,12 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 5,
 			kind: 'reading',
 			title: 'Genesis 49'
+		},
+		{
+			week: 13,
+			dayOfWeek: 6,
+			kind: 'book',
+			title: 'Man Code CH 33 & CTA'
 		},
 		{
 			week: 13,
