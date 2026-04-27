@@ -1,5 +1,5 @@
 <script>
-  import {Actions, Hero} from '$lib/components';
+	import { Hero } from '$lib/components';
   import { Container } from '@sveltestrap/sveltestrap';
 </script>
 
