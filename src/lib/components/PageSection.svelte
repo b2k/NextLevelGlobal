@@ -92,7 +92,7 @@
 										</a>
 									</article>
 								{:else}
-									<a class="group-tile" href={itemHref(item)} target="_blank" rel="noopener">
+									<a class="group-tile" href={itemHref(item)} target={item.type === 'pdf' ? '_blank' : '_self'} rel="noopener">
 										{item.title}
 									</a>
 								{/if}
