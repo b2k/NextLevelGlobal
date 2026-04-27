@@ -122,7 +122,7 @@ export const calendar: GroupCalendarConfig = {
 			title: 'Matthew 10'
 		},
 		{
-			week: 1,
+			week: 2,
 			dayOfWeek: 4,
 			kind: 'book',
 			title: 'Man Code CH 4'

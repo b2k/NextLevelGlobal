@@ -43,6 +43,7 @@ export const oldPageByPath = new Map<string, GroupPage>([
 		],
 		calendar: {
 			title: 'Women 401 Schedule',
+			startingWeek: 1,
 			description: 'Recurring schedule for Women 401',
 			defaultStartDate: '2024-01-01',
 			entries: [] as CalendarEntry[]
