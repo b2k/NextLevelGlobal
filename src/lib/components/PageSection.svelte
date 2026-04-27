@@ -3,6 +3,7 @@
 	import { resolve } from '$app/paths';
 	import { getTheme } from '$lib/config/groups/themes';
 	import type { PageSection, ThemeName, SectionItem } from '$lib/config/groups/types';
+	import Description from './Description.svelte';
 
 	let { section, pageTheme = 'light' } = $props<{ section: PageSection; pageTheme?: ThemeName }>();
 
@@ -15,6 +16,7 @@
 		--section-accent: ${resolvedTheme.section.accent};
 		--section-button-bg: ${resolvedTheme.section.buttonPrimaryBg};
 		--section-button-text: ${resolvedTheme.section.buttonPrimaryText};
+		--section-bg-image: ${section.backgroundImage ? `url('${section.backgroundImage}')` : 'none'};
 	`
 	);
 
@@ -27,6 +29,16 @@
 	function itemSecondaryHref(item: SectionItem) {
 		return item.type === 'book' ? item.questionsPdf : '';
 	}
+	export function toYouTubeEmbedUrl(url: string) {
+		const parsed = new URL(url);
+
+		if (parsed.hostname.includes('youtu.be')) {
+			return `https://www.youtube.com/embed/${parsed.pathname.slice(1)}`;
+		}
+
+		const id = parsed.searchParams.get('v');
+		return id ? `https://www.youtube.com/embed/${id}` : url;
+	}
 </script>
 
 <section class="group-section {section.theme ?? pageTheme}" {style}>
@@ -38,6 +50,10 @@
 				<p class="group-section__subtitle">{section.subtitle}</p>
 			{/if}
 		</header>
+
+		{#if section.description}
+			<Description text={section.description} />
+		{/if}
 
 		{#if section.columns?.length}
 			<div class="group-section__columns">
@@ -92,15 +108,12 @@
 						<article class="group-card group-card--book">
 							{#if item.image}
 								<div class="group-card__image-wrap">
-									<a href={item.buyUrl}
-										target="_blank"
-										rel="noopener"
-									>
+									<a href={item.buyUrl} target="_blank" rel="noopener">
 										<img src={item.image} alt={item.title} class="group-card__image" />
 									</a>
 								</div>
-								{:else}
-							<h3>{item.title}</h3>
+							{:else}
+								<h3>{item.title}</h3>
 							{/if}
 
 							{#if item.description}
@@ -126,6 +139,26 @@
 								</a>
 							</div>
 						</article>
+					{:else if item.type === 'video'}
+						<div class="section-video">
+							{#if item.title}
+								<h3>{item.title}</h3>
+							{/if}
+
+							<div class="section-video__frame">
+								<iframe
+									src={toYouTubeEmbedUrl(item.href)}
+									title={item.title ?? 'Video'}
+									loading="lazy"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+									allowfullscreen
+								></iframe>
+							</div>
+
+							{#if item.description}
+								<p>{item.description}</p>
+							{/if}
+						</div>
 					{:else}
 						<a class="group-tile" href={itemHref(item)} target="_blank" rel="noopener">
 							{item.title}
@@ -142,6 +175,12 @@
 		background: var(--section-bg);
 		color: var(--section-text);
 		width: 100%;
+	}
+	.group-section {
+		background-image: var(--section-bg-image);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
 	}
 
 	.group-section__inner {
@@ -255,11 +294,6 @@
 		gap: 0.75rem;
 		margin-top: 1rem;
 	}
-	.group-section .btn,
-.group-section button {
-	background-color: var(--section-button-bg);
-	color: var(--section-button-text);
-}
 
 	.group-tile {
 		display: inline-flex;
@@ -293,7 +327,36 @@
 		color: white;
 		border-color: var(--section-accent);
 	}
+	.section-video-list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(min(100%, 32rem), 1fr));
+		gap: 2rem;
+		align-items: start;
+		width: 100%;
+	}
 
+	.section-video {
+		width: 100%;
+		min-width: min(100%, 32rem);
+		max-width: 56rem;
+		margin-inline: auto;
+	}
+
+	.section-video__frame {
+		aspect-ratio: 16 / 9;
+		width: 100%;
+		overflow: hidden;
+		border-radius: 1rem;
+		background: #000;
+		box-shadow: 0 12px 30px rgb(0 0 0 / 0.2);
+	}
+
+	.section-video__frame iframe {
+		display: block;
+		width: 100%;
+		height: 100%;
+		border: 0;
+	}
 	@media (min-width: 900px) {
 		.group-section__columns {
 			grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));

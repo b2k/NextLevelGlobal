@@ -44,6 +44,12 @@ export type SectionItem =
 			title: string;
 			href: string;
 			description?: string;
+	  }
+	| {
+			type: 'video';
+			title?: string;
+			description?: string;
+			href: string;
 	  };
 
 export type SectionColumn = {
@@ -55,6 +61,8 @@ export type PageSection = {
 	id?: string;
 	title: string;
 	subtitle?: string;
+	description?: string;
+	backgroundImage?: string;
 	theme?: ThemeName;
 	items?: SectionItem[];
 	columns?: SectionColumn[];
@@ -80,6 +88,7 @@ export interface GroupPage {
 	id: string;
 	title: string;
 	subtitle?: string;
+	description?: string;
 	path?: string;
 	menuTitle?: string;
 	theme?: ThemeName;

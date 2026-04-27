@@ -132,7 +132,6 @@
 	let canGoToday = $derived(
 		monthKey(minVisibleMonth) <= monthKey(today) && monthKey(today) <= monthKey(maxVisibleMonth)
 	);
-	const customStartDateCookie = 'customStartDate';
 
 	let customStartDate = $state('');
 
