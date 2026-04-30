@@ -1,8 +1,8 @@
-export type CalendarEntryKind = 'week' | 'reading' | 'memory' | 'psalm' | 'book' | 'meeting' | 'other';
+export type CalendarEntryKind = 'week' | 'reading' | 'memory' | 'psalm' | 'book' | 'meeting' | 'event' | 'other';
 
 export type CalendarEntry = {
-  week: number;
-  dayOfWeek: number; // 0 = Sunday
+  week?: number;
+  dayOfWeek?: number; // 0 = Sunday
   kind: CalendarEntryKind;
   title: string;
   allDay?: boolean;

@@ -1,4 +1,4 @@
-import type { GroupCalendarConfig } from '$lib/config/calendars/groupCalendars';
+import type { GroupCalendarConfig } from '$lib/config/models/calendars/groupCalendars';
 
 export const calendar: GroupCalendarConfig = {
 	title: 'Next Level 101',

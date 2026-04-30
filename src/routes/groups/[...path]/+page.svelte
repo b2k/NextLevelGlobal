@@ -1,7 +1,7 @@
 <script lang="ts">
-	import GroupPageComponent from '$lib/components/PageComponent.svelte';
+	import PageComponent from '$lib/components/PageComponent.svelte';
 
 	const { data, params } = $props();
 </script>
 
-<GroupPageComponent {data} {params} />
+<PageComponent {data} {params} />

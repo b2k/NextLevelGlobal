@@ -5,6 +5,7 @@
 	import { getTheme } from '$lib/config/models/themes';
 	import { titleCase } from '$lib/utils/formatters.js';
 	import Description from './Description.svelte';
+	import { dev } from '$app/environment';
 
 	let { data, params } = $props();
 
@@ -65,6 +66,11 @@
 									<a href={resolve('/groups/[...path]', { path: crumb.href })}>{crumb.label}</a>
 								</li>
 							{/each}
+							{#if dev}
+								<li>
+									<a class="breadcrumb__edit " href={resolve('/admin/[...path]', { path: `${data.path}` })}>Edit</a>
+								</li>
+							{/if}
 						</ol>
 					</nav>
 				{/if}
@@ -169,6 +175,13 @@
 
 	.breadcrumb__sep {
 		opacity: 0.65;
+	}
+	.breadcrumb__edit {
+		font-size: 0.875rem;
+		padding: 0.25rem 0.5rem;
+		background: rgba(255, 255, 255, 0.15);
+		color: rgba(255, 255, 255, 0.9);
+		border-radius: 0.25rem;
 	}
 
 	.group-page__header {
