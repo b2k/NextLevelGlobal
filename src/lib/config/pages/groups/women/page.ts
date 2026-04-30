@@ -16,18 +16,23 @@ export const page: GroupPage = {
 			items: [
 				{
 					type: 'link',
-					title: '100-Level',
-					href: '/groups/women/100'
+					title: '101',
+					href: '/groups/women/101'
 				},
 				{
 					type: 'link',
-					title: '200-Level',
-					href: '/groups/women/200'
+					title: '201',
+					href: '/groups/women/201'
 				},
 				{
 					type: 'link',
-					title: '300-Level',
-					href: '/groups/women/300'
+					title: '401',
+					href: '/groups/women/401'
+				},
+				{
+					type: 'link',
+					title: '402',
+					href: '/groups/women/402'
 				}
 			]
 		}
