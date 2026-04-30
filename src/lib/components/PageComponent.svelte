@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
-	import Calendar from '$lib/components/groups/Calendar.svelte';
-	import GroupSection from '$lib/components/PageSection.svelte';
-	import { getTheme } from '$lib/config/groups/themes.js';
+	import Calendar from './groups/Calendar.svelte';
+	import GroupSection from './PageSection.svelte';
+	import { getTheme } from '$lib/config/models/themes';
 	import { titleCase } from '$lib/utils/formatters.js';
 	import Description from './Description.svelte';
 

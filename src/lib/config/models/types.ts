@@ -1,4 +1,4 @@
-import type { GroupCalendarConfig } from '../calendars/groupCalendars';
+import type { GroupCalendarConfig } from './calendars/groupCalendars';
 
 export type ThemeName = 'light' | 'dark';
 
@@ -67,22 +67,6 @@ export type PageSection = {
 	items?: SectionItem[];
 	columns?: SectionColumn[];
 };
-
-export interface FloatingStartRule {
-	month: number; // 1-12
-	weekday: 0 | 1 | 2 | 3 | 4 | 5 | 6; // 0 = Sunday
-	occurrence: number; // 1 = first, 2 = second, 3 = third, etc.
-}
-
-export interface CalendarEventEntry {
-	uid: string;
-	title: string;
-	description?: string;
-	location?: string;
-	allDay?: boolean;
-	durationDays?: number;
-	startRule?: FloatingStartRule;
-}
 
 export interface GroupPage {
 	id: string;

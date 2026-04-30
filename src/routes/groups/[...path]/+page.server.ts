@@ -1,17 +1,17 @@
 import { error } from '@sveltejs/kit';
-import { pageByPath } from '$lib/config/groups/pages';
-import { generateCalendarEntries } from '$lib/config/calendars/generateCalendarEntries';
-import { resolveCalendarStartDate } from '$lib/config/calendars/resolveCalendarStartDate';
+import { generateCalendarEntries } from '$lib/config/models/calendars/generateCalendarEntries';
+import { resolveCalendarStartDate } from '$lib/config/models/calendars/resolveCalendarStartDate';
 import { jsonClone } from '$lib/utils/jsonClone';
+import { getPageByPath } from '$lib/config/models/pages';
 
 export function load({ url, params, cookies }) {
-	const path = (params.path?.split('/') ?? []).join('/');
+	const path = 'groups/' + (params.path?.split('/') ?? []).join('/');
 
 	if (!path) {
 		throw error(404, 'Page not found');
 	}
-
-	const page = jsonClone(pageByPath.get(path));
+	const pageData = getPageByPath(path);
+	const page = jsonClone(pageData);
 
 	if (!page) {
 		throw error(404, `Page not found: ${path}`);

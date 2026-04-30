@@ -1,4 +1,4 @@
-import type { CalendarEventEntry } from '$lib/config/groups/types';
+import type { CalendarEventEntry } from './CalendarEventEntry';
 
 function pad(value: number): string {
 	return String(value).padStart(2, '0');

@@ -1,4 +1,4 @@
-import type { GroupPage } from '$lib/config/groups/types';
+import type { GroupPage } from '$lib/config/models/types';
 import { calendar } from './calendar';
 
 export const page: GroupPage = {

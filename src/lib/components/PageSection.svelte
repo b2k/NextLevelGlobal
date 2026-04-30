@@ -1,8 +1,8 @@
 <script lang="ts">
 	/* eslint-disable svelte/no-navigation-without-resolve */
 	import { resolve } from '$app/paths';
-	import { getTheme } from '$lib/config/groups/themes';
-	import type { PageSection, ThemeName, SectionItem } from '$lib/config/groups/types';
+	import type { PageSection, ThemeName, SectionItem } from '$lib/config/models/types';
+	import { getTheme } from '$lib/config/models/themes';
 	import Description from './Description.svelte';
 
 	let { section, pageTheme = 'light' } = $props<{ section: PageSection; pageTheme?: ThemeName }>();
@@ -92,7 +92,12 @@
 										</a>
 									</article>
 								{:else}
-									<a class="group-tile" href={itemHref(item)} target={item.type === 'pdf' ? '_blank' : '_self'} rel="noopener">
+									<a
+										class="group-tile"
+										href={itemHref(item)}
+										target={item.type === 'pdf' ? '_blank' : '_self'}
+										rel="noopener"
+									>
 										{item.title}
 									</a>
 								{/if}
