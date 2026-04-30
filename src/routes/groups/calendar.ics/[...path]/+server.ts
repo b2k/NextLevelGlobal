@@ -1,7 +1,7 @@
 import { error } from '@sveltejs/kit';
-import { pageByPath } from '$lib/config/groups/pages';
+import { pageByPath } from '$lib/config/models/pages';
 import { jsonClone } from '$lib/utils/jsonClone.js';
-import { buildCalendarIcs } from '$lib/config/groups/calendar';
+import { buildCalendarIcs } from '$lib/config/models/calendars/calendar';
 
 export function GET({ params, url }) {
 	const path = params.path;
