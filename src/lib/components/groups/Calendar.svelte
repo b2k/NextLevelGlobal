@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { CalendarEntry, GroupCalendarConfig } from '$lib/config/calendars/groupCalendars';
+	import type { CalendarEntry, GroupCalendarConfig } from '$lib/config/models/typescalendars/groupCalendars';
 	import { SvelteDate } from 'svelte/reactivity';
 	import { browser } from '$app/environment';
 	import { onMount } from 'svelte';
@@ -223,7 +223,6 @@
 		onselect?.(date);
 	}
 </script>
-
 <div class="calendar">
 	<div class="calendar-toolbar">
 		<div class="calendar-toolbar-left">

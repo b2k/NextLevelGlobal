@@ -7,7 +7,7 @@ import path from 'node:path';
 
 export function load({ url, params, cookies }) {
 	const configPath = path.join('groups', ...(params.path?.split('/') ?? []).filter(Boolean));
-
+	const cookiesPath = path.join(...(params.path?.split('/') ?? []).filter(Boolean));
 	if (!configPath) {
 		throw error(404, 'Page not found');
 	}
@@ -21,7 +21,7 @@ export function load({ url, params, cookies }) {
 	let startDate: string | null = null;
 
 	if (page.calendar) {
-		const customStartDate = cookies.get(`customStartDate:${configPath}`);
+		const customStartDate = cookies.get(`customStartDate:${cookiesPath}`);
 		console.log('Custom start date from cookie:', customStartDate);
 
 		startDate = resolveCalendarStartDate(
@@ -38,7 +38,6 @@ export function load({ url, params, cookies }) {
 	return {
 		page,
 		path: configPath,
-		segments: configPath.split('/').slice(1), // Remove 'groups' from segments
-		startDate
+		segments: configPath.split('/').slice(1) // Remove 'groups' from segments
 	};
 }
