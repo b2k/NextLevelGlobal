@@ -2,7 +2,9 @@ import type { GroupPage } from '$lib/config/models/types';
 
 export const page: GroupPage = {
 	id: 'home',
-	title: 'Moving towards a Christ centered life',
+	title: 'Next Level Global',
+	subtitle: 'Moving towards a Christ centered life together',
+	description: `Next Level Global is an accountability group for believers who want to live Christ-centered lives. Participants are encouraged to grow spiritually, emotionally, and mentally through the use of the spiritual disciplines of daily Bible reading, scripture memorization, and reading books by respected Christian authors. The desire of Next Level Global is to make an impact in the lives of believers so that they may become fully mature in Christ.`,
 	menuTitle: '',
 	parentPath: '',
 	order: 1,

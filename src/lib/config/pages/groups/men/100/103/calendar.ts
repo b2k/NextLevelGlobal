@@ -1,707 +1,616 @@
-import type { GroupCalendarConfig } from '$lib/config/calendars/groupCalendars';
+import type { GroupCalendarConfig } from '$lib/config/models/calendars/groupCalendars';
 
 export const calendar: GroupCalendarConfig = {
-	title: 'Next Level 102',
-	defaultStartDate: '2022-04-17',
-	startingWeek: 14,
-	description:
-		'Draft normalized from legacy ics using the 2022 James/Exodus/Galatians + Psalm cycle, with current Fight Like Man and LCV cycles.',
+	title: 'Next Level 103',
+	defaultStartDate: '2026-09-06',
+	startingWeek: 34,
+	description: 'Calendar for Next Level 103-Level Men\'s Group',
 	entries: [
 		{
-			week: 14,
+			week: 34,
 			dayOfWeek: 0,
 			kind: 'psalm',
-			title: "Psalm 22"
+			title: 'Psalm 45'
 		},
 		{
-			week: 14,
+			week: 34,
 			dayOfWeek: 0,
 			kind: 'week',
-			title: "Week 14"
+			title: 'Week 34'
 		},
 		{
-			week: 14,
-			dayOfWeek: 1,
+			week: 34,
+			dayOfWeek: 0,
 			kind: 'memory',
-			title: "LCV: 1 Thess. 4:3"
+			title: 'LCV: Eph 6:10'
 		},
 		{
-			week: 14,
+			week: 34,
 			dayOfWeek: 1,
 			kind: 'reading',
-			title: "James 1"
+			title: 'Ephesians 1'
 		},
 		{
-			week: 14,
+			week: 34,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: "Fight Like Man: CH 1"
+			title: 'Titus 10 Intro'
 		},
 		{
-			week: 14,
+			week: 34,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: "James 2"
+			title: 'Ephesians 2'
 		},
 		{
-			week: 14,
+			week: 34,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: "James 3"
+			title: 'Ephesians 3'
 		},
 		{
-			week: 14,
-			dayOfWeek: 3,
-			kind: 'book',
-			title: "Fight Like Man: CH 2"
-		},
-		{
-			week: 14,
+			week: 34,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: "James 4"
+			title: 'Ephesians 4'
 		},
 		{
-			week: 14,
+			week: 34,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: "James 5"
+			title: 'Ephesians 5'
 		},
 		{
-			week: 14,
-			dayOfWeek: 5,
-			kind: 'book',
-			title: "Fight Like Man: CH 3"
-		},
-		{
-			week: 14,
+			week: 34,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: "Exodus 1"
+			title: 'Ephesians 6'
 		},
 		{
-			week: 15,
+			week: 35,
 			dayOfWeek: 0,
 			kind: 'psalm',
-			title: "Psalm 23 & 24"
+			title: 'Psalm 46'
 		},
 		{
-			week: 15,
+			week: 35,
 			dayOfWeek: 0,
 			kind: 'week',
-			title: "Week 15"
+			title: 'Week 35'
 		},
 		{
-			week: 15,
-			dayOfWeek: 1,
+			week: 35,
+			dayOfWeek: 0,
 			kind: 'memory',
-			title: "LCV: 1 Thess. 4:3-5"
+			title: 'LCV: Eph 6:10-11'
 		},
 		{
-			week: 15,
+			week: 35,
 			dayOfWeek: 1,
 			kind: 'reading',
-			title: "Exodus 2"
+			title: 'Numbers 16'
 		},
 		{
-			week: 15,
+			week: 35,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: "Fight Like Man: CH 4"
+			title: 'Titus 10 Ch 1'
 		},
 		{
-			week: 15,
+			week: 35,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: "Exodus 3"
+			title: 'Numbers 17'
 		},
 		{
-			week: 15,
+			week: 35,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: "Exodus 4"
+			title: 'Numbers 20'
 		},
 		{
-			week: 15,
-			dayOfWeek: 3,
-			kind: 'book',
-			title: "Fight Like Man: CH 5"
-		},
-		{
-			week: 15,
+			week: 35,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: "Exodus 5"
+			title: 'Numbers 21'
 		},
 		{
-			week: 15,
+			week: 35,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: "Exodus 6"
+			title: 'Numbers 22'
 		},
 		{
-			week: 15,
-			dayOfWeek: 5,
-			kind: 'book',
-			title: "Fight Like Man: CH 6"
-		},
-		{
-			week: 15,
+			week: 35,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: "Exodus 7"
+			title: 'Numbers 23'
 		},
 		{
-			week: 16,
+			week: 36,
 			dayOfWeek: 0,
 			kind: 'psalm',
-			title: "Psalm 25"
+			title: 'Psalm 47,48'
 		},
 		{
-			week: 16,
+			week: 36,
 			dayOfWeek: 0,
 			kind: 'week',
-			title: "Week 16"
+			title: 'Week 36'
 		},
 		{
-			week: 16,
-			dayOfWeek: 1,
+			week: 36,
+			dayOfWeek: 0,
 			kind: 'memory',
-			title: "LCV: 1 Thess. 4:3-6"
+			title: 'LCV: Eph 6:10-12'
 		},
 		{
-			week: 16,
+			week: 36,
 			dayOfWeek: 1,
 			kind: 'reading',
-			title: "Exodus 8"
+			title: 'Numbers 24'
 		},
 		{
-			week: 16,
+			week: 36,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: "Fight Like Man: CH 7"
+			title: 'Titus 10 Ch 2'
 		},
 		{
-			week: 16,
+			week: 36,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: "Exodus 9"
+			title: 'Numbers 25'
 		},
 		{
-			week: 16,
+			week: 36,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: "Exodus 10"
+			title: '1 Corinthians 1'
 		},
 		{
-			week: 16,
-			dayOfWeek: 3,
-			kind: 'book',
-			title: "Fight Like Man: CH 8"
-		},
-		{
-			week: 16,
+			week: 36,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: "Exodus 11"
+			title: '1 Corinthians 2'
 		},
 		{
-			week: 16,
+			week: 36,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: "Exodus 12"
+			title: '1 Corinthians 3'
 		},
 		{
-			week: 16,
-			dayOfWeek: 5,
-			kind: 'book',
-			title: "Fight Like Man: CH 9"
-		},
-		{
-			week: 16,
+			week: 36,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: "Exodus 13"
+			title: '1 Corinthians 4'
 		},
 		{
-			week: 17,
+			week: 37,
 			dayOfWeek: 0,
 			kind: 'psalm',
-			title: "Psalm 26"
+			title: 'Psalm 49'
 		},
 		{
-			week: 17,
+			week: 37,
 			dayOfWeek: 0,
 			kind: 'week',
-			title: "Week 17"
+			title: 'Week 37'
 		},
 		{
-			week: 17,
-			dayOfWeek: 1,
+			week: 37,
+			dayOfWeek: 0,
 			kind: 'memory',
-			title: "LCV: 1 Thess. 4:3-7"
+			title: 'LCV: Eph 6:10-13'
 		},
 		{
-			week: 17,
+			week: 37,
 			dayOfWeek: 1,
 			kind: 'reading',
-			title: "Exodus 14"
+			title: '1 Corinthians 4'
 		},
 		{
-			week: 17,
+			week: 37,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: "Fight Like Man: CH 10"
+			title: 'Titus 10 Ch 3'
 		},
 		{
-			week: 17,
+			week: 37,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: "Exodus 15"
+			title: '1 Corinthians 6'
 		},
 		{
-			week: 17,
+			week: 37,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: "Exodus 16"
+			title: '1 Corinthians 7'
 		},
 		{
-			week: 17,
+			week: 37,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: "Exodus 17"
+			title: '1 Corinthians 8'
 		},
 		{
-			week: 17,
-			dayOfWeek: 4,
-			kind: 'book',
-			title: "Fight Like Man: CH 11"
-		},
-		{
-			week: 17,
+			week: 37,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: "Exodus 18"
+			title: '1 Corinthians 9'
 		},
 		{
-			week: 17,
+			week: 37,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: "Exodus 19"
+			title: '1 Corinthians 10'
 		},
 		{
-			week: 18,
+			week: 38,
 			dayOfWeek: 0,
 			kind: 'psalm',
-			title: "Psalm 27"
+			title: 'Psalm 50'
 		},
 		{
-			week: 18,
+			week: 38,
 			dayOfWeek: 0,
 			kind: 'week',
-			title: "Week 18"
+			title: 'Week 38'
 		},
 		{
-			week: 18,
-			dayOfWeek: 1,
+			week: 38,
+			dayOfWeek: 0,
 			kind: 'memory',
-			title: "LCV: 1 Thess. 4:3-8"
+			title: 'LCV: Eph 6:10-14'
 		},
 		{
-			week: 18,
+			week: 38,
 			dayOfWeek: 1,
 			kind: 'reading',
-			title: "Exodus 20"
+			title: '1 Corinthians 11'
 		},
 		{
-			week: 18,
+			week: 38,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: "Fight Like Man: CH 12"
+			title: 'Titus 10 Ch 4'
 		},
 		{
-			week: 18,
+			week: 38,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: "Exodus 21"
+			title: '1 Corinthians 12'
 		},
 		{
-			week: 18,
+			week: 38,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: "Exodus 22"
+			title: '1 Corinthians 13'
 		},
 		{
-			week: 18,
+			week: 38,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: "Exodus 23"
+			title: '1 Corinthians 14'
 		},
 		{
-			week: 18,
-			dayOfWeek: 4,
-			kind: 'book',
-			title: "Fight Like Man: CH 13"
-		},
-		{
-			week: 18,
+			week: 38,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: "Exodus 24"
+			title: '1 Corinthians 15'
 		},
 		{
-			week: 18,
+			week: 38,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: "Exodus 25"
+			title: '1 Corinthians 16'
 		},
 		{
-			week: 19,
+			week: 39,
 			dayOfWeek: 0,
 			kind: 'psalm',
-			title: "Psalm 28 & 29"
+			title: 'Psalm 51'
 		},
 		{
-			week: 19,
+			week: 39,
 			dayOfWeek: 0,
 			kind: 'week',
-			title: "Week 19"
+			title: 'Week 39'
 		},
 		{
-			week: 19,
-			dayOfWeek: 1,
+			week: 39,
+			dayOfWeek: 0,
 			kind: 'memory',
-			title: "LCV: Romans 1:16"
+			title: 'LCV: Eph 6:10-15'
 		},
 		{
-			week: 19,
+			week: 39,
 			dayOfWeek: 1,
 			kind: 'reading',
-			title: "Exodus 26"
+			title: 'Deuteronomy 1'
 		},
 		{
-			week: 19,
+			week: 39,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: "Fight Like Man: CH 14"
+			title: 'Titus 10 Ch 5'
 		},
 		{
-			week: 19,
+			week: 39,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: "Exodus 27"
+			title: 'Deuteronomy 2'
 		},
 		{
-			week: 19,
+			week: 39,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: "Exodus 28"
+			title: 'Deuteronomy 3'
 		},
 		{
-			week: 19,
-			dayOfWeek: 3,
-			kind: 'book',
-			title: "Fight Like Man: CH 15"
-		},
-		{
-			week: 19,
+			week: 39,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: "Exodus 29"
+			title: 'Deuteronomy 4'
 		},
 		{
-			week: 19,
+			week: 39,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: "Exodus 30"
+			title: 'Deuteronomy 5'
 		},
 		{
-			week: 19,
-			dayOfWeek: 5,
-			kind: 'book',
-			title: "Fight Like Man: CH 16"
-		},
-		{
-			week: 19,
+			week: 39,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: "Exodus 31"
+			title: 'Deuteronomy 6'
 		},
 		{
-			week: 20,
+			week: 40,
 			dayOfWeek: 0,
 			kind: 'psalm',
-			title: "Psalm 30"
+			title: 'Psalm 52'
 		},
 		{
-			week: 20,
+			week: 40,
 			dayOfWeek: 0,
 			kind: 'week',
-			title: "Week 20"
+			title: 'Week 40'
 		},
 		{
-			week: 20,
+			week: 40,
 			dayOfWeek: 0,
-			kind: 'reading',
-			title: "Exodus 31"
-		},
-		{
-			week: 20,
-			dayOfWeek: 1,
 			kind: 'memory',
-			title: "LCV: Romans 3:23"
+			title: 'LCV: Eph 6:10-16'
 		},
 		{
-			week: 20,
+			week: 40,
 			dayOfWeek: 1,
 			kind: 'reading',
-			title: "Exodus 32"
+			title: 'Deuteronomy 7'
 		},
 		{
-			week: 20,
+			week: 40,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: "Fight Like Man: CH 17"
+			title: 'Titus 10 Ch 6'
 		},
 		{
-			week: 20,
+			week: 40,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: "Exodus 33"
+			title: 'Deuteronomy 8'
 		},
 		{
-			week: 20,
+			week: 40,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: "Exodus 34"
+			title: 'Deuteronomy 31'
 		},
 		{
-			week: 20,
+			week: 40,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: "Exodus 35"
+			title: 'Deuteronomy 34'
 		},
 		{
-			week: 20,
-			dayOfWeek: 4,
-			kind: 'book',
-			title: "Fight Like Man: CH 18"
-		},
-		{
-			week: 20,
+			week: 40,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: "Exodus 36"
+			title: 'Joshua 1'
 		},
 		{
-			week: 20,
+			week: 40,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: "Exodus 37"
+			title: 'Joshua 2'
 		},
 		{
-			week: 21,
+			week: 41,
 			dayOfWeek: 0,
 			kind: 'psalm',
-			title: "Psalm 31"
+			title: 'Psalm 53,54'
 		},
 		{
-			week: 21,
+			week: 41,
 			dayOfWeek: 0,
 			kind: 'week',
-			title: "Week 21"
+			title: 'Week 41'
 		},
 		{
-			week: 21,
-			dayOfWeek: 1,
+			week: 41,
+			dayOfWeek: 0,
 			kind: 'memory',
-			title: "LCV: Romans 5:8"
+			title: 'LCV: Eph 6:10-17'
 		},
 		{
-			week: 21,
+			week: 41,
 			dayOfWeek: 1,
 			kind: 'reading',
-			title: "Exodus 38"
+			title: 'Joshua 3'
 		},
 		{
-			week: 21,
+			week: 41,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: "Fight Like Man: CH 19"
+			title: 'Titus 10 Ch 7'
 		},
 		{
-			week: 21,
+			week: 41,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: "Exodus 39"
+			title: 'Joshua 4'
 		},
 		{
-			week: 21,
+			week: 41,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: "Exodus 40"
+			title: 'Joshua 5'
 		},
 		{
-			week: 21,
-			dayOfWeek: 3,
-			kind: 'book',
-			title: "Fight Like Man: CH 20"
-		},
-		{
-			week: 21,
+			week: 41,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: "Galatians 1"
+			title: 'Joshua 6'
 		},
 		{
-			week: 21,
+			week: 41,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: "Galatians 2"
+			title: 'Joshua 7'
 		},
 		{
-			week: 21,
-			dayOfWeek: 5,
-			kind: 'book',
-			title: "Fight Like Man: CH 21"
-		},
-		{
-			week: 21,
+			week: 41,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: "Galatians 3"
+			title: 'Joshua 8'
 		},
 		{
-			week: 22,
+			week: 42,
 			dayOfWeek: 0,
 			kind: 'psalm',
-			title: "Psalm 32"
+			title: 'Psalm 55'
 		},
 		{
-			week: 22,
+			week: 42,
 			dayOfWeek: 0,
 			kind: 'week',
-			title: "Week 22"
+			title: 'Week 42'
 		},
 		{
-			week: 22,
-			dayOfWeek: 1,
+			week: 42,
+			dayOfWeek: 0,
 			kind: 'memory',
-			title: "LCV: Romans 6:23"
+			title: 'LCV: Eph 6:10-18'
 		},
 		{
-			week: 22,
+			week: 42,
 			dayOfWeek: 1,
 			kind: 'reading',
-			title: "Galatians 4"
+			title: 'Joshua 9'
 		},
 		{
-			week: 22,
+			week: 42,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: "Fight Like Man: CH 22"
+			title: 'Titus 10 Ch 8'
 		},
 		{
-			week: 22,
+			week: 42,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: "Galatians 5"
+			title: 'Joshua 10'
 		},
 		{
-			week: 22,
+			week: 42,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: "Galatians 6"
+			title: 'Joshua 11'
 		},
 		{
-			week: 22,
+			week: 42,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: "Leviticus 9"
+			title: 'Joshua 12,13'
 		},
 		{
-			week: 22,
-			dayOfWeek: 4,
-			kind: 'book',
-			title: "Fight Like Man: CH 23"
-		},
-		{
-			week: 22,
+			week: 42,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: "Leviticus 10"
+			title: 'Joshua 14'
 		},
 		{
-			week: 22,
+			week: 42,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: "Leviticus 23"
+			title: 'Joshua 22'
 		},
 		{
-			week: 23,
+			week: 43,
 			dayOfWeek: 0,
 			kind: 'psalm',
-			title: "Psalm 33"
+			title: 'Psalm 56,57'
 		},
 		{
-			week: 23,
+			week: 43,
 			dayOfWeek: 0,
 			kind: 'week',
-			title: "Week 23"
+			title: 'Week 43'
 		},
 		{
-			week: 23,
+			week: 43,
 			dayOfWeek: 0,
-			kind: 'reading',
-			title: "Numbers 10"
-		},
-		{
-			week: 23,
-			dayOfWeek: 1,
 			kind: 'memory',
-			title: "LCV: Romans 10:9-10"
+			title: 'LCV: Eph 6:10-20'
 		},
 		{
-			week: 23,
+			week: 43,
 			dayOfWeek: 1,
 			kind: 'reading',
-			title: "Numbers 11"
+			title: 'Joshua 23'
 		},
 		{
-			week: 23,
+			week: 43,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: "Fight Like Man: CH 24"
+			title: 'Titus 10 Ch 9'
 		},
 		{
-			week: 23,
+			week: 43,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: "Numbers 12"
+			title: 'Joshua 24'
 		},
 		{
-			week: 23,
+			week: 43,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: "Numbers 13"
+			title: 'Philippians 1'
 		},
 		{
-			week: 23,
+			week: 43,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: "Numbers 14"
+			title: 'Philippians 2'
 		},
 		{
-			week: 23,
+			week: 43,
 			dayOfWeek: 4,
 			kind: 'book',
-			title: "Fight Like Man: CH 25"
+			title: 'Titus 10 Ch 10'
 		},
 		{
-			week: 23,
+			week: 43,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: "Numbers 15"
+			title: 'Philippians 3'
+		},
+		{
+			week: 43,
+			dayOfWeek: 6,
+			kind: 'reading',
+			title: 'Philippians 4'
 		}
 	]
 };

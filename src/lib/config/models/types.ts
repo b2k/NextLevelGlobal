@@ -4,6 +4,13 @@ export type ThemeName = 'light' | 'dark';
 
 export type SectionItem =
 	| {
+			type: 'item';
+			title?: string;
+			description?: string;
+			href?: string;
+			target?: '_self' | '_blank' | '_parent' | '_top';
+	  }
+	| {
 			type: 'pdf';
 			title: string;
 			pdf: string;

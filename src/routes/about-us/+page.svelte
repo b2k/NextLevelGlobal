@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
 	import { resolve } from '$app/paths';
 	import { Hero, Actions } from '$lib/components';
 	import { Container } from '@sveltestrap/sveltestrap';
@@ -38,7 +40,7 @@
 	<blockquote>
 		I was stuck. I was tired of being an ineffective Christian. I was ashamed about how little I
 		knew about the Bible. What I did know, I didn't put into action. Next Level changed all of that
-		for me. It also changed my mind.<br />​"Do not conform any longer to the patterns of this world,
+		for me. It also changed my mind.<br />"Do not conform any longer to the patterns of this world,
 		but be transformed by the renewing of your mind. Then you will be able to test and approve what
 		God's will is. His good, pleasing and perfect will." (Romans 12:2)
 		<br />Next Level has completely changed my life - Jack Davy
