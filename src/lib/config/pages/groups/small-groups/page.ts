@@ -1,12 +1,12 @@
 import type { GroupPage } from '$lib/config/models/types';
 
 export const page: GroupPage = {
-	id: 'men-100',
-	title: "Men's 100-Level Groups",
-	menuTitle: '100-Level',
-	parentPath: 'men',
+	id: 'groups-small-groups',
+	title: "Small Groups",
+	menuTitle: "Small Groups",
+	parentPath: '',
 	order: 1,
-	heroImage: '/groups/men/100/hero.jpg',
+	heroImage: '/groups/small-groups/hero.jpg',
 	theme: 'light',
 	sections: [
 		{
@@ -16,18 +16,18 @@ export const page: GroupPage = {
 			items: [
 				{
 					type: 'link',
-					title: '101',
-					href: '/groups/men/100/101'
+					title: '10',
+					href: '/groups/small-groups/10'
 				},
 				{
 					type: 'link',
-					title: '102',
-					href: '/groups/men/100/102'
+					title: '20',
+					href: '/groups/small-groups/20'
 				},
 				{
 					type: 'link',
-					title: '103',
-					href: '/groups/men/100/103'
+					title: '30',
+					href: '/groups/small-groups/30'
 				}
 			]
 		}

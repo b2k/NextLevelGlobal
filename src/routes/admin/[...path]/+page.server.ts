@@ -2,6 +2,7 @@
 import { dev } from '$app/environment';
 import type { GroupCalendarConfig } from '$lib/config/models/calendars/groupCalendars.js';
 import type { GroupPage } from '$lib/config/models/types.js';
+import { archiveFile } from '$lib/utils/editorHelpers';
 import { error, fail, redirect } from '@sveltejs/kit';
 import { existsSync } from 'node:fs';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
@@ -43,11 +44,17 @@ function pageDir(parts: string[]) {
 }
 
 function serializeTs(value: unknown) {
-	return JSON.stringify(value, null, '\t')
-		.replace(/"([^"]+)":/g, '$1:')
-		.replace(/"/g, "'");
+	return (
+		JSON.stringify(value, null, '\t')
+			// escape single quotes inside string values
+			.replace(/"((?:[^"\\]|\\.)*)"/g, (_, content) => {
+				const escaped = content.replace(/'/g, "\\'");
+				return `'${escaped}'`;
+			})
+			// unquote keys
+			.replace(/'([^']+)':/g, '$1:')
+	);
 }
-
 function entryToLine(entry: any) {
 	const code = typeToCode[entry.kind as keyof typeof typeToCode] ?? entry.kind;
 	if (entry.kind === 'event') {
@@ -158,20 +165,22 @@ async function loadConfig(parts: string[]) {
 
 	const version = Date.now();
 	const pageModule = await import(`${pathToFileURL(pageFile).href}?v=${version}`);
-	const calendarModule = await import(`${pathToFileURL(calendarFile).href}?v=${version}`);
-
+	let calendarModule = { calendar: null };
+	if (existsSync(calendarFile)) {
+		calendarModule = await import(`${pathToFileURL(calendarFile).href}?v=${version}`);
+	}
 	return {
 		page: pageModule.page,
-		calendar: calendarModule.calendar
+		calendar: calendarModule?.calendar ?? ({} as GroupCalendarConfig)
 	};
 }
 
 export async function load({ params, url }) {
 	const parts = params.path.split('/').filter(Boolean);
 
-    if (!dev) {
-        error(401, 'Unauthorized: Dev mode only');
-    }
+	if (!dev) {
+		error(401, 'Unauthorized: Dev mode only');
+	}
 
 	let page: GroupPage | null = null;
 	let calendar: GroupCalendarConfig | null = null;
@@ -216,10 +225,18 @@ export const actions = {
 			const dir = pageDir(parts);
 			await mkdir(dir, { recursive: true });
 
-			const calendarTs = `import type { GroupCalendarConfig } from '$lib/config/calendars/groupCalendars';
+			const hasCalendarEntries = calendar.entries && calendar.entries.length > 0;
+			let calendarTs = '';
+			if (hasCalendarEntries) {
+				if (!calendar.defaultStartDate) {
+					calendar.defaultStartDate = new Date().toISOString().split('T')[0];
+				}
+
+				calendarTs = `import type { GroupCalendarConfig } from '$lib/config/models/calendars/groupCalendars';
 
 export const calendar: GroupCalendarConfig = ${serializeTs(calendar)};
 `;
+			}
 
 			const pageForFile = {
 				...page,
@@ -227,21 +244,30 @@ export const calendar: GroupCalendarConfig = ${serializeTs(calendar)};
 			};
 
 			delete pageForFile.calendar;
+			const importCalendar = hasCalendarEntries ? `import { calendar } from './calendar';` : '';
+			const calendarProp = hasCalendarEntries ? '\tcalendar,\n' : '';
 
 			const pageTs = `import type { GroupPage } from '$lib/config/models/types';
-import { calendar } from './calendar';
+${importCalendar}
 
 export const page: GroupPage = {
 ${Object.entries(pageForFile)
 	.map(([key, value]) => `\t${key}: ${serializeTs(value)},`)
 	.join('\n')}
-\tcalendar: calendar
+${calendarProp}
 };
 `;
 
-			await writeFile(path.join(dir, 'calendar.ts'), calendarTs, 'utf8');
-			await writeFile(path.join(dir, 'page.ts'), pageTs, 'utf8');
+			const pagePath = path.join(dir, 'page.ts');
 
+			await writeFile(pagePath, pageTs, 'utf8');
+
+			if (hasCalendarEntries) {
+				const calendarPath = path.join(dir, 'calendar.ts');
+				archiveFile(calendarPath);
+				archiveFile(pagePath);
+				await writeFile(calendarPath, calendarTs, 'utf8');
+			}
 			return { ok: true };
 		} catch (error) {
 			return fail(400, {
@@ -272,15 +298,18 @@ ${Object.entries(pageForFile)
 			await mkdir(targetDir, { recursive: true });
 
 			let pageTs = await readFile(path.join(sourceDir, 'page.ts'), 'utf8');
-			const calendarTs = await readFile(path.join(sourceDir, 'calendar.ts'), 'utf8');
-
 			pageTs = pageTs.replace(/id:\s*'[^']+'/, `id: '${targetPath.join('-')}'`);
 			pageTs = pageTs.replace(/menuTitle:\s*'[^']+'/, `menuTitle: '${targetPath.at(-1)}'`);
-
 			await writeFile(path.join(targetDir, 'page.ts'), pageTs, 'utf8');
-			await writeFile(path.join(targetDir, 'calendar.ts'), calendarTs, 'utf8');
 
-			throw redirect(303, `/admin/groups/${targetPath.join('/')}`);
+			const calendarSource = path.join(sourceDir, 'calendar.ts');
+			let calendarTs = '';
+			if (existsSync(calendarSource)) {
+				calendarTs = await readFile(calendarSource, 'utf8');
+				await writeFile(path.join(targetDir, 'calendar.ts'), calendarTs, 'utf8');
+			}
+
+			return redirect(303, `/admin/${targetPath.join('/')}`);
 		} catch (error) {
 			return fail(400, {
 				ok: false,

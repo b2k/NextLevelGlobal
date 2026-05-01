@@ -2,28 +2,6 @@ import type { GroupCalendarConfig } from './calendars/groupCalendars';
 
 export type ThemeName = 'light' | 'dark';
 
-export type PageItem =
-	| {
-			type: 'pdf';
-			title: string;
-			pdf: string;
-			description?: string;
-	  }
-	| {
-			type: 'book';
-			title: string;
-			buyUrl: string;
-			questionsPdf: string;
-			description?: string;
-			image?: string;
-	  }
-	| {
-			type: 'link';
-			title: string;
-			href: string;
-			description?: string;
-	  };
-
 export type SectionItem =
 	| {
 			type: 'pdf';
@@ -43,6 +21,7 @@ export type SectionItem =
 			type: 'link';
 			title: string;
 			href: string;
+			target?: '_self' | '_blank' | '_parent' | '_top';
 			description?: string;
 	  }
 	| {

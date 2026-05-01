@@ -9,12 +9,7 @@
 	} = $props();
 
 	const routeName = $derived.by(() => {
-		// 1. Parameterized routes (/pages/[slug])
-		if (page.params?.slug) {
-			return page.params.slug;
-		}
 
-		// 2. Root
 		const id = page.route.id;
 		if (!id || id === '/') {
 			return 'home';
@@ -25,8 +20,7 @@
 	});
 
 	const bgUrl = $derived.by(() => {
-		debugger;
-		return routeName ? `url('/assets/${routeName}/hero.jpg')` : undefined;
+		return routeName ? `url('/${routeName}/hero.jpg')` : undefined;
 	});
 
 	const alignStyles = $derived.by(() => {

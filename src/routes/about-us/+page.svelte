@@ -1,4 +1,5 @@
 <script>
+	import { resolve } from '$app/paths';
 	import { Hero, Actions } from '$lib/components';
 	import { Container } from '@sveltestrap/sveltestrap';
 </script>
@@ -20,8 +21,8 @@
 	</p>
 
 	<p>
-		It's easy to get started, just click <a href="/contact-us">Contact Us</a>
-		to join a group or review the <a href="/quick-links">Quick Links</a> on our home page to review our
+		It's easy to get started, just click <a href={resolve('/contact')}>Contact Us</a>
+		to join a group or review the <a href={resolve('/quick-links')}>Quick Links</a> on our home page to review our
 		program.
 	</p>
 
@@ -50,7 +51,7 @@
 		{
 			href: '/contact-us',
 			text: 'Contact Us',
-			variant: 'outline-dark'
+			variant: 'dark'
 		},
 		{
 			href: '/beliefs',

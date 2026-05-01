@@ -91,6 +91,30 @@
 											Questions
 										</a>
 									</article>
+								{:else if item.type === 'link'}
+									<a class="group-tile" href={itemHref(item)} target={item.target}>
+										{item.title}
+									</a>
+								{:else if item.type === 'video'}
+									<div class="section-video">
+										{#if item.title}
+											<h3>{item.title}</h3>
+										{/if}
+
+										<div class="section-video__frame">
+											<iframe
+												src={toYouTubeEmbedUrl(item.href)}
+												title={item.title ?? 'Video'}
+												loading="lazy"
+												allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+												allowfullscreen
+											></iframe>
+										</div>
+
+										{#if item.description}
+											<p>{item.description}</p>
+										{/if}
+									</div>
 								{:else}
 									<a
 										class="group-tile"
@@ -164,6 +188,10 @@
 								<p>{item.description}</p>
 							{/if}
 						</div>
+					{:else if item.type === 'link'}
+						<a class="group-tile" href={itemHref(item)} target={item.target}>
+							{item.title}
+						</a>
 					{:else}
 						<a class="group-tile" href={itemHref(item)} target="_blank" rel="noopener">
 							{item.title}

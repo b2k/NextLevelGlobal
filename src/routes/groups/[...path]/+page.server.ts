@@ -3,24 +3,25 @@ import { generateCalendarEntries } from '$lib/config/models/calendars/generateCa
 import { resolveCalendarStartDate } from '$lib/config/models/calendars/resolveCalendarStartDate';
 import { jsonClone } from '$lib/utils/jsonClone';
 import { getPageByPath } from '$lib/config/models/pages';
+import path from 'node:path';
 
 export function load({ url, params, cookies }) {
-	const path = 'groups/' + (params.path?.split('/') ?? []).join('/');
+	const configPath = path.join('groups', ...(params.path?.split('/') ?? []).filter(Boolean));
 
-	if (!path) {
+	if (!configPath) {
 		throw error(404, 'Page not found');
 	}
-	const pageData = getPageByPath(path);
+	const pageData = getPageByPath(configPath);
 	const page = jsonClone(pageData);
 
 	if (!page) {
-		throw error(404, `Page not found: ${path}`);
+		throw error(404, `Page not found: ${configPath}`);
 	}
 
 	let startDate: string | null = null;
 
 	if (page.calendar) {
-		const customStartDate = cookies.get(`customStartDate:${path}`);
+		const customStartDate = cookies.get(`customStartDate:${configPath}`);
 		console.log('Custom start date from cookie:', customStartDate);
 
 		startDate = resolveCalendarStartDate(
@@ -36,7 +37,8 @@ export function load({ url, params, cookies }) {
 
 	return {
 		page,
-		path,
-		segments: path.split('/')
+		path: configPath,
+		segments: configPath.split('/').slice(1), // Remove 'groups' from segments
+		startDate
 	};
 }

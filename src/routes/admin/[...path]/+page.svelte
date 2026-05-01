@@ -275,9 +275,10 @@
 								<label>
 									Type
 									<select bind:value={item.type}>
-										<option value="pdf">PDF</option>
 										<option value="book">Book</option>
-										<option value="link">Other</option>
+										<option value="pdf">PDF</option>
+										<option value="link">Link</option>
+										<option value="other">Other</option>
 										<option value="video">Video</option>
 									</select>
 								</label>
