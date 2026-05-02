@@ -8,23 +8,32 @@
 
 	let { data, form } = $props();
 
-	// 1. Initialize with empty values or undefined
-	let page = $state({} as GroupPage);
-	let calendar = $state({} as GroupCalendarConfig);
-	let calendarGrid = $state({} as Record<string, Record<string, string>>);
-	let fixedEvents = $state([] as CalendarEntry[]);
-	let dayNames = $state([] as string[]);
+	let page = $state(data.page ?? ({} as GroupPage));
+	let calendar = $state(data.calendar ?? ({} as GroupCalendarConfig));
+	let calendarGrid = $state(data.calendarGrid ?? ({} as Record<string, Record<string, string>>));
+	let fixedEvents = $state(data.fixedEvents ?? ([] as CalendarEntry[]));
+	let dayNames = $state(data.dayNames ?? ([] as string[]));
+	let startingWeek = $state(calendar.startingWeek ?? 1);
+	let lastStartingWeek = $state(startingWeek);
 
-	// 2. The compiler is happy because 'data' isn't inside $state()
-	// 3. This effect runs immediately on mount to sync the data
 	$effect(() => {
-		page = $state.snapshot(data.page ?? ({} as GroupPage));
-		calendar = $state.snapshot(data.calendar ?? ({} as GroupCalendarConfig));
-		calendarGrid = $state.snapshot(
-			data.calendarGrid ?? ({} as Record<string, Record<string, string>>)
-		);
-		fixedEvents = $state.snapshot(data.fixedEvents ?? ([] as CalendarEntry[]));
-		dayNames = $state.snapshot(data.dayNames ?? ([] as string[]));
+		if (startingWeek !== lastStartingWeek) {
+			// Shift the calendar grid keys based on the change in starting week
+			const weekDifference = startingWeek - lastStartingWeek;
+			const newCalendarGrid: Record<string, Record<string, string>> = {};
+
+			for (const [weekKey, days] of Object.entries(calendarGrid)) {
+				const newWeekKey = String(Number(weekKey) + weekDifference);
+				const newDays = {} as Record<string, string>;
+				for (const dayKey of Object.keys(days)) {
+					newDays[dayKey] = days[dayKey].replace(`Week ${weekKey}`, `Week ${newWeekKey}`);
+				}
+				newCalendarGrid[newWeekKey] = newDays;
+			}
+			calendar.startingWeek = startingWeek;
+			calendarGrid = newCalendarGrid;
+			lastStartingWeek = startingWeek;
+		}
 	});
 	const themes = ['light', 'dark'];
 
@@ -138,6 +147,14 @@
 			<input type="hidden" name="fixedEvents" value={fixedEventsJson} />
 
 			<button type="submit" class="primary">Save</button>
+			<button
+				type="button"
+				class="secondary"
+				onclick={() => {
+					let href = location.href.split('?')[0];
+					location.href = href.replace('/admin/', '/');
+				}}>Back</button
+			>
 		</form>
 	</header>
 
@@ -182,6 +199,10 @@
 			</label>
 
 			<label>
+				Subtitle
+				<input bind:value={page.subtitle} />
+			</label>
+			<label>
 				Menu Title
 				<input bind:value={page.menuTitle} />
 			</label>
@@ -215,6 +236,10 @@
 				<input bind:value={page.heroTextColor} />
 			</label>
 		</div>
+		<label>
+			Description
+			<textarea rows="3" bind:value={page.description}></textarea>
+		</label>
 	</section>
 
 	<section class="panel">
@@ -287,11 +312,6 @@
 									Title
 									<input bind:value={item.title} />
 								</label>
-								<label>
-									Description
-									<input bind:value={item.description} />
-								</label>
-
 								{#if item.type === 'link' || item.type === 'video'}
 									<label>
 										URL
@@ -376,8 +396,8 @@
 			<h2>Weekly Calendar Entries</h2>
 
 			<div class="button-row">
-				<button type="button" onclick={removeLastWeek}>- Remove Last Week</button>
-				<button type="button" onclick={addWeek}>+ Add Week</button>
+				<button type="button" class="danger" onclick={removeLastWeek}>- Remove Last Week</button>
+				<button type="button" class="primary" onclick={addWeek}>+ Add Week</button>
 			</div>
 		</div>
 
@@ -394,7 +414,13 @@
 			{/each}
 
 			{#each weekNumbers as week (week)}
-				<div class="week-cell">{week}</div>
+				{#if week == startingWeek}
+					<div class="week-cell">
+						<input type="number" name="startingWeek" bind:value={startingWeek} />
+					</div>
+				{:else}
+					<div class="week-cell">{week}</div>
+				{/if}
 
 				<!-- eslint-disable-next-line @typescript-eslint/no-unused-vars -->
 				{#each dayNames as _, day (day)}

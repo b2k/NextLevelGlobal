@@ -63,14 +63,14 @@ function entryToLine(entry: any) {
 	return `${code}|${entry.title}`;
 }
 
-function entriesToGrid(entries: any[] = []) {
+function entriesToGrid(startingWeek: number, entries: any[] = []) {
 	const grid: Record<string, Record<string, string>> = {};
-	let maxWeek = 1;
+	let maxWeek = startingWeek;
 
 	for (const entry of entries) {
 		if (entry.kind === 'event' && entry.date) continue;
 
-		const week = Number(entry.week || 1);
+		const week = Number(entry.week || startingWeek);
 		const day = Number(entry.dayOfWeek || 0);
 		maxWeek = Math.max(maxWeek, week);
 
@@ -80,7 +80,7 @@ function entriesToGrid(entries: any[] = []) {
 		grid[week][day] += `${entryToLine(entry)}\n`;
 	}
 
-	for (let week = 1; week <= maxWeek; week++) {
+	for (let week = startingWeek; week <= maxWeek; week++) {
 		grid[week] ??= {};
 		for (let day = 0; day < 7; day++) {
 			grid[week][day] ??= '';
@@ -202,7 +202,7 @@ export async function load({ params, url }) {
 		missing,
 		page,
 		calendar,
-		calendarGrid: entriesToGrid(calendar?.entries ?? []),
+		calendarGrid: entriesToGrid(calendar?.startingWeek ?? 1, calendar?.entries ?? []),
 		fixedEvents: (calendar?.entries ?? []).filter((e: any) => e.kind === 'event' && e.date)
 	};
 }
@@ -216,6 +216,7 @@ export const actions = {
 
 			const page = JSON.parse(String(data.get('page') ?? '{}'));
 			const calendar = JSON.parse(String(data.get('calendar') ?? '{}'));
+			calendar.startingWeek = Number(data.get('startingWeek') ?? calendar.startingWeek ?? 1);
 
 			const entries = gridToEntries(String(data.get('calendarGrid') ?? '{}'));
 			const events = parseEvents(String(data.get('fixedEvents') ?? '[]'));
@@ -259,13 +260,12 @@ ${calendarProp}
 `;
 
 			const pagePath = path.join(dir, 'page.ts');
-
+			archiveFile(pagePath);
 			await writeFile(pagePath, pageTs, 'utf8');
 
 			if (hasCalendarEntries) {
 				const calendarPath = path.join(dir, 'calendar.ts');
 				archiveFile(calendarPath);
-				archiveFile(pagePath);
 				await writeFile(calendarPath, calendarTs, 'utf8');
 			}
 			return { ok: true };
@@ -308,13 +308,12 @@ ${calendarProp}
 				calendarTs = await readFile(calendarSource, 'utf8');
 				await writeFile(path.join(targetDir, 'calendar.ts'), calendarTs, 'utf8');
 			}
-
-			return redirect(303, `/admin/${targetPath.join('/')}`);
 		} catch (error) {
 			return fail(400, {
 				ok: false,
 				message: error instanceof Error ? error.message : 'Could not clone page'
 			});
 		}
+		return redirect(303, `/admin/${targetPath.join('/')}`);
 	}
 };

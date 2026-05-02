@@ -2,12 +2,12 @@ import type { GroupPage } from '$lib/config/models/types';
 
 
 export const page: GroupPage = {
-	id: 'men-100',
-	title: 'Men\'s 100-Level',
-	menuTitle: '100-Level',
+	id: 'groups-men-300',
+	title: 'Men\'s 300-Level',
+	menuTitle: '300',
 	parentPath: 'men',
 	order: 1,
-	heroImage: '/groups/men/100/hero.jpg',
+	heroImage: '/groups/men/300/hero.jpg',
 	theme: 'light',
 	sections: [
 	{
@@ -17,23 +17,23 @@ export const page: GroupPage = {
 		items: [
 			{
 				type: 'link',
-				title: '101',
-				href: '/groups/men/100/101'
+				title: '301',
+				href: '/groups/men/300/301'
 			},
 			{
 				type: 'link',
-				title: '102',
-				href: '/groups/men/100/102'
+				title: '302',
+				href: '/groups/men/300/302'
 			},
 			{
 				type: 'link',
 				title: 'Summer',
-				href: '/groups/men/100/summer'
+				href: '/groups/men/300/summer'
 			},
 			{
 				type: 'link',
-				title: '103',
-				href: '/groups/men/100/103'
+				title: '303',
+				href: '/groups/men/300/303'
 			}
 		]
 	}

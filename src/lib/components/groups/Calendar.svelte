@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { CalendarEntry, GroupCalendarConfig } from '$lib/config/models/typescalendars/groupCalendars';
+	import type { CalendarEntry, GroupCalendarConfig } from '$lib/config/models/calendars/groupCalendars';
 	import { SvelteDate } from 'svelte/reactivity';
 	import { browser } from '$app/environment';
 	import { onMount } from 'svelte';
