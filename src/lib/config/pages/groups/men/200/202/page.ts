@@ -3,7 +3,7 @@ import { calendar } from './calendar';
 
 export const page: GroupPage = {
 	id: 'groups-men-200-202',
-	title: 'Men 201',
+	title: 'Men 202',
 	menuTitle: '202',
 	parentPath: 'men',
 	order: 1,

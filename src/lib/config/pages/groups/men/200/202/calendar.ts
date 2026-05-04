@@ -27,7 +27,7 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 57,
 			dayOfWeek: 0,
-			kind: 'reading',
+			kind: 'week',
 			title: 'Week 57'
 		},
 		{
@@ -87,7 +87,7 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 58,
 			dayOfWeek: 0,
-			kind: 'reading',
+			kind: 'week',
 			title: 'Week 58'
 		},
 		{
@@ -147,7 +147,7 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 59,
 			dayOfWeek: 0,
-			kind: 'reading',
+			kind: 'week',
 			title: 'Week 59'
 		},
 		{
@@ -207,7 +207,7 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 60,
 			dayOfWeek: 0,
-			kind: 'reading',
+			kind: 'week',
 			title: 'Week 60'
 		},
 		{
@@ -267,7 +267,7 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 61,
 			dayOfWeek: 0,
-			kind: 'reading',
+			kind: 'week',
 			title: 'Week 61'
 		},
 		{
@@ -327,7 +327,7 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 62,
 			dayOfWeek: 0,
-			kind: 'reading',
+			kind: 'week',
 			title: 'Week 62'
 		},
 		{
@@ -387,7 +387,7 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 63,
 			dayOfWeek: 0,
-			kind: 'reading',
+			kind: 'week',
 			title: 'Week 63'
 		},
 		{
@@ -447,7 +447,7 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 64,
 			dayOfWeek: 0,
-			kind: 'reading',
+			kind: 'week',
 			title: 'Week 64'
 		},
 		{
@@ -507,7 +507,7 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 65,
 			dayOfWeek: 0,
-			kind: 'reading',
+			kind: 'week',
 			title: 'Week 65'
 		},
 		{
@@ -567,7 +567,7 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 66,
 			dayOfWeek: 0,
-			kind: 'reading',
+			kind: 'week',
 			title: 'Week 66'
 		},
 		{
