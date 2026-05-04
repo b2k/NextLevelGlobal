@@ -1,4 +1,7 @@
+<!-- eslint-disable-next-line svelte/no-unused-svelte-ignore -->
+<!-- svelte-ignore state_referenced_locally -->
 <script lang="ts">
+	import { Themes } from '$lib/config/models/themes';
 	import { enhance } from '$app/forms';
 	import type {
 		GroupCalendarConfig,
@@ -35,7 +38,7 @@
 			lastStartingWeek = startingWeek;
 		}
 	});
-	const themes = ['light', 'dark'];
+	const themes = Themes;
 
 	function addWeek() {
 		const weeks = Object.keys(calendarGrid).map(Number);

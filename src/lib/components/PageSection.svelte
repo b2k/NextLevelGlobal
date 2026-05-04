@@ -23,14 +23,15 @@
 
 <section class="group-section {section.theme ?? pageTheme}" {style}>
 	<div class="group-section__inner">
-		<header class="group-section__header">
-			<h2 class="group-section__title">{section.title}</h2>
+		{#if section.title || section.subtitle}
+			<header class="group-section__header">
+				<h2 class="group-section__title">{section.title}</h2>
 
-			{#if section.subtitle}
-				<p class="group-section__subtitle">{section.subtitle}</p>
-			{/if}
-		</header>
-
+				{#if section.subtitle}
+					<p class="group-section__subtitle">{section.subtitle}</p>
+				{/if}
+			</header>
+		{/if}
 		{#if section.description}
 			<Description text={section.description} />
 		{/if}
@@ -51,7 +52,8 @@
 					</div>
 				{/each}
 			</div>
-		{:else if section.items?.length}
+		{/if}
+		{#if section.items?.length}
 			<div class="group-section__grid">
 				{#each section.items as item, i (i)}
 					<SectionItem {item} />

@@ -43,7 +43,7 @@
 
 	function isLinkGroupActive(group: NavDropdownItem): boolean {
 		if (group.href && isActive({ label: group.label, href: group.href })) return true;
-		return group.items.some((item) => isItemOrChildActive(item));
+		return group.items?.some((item) => isItemOrChildActive(item)) ?? false;
 	}
 
 	function isItemOrChildActive(item: NavLinkItem): boolean {
@@ -75,33 +75,45 @@
 			{/each}
 
 			{#each navDropdowns as group (group.label)}
-				<Dropdown nav inNavbar>
-					<DropdownToggle nav caret class={isLinkGroupActive(group) ? 'active' : ''}>
-						{#if group.href}
-							<span class="top-dropdown-label">{group.label}</span>
-						{:else}
-							<span>{group.label}</span>
-						{/if}
-					</DropdownToggle>
+				{#if group.items}
+					<Dropdown nav inNavbar>
+						<DropdownToggle nav caret class={isLinkGroupActive(group) ? 'active' : ''}>
+							{#if group.href}
+								<span class="top-dropdown-label">{group.label}</span>
+							{:else}
+								<span>{group.label}</span>
+							{/if}
+						</DropdownToggle>
 
-					<DropdownMenu end>
-						{#if group.href}
-							<li>
-								<a
-									class:active={isActive({ label: group.label, href: group.href })}
-									class="dropdown-item fw-semibold"
-									href={group.href}
-									onclick={closeMenu}
-								>
-									{group.label}
-								</a>
-							</li>
-							<li><hr class="dropdown-divider" /></li>
-						{/if}
+						<DropdownMenu end>
+							{#if group.href}
+								<li>
+									<a
+										class:active={isActive({ label: group.label, href: group.href })}
+										class="dropdown-item fw-semibold"
+										href={group.href}
+										onclick={closeMenu}
+									>
+										{group.label}
+									</a>
+								</li>
+								<li><hr class="dropdown-divider" /></li>
+							{/if}
 
-						<MenuItems items={group.items} {closeMenu} />
-					</DropdownMenu>
-				</Dropdown>
+							<MenuItems items={group.items} {closeMenu} />
+						</DropdownMenu>
+					</Dropdown>
+				{:else}
+					<NavItem>
+						<NavLink
+							href={group.href}
+							onclick={closeMenu}
+							class={isActive({ label: group.label, href: group.href }) ? 'active' : ''}
+						>
+							{group.label}
+						</NavLink>
+					</NavItem>
+				{/if}
 			{/each}
 		</Nav>
 	</Collapse>

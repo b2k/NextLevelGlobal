@@ -50,45 +50,54 @@
 </svelte:head>
 
 <div class="group-page {pageTheme}" {style}>
-	<div
-		class={`group-page__hero ${data.page.heroImage ? 'hero-image' : ''}`}
-		style={`--hero-image: url('${data.page.heroImage ?? ''}')`}
-	>
-		<div class="group-page__hero-overlay">
-			<div class="group-page__hero-inner">
-				{#if breadcrumbs && breadcrumbs.length > 0}
-					<nav class="group-page__breadcrumbs text-sm" aria-label="Breadcrumb">
-						<ol class="breadcrumb">
-							<li><a href={resolve('/groups')}>Groups</a></li>
-							{#each breadcrumbs as crumb, c (c)}
-								<li class="breadcrumb__sep" aria-hidden="true">/</li>
-								<li>
-									<a href={resolve('/groups/[...path]', { path: crumb.href })}>{crumb.label}</a>
-								</li>
-							{/each}
-							{#if dev}
-								<li>
-									<a class="breadcrumb__edit " href={resolve('/admin/[...path]', { path: `${data.path}` })}>Edit</a>
-								</li>
-							{/if}
-						</ol>
-					</nav>
-				{/if}
-
-				<header class="group-page__header">
-					<h1>{data.page.title}</h1>
-
-					{#if data.page.subtitle}
-						<p>{data.page.subtitle}</p>
+	{#if data.page.title || data.page.subtitle || data.page.description}
+		<div
+			class={`group-page__hero ${data.page.heroImage ? 'hero-image' : ''}`}
+			style={`--hero-image: url('${data.page.heroImage ?? ''}')`}
+		>
+			<div class="group-page__hero-overlay">
+				<div class="group-page__hero-inner">
+					{#if breadcrumbs && breadcrumbs.length > 0}
+						<nav class="group-page__breadcrumbs text-sm" aria-label="Breadcrumb">
+							<ol class="breadcrumb">
+								<li><a href={resolve('/groups')}>Groups</a></li>
+								{#each breadcrumbs as crumb, c (c)}
+									<li class="breadcrumb__sep" aria-hidden="true">/</li>
+									<li>
+										<a href={resolve('/groups/[...path]', { path: crumb.href })}>{crumb.label}</a>
+									</li>
+								{/each}
+								{#if dev}
+									<li>
+										<a
+											class="breadcrumb__edit"
+											href={resolve('/admin/[...path]', { path: `${data.path}` })}>Edit</a
+										>
+									</li>
+								{/if}
+							</ol>
+						</nav>
 					{/if}
-				</header>
 
-				{#if data.page.description}
-					<Description text={data.page.description} />
-				{/if}
+					{#if data.page.title || data.page.subtitle}
+						<header class="group-page__header">
+							{#if data.page.title}
+								<h1>{data.page.title}</h1>
+							{/if}
+
+							{#if data.page.subtitle}
+								<p>{data.page.subtitle}</p>
+							{/if}
+						</header>
+					{/if}
+
+					{#if data.page.description}
+						<Description text={data.page.description} />
+					{/if}
+				</div>
 			</div>
 		</div>
-	</div>
+	{/if}
 
 	{#if data.page.calendar}
 		<div class="group-page__actions">

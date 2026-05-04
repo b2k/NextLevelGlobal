@@ -1,4 +1,5 @@
-export type ThemeName = 'light' | 'dark';
+export const Themes = ['light', 'dark', 'tan'];
+export type ThemeName = 'light' | 'dark' | 'tan';
 
 export interface ThemeDefinition {
 	name: ThemeName;
@@ -55,6 +56,34 @@ export const themes: Record<ThemeName, ThemeDefinition> = {
 			cardBorder: 'rgba(148, 163, 184, 0.3)',
 			buttonPrimaryBg: '#0f172a',
 			buttonPrimaryText: '#fff'
+		}
+	},
+	tan: {
+		name: 'tan',
+		page: {
+			background:
+				'radial-gradient(circle at top, rgba(180, 140, 90, 0.08), transparent 30%), linear-gradient(180deg, #f5efe6 0%, #e8dccb 100%)',
+			text: '#3b2f2f',
+			heroBackground: 'linear-gradient(180deg, #3b2f2f 0%, #2a211c 100%)',
+			heroText: '#ffffff',
+			heroMutedText: 'rgba(255, 255, 255, 0.78)',
+			breadcrumbText: 'rgba(255, 255, 255, 0.72)',
+			breadcrumbHoverText: '#ffffff',
+			secondaryButtonBorder: 'rgba(255, 255, 255, 0.25)',
+			secondaryButtonBackground: 'rgba(255, 255, 255, 0.06)',
+			secondaryButtonHoverBackground: 'rgba(255, 255, 255, 0.12)',
+			primaryButtonBackground: '#c2410c', // warm burnt orange
+			primaryButtonHoverBackground: '#9a3412',
+			primaryButtonShadow: '0 10px 25px rgba(194, 65, 12, 0.25)'
+		},
+		section: {
+			background: '#fffaf3',
+			text: '#3b2f2f',
+			accent: '#c2410c',
+			cardBackground: 'rgba(255, 250, 240, 0.75)',
+			cardBorder: 'rgba(180, 140, 90, 0.25)',
+			buttonPrimaryBg: '#3b2f2f',
+			buttonPrimaryText: '#ffffff'
 		}
 	},
 	dark: {

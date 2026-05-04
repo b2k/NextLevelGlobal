@@ -7,7 +7,16 @@
 
 <!-- eslint-disable svelte/no-navigation-without-resolve -->
 
-{#if item.type === 'book'}
+{#if item.type === 'item'}
+	<div class="column-item">
+		<div class="bullet">{item.bullet ?? '•'}</div>
+
+		<div class="content">
+			<span class="title">{item.title}</span>
+			<span class="description"> {item.description}</span>
+		</div>
+	</div>
+{:else if item.type === 'book'}
 	<article class="group-card group-card--book">
 		{#if item.image}
 			<div class="group-card__image-wrap">
@@ -59,6 +68,33 @@
 {/if}
 
 <style>
+	.column-item {
+		display: flex;
+		align-items: flex-start;
+		gap: 0.75rem;
+		margin-bottom: 1.25rem;
+		text-align: left; /* 👈 key */
+	}
+
+	.content {
+		line-height: 1.7;
+		font-size: 1rem;
+		text-align: left; /* 👈 force left alignment */
+	}
+
+	.bullet {
+		font-size: 3rem;
+		line-height: 1rem;
+		margin-top: 0.2rem;
+	}
+
+	.title {
+		font-weight: 600;
+	}
+
+	.description {
+		font-weight: 400;
+	}
 	.group-card {
 		text-align: center;
 		color: var(--section-text);

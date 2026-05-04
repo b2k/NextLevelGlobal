@@ -8,7 +8,7 @@ export type NavLinkItem = {
 export type NavDropdownItem = {
 	label: string;
 	href?: string;
-	items: NavLinkItem[];
+	items?: NavLinkItem[];
 };
 
 export const topNavLinks: NavLinkItem[] = [{ label: 'Home', href: '/', match: 'exact' }];
@@ -16,11 +16,11 @@ export const topNavLinks: NavLinkItem[] = [{ label: 'Home', href: '/', match: 'e
 export const navDropdowns: NavDropdownItem[] = [
 	{
 		label: 'About Us',
-		href: '/about-us',
 		items: [
-			{ label: 'Beliefs', href: '/beliefs' },
-			{ label: 'F.A.Q.', href: '/faq' },
-			{ label: 'Contact', href: '/contact' }
+			{ label: 'Overview', href: '/about-us' },
+			{ label: 'Beliefs', href: '/about-us/beliefs' },
+			{ label: 'F.A.Q.', href: '/about-us/faq' },
+			{ label: 'Contact', href: '/about-us/contact-us' }
 		]
 	},
 	{
@@ -42,12 +42,8 @@ export const navDropdowns: NavDropdownItem[] = [
 		]
 	},
 	{
-		label: 'Media',
-		items: [
-			{ label: 'Events', href: '/events' },
-			{ label: 'Missions', href: '/missions' },
-			{ label: 'Give', href: '/give' }
-		]
+		label: 'Privacy Policy',
+		href: '/privacy-policy'
 	},
 	{
 		label: 'Español',

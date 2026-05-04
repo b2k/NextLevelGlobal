@@ -1,12 +1,13 @@
 import type { GroupCalendarConfig } from './calendars/groupCalendars';
 
-export type ThemeName = 'light' | 'dark';
+export type ThemeName = 'light' | 'dark' | 'tan';
 
 export type SectionItem =
 	| {
 			type: 'item';
 			title?: string;
 			description?: string;
+			bullet?: string;
 			href?: string;
 			target?: '_self' | '_blank' | '_parent' | '_top';
 	  }

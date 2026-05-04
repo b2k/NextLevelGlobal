@@ -1,5 +1,5 @@
 <script>
-// @ts-nocheck
+	// @ts-nocheck
 
 	import { resolve } from '$app/paths';
 	import { Hero, Actions } from '$lib/components';
@@ -23,8 +23,8 @@
 	</p>
 
 	<p>
-		It's easy to get started, just click <a href={resolve('/contact')}>Contact Us</a>
-		to join a group or review the <a href={resolve('/quick-links')}>Quick Links</a> on our home page to review our
+		It's easy to get started, just click <a href={resolve('/about-us/contact')}>Contact Us</a>
+		to join a group or review the <a href={resolve('/')}>Quick Links</a> on our home page to review our
 		program.
 	</p>
 
@@ -51,17 +51,17 @@
 	align="center"
 	actions={[
 		{
-			href: '/contact-us',
+			href: '/about-us/contact-us',
 			text: 'Contact Us',
 			variant: 'dark'
 		},
 		{
-			href: '/beliefs',
+			href: '/about-us/beliefs',
 			text: 'Beliefs',
 			variant: 'dark'
 		},
 		{
-			href: '/faq',
+			href: '/about-us/faq',
 			text: 'F.A.Q.',
 			variant: 'dark'
 		}
