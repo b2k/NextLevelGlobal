@@ -12,12 +12,19 @@ export function escapeICal(value: string): string {
 		.replace(/;/g, '\\;');
 }
 
+export function formatEventDate(event: CalendarEventEntry, date: Date): string {
+	if (event.allDay) {
+		return `VALUE=DATE:${formatDateOnly(date)}`;
+	} else {
+		return `${formatUtcTimestamp(date)}`;
+	}
+}
+
 export function formatUtcTimestamp(date: Date): string {
-	return [
-		date.getUTCFullYear(),
-		pad(date.getUTCMonth() + 1),
-		pad(date.getUTCDate())
-	].join('') + `T${pad(date.getUTCHours())}${pad(date.getUTCMinutes())}${pad(date.getUTCSeconds())}Z`;
+	return (
+		[date.getUTCFullYear(), pad(date.getUTCMonth() + 1), pad(date.getUTCDate())].join('') +
+		`T${pad(date.getUTCHours())}${pad(date.getUTCMinutes())}${pad(date.getUTCSeconds())}Z`
+	);
 }
 
 export function formatDateOnly(date: Date): string {
@@ -46,43 +53,13 @@ export function nthWeekdayOfMonth(
 	return new Date(Date.UTC(year, month - 1, dayOfMonth));
 }
 
-export function resolveDefaultStartDate(event: CalendarEventEntry, today = new Date()): Date {
-	if (!event.startRule) {
-		return new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate()));
-	}
-
-	const currentYear = today.getUTCFullYear();
-
-	const thisYearStart = nthWeekdayOfMonth(
-		currentYear,
-		event.startRule.month,
-		event.startRule.weekday,
-		event.startRule.occurrence
-	);
-
-	const todayDateOnly = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate()));
-
-	if (thisYearStart >= todayDateOnly) {
-		return thisYearStart;
-	}
-
-	return nthWeekdayOfMonth(
-		currentYear + 1,
-		event.startRule.month,
-		event.startRule.weekday,
-		event.startRule.occurrence
-	);
-}
-
 export function buildCalendarIcs(args: {
 	name: string;
 	description?: string;
 	events: CalendarEventEntry[];
-	startDateOverride?: string | null;
 }): string {
-	const { name, description, events, startDateOverride } = args;
+	const { name, description, events } = args;
 
-	const overrideDate = startDateOverride ? parseDateOnly(startDateOverride) : null;
 	const now = new Date();
 
 	const lines: string[] = [
@@ -91,21 +68,37 @@ export function buildCalendarIcs(args: {
 		'PRODID:-//Next Level Global//Group Calendar//EN',
 		'CALSCALE:GREGORIAN',
 		'METHOD:PUBLISH',
-		`X-WR-CALNAME:${escapeICal(name)}`
+		`X-WR-CALNAME:${escapeICal(name)}`,
+		'X-WR-TIMEZONE:America/Chicago'
 	];
+	/*
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20240813
+DTEND;VALUE=DATE:20240814
+RRULE:FREQ=WEEKLY;INTERVAL=52
+DTSTAMP:20260505T011755Z
+UID:CSVConvert040842930b34c31cd5d54cfa70d0ef19
+CREATED:19000101T120000Z
+LAST-MODIFIED:20260402T003620Z
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Jeremiah 51
+TRANSP:OPAQUE
+END:VEVENT
 
+*/
 	if (description) {
 		lines.push(`X-WR-CALDESC:${escapeICal(description)}`);
 	}
 
 	for (const event of events) {
-		const startDate = overrideDate ?? resolveDefaultStartDate(event, now);
-
 		lines.push('BEGIN:VEVENT');
 		lines.push(`UID:${escapeICal(event.uid)}`);
 		lines.push(`DTSTAMP:${formatUtcTimestamp(now)}`);
 		lines.push(`SUMMARY:${escapeICal(event.title)}`);
 
+		const startDate = event.date?.replace(/[^\d]/g, '');
+		const endDate = event.endDate?.replace(/[^\d]/g, '') ?? startDate;
 		if (event.description) {
 			lines.push(`DESCRIPTION:${escapeICal(event.description)}`);
 		}
@@ -115,21 +108,23 @@ export function buildCalendarIcs(args: {
 		}
 
 		if (event.allDay) {
-			lines.push(`DTSTART;VALUE=DATE:${formatDateOnly(startDate)}`);
-
-			if ((event.durationDays ?? 1) > 1) {
-				const endDate = new Date(startDate);
-				endDate.setUTCDate(endDate.getUTCDate() + (event.durationDays ?? 1));
-				lines.push(`DTEND;VALUE=DATE:${formatDateOnly(endDate)}`);
-			}
+			lines.push(`DTSTART;VALUE=DATE:${startDate}`);
+			lines.push(`DTEND;VALUE=DATE:${endDate}`);
 
 			lines.push('RRULE:FREQ=WEEKLY;INTERVAL=52');
 		} else {
-			const endDateTime = new Date(startDate);
-			endDateTime.setUTCHours(endDateTime.getUTCHours() + 1);
+			const startTime = event.startTime?.replace(/[^\d]/g, '') ?? '000000';
+			const endTime = event.endTime?.replace(/[^\d]/g, '') ?? '000000';
+			if (!startTime || !endTime) {
+				throw new Error(`Event ${event.uid} is missing startTime or endTime`);
+			}
 
-			lines.push(`DTSTART:${formatUtcTimestamp(startDate)}`);
-			lines.push(`DTEND:${formatUtcTimestamp(endDateTime)}`);
+			lines.push(
+				`DTSTART;TZID=America/Chicago:${startDate}T${startTime}`
+			);
+			lines.push(
+				`DTEND;TZID=America/Chicago:${endDate}T${endTime}`
+			);
 			lines.push('RRULE:FREQ=WEEKLY;INTERVAL=52');
 		}
 
