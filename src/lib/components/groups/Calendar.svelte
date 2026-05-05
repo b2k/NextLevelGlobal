@@ -1,5 +1,9 @@
 <script lang="ts">
-	import type { CalendarEntry, GroupCalendarConfig } from '$lib/config/models/calendars/groupCalendars';
+	import type {
+		CalendarEntry,
+		CalendarEntryKind,
+		GroupCalendarConfig
+	} from '$lib/config/models/calendars/groupCalendars';
 	import { SvelteDate } from 'svelte/reactivity';
 	import { browser } from '$app/environment';
 	import { onMount } from 'svelte';
@@ -77,8 +81,68 @@
 	type NormalizedEntry = {
 		date: Date;
 		title: string;
+		kind: CalendarEntryKind;
 		raw: CalendarEntry;
 	};
+
+	type CalendarEntryColor = {
+		bg: string;
+		text: string;
+		accent: string;
+	};
+
+	const defaultEntryColor: CalendarEntryColor = {
+		bg: '#F9FAFB',
+		text: '#374151',
+		accent: '#CBD5E1'
+	};
+
+	const calendarEntryColors: Record<CalendarEntryKind, CalendarEntryColor> = {
+		week: {
+			bg: '#F3F4F6',
+			text: '#374151',
+			accent: '#9CA3AF'
+		},
+		reading: {
+			bg: '#E8F0FE',
+			text: '#1D4ED8',
+			accent: '#3B82F6'
+		},
+		memory: {
+			bg: '#ECFDF5',
+			text: '#065F46',
+			accent: '#10B981'
+		},
+		book: {
+			bg: '#FEF3E8',
+			text: '#C2410C',
+			accent: '#F97316'
+		},
+		psalm: {
+			bg: '#F3E8FF',
+			text: '#7C3AED',
+			accent: '#A78BFA'
+		},
+		meeting: {
+			bg: '#FEE2E2',
+			text: '#B91C1C',
+			accent: '#EF4444'
+		},
+		event: {
+			bg: '',
+			text: '',
+			accent: ''
+		},
+		other: {
+			bg: '',
+			text: '',
+			accent: ''
+		}
+	};
+
+	function getEntryColor(kind: CalendarEntryKind): CalendarEntryColor {
+		return calendarEntryColors[kind] ?? defaultEntryColor;
+	}
 
 	let normalizedEntries = $derived.by(() => {
 		return (calendar.entries ?? [])
@@ -87,6 +151,7 @@
 				return {
 					date: parseDate(entry.date)!,
 					title: entry.title ?? '',
+					kind: entry.kind,
 					raw: entry
 				} satisfies NormalizedEntry;
 			})
@@ -289,7 +354,12 @@
 
 				<div class="calendar-events">
 					{#each day.events as event, e (e)}
-						<div class="calendar-event" title={event.title}>
+						{@const color = getEntryColor(event.kind)}
+						<div
+							class="calendar-event"
+							title={event.title}
+							style={`--entry-bg: ${color.bg}; --entry-text: ${color.text}; --entry-accent: ${color.accent};`}
+						>
 							{event.title}
 						</div>
 					{/each}
@@ -450,13 +520,15 @@
 	.calendar-event {
 		padding: 0.28rem 0.45rem;
 		border-radius: 0.35rem;
-		background: #7e8fd6;
-		color: #fff;
+		border-left: 4px solid var(--entry-accent);
+		background: var(--entry-bg);
+		color: var(--entry-text);
 		font-size: 0.8rem;
 		line-height: 1.25;
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
+		font-weight: 600;
 	}
 
 	.calendar-toolbar-right {

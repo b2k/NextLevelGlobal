@@ -30,8 +30,8 @@ export function generateCalendarEntries(
 
 	return template.entries
 		.map((entry) => {
-			const weekOffset = entry.week - template.startingWeek;
-			const offset = weekOffset * 7 + entry.dayOfWeek;
+			const weekOffset = (entry.week as number) - template.startingWeek;
+			const offset = weekOffset * 7 + (entry.dayOfWeek as number);
 			const date = addDays(anchor, offset);
 
 			const result: CalendarEntry = {
