@@ -25,7 +25,30 @@ export const page: GroupPage = {
 			]
 		},
 		{
+			id: 'scripture-summaries',
 			title: 'Scripture Summaries & Questions',
+			subtitle: 'Download weekly summaries and discussion questions.',
+			theme: 'light',
+			items: [
+				{
+					type: 'pdf',
+					title: 'Weeks 100-102',
+					pdf: '/groups/men/300/302/nlgm302w100-102.pdf'
+				},
+				{
+					type: 'pdf',
+					title: 'Weeks 103-105',
+					pdf: '/groups/men/300/302/nlgm302w103-105.pdf'
+				},
+				{
+					type: 'pdf',
+					title: 'Weeks 106-109',
+					pdf: '/groups/men/300/302/nlgm302w106-109.pdf'
+				},
+			]
+		},
+		{
+			title: 'Scripture Memorization',
 			theme: 'light',
 			columns: [
 				{

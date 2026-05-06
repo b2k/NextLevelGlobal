@@ -2,28 +2,25 @@ import type { GroupPage } from '$lib/config/models/types';
 import { calendar } from './calendar';
 
 export const page: GroupPage = {
-	id: 'men-301',
-	title: 'Men 301',
-	menuTitle: '301',
-	parentPath: 'men/300',
-	order: 1,
-	heroImage: '/groups/men/300/301/hero.jpg',
+	id: 'men-300-303',
+	title: 'Men 303',
+	subtitle: '',
+	heroImage: '/groups/men/300/303/hero.jpg',
 	heroTextColor: 'white',
-	theme: 'dark',
+	theme: 'tan',
 	sections: [
 		{
-			id: 'books',
-			title: '301 Books',
+			title: 'Book',
 			theme: 'dark',
 			items: [
 				{
 					type: 'book',
-					title: 'A Praying Life Questions',
+					title: 'The Man Code',
+					description: 'Timothy Keller',
+					image: '/groups/men/300/303/man-code.jpg',
 					buyUrl:
-						'https://www.christianbook.com/praying-life-connecting-distracting-world-edition/paul-miller/9781631466830/pd/466830',
-					questionsPdf: '/groups/men/300/301/praying-life-questions.pdf',
-					image: '/groups/men/300/301/praying-life.jpg',
-					description: 'Download the weekly discussion questions PDF.'
+						'https://www.christianbook.com/man-code-priorities-every-needs-know/9780736990035/pd/990037?event=ESRCG',
+					questionsPdf: '/groups/men/300/303/man-code.pdf'
 				}
 			]
 		},
@@ -35,29 +32,24 @@ export const page: GroupPage = {
 			items: [
 				{
 					type: 'pdf',
-					title: 'Weeks 87-89',
-					pdf: '/groups/men/300/301/nlgm301w87-89.pdf'
+					title: 'Weeks 121-124',
+					pdf: '/groups/men/300/303/nlgm303w121-124.pdf'
 				},
 				{
 					type: 'pdf',
-					title: 'Weeks 90-92',
-					pdf: '/groups/men/300/301/nlgm301w90-92.pdf'
+					title: 'Weeks 125-128',
+					pdf: '/groups/men/300/303/nlgm303w125-128.pdf'
 				},
 				{
 					type: 'pdf',
-					title: 'Weeks 93-95',
-					pdf: '/groups/men/300/301/nlgm301w93-95.pdf'
-				},
-				{
-					type: 'pdf',
-					title: 'Weeks 96-99',
-					pdf: '/groups/men/300/301/nlgm301w96-99.pdf'
+					title: 'Weeks 129-133',
+					pdf: '/groups/men/300/303/nlgm303w129-133.pdf'
 				}
 			]
 		},
 		{
 			title: 'Scripture Memorization',
-			theme: 'dark',
+			theme: 'light',
 			columns: [
 				{
 					title: 'ESV',
@@ -109,7 +101,7 @@ export const page: GroupPage = {
 		{
 			id: 'additional-resources',
 			title: 'Additional Resources',
-			theme: 'light',
+			theme: 'dark',
 			items: [
 				{
 					type: 'pdf',
@@ -129,5 +121,6 @@ export const page: GroupPage = {
 			]
 		}
 	],
+	menuTitle: 'Men 303',
 	calendar
 };
