@@ -9,14 +9,8 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 44,
 			dayOfWeek: 0,
-			kind: 'book',
-			title: 'Exp God Ch 1'
-		},
-		{
-			week: 44,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV John 15:1'
+			kind: 'week',
+			title: 'Week 44'
 		},
 		{
 			week: 44,
@@ -26,15 +20,21 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 44,
-			dayOfWeek: 0,
-			kind: 'week',
-			title: 'Week 44'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV John 15:1'
 		},
 		{
 			week: 44,
 			dayOfWeek: 1,
 			kind: 'reading',
 			title: 'Ruth 1'
+		},
+		{
+			week: 44,
+			dayOfWeek: 1,
+			kind: 'book',
+			title: 'Exp God Ch 1'
 		},
 		{
 			week: 44,
@@ -69,14 +69,8 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 45,
 			dayOfWeek: 0,
-			kind: 'book',
-			title: 'Exp God Ch 2'
-		},
-		{
-			week: 45,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV John 15:1-2'
+			kind: 'week',
+			title: 'Week 45'
 		},
 		{
 			week: 45,
@@ -86,15 +80,21 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 45,
-			dayOfWeek: 0,
-			kind: 'week',
-			title: 'Week 45'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV John 15:1-2'
 		},
 		{
 			week: 45,
 			dayOfWeek: 1,
 			kind: 'reading',
 			title: 'Luke 4'
+		},
+		{
+			week: 45,
+			dayOfWeek: 1,
+			kind: 'book',
+			title: 'Exp God Ch 2'
 		},
 		{
 			week: 45,
@@ -129,14 +129,8 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 46,
 			dayOfWeek: 0,
-			kind: 'book',
-			title: 'Exp God Ch 3'
-		},
-		{
-			week: 46,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV John 15:1-4'
+			kind: 'week',
+			title: 'Week 46'
 		},
 		{
 			week: 46,
@@ -146,15 +140,21 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 46,
-			dayOfWeek: 0,
-			kind: 'week',
-			title: 'Week 46'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV John 15:1-4'
 		},
 		{
 			week: 46,
 			dayOfWeek: 1,
 			kind: 'reading',
 			title: 'Luke 10'
+		},
+		{
+			week: 46,
+			dayOfWeek: 1,
+			kind: 'book',
+			title: 'Exp God Ch 3'
 		},
 		{
 			week: 46,
@@ -189,14 +189,8 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 47,
 			dayOfWeek: 0,
-			kind: 'book',
-			title: 'Exp God Ch 4'
-		},
-		{
-			week: 47,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV John 15:1-5'
+			kind: 'week',
+			title: 'Week 47'
 		},
 		{
 			week: 47,
@@ -206,15 +200,21 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 47,
-			dayOfWeek: 0,
-			kind: 'week',
-			title: 'Week 47'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV John 15:1-5'
 		},
 		{
 			week: 47,
 			dayOfWeek: 1,
 			kind: 'reading',
 			title: 'Luke 16'
+		},
+		{
+			week: 47,
+			dayOfWeek: 1,
+			kind: 'book',
+			title: 'Exp God Ch 4'
 		},
 		{
 			week: 47,
@@ -249,14 +249,8 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 48,
 			dayOfWeek: 0,
-			kind: 'book',
-			title: 'Exp God Ch 5'
-		},
-		{
-			week: 48,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV John 15:1-6'
+			kind: 'week',
+			title: 'Week 48'
 		},
 		{
 			week: 48,
@@ -266,15 +260,21 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 48,
-			dayOfWeek: 0,
-			kind: 'week',
-			title: 'Week 48'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV John 15:1-6'
 		},
 		{
 			week: 48,
 			dayOfWeek: 1,
 			kind: 'reading',
 			title: 'Luke 22'
+		},
+		{
+			week: 48,
+			dayOfWeek: 1,
+			kind: 'book',
+			title: 'Exp God Ch 5'
 		},
 		{
 			week: 48,
@@ -309,14 +309,8 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 49,
 			dayOfWeek: 0,
-			kind: 'book',
-			title: 'Exp God Ch 6'
-		},
-		{
-			week: 49,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV John 15:1-7'
+			kind: 'week',
+			title: 'Week 49'
 		},
 		{
 			week: 49,
@@ -326,15 +320,21 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 49,
-			dayOfWeek: 0,
-			kind: 'week',
-			title: 'Week 49'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV John 15:1-7'
 		},
 		{
 			week: 49,
 			dayOfWeek: 1,
 			kind: 'reading',
 			title: 'Judges 4'
+		},
+		{
+			week: 49,
+			dayOfWeek: 1,
+			kind: 'book',
+			title: 'Exp God Ch 6'
 		},
 		{
 			week: 49,
@@ -369,14 +369,8 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 50,
 			dayOfWeek: 0,
-			kind: 'book',
-			title: 'Exp God Ch 7'
-		},
-		{
-			week: 50,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV John 15:1-8'
+			kind: 'week',
+			title: 'Week 50'
 		},
 		{
 			week: 50,
@@ -386,15 +380,21 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 50,
-			dayOfWeek: 0,
-			kind: 'week',
-			title: 'Week 50'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV John 15:1-8'
 		},
 		{
 			week: 50,
 			dayOfWeek: 1,
 			kind: 'reading',
 			title: 'Judges 10'
+		},
+		{
+			week: 50,
+			dayOfWeek: 1,
+			kind: 'book',
+			title: 'Exp God Ch 7'
 		},
 		{
 			week: 50,
@@ -429,14 +429,8 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 51,
 			dayOfWeek: 0,
-			kind: 'book',
-			title: 'Exp God Ch 8'
-		},
-		{
-			week: 51,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV John 15:1-9'
+			kind: 'week',
+			title: 'Week 51'
 		},
 		{
 			week: 51,
@@ -446,15 +440,21 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 51,
-			dayOfWeek: 0,
-			kind: 'week',
-			title: 'Week 51'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV John 15:1-9'
 		},
 		{
 			week: 51,
 			dayOfWeek: 1,
 			kind: 'reading',
 			title: 'Judges 16'
+		},
+		{
+			week: 51,
+			dayOfWeek: 1,
+			kind: 'book',
+			title: 'Exp God Ch 8'
 		},
 		{
 			week: 51,
@@ -489,14 +489,8 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 52,
 			dayOfWeek: 0,
-			kind: 'book',
-			title: 'Exp God Ch 9'
-		},
-		{
-			week: 52,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV John 15:1-12'
+			kind: 'week',
+			title: 'Week 52'
 		},
 		{
 			week: 52,
@@ -506,63 +500,51 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 52,
-			dayOfWeek: 0,
-			kind: 'week',
-			title: 'Week 52'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV John 15:1-12'
 		},
 		{
 			week: 52,
 			dayOfWeek: 1,
 			kind: 'reading',
-			title: '1 Sam 1'
+			title: '1 Samuel 1'
+		},
+		{
+			week: 52,
+			dayOfWeek: 1,
+			kind: 'book',
+			title: 'Exp God Ch 9'
 		},
 		{
 			week: 52,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: '1 Sam 2'
+			title: '1 Samuel 2'
 		},
 		{
 			week: 52,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: '1 Sam 3'
+			title: '1 Samuel 3'
 		},
 		{
 			week: 52,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: '1 Sam 4'
+			title: '1 Samuel 4'
 		},
 		{
 			week: 52,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: '1 Sam 5 & 6'
+			title: '1 Samuel 5 & 6'
 		},
 		{
 			week: 52,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: '1 Sam 7'
-		},
-		{
-			week: 53,
-			dayOfWeek: 0,
-			kind: 'book',
-			title: 'Exp God Ch 10'
-		},
-		{
-			week: 53,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV John 15:1-14'
-		},
-		{
-			week: 53,
-			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 73'
+			title: '1 Samuel 7'
 		},
 		{
 			week: 53,
@@ -572,57 +554,57 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 53,
+			dayOfWeek: 0,
+			kind: 'psalm',
+			title: 'Psalm 73'
+		},
+		{
+			week: 53,
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV John 15:1-14'
+		},
+		{
+			week: 53,
 			dayOfWeek: 1,
 			kind: 'reading',
-			title: '1 Sam 8'
+			title: '1 Samuel 8'
+		},
+		{
+			week: 53,
+			dayOfWeek: 1,
+			kind: 'book',
+			title: 'Exp God Ch 10'
 		},
 		{
 			week: 53,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: '1 Sam 9'
+			title: '1 Samuel 9'
 		},
 		{
 			week: 53,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: '1 Sam 10'
+			title: '1 Samuel 10'
 		},
 		{
 			week: 53,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: '1 Sam 11'
+			title: '1 Samuel 11'
 		},
 		{
 			week: 53,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: '1 Sam 12'
+			title: '1 Samuel 12'
 		},
 		{
 			week: 53,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: '1 Sam 13'
-		},
-		{
-			week: 54,
-			dayOfWeek: 0,
-			kind: 'book',
-			title: 'Exp God Ch 11'
-		},
-		{
-			week: 54,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV John 15:1-15'
-		},
-		{
-			week: 54,
-			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 74'
+			title: '1 Samuel 13'
 		},
 		{
 			week: 54,
@@ -632,57 +614,57 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 54,
+			dayOfWeek: 0,
+			kind: 'psalm',
+			title: 'Psalm 74'
+		},
+		{
+			week: 54,
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV John 15:1-15'
+		},
+		{
+			week: 54,
 			dayOfWeek: 1,
 			kind: 'reading',
-			title: '1 Sam 14'
+			title: '1 Samuel 14'
+		},
+		{
+			week: 54,
+			dayOfWeek: 1,
+			kind: 'book',
+			title: 'Exp God Ch 11'
 		},
 		{
 			week: 54,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: '1 Sam 15'
+			title: '1 Samuel 15'
 		},
 		{
 			week: 54,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: '1 Sam 16'
+			title: '1 Samuel 16'
 		},
 		{
 			week: 54,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: '1 Sam 17'
+			title: '1 Samuel 17'
 		},
 		{
 			week: 54,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: '1 Sam 18'
+			title: '1 Samuel 18'
 		},
 		{
 			week: 54,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: '1 Sam 19'
-		},
-		{
-			week: 55,
-			dayOfWeek: 0,
-			kind: 'book',
-			title: 'Exp God Ch 12'
-		},
-		{
-			week: 55,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV John 15:1-16'
-		},
-		{
-			week: 55,
-			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 75'
+			title: '1 Samuel 19'
 		},
 		{
 			week: 55,
@@ -692,57 +674,57 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 55,
+			dayOfWeek: 0,
+			kind: 'psalm',
+			title: 'Psalm 75'
+		},
+		{
+			week: 55,
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV John 15:1-16'
+		},
+		{
+			week: 55,
 			dayOfWeek: 1,
 			kind: 'reading',
-			title: '1 Sam 20'
+			title: '1 Samuel 20'
+		},
+		{
+			week: 55,
+			dayOfWeek: 1,
+			kind: 'book',
+			title: 'Exp God Ch 12'
 		},
 		{
 			week: 55,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: '1 Sam 21'
+			title: '1 Samuel 21'
 		},
 		{
 			week: 55,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: '1 Sam 22'
+			title: '1 Samuel 22'
 		},
 		{
 			week: 55,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: '1 Sam 2023'
+			title: '1 Samuel 23'
 		},
 		{
 			week: 55,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: '1 Sam 24'
+			title: '1 Samuel 24'
 		},
 		{
 			week: 55,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: '1 Sam 25'
-		},
-		{
-			week: 56,
-			dayOfWeek: 0,
-			kind: 'book',
-			title: 'Exp God Ch 13'
-		},
-		{
-			week: 56,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV John 15:1-17'
-		},
-		{
-			week: 56,
-			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 76'
+			title: '1 Samuel 25'
 		},
 		{
 			week: 56,
@@ -752,51 +734,69 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 56,
+			dayOfWeek: 0,
+			kind: 'psalm',
+			title: 'Psalm 76'
+		},
+		{
+			week: 56,
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV John 15:1-17'
+		},
+		{
+			week: 56,
 			dayOfWeek: 1,
 			kind: 'reading',
-			title: '1 Sam 26'
+			title: '1Samuel 26'
+		},
+		{
+			week: 56,
+			dayOfWeek: 1,
+			kind: 'book',
+			title: 'Exp God Ch 13'
 		},
 		{
 			week: 56,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: '1 Sam 27'
+			title: '1 Samuel 27'
 		},
 		{
 			week: 56,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: '1 Sam 28'
+			title: '1 Samuel 28'
 		},
 		{
 			week: 56,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: '1 Sam 29'
+			title: '1 Samuel 29'
 		},
 		{
 			week: 56,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: '1 Sam 30'
+			title: '1 Samuel 30'
 		},
 		{
 			week: 56,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: '1 Sam 31'
-		},
-		{
-			week: 57,
-			dayOfWeek: 0,
-			kind: 'book',
-			title: 'Exp God Ch 14'
+			title: '1 Samuel 31'
 		},
 		{
 			week: 57,
 			dayOfWeek: 0,
 			kind: 'week',
 			title: 'Week 57'
+		},
+		{
+			week: 57,
+			dayOfWeek: 0,
+			kind: 'book',
+			title: 'Exp God Ch 14'
 		},
 		{
 			week: 57,

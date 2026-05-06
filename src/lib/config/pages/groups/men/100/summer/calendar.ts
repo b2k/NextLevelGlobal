@@ -9,14 +9,14 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 24,
 			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 34'
+			kind: 'week',
+			title: 'Week 24'
 		},
 		{
 			week: 24,
 			dayOfWeek: 0,
-			kind: 'week',
-			title: 'Week 24'
+			kind: 'psalm',
+			title: 'Psalm 34'
 		},
 		{
 			week: 24,
@@ -53,6 +53,12 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 6,
 			kind: 'reading',
 			title: '1 Chronicles 11'
+		},
+		{
+			week: 25,
+			dayOfWeek: 0,
+			kind: 'week',
+			title: 'Week 25'
 		},
 		{
 			week: 25,
@@ -99,14 +105,14 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 26,
 			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 36'
+			kind: 'week',
+			title: 'Week 26'
 		},
 		{
 			week: 26,
 			dayOfWeek: 0,
-			kind: 'week',
-			title: 'Week 26'
+			kind: 'psalm',
+			title: 'Psalm 36'
 		},
 		{
 			week: 26,
@@ -147,14 +153,14 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 27,
 			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 37'
+			kind: 'week',
+			title: 'Week 27'
 		},
 		{
 			week: 27,
 			dayOfWeek: 0,
-			kind: 'week',
-			title: 'Week 27'
+			kind: 'psalm',
+			title: 'Psalm 37'
 		},
 		{
 			week: 27,
@@ -195,14 +201,14 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 28,
 			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 38'
+			kind: 'week',
+			title: 'Week 28'
 		},
 		{
 			week: 28,
 			dayOfWeek: 0,
-			kind: 'week',
-			title: 'Week 28'
+			kind: 'psalm',
+			title: 'Psalm 38'
 		},
 		{
 			week: 28,
@@ -243,14 +249,14 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 29,
 			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 39'
+			kind: 'week',
+			title: 'Week 29'
 		},
 		{
 			week: 29,
 			dayOfWeek: 0,
-			kind: 'week',
-			title: 'Week 29'
+			kind: 'psalm',
+			title: 'Psalm 39'
 		},
 		{
 			week: 29,
@@ -291,14 +297,14 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 30,
 			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 40'
+			kind: 'week',
+			title: 'Week 30'
 		},
 		{
 			week: 30,
 			dayOfWeek: 0,
-			kind: 'week',
-			title: 'Week 30'
+			kind: 'psalm',
+			title: 'Psalm 40'
 		},
 		{
 			week: 30,
@@ -339,14 +345,14 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 31,
 			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 41'
+			kind: 'week',
+			title: 'Week 31'
 		},
 		{
 			week: 31,
 			dayOfWeek: 0,
-			kind: 'week',
-			title: 'Week 31'
+			kind: 'psalm',
+			title: 'Psalm 41'
 		},
 		{
 			week: 31,
@@ -387,14 +393,14 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 32,
 			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 42,43'
+			kind: 'week',
+			title: 'Week 32'
 		},
 		{
 			week: 32,
 			dayOfWeek: 0,
-			kind: 'week',
-			title: 'Week 32'
+			kind: 'psalm',
+			title: 'Psalm 42,43'
 		},
 		{
 			week: 32,
@@ -435,14 +441,14 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 33,
 			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 44'
+			kind: 'week',
+			title: 'Week 33'
 		},
 		{
 			week: 33,
 			dayOfWeek: 0,
-			kind: 'week',
-			title: 'Week 33'
+			kind: 'psalm',
+			title: 'Psalm 44'
 		},
 		{
 			week: 33,

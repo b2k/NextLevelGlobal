@@ -9,18 +9,18 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 110,
 			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 143'
-		},
-		{
-			week: 110,
-			dayOfWeek: 0,
 			kind: 'week',
 			title: 'Week 110'
 		},
 		{
 			week: 110,
 			dayOfWeek: 0,
+			kind: 'psalm',
+			title: 'Psalm 143'
+		},
+		{
+			week: 110,
+			dayOfWeek: 1,
 			kind: 'memory',
 			title: 'LCV: Romans 8:1-17'
 		},
@@ -63,18 +63,18 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 111,
 			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 144'
-		},
-		{
-			week: 111,
-			dayOfWeek: 0,
 			kind: 'week',
 			title: 'Week 111'
 		},
 		{
 			week: 111,
 			dayOfWeek: 0,
+			kind: 'psalm',
+			title: 'Psalm 144'
+		},
+		{
+			week: 111,
+			dayOfWeek: 1,
 			kind: 'memory',
 			title: 'LCV: Romans 8:1-18'
 		},
@@ -117,18 +117,18 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 112,
 			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 145'
-		},
-		{
-			week: 112,
-			dayOfWeek: 0,
 			kind: 'week',
 			title: 'Week 112'
 		},
 		{
 			week: 112,
 			dayOfWeek: 0,
+			kind: 'psalm',
+			title: 'Psalm 145'
+		},
+		{
+			week: 112,
+			dayOfWeek: 1,
 			kind: 'memory',
 			title: 'LCV: Romans 8:1-19'
 		},
@@ -171,18 +171,18 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 113,
 			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 146'
-		},
-		{
-			week: 113,
-			dayOfWeek: 0,
 			kind: 'week',
 			title: 'Week 113'
 		},
 		{
 			week: 113,
 			dayOfWeek: 0,
+			kind: 'psalm',
+			title: 'Psalm 146'
+		},
+		{
+			week: 113,
+			dayOfWeek: 1,
 			kind: 'memory',
 			title: 'LCV: Romans 8:1-20'
 		},
@@ -225,18 +225,18 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 114,
 			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 147'
-		},
-		{
-			week: 114,
-			dayOfWeek: 0,
 			kind: 'week',
 			title: 'Week 114'
 		},
 		{
 			week: 114,
 			dayOfWeek: 0,
+			kind: 'psalm',
+			title: 'Psalm 147'
+		},
+		{
+			week: 114,
+			dayOfWeek: 1,
 			kind: 'memory',
 			title: 'LCV: Romans 8:1-21'
 		},
@@ -279,18 +279,18 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 115,
 			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 148'
-		},
-		{
-			week: 115,
-			dayOfWeek: 0,
 			kind: 'week',
 			title: 'Week 115'
 		},
 		{
 			week: 115,
 			dayOfWeek: 0,
+			kind: 'psalm',
+			title: 'Psalm 148'
+		},
+		{
+			week: 115,
+			dayOfWeek: 1,
 			kind: 'memory',
 			title: 'LCV: Romans 8:1-22'
 		},
@@ -333,18 +333,18 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 116,
 			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 149,150'
-		},
-		{
-			week: 116,
-			dayOfWeek: 0,
 			kind: 'week',
 			title: 'Week 116'
 		},
 		{
 			week: 116,
 			dayOfWeek: 0,
+			kind: 'psalm',
+			title: 'Psalm 149,150'
+		},
+		{
+			week: 116,
+			dayOfWeek: 1,
 			kind: 'memory',
 			title: 'LCV: Romans 8:1-23'
 		},
@@ -393,14 +393,14 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 117,
 			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV: Romans 8:1-24'
+			kind: 'psalm',
+			title: 'Proverbs 1'
 		},
 		{
 			week: 117,
-			dayOfWeek: 0,
-			kind: 'reading',
-			title: 'Proverbs 1'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV: Romans 8:1-24'
 		},
 		{
 			week: 117,
@@ -447,14 +447,14 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 118,
 			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV: Romans 8:1-25'
+			kind: 'psalm',
+			title: 'Proverbs 2'
 		},
 		{
 			week: 118,
-			dayOfWeek: 0,
-			kind: 'reading',
-			title: 'Proverbs 2'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV: Romans 8:1-25'
 		},
 		{
 			week: 118,
@@ -501,14 +501,14 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 119,
 			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV: Romans 8:1-26'
+			kind: 'psalm',
+			title: 'Proverbs 3'
 		},
 		{
 			week: 119,
-			dayOfWeek: 0,
-			kind: 'reading',
-			title: 'Proverbs 3'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV: Romans 8:1-26'
 		},
 		{
 			week: 119,
@@ -555,14 +555,14 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 120,
 			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV: Romans 8:1-27'
+			kind: 'psalm',
+			title: 'Proverbs 4'
 		},
 		{
 			week: 120,
-			dayOfWeek: 0,
-			kind: 'reading',
-			title: 'Proverbs 4'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV: Romans 8:1-27'
 		},
 		{
 			week: 120,

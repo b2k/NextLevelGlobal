@@ -1,22 +1,16 @@
 import type { GroupCalendarConfig } from '$lib/config/models/calendars/groupCalendars';
 
 export const calendar: GroupCalendarConfig = {
-	title: 'Next Level 201',
+	title: 'Next Level 203',
 	defaultStartDate: '2026-08-30',
 	startingWeek: 76,
-	description: '201-Level Group Calendar',
+	description: '203-Level Group Calendar',
 	entries: [
 		{
 			week: 76,
 			dayOfWeek: 0,
-			kind: 'book',
-			title: 'Knowing God Ch 11'
-		},
-		{
-			week: 76,
-			dayOfWeek: 0,
-			kind: 'reading',
-			title: 'John 15:1-17'
+			kind: 'week',
+			title: 'Week 76'
 		},
 		{
 			week: 76,
@@ -26,27 +20,21 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 76,
-			dayOfWeek: 0,
+			dayOfWeek: 1,
 			kind: 'memory',
 			title: 'Review'
 		},
 		{
-			week: 77,
-			dayOfWeek: 0,
+			week: 76,
+			dayOfWeek: 1,
+			kind: 'reading',
+			title: 'John 15:1-17'
+		},
+		{
+			week: 76,
+			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Knowing God Ch 12'
-		},
-		{
-			week: 77,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV Joshua 1:8'
-		},
-		{
-			week: 77,
-			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 98,99'
+			title: 'Knowing God Ch 11'
 		},
 		{
 			week: 77,
@@ -56,9 +44,27 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 77,
+			dayOfWeek: 0,
+			kind: 'psalm',
+			title: 'Psalm 98,99'
+		},
+		{
+			week: 77,
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV Joshua 1:8'
+		},
+		{
+			week: 77,
 			dayOfWeek: 1,
 			kind: 'reading',
 			title: 'Hebrews 1'
+		},
+		{
+			week: 77,
+			dayOfWeek: 1,
+			kind: 'book',
+			title: 'Knowing God Ch 12'
 		},
 		{
 			week: 77,
@@ -93,14 +99,8 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 78,
 			dayOfWeek: 0,
-			kind: 'book',
-			title: 'Knowing God Ch 13'
-		},
-		{
-			week: 78,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV Philippians 4:6,7'
+			kind: 'week',
+			title: 'Week 78'
 		},
 		{
 			week: 78,
@@ -110,15 +110,21 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 78,
-			dayOfWeek: 0,
-			kind: 'week',
-			title: 'Week 78'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV Philippians 4:6,7'
 		},
 		{
 			week: 78,
 			dayOfWeek: 1,
 			kind: 'reading',
 			title: 'Hebrews 7'
+		},
+		{
+			week: 78,
+			dayOfWeek: 1,
+			kind: 'book',
+			title: 'Knowing God Ch 13'
 		},
 		{
 			week: 78,
@@ -153,14 +159,8 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 79,
 			dayOfWeek: 0,
-			kind: 'book',
-			title: 'Knowing God Ch 14'
-		},
-		{
-			week: 79,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV 1 John 1:9'
+			kind: 'week',
+			title: 'Week 79'
 		},
 		{
 			week: 79,
@@ -170,15 +170,21 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 79,
-			dayOfWeek: 0,
-			kind: 'week',
-			title: 'Week 79'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV 1 John 1:9'
 		},
 		{
 			week: 79,
 			dayOfWeek: 1,
 			kind: 'reading',
 			title: 'Hebrews 13'
+		},
+		{
+			week: 79,
+			dayOfWeek: 1,
+			kind: 'book',
+			title: 'Knowing God Ch 14'
 		},
 		{
 			week: 79,
@@ -213,14 +219,8 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 80,
 			dayOfWeek: 0,
-			kind: 'book',
-			title: 'Knowing God Ch 15'
-		},
-		{
-			week: 80,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV Hebrews 10:24,25'
+			kind: 'week',
+			title: 'Week 80'
 		},
 		{
 			week: 80,
@@ -230,15 +230,21 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 80,
-			dayOfWeek: 0,
-			kind: 'week',
-			title: 'Week 80'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV Hebrews 10:24,25'
 		},
 		{
 			week: 80,
 			dayOfWeek: 1,
 			kind: 'reading',
 			title: '2 Kings 6'
+		},
+		{
+			week: 80,
+			dayOfWeek: 1,
+			kind: 'book',
+			title: 'Knowing God Ch 15'
 		},
 		{
 			week: 80,
@@ -273,14 +279,8 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 81,
 			dayOfWeek: 0,
-			kind: 'book',
-			title: 'Knowing God Ch 16'
-		},
-		{
-			week: 81,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV Ephesians 2:8-10'
+			kind: 'week',
+			title: 'Week 81'
 		},
 		{
 			week: 81,
@@ -290,15 +290,21 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 81,
-			dayOfWeek: 0,
-			kind: 'week',
-			title: 'Week 81'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV Ephesians 2:8-10'
 		},
 		{
 			week: 81,
 			dayOfWeek: 1,
 			kind: 'reading',
 			title: '2 Kings 12'
+		},
+		{
+			week: 81,
+			dayOfWeek: 1,
+			kind: 'book',
+			title: 'Knowing God Ch 16'
 		},
 		{
 			week: 81,
@@ -333,14 +339,8 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 82,
 			dayOfWeek: 0,
-			kind: 'book',
-			title: 'Knowing God Ch 17'
-		},
-		{
-			week: 82,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV 1 Corinthians 6:19,20'
+			kind: 'week',
+			title: 'Week 82'
 		},
 		{
 			week: 82,
@@ -350,15 +350,21 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 82,
-			dayOfWeek: 0,
-			kind: 'week',
-			title: 'Week 82'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV 1 Corinthians 6:19,20'
 		},
 		{
 			week: 82,
 			dayOfWeek: 1,
 			kind: 'reading',
 			title: '2 Kings 18'
+		},
+		{
+			week: 82,
+			dayOfWeek: 1,
+			kind: 'book',
+			title: 'Knowing God Ch 17'
 		},
 		{
 			week: 82,
@@ -393,14 +399,8 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 83,
 			dayOfWeek: 0,
-			kind: 'book',
-			title: 'Knowing God Ch 18'
-		},
-		{
-			week: 83,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV Isaiah 41:10'
+			kind: 'week',
+			title: 'Week 83'
 		},
 		{
 			week: 83,
@@ -410,15 +410,21 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 83,
-			dayOfWeek: 0,
-			kind: 'week',
-			title: 'Week 83'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV Isaiah 41:10'
 		},
 		{
 			week: 83,
 			dayOfWeek: 1,
 			kind: 'reading',
 			title: '2 Kings 24'
+		},
+		{
+			week: 83,
+			dayOfWeek: 1,
+			kind: 'book',
+			title: 'Knowing God Ch 18'
 		},
 		{
 			week: 83,
@@ -453,14 +459,8 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 84,
 			dayOfWeek: 0,
-			kind: 'book',
-			title: 'Knowing God Ch 19'
-		},
-		{
-			week: 84,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV Isaiah 26:3'
+			kind: 'week',
+			title: 'Week 84'
 		},
 		{
 			week: 84,
@@ -470,15 +470,21 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 84,
-			dayOfWeek: 0,
-			kind: 'week',
-			title: 'Week 84'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV Isaiah 26:3'
 		},
 		{
 			week: 84,
 			dayOfWeek: 1,
 			kind: 'reading',
 			title: 'Ezra 5'
+		},
+		{
+			week: 84,
+			dayOfWeek: 1,
+			kind: 'book',
+			title: 'Knowing God Ch 19'
 		},
 		{
 			week: 84,
@@ -513,14 +519,8 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 85,
 			dayOfWeek: 0,
-			kind: 'book',
-			title: 'Knowing God Ch 20'
-		},
-		{
-			week: 85,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV 1 Corinthians 10:13'
+			kind: 'week',
+			title: 'Week 85'
 		},
 		{
 			week: 85,
@@ -530,15 +530,21 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 85,
-			dayOfWeek: 0,
-			kind: 'week',
-			title: 'Week 85'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV 1 Corinthians 10:13'
 		},
 		{
 			week: 85,
 			dayOfWeek: 1,
 			kind: 'reading',
 			title: 'Colossians 1'
+		},
+		{
+			week: 85,
+			dayOfWeek: 1,
+			kind: 'book',
+			title: 'Knowing God Ch 20'
 		},
 		{
 			week: 85,
@@ -573,26 +579,32 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 86,
 			dayOfWeek: 0,
-			kind: 'book',
-			title: 'Knowing God Ch 21'
-		},
-		{
-			week: 86,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV Matthew 6:33,34'
-		},
-		{
-			week: 86,
-			dayOfWeek: 0,
 			kind: 'psalm',
 			title: 'Psalm 109'
+		},
+		{
+			week: 86,
+			dayOfWeek: 0,
+			kind: 'week',
+			title: 'Week 86'
+		},
+		{
+			week: 86,
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV Matthew 6:33,34'
 		},
 		{
 			week: 86,
 			dayOfWeek: 1,
 			kind: 'reading',
 			title: '1 Thessalonians 3'
+		},
+		{
+			week: 86,
+			dayOfWeek: 1,
+			kind: 'book',
+			title: 'Knowing God Ch 21'
 		},
 		{
 			week: 86,
@@ -627,14 +639,14 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 87,
 			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'Review LCV'
+			kind: 'week',
+			title: 'Week 87'
 		},
 		{
 			week: 87,
-			dayOfWeek: 0,
-			kind: 'week',
-			title: 'Discuss Week 86'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'Review LCV'
 		}
 	]
 };

@@ -15,14 +15,14 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 100,
 			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV: Romans 8:1-7'
+			kind: 'psalm',
+			title: 'Psalm 128,129'
 		},
 		{
 			week: 100,
-			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 128,129'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV: Romans 8:1-7'
 		},
 		{
 			week: 100,
@@ -75,14 +75,14 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 101,
 			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV: Romans 8:1-8'
+			kind: 'psalm',
+			title: 'Psalm 130,131'
 		},
 		{
 			week: 101,
-			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 130,131'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV: Romans 8:1-8'
 		},
 		{
 			week: 101,
@@ -135,14 +135,14 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 102,
 			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV: Romans 8:1-9'
+			kind: 'psalm',
+			title: 'Psalm 132'
 		},
 		{
 			week: 102,
-			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 132'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV: Romans 8:1-9'
 		},
 		{
 			week: 102,
@@ -195,14 +195,14 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 103,
 			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV: Romans 8:1-10'
+			kind: 'psalm',
+			title: 'Psalm 133,134'
 		},
 		{
 			week: 103,
-			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 133,134'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV: Romans 8:1-10'
 		},
 		{
 			week: 103,
@@ -255,14 +255,14 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 104,
 			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV: Romans 8:1-11'
+			kind: 'psalm',
+			title: 'Psalm 135'
 		},
 		{
 			week: 104,
-			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 135'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV: Romans 8:1-11'
 		},
 		{
 			week: 104,
@@ -315,14 +315,14 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 105,
 			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV: Romans 8:1-12'
+			kind: 'psalm',
+			title: 'Psalm 136'
 		},
 		{
 			week: 105,
-			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 136'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV: Romans 8:1-12'
 		},
 		{
 			week: 105,
@@ -375,14 +375,14 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 106,
 			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV: Romans 8:1-13'
+			kind: 'psalm',
+			title: 'Psalm 137,138'
 		},
 		{
 			week: 106,
-			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 137,138'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV: Romans 8:1-13'
 		},
 		{
 			week: 106,
@@ -435,14 +435,14 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 107,
 			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV: Romans 8:1-14'
+			kind: 'psalm',
+			title: 'Psalm 139'
 		},
 		{
 			week: 107,
-			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 139'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV: Romans 8:1-14'
 		},
 		{
 			week: 107,
@@ -495,14 +495,14 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 108,
 			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV: Romans 8:1-15'
+			kind: 'psalm',
+			title: 'Psalm 140'
 		},
 		{
 			week: 108,
-			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 140'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV: Romans 8:1-15'
 		},
 		{
 			week: 108,
@@ -555,14 +555,14 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 109,
 			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV: Romans 8:1-16'
+			kind: 'psalm',
+			title: 'Psalm 141,142'
 		},
 		{
 			week: 109,
-			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 141,142'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV: Romans 8:1-16'
 		},
 		{
 			week: 109,
@@ -615,14 +615,14 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 110,
 			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV: Romans 8:1-17'
+			kind: 'psalm',
+			title: 'Psalm 143'
 		},
 		{
 			week: 110,
-			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 143'
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV: Romans 8:1-17'
 		},
 		{
 			week: 110,

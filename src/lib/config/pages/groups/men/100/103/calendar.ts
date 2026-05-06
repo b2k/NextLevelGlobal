@@ -9,18 +9,18 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 34,
 			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 45'
-		},
-		{
-			week: 34,
-			dayOfWeek: 0,
 			kind: 'week',
 			title: 'Week 34'
 		},
 		{
 			week: 34,
 			dayOfWeek: 0,
+			kind: 'psalm',
+			title: 'Psalm 45'
+		},
+		{
+			week: 34,
+			dayOfWeek: 1,
 			kind: 'memory',
 			title: 'LCV: Eph 6:10'
 		},
@@ -69,18 +69,18 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 35,
 			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 46'
-		},
-		{
-			week: 35,
-			dayOfWeek: 0,
 			kind: 'week',
 			title: 'Week 35'
 		},
 		{
 			week: 35,
 			dayOfWeek: 0,
+			kind: 'psalm',
+			title: 'Psalm 46'
+		},
+		{
+			week: 35,
+			dayOfWeek: 1,
 			kind: 'memory',
 			title: 'LCV: Eph 6:10-11'
 		},
@@ -129,18 +129,18 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 36,
 			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 47,48'
-		},
-		{
-			week: 36,
-			dayOfWeek: 0,
 			kind: 'week',
 			title: 'Week 36'
 		},
 		{
 			week: 36,
 			dayOfWeek: 0,
+			kind: 'psalm',
+			title: 'Psalm 47,48'
+		},
+		{
+			week: 36,
+			dayOfWeek: 1,
 			kind: 'memory',
 			title: 'LCV: Eph 6:10-12'
 		},
@@ -189,18 +189,18 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 37,
 			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 49'
-		},
-		{
-			week: 37,
-			dayOfWeek: 0,
 			kind: 'week',
 			title: 'Week 37'
 		},
 		{
 			week: 37,
 			dayOfWeek: 0,
+			kind: 'psalm',
+			title: 'Psalm 49'
+		},
+		{
+			week: 37,
+			dayOfWeek: 1,
 			kind: 'memory',
 			title: 'LCV: Eph 6:10-13'
 		},
@@ -249,18 +249,18 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 38,
 			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 50'
-		},
-		{
-			week: 38,
-			dayOfWeek: 0,
 			kind: 'week',
 			title: 'Week 38'
 		},
 		{
 			week: 38,
 			dayOfWeek: 0,
+			kind: 'psalm',
+			title: 'Psalm 50'
+		},
+		{
+			week: 38,
+			dayOfWeek: 1,
 			kind: 'memory',
 			title: 'LCV: Eph 6:10-14'
 		},
@@ -309,18 +309,18 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 39,
 			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 51'
-		},
-		{
-			week: 39,
-			dayOfWeek: 0,
 			kind: 'week',
 			title: 'Week 39'
 		},
 		{
 			week: 39,
 			dayOfWeek: 0,
+			kind: 'psalm',
+			title: 'Psalm 51'
+		},
+		{
+			week: 39,
+			dayOfWeek: 1,
 			kind: 'memory',
 			title: 'LCV: Eph 6:10-15'
 		},
@@ -369,18 +369,18 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 40,
 			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 52'
-		},
-		{
-			week: 40,
-			dayOfWeek: 0,
 			kind: 'week',
 			title: 'Week 40'
 		},
 		{
 			week: 40,
 			dayOfWeek: 0,
+			kind: 'psalm',
+			title: 'Psalm 52'
+		},
+		{
+			week: 40,
+			dayOfWeek: 1,
 			kind: 'memory',
 			title: 'LCV: Eph 6:10-16'
 		},
@@ -429,18 +429,18 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 41,
 			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 53,54'
-		},
-		{
-			week: 41,
-			dayOfWeek: 0,
 			kind: 'week',
 			title: 'Week 41'
 		},
 		{
 			week: 41,
 			dayOfWeek: 0,
+			kind: 'psalm',
+			title: 'Psalm 53,54'
+		},
+		{
+			week: 41,
+			dayOfWeek: 1,
 			kind: 'memory',
 			title: 'LCV: Eph 6:10-17'
 		},
@@ -489,18 +489,18 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 42,
 			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 55'
-		},
-		{
-			week: 42,
-			dayOfWeek: 0,
 			kind: 'week',
 			title: 'Week 42'
 		},
 		{
 			week: 42,
 			dayOfWeek: 0,
+			kind: 'psalm',
+			title: 'Psalm 55'
+		},
+		{
+			week: 42,
+			dayOfWeek: 1,
 			kind: 'memory',
 			title: 'LCV: Eph 6:10-18'
 		},
@@ -549,18 +549,18 @@ export const calendar: GroupCalendarConfig = {
 		{
 			week: 43,
 			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 56,57'
-		},
-		{
-			week: 43,
-			dayOfWeek: 0,
 			kind: 'week',
 			title: 'Week 43'
 		},
 		{
 			week: 43,
 			dayOfWeek: 0,
+			kind: 'psalm',
+			title: 'Psalm 56,57'
+		},
+		{
+			week: 43,
+			dayOfWeek: 1,
 			kind: 'memory',
 			title: 'LCV: Eph 6:10-20'
 		},
