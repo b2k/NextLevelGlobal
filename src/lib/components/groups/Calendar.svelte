@@ -199,7 +199,6 @@
 	});
 
 	let visibleMonth = $state(startOfMonth(stripTime(new SvelteDate())));
-	let visibleYear = $state(new SvelteDate().getFullYear());
 
 	let customStartDate = $state('');
 
@@ -233,38 +232,19 @@
 	}
 	function previousMonth() {
 		visibleMonth = addMonths(visibleMonth, -1);
-		visibleYear = visibleMonth.getFullYear();
 	}
 
 	function nextMonth() {
 		visibleMonth = addMonths(visibleMonth, 1);
-		visibleYear = visibleMonth.getFullYear();
 	}
 
 	function previousYear() {
 		visibleMonth = new SvelteDate(visibleMonth.getFullYear() - 1, visibleMonth.getMonth(), 1);
-		visibleYear = visibleMonth.getFullYear();
 	}
 
 	function nextYear() {
 		visibleMonth = new SvelteDate(visibleMonth.getFullYear() + 1, visibleMonth.getMonth(), 1);
-		visibleYear = visibleMonth.getFullYear();
 	}
-	function setVisibleYear(event: Event) {
-		const year = Number((event.currentTarget as HTMLSelectElement).value);
-		if (!Number.isFinite(year)) return;
-		visibleYear = year;
-
-		visibleMonth = new SvelteDate(year, visibleMonth.getMonth(), 1);
-	}
-
-	let yearOptions = $derived.by(() => {
-		const currentYear = today.getFullYear();
-		const start = Math.min(currentYear - 5, visibleYear - 5);
-		const end = Math.max(currentYear + 5, visibleYear + 5);
-
-		return Array.from({ length: end - start + 1 }, (_, index) => start + index);
-	});
 
 	function goToToday() {
 		const target = clampMonth(startOfMonth(today), minVisibleMonth, maxVisibleMonth);
@@ -398,10 +378,6 @@
 </div>
 
 <style>
-	button.disabled {
-		opacity: 0.5;
-		cursor: not-allowed;
-	}
 	.calendar {
 		width: 100%;
 		background: #fff;

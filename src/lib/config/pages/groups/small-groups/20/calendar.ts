@@ -1,10 +1,10 @@
 import type { GroupCalendarConfig } from '$lib/config/models/calendars/groupCalendars';
 
 export const calendar: GroupCalendarConfig = {
-	title: 'Next Level 10',
-	defaultStartDate: '2025-01-12',
+	title: 'Next Level 20',
+	defaultStartDate: '2025-03-30',
 	startingWeek: 1,
-	description: 'Draft normalized from legacy ics: Sunday weekly track plus daily John reading track.',
+	description: 'Draft normalized from legacy ics: annual Next Level 20 reading track with LCV and Search CH entries.',
 	entries: [
 		{
 			week: 1,
@@ -14,45 +14,51 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 1,
-			dayOfWeek: 0,
+			dayOfWeek: 1,
 			kind: 'memory',
-			title: 'LCV John 1:12'
+			title: 'LCV Acts 2:42'
 		},
 		{
 			week: 1,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Ev Ch Ought Ch 1'
+			title: 'Search CH1'
+		},
+		{
+			week: 1,
+			dayOfWeek: 1,
+			kind: 'reading',
+			title: 'Acts 1:1-14 Q-1'
 		},
 		{
 			week: 1,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: 'John 1:1-18 Q-1'
+			title: 'Acts 1:15-26 Q-2'
 		},
 		{
 			week: 1,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: 'John 1:19-34 Q-2'
+			title: 'Acts 2:1-28 Q-3'
 		},
 		{
 			week: 1,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: 'John 1:35-51 Q-3'
+			title: 'Acts 2:29-47 Q-4'
 		},
 		{
 			week: 1,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: 'John 2:1-11 Q-4'
+			title: 'Acts 3:1-10 Q-5'
 		},
 		{
 			week: 1,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: 'John 2:12-25 Q-5'
+			title: 'Acts 3:11-26 Q-6'
 		},
 		{
 			week: 2,
@@ -62,51 +68,51 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 2,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV John 3:36'
-		},
-		{
-			week: 2,
 			dayOfWeek: 1,
-			kind: 'reading',
-			title: 'John 3:1-21 Q-6'
+			kind: 'memory',
+			title: 'LCV 1 Peter 2:9'
 		},
 		{
 			week: 2,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Ev Ch Ought Ch 2'
+			title: 'Search CH2'
+		},
+		{
+			week: 2,
+			dayOfWeek: 1,
+			kind: 'reading',
+			title: 'Acts 4:1-22 Q-7'
 		},
 		{
 			week: 2,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: 'John 3:22-36 Q-7'
+			title: 'Acts 4:23-37 Q-8'
 		},
 		{
 			week: 2,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: 'John 4:1-26 Q-8'
+			title: 'Acts 5:1-11 Q-9'
 		},
 		{
 			week: 2,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: 'John 4:27-42 Q-9'
+			title: 'Acts 5:12-24 Q-10'
 		},
 		{
 			week: 2,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: 'John 4:43-54 Q-10'
+			title: 'Acts 5:25-42 Q-11'
 		},
 		{
 			week: 2,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: 'John 5:1-15 Q-11'
+			title: 'Acts 6:1-15 Q-12'
 		},
 		{
 			week: 3,
@@ -116,51 +122,51 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 3,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV John 5:24'
-		},
-		{
-			week: 3,
 			dayOfWeek: 1,
-			kind: 'reading',
-			title: 'John 5:16-47 Q-12'
+			kind: 'memory',
+			title: 'LCV Proverbs 3:5-6'
 		},
 		{
 			week: 3,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Ev Ch Ought Ch 3'
+			title: 'Search CH3'
+		},
+		{
+			week: 3,
+			dayOfWeek: 1,
+			kind: 'reading',
+			title: 'Acts 7:1-29 Q-13'
 		},
 		{
 			week: 3,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: 'John 6:1-15 Q-13'
+			title: 'Acts 7:30-60 Q-14'
 		},
 		{
 			week: 3,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: 'John 6:16-24 Q-14'
+			title: 'Acts 8:1-25 Q-15'
 		},
 		{
 			week: 3,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: 'John 6:25-59 Q-15'
+			title: 'Acts 8:26-40 Q-16'
 		},
 		{
 			week: 3,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: 'John 6:60-7:13 Q-16'
+			title: 'Acts 9:1-31 Q-17'
 		},
 		{
 			week: 3,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: 'John 7:14-24 Q-17'
+			title: 'Acts 9:32-43 Q-18'
 		},
 		{
 			week: 4,
@@ -170,51 +176,51 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 4,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV John 10:10'
-		},
-		{
-			week: 4,
 			dayOfWeek: 1,
-			kind: 'reading',
-			title: 'John 7:25-44 Q-18'
+			kind: 'memory',
+			title: 'LCV 2 Corinthians 5:21'
 		},
 		{
 			week: 4,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Ev Ch Ought Ch 4'
+			title: 'Search CH4'
+		},
+		{
+			week: 4,
+			dayOfWeek: 1,
+			kind: 'reading',
+			title: 'Acts 10:1-23 Q-19'
 		},
 		{
 			week: 4,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: 'John 7:45-8:11 Q-19'
+			title: 'Acts 10:24-48 Q-20'
 		},
 		{
 			week: 4,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: 'John 8:12-30 Q-20'
+			title: 'Acts 11:1-18 Q-21'
 		},
 		{
 			week: 4,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: 'John 8:31-47 Q-21'
+			title: 'Acts 11:19-30 Q-22'
 		},
 		{
 			week: 4,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: 'John 8:48-59 Q-22'
+			title: 'Acts 12:1-19 Q-23'
 		},
 		{
 			week: 4,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: 'John 9:1-12 Q-23'
+			title: 'Acts 12:20-25 Q-24'
 		},
 		{
 			week: 5,
@@ -224,45 +230,51 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 5,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV John 10:27-28'
-		},
-		{
-			week: 5,
 			dayOfWeek: 1,
-			kind: 'reading',
-			title: 'John 9:13-34 Q-24'
+			kind: 'memory',
+			title: 'LCV Colossians 1:21-22'
 		},
 		{
 			week: 5,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Ev Ch Ought Ch 5'
+			title: 'Search CH5'
+		},
+		{
+			week: 5,
+			dayOfWeek: 1,
+			kind: 'reading',
+			title: 'Acts 13:1-31 Q-25'
 		},
 		{
 			week: 5,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: 'John 9:35-10:21 Q-25'
+			title: 'Acts 13:32-52 Q-26'
 		},
 		{
 			week: 5,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: 'John 10:22-42 Q-26'
+			title: 'Acts 14:1-28 Q-27'
 		},
 		{
 			week: 5,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: 'John 11:1-16 Q-27'
+			title: 'Acts 15:1-35 Q-28'
 		},
 		{
 			week: 5,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: 'John 11:17-37 Q-28'
+			title: 'Acts 15:36-16:15 Q-29'
+		},
+		{
+			week: 5,
+			dayOfWeek: 6,
+			kind: 'reading',
+			title: 'Acts 16:16-40 Q-30'
 		},
 		{
 			week: 6,
@@ -272,51 +284,51 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 6,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV John 10:27-28'
-		},
-		{
-			week: 6,
 			dayOfWeek: 1,
-			kind: 'reading',
-			title: 'John 11:38-57 Q-29'
+			kind: 'memory',
+			title: 'LCV 1 John 4:10-11'
 		},
 		{
 			week: 6,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Ev Ch Ought Ch 6'
+			title: 'Search CH6'
+		},
+		{
+			week: 6,
+			dayOfWeek: 1,
+			kind: 'reading',
+			title: 'Acts 17:1-15 Q-31'
 		},
 		{
 			week: 6,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: 'John 12:1-19 Q-30'
+			title: 'Acts 17:16-34 Q-32'
 		},
 		{
 			week: 6,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: 'John 12:20-36 Q-31'
+			title: 'Acts 18:1-17 Q-33'
 		},
 		{
 			week: 6,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: 'John 12:37-50 Q-32'
+			title: 'Acts 18:18-28 Q-34'
 		},
 		{
 			week: 6,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: 'John 13:1-17 Q-33'
+			title: 'Acts 19:1-20 Q-35'
 		},
 		{
 			week: 6,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: 'John 13:18-38 Q-34'
+			title: 'Acts 19:21-41 Q-36'
 		},
 		{
 			week: 7,
@@ -326,51 +338,57 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 7,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV John 12:24'
-		},
-		{
-			week: 7,
 			dayOfWeek: 1,
-			kind: 'reading',
-			title: 'John 14:1-14 Q-35'
+			kind: 'memory',
+			title: 'LCV Titus 3:5'
 		},
 		{
 			week: 7,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Ev Ch Ought Ch 7'
+			title: 'Search CH7'
+		},
+		{
+			week: 7,
+			dayOfWeek: 1,
+			kind: 'reading',
+			title: 'Acts 20:1-12 Q-37'
 		},
 		{
 			week: 7,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: 'John 14:15-31 Q-36'
+			title: 'Acts 20:13-38 Q-38'
 		},
 		{
 			week: 7,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: 'John 15:1-17 Q-37'
+			title: 'Acts 21:1-16 Q-39'
+		},
+		{
+			week: 7,
+			dayOfWeek: 4,
+			kind: 'book',
+			title: 'Search CH8'
 		},
 		{
 			week: 7,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: 'John 15:18-27 Q-38'
+			title: 'Acts 21:17-26 Q-40'
 		},
 		{
 			week: 7,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: 'John 16:1-16 Q-39'
+			title: 'Acts 21:27-36 Q-41'
 		},
 		{
 			week: 7,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: 'John 16: 17-33 Q-40'
+			title: 'Acts 21:37-40 Q-42'
 		},
 		{
 			week: 8,
@@ -380,45 +398,57 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 8,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV John 12:24-25'
-		},
-		{
-			week: 8,
 			dayOfWeek: 1,
-			kind: 'reading',
-			title: 'John 17:1-19 Q-41'
+			kind: 'memory',
+			title: 'LCV Acts 20:24'
 		},
 		{
 			week: 8,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Ev Ch Ought Ch 8'
+			title: 'Search CH9'
+		},
+		{
+			week: 8,
+			dayOfWeek: 1,
+			kind: 'reading',
+			title: 'Acts 22:1-21 Q-43'
 		},
 		{
 			week: 8,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: 'John 17:19-18:11 Q-42'
+			title: 'Acts 22:22-29 Q-44'
 		},
 		{
 			week: 8,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: 'John 18:12-27 Q-43'
+			title: 'Acts 22:30-23:11 Q-45'
+		},
+		{
+			week: 8,
+			dayOfWeek: 4,
+			kind: 'book',
+			title: 'Search CH10'
 		},
 		{
 			week: 8,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: 'John 18:28-40 Q-44'
+			title: 'Acts 23:12-22 Q-46'
 		},
 		{
 			week: 8,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: 'John 19:1-18 Q-45'
+			title: 'Acts 23:23-30 Q-47'
+		},
+		{
+			week: 8,
+			dayOfWeek: 6,
+			kind: 'reading',
+			title: 'Acts 23:31-35 Q-48'
 		},
 		{
 			week: 9,
@@ -428,45 +458,45 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 9,
-			dayOfWeek: 0,
-			kind: 'memory',
-			title: 'LCV John 13:34'
+			dayOfWeek: 1,
+			kind: 'book',
+			title: 'Search CH11'
 		},
 		{
 			week: 9,
 			dayOfWeek: 1,
 			kind: 'reading',
-			title: 'John 19:19-37 Q-46'
-		},
-		{
-			week: 9,
-			dayOfWeek: 1,
-			kind: 'book',
-			title: 'Ev Ch Ought Ch 9'
+			title: 'Acts 24:1-16 Q-49'
 		},
 		{
 			week: 9,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: 'John 19:38-20:9 Q-47'
+			title: 'Acts 24:17-27 Q-50'
 		},
 		{
 			week: 9,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: 'John 20:10-23 Q-48'
+			title: 'Acts 25:1-12 Q-51'
 		},
 		{
 			week: 9,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: 'John 20:24-21:14 Q-49'
+			title: 'Acts 25:13-27 Q-52'
 		},
 		{
 			week: 9,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: 'John 21:15-25 Q-50'
+			title: 'Acts 26:1-18 Q-53'
+		},
+		{
+			week: 9,
+			dayOfWeek: 6,
+			kind: 'reading',
+			title: 'Acts 26:19-32 Q-54'
 		},
 		{
 			week: 10,
@@ -476,27 +506,57 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 10,
-			dayOfWeek: 0,
+			dayOfWeek: 1,
 			kind: 'memory',
-			title: 'LCV John 15:5'
+			title: 'Recite All Verses'
 		},
 		{
 			week: 10,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Ev Ch Ought Ch 10'
+			title: 'Search CH12'
+		},
+		{
+			week: 10,
+			dayOfWeek: 1,
+			kind: 'reading',
+			title: 'Acts 27:1-12 Q-55'
+		},
+		{
+			week: 10,
+			dayOfWeek: 2,
+			kind: 'reading',
+			title: 'Acts 27:13-26 Q-56'
 		},
 		{
 			week: 10,
 			dayOfWeek: 3,
+			kind: 'reading',
+			title: 'Acts 27:27-44 Q-57'
+		},
+		{
+			week: 10,
+			dayOfWeek: 4,
 			kind: 'book',
-			title: 'Ev Ch Ought Ch 11'
+			title: 'Search CH13'
+		},
+		{
+			week: 10,
+			dayOfWeek: 4,
+			kind: 'reading',
+			title: 'Acts 28:1-10 Q-58'
 		},
 		{
 			week: 10,
 			dayOfWeek: 5,
-			kind: 'book',
-			title: 'Ev Ch Ought Ch 12'
+			kind: 'reading',
+			title: 'Acts 28:11-16 Q-59'
+		},
+		{
+			week: 10,
+			dayOfWeek: 6,
+			kind: 'reading',
+			title: 'Acts 28:17-31 Q-60'
 		}
 	]
 };
