@@ -1,4 +1,7 @@
-function parseLocalDate(value: string): Date | null {
+export function parseLocalDate(value: string | Date): Date | null {
+	if (value instanceof Date) {
+		return value;
+	}
 	const trimmed = value.trim();
 
 	let year: number;

@@ -1,9 +1,5 @@
-import path from 'path';
 import type { CalendarEntry, GroupCalendarConfig } from './groupCalendars';
 import { resolveCalendarStartDate } from './resolveCalendarStartDate';
-import { error } from 'console';
-import { jsonClone } from '$lib/utils/jsonClone';
-import { pageByPath } from '../pages';
 
 function parseLocalDate(value: string): Date {
 	const [y, m, d] = value.split('-').map(Number);
@@ -26,38 +22,18 @@ function combine(date: Date, time: string): string {
 	dt.setHours(h, m, 0, 0);
 	return dt.toISOString();
 }
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function resolveCalendarPage(params: any, cookies: any, url: any) {
-	let configPath = params.path;
-	const cookiesPath = path.join(...(params.path?.split('/') ?? []).filter(Boolean));
-	console.log('Calendar GET request for path:', configPath);
-	if (!configPath) {
-		throw error(404, 'Calendar not found');
-	}
-	if (configPath.endsWith('.ics')) {
-		configPath = configPath.slice(0, -4);
-	}
+export function createCalendarByReferenceDate(
+	calendar: GroupCalendarConfig,
+	customStartDate: string,
+	referenceDate: Date
+) {
+	const resolvedStartDate =
+		resolveCalendarStartDate(calendar.defaultStartDate, customStartDate, referenceDate) || '';
 
-	const page = jsonClone(pageByPath.get(configPath));
-
-	if (!page?.calendar) {
-		throw error(404, `Calendar not found: ${configPath}`);
-	}
-
-	const customStartDate = cookies.get(`customStartDate:${cookiesPath}`);
-	console.log('Custom start date from cookie:', customStartDate);
-
-	const startDate = resolveCalendarStartDate(
-		page.calendar.defaultStartDate,
-		customStartDate || url.searchParams.get('start-date')
-	);
-
-	const entries = startDate ? generateCalendarEntries(page.calendar, startDate) : [];
-
-	page.calendar.defaultStartDate = startDate ?? page.calendar.defaultStartDate;
-	page.calendar.entries = entries;
-	return { page, configPath };
+	const entries = generateCalendarEntries(calendar, resolvedStartDate) ?? [];
+	return { startDate: resolvedStartDate, entries };
 }
+
 export function generateCalendarEntries(
 	template: GroupCalendarConfig,
 	startDate: string

@@ -1,9 +1,9 @@
 import { error } from '@sveltejs/kit';
 import { buildCalendarIcs } from '$lib/config/models/calendars/calendar';
-import { resolveCalendarPage } from '$lib/config/models/calendars/generateCalendarEntries';
+import { resolveCalendarPage } from '$lib/config/models/calendars/resolveCalendarPage';
 
 export function GET({ params, url, cookies }) {
-	const { page, configPath } = resolveCalendarPage(params, cookies, url);
+	const { page, configPath } = resolveCalendarPage({ params, cookies, url });
 	if (!page?.calendar) {
 		throw error(404, `Calendar not found: ${configPath}`);
 	}
@@ -24,5 +24,3 @@ export function GET({ params, url, cookies }) {
 		}
 	});
 }
-
-

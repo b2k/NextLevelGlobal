@@ -7,6 +7,7 @@
 	import { SvelteDate } from 'svelte/reactivity';
 	import { browser } from '$app/environment';
 	import { onMount } from 'svelte';
+	import { createCalendarByReferenceDate } from '$lib/config/models/calendars/generateCalendarEntries';
 
 	type Props = {
 		calendar: GroupCalendarConfig;
@@ -144,8 +145,15 @@
 		return calendarEntryColors[kind] ?? defaultEntryColor;
 	}
 
+	let generatedEntries = $state<CalendarEntry[]>(calendar.entries ?? []);
+
+	$effect(() => {
+		const { entries } = createCalendarByReferenceDate(calendar, customStartDate, visibleMonth);
+		generatedEntries = entries ?? [];
+	});
+
 	let normalizedEntries = $derived.by(() => {
-		return (calendar.entries ?? [])
+		return (generatedEntries ?? [])
 			.filter((entry) => entry.date)
 			.map((entry) => {
 				return {
@@ -191,12 +199,7 @@
 	});
 
 	let visibleMonth = $state(startOfMonth(stripTime(new SvelteDate())));
-
-	let canGoPrevious = $derived(monthKey(visibleMonth) > monthKey(minVisibleMonth));
-	let canGoNext = $derived(monthKey(visibleMonth) < monthKey(maxVisibleMonth));
-	let canGoToday = $derived(
-		monthKey(minVisibleMonth) <= monthKey(today) && monthKey(today) <= monthKey(maxVisibleMonth)
-	);
+	let visibleYear = $state(new SvelteDate().getFullYear());
 
 	let customStartDate = $state('');
 
@@ -229,14 +232,39 @@
 		location.reload();
 	}
 	function previousMonth() {
-		if (!canGoPrevious) return;
 		visibleMonth = addMonths(visibleMonth, -1);
+		visibleYear = visibleMonth.getFullYear();
 	}
 
 	function nextMonth() {
-		if (!canGoNext) return;
 		visibleMonth = addMonths(visibleMonth, 1);
+		visibleYear = visibleMonth.getFullYear();
 	}
+
+	function previousYear() {
+		visibleMonth = new SvelteDate(visibleMonth.getFullYear() - 1, visibleMonth.getMonth(), 1);
+		visibleYear = visibleMonth.getFullYear();
+	}
+
+	function nextYear() {
+		visibleMonth = new SvelteDate(visibleMonth.getFullYear() + 1, visibleMonth.getMonth(), 1);
+		visibleYear = visibleMonth.getFullYear();
+	}
+	function setVisibleYear(event: Event) {
+		const year = Number((event.currentTarget as HTMLSelectElement).value);
+		if (!Number.isFinite(year)) return;
+		visibleYear = year;
+
+		visibleMonth = new SvelteDate(year, visibleMonth.getMonth(), 1);
+	}
+
+	let yearOptions = $derived.by(() => {
+		const currentYear = today.getFullYear();
+		const start = Math.min(currentYear - 5, visibleYear - 5);
+		const end = Math.max(currentYear + 5, visibleYear + 5);
+
+		return Array.from({ length: end - start + 1 }, (_, index) => start + index);
+	});
 
 	function goToToday() {
 		const target = clampMonth(startOfMonth(today), minVisibleMonth, maxVisibleMonth);
@@ -288,36 +316,36 @@
 		onselect?.(date);
 	}
 </script>
+
 <div class="calendar">
 	<div class="calendar-toolbar">
 		<div class="calendar-toolbar-left">
-			<button
-				type="button"
-				class={`toolbar-btn today-btn ${!canGoToday ? 'disabled' : ''}`}
-				onclick={goToToday}
-				disabled={!canGoToday}>Today</button
-			>
+			<button type="button" class="toolbar-btn today-btn" onclick={goToToday}>Today</button>
 			<div class="month-nav">
 				<button
 					type="button"
-					class={`toolbar-btn nav-btn ${!canGoPrevious ? 'disabled' : ''}`}
+					class="toolbar-btn nav-btn"
+					onclick={previousYear}
+					aria-label="Previous year"
+				>
+					«
+				</button>
+				<button
+					type="button"
+					class="toolbar-btn nav-btn"
 					onclick={previousMonth}
-					disabled={!canGoPrevious}
 					aria-label="Previous month"
 				>
 					‹
 				</button>
-				<button
-					type="button"
-					class={`toolbar-btn nav-btn ${!canGoNext ? 'disabled' : ''}`}
-					onclick={nextMonth}
-					disabled={!canGoNext}
-					aria-label="Next month"
-				>
-					›
-				</button>
 			</div>
 			<h3 class="calendar-title">{formatMonth(visibleMonth)}</h3>
+			<button type="button" class="toolbar-btn nav-btn" onclick={nextMonth} aria-label="Next month">
+				›
+			</button>
+			<button type="button" class="toolbar-btn nav-btn" onclick={nextYear} aria-label="Next year">
+				»
+			</button>
 		</div>
 		<div class="calendar-toolbar-right">
 			<label for="custom-start-date" class="custom-start-date-label"> Custom Start Date </label>
@@ -405,8 +433,10 @@
 		color: #243247;
 	}
 
-	.month-nav {
+	.month-nav,
+	.year-nav {
 		display: flex;
+		align-items: center;
 		gap: 0.35rem;
 	}
 
