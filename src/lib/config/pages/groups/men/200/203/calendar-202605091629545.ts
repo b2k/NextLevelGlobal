@@ -1,616 +1,652 @@
 import type { GroupCalendarConfig } from '$lib/config/models/calendars/groupCalendars';
 
 export const calendar: GroupCalendarConfig = {
-	title: 'Next Level 103',
-	defaultStartDate: '2026-09-13',
-	startingWeek: 34,
-	description: 'Calendar for Next Level 103-Level Men\'s Group',
+	title: 'Next Level 203',
+	defaultStartDate: '2026-08-30',
+	startingWeek: 76,
+	description: '203-Level Group Calendar',
 	entries: [
 		{
-			week: 34,
+			week: 76,
 			dayOfWeek: 0,
 			kind: 'week',
-			title: 'Week 34'
+			title: 'Week 76'
 		},
 		{
-			week: 34,
+			week: 76,
 			dayOfWeek: 0,
-			kind: 'psalm',
-			title: 'Psalm 45'
+			kind: 'reading',
+			title: 'Psalm 103:1-2'
 		},
 		{
-			week: 34,
+			week: 76,
 			dayOfWeek: 1,
 			kind: 'memory',
-			title: 'LCV: Eph 6:10'
+			title: 'Review'
 		},
 		{
-			week: 34,
+			week: 76,
 			dayOfWeek: 1,
 			kind: 'reading',
-			title: 'Ephesians 1'
+			title: 'John 15:1-17'
 		},
 		{
-			week: 34,
+			week: 76,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Titus 10 Intro'
+			title: 'Knowing God Ch 11'
 		},
 		{
-			week: 34,
-			dayOfWeek: 2,
-			kind: 'reading',
-			title: 'Ephesians 2'
-		},
-		{
-			week: 34,
-			dayOfWeek: 3,
-			kind: 'reading',
-			title: 'Ephesians 3'
-		},
-		{
-			week: 34,
-			dayOfWeek: 4,
-			kind: 'reading',
-			title: 'Ephesians 4'
-		},
-		{
-			week: 34,
-			dayOfWeek: 5,
-			kind: 'reading',
-			title: 'Ephesians 5'
-		},
-		{
-			week: 34,
-			dayOfWeek: 6,
-			kind: 'reading',
-			title: 'Ephesians 6'
-		},
-		{
-			week: 35,
+			week: 77,
 			dayOfWeek: 0,
 			kind: 'week',
-			title: 'Week 35'
+			title: 'Week 77'
 		},
 		{
-			week: 35,
+			week: 77,
 			dayOfWeek: 0,
 			kind: 'psalm',
-			title: 'Psalm 46'
+			title: 'Psalm 98,99'
 		},
 		{
-			week: 35,
+			week: 77,
 			dayOfWeek: 1,
 			kind: 'memory',
-			title: 'LCV: Eph 6:10-11'
+			title: 'LCV Joshua 1:8'
 		},
 		{
-			week: 35,
+			week: 77,
 			dayOfWeek: 1,
 			kind: 'reading',
-			title: 'Numbers 16'
+			title: 'Hebrews 1'
 		},
 		{
-			week: 35,
+			week: 77,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Titus 10 Ch 1'
+			title: 'Knowing God Ch 12'
 		},
 		{
-			week: 35,
+			week: 77,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: 'Numbers 17'
+			title: 'Hebrews 2'
 		},
 		{
-			week: 35,
+			week: 77,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: 'Numbers 20'
+			title: 'Hebrews 3'
 		},
 		{
-			week: 35,
+			week: 77,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: 'Numbers 21'
+			title: 'Hebrews 4'
 		},
 		{
-			week: 35,
+			week: 77,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: 'Numbers 22'
+			title: 'Hebrews 5'
 		},
 		{
-			week: 35,
+			week: 77,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: 'Numbers 23'
+			title: 'Hebrews 6'
 		},
 		{
-			week: 36,
+			week: 78,
 			dayOfWeek: 0,
 			kind: 'week',
-			title: 'Week 36'
+			title: 'Week 78'
 		},
 		{
-			week: 36,
+			week: 78,
 			dayOfWeek: 0,
 			kind: 'psalm',
-			title: 'Psalm 47,48'
+			title: 'Psalm 100,101'
 		},
 		{
-			week: 36,
+			week: 78,
 			dayOfWeek: 1,
 			kind: 'memory',
-			title: 'LCV: Eph 6:10-12'
+			title: 'LCV Philippians 4:6,7'
 		},
 		{
-			week: 36,
+			week: 78,
 			dayOfWeek: 1,
 			kind: 'reading',
-			title: 'Numbers 24'
+			title: 'Hebrews 7'
 		},
 		{
-			week: 36,
+			week: 78,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Titus 10 Ch 2'
+			title: 'Knowing God Ch 13'
 		},
 		{
-			week: 36,
+			week: 78,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: 'Numbers 25'
+			title: 'Hebrews 8'
 		},
 		{
-			week: 36,
+			week: 78,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: '1 Corinthians 1'
+			title: 'Hebrews 9'
 		},
 		{
-			week: 36,
+			week: 78,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: '1 Corinthians 2'
+			title: 'Hebrews 10'
 		},
 		{
-			week: 36,
+			week: 78,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: '1 Corinthians 3'
+			title: 'Hebrews 11'
 		},
 		{
-			week: 36,
+			week: 78,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: '1 Corinthians 4'
+			title: 'Hebrews 12'
 		},
 		{
-			week: 37,
+			week: 79,
 			dayOfWeek: 0,
 			kind: 'week',
-			title: 'Week 37'
+			title: 'Week 79'
 		},
 		{
-			week: 37,
+			week: 79,
 			dayOfWeek: 0,
 			kind: 'psalm',
-			title: 'Psalm 49'
+			title: 'Psalm 102'
 		},
 		{
-			week: 37,
+			week: 79,
 			dayOfWeek: 1,
 			kind: 'memory',
-			title: 'LCV: Eph 6:10-13'
+			title: 'LCV 1 John 1:9'
 		},
 		{
-			week: 37,
+			week: 79,
 			dayOfWeek: 1,
 			kind: 'reading',
-			title: '1 Corinthians 4'
+			title: 'Hebrews 13'
 		},
 		{
-			week: 37,
+			week: 79,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Titus 10 Ch 3'
+			title: 'Knowing God Ch 14'
 		},
 		{
-			week: 37,
+			week: 79,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: '1 Corinthians 6'
+			title: '2 Kings 1'
 		},
 		{
-			week: 37,
+			week: 79,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: '1 Corinthians 7'
+			title: '2 Kings 2'
 		},
 		{
-			week: 37,
+			week: 79,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: '1 Corinthians 8'
+			title: '2 Kings 3'
 		},
 		{
-			week: 37,
+			week: 79,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: '1 Corinthians 9'
+			title: '2 Kings 4'
 		},
 		{
-			week: 37,
+			week: 79,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: '1 Corinthians 10'
+			title: '2 Kings 5'
 		},
 		{
-			week: 38,
+			week: 80,
 			dayOfWeek: 0,
 			kind: 'week',
-			title: 'Week 38'
+			title: 'Week 80'
 		},
 		{
-			week: 38,
+			week: 80,
 			dayOfWeek: 0,
 			kind: 'psalm',
-			title: 'Psalm 50'
+			title: 'Psalm 103'
 		},
 		{
-			week: 38,
+			week: 80,
 			dayOfWeek: 1,
 			kind: 'memory',
-			title: 'LCV: Eph 6:10-14'
+			title: 'LCV Hebrews 10:24,25'
 		},
 		{
-			week: 38,
+			week: 80,
 			dayOfWeek: 1,
 			kind: 'reading',
-			title: '1 Corinthians 11'
+			title: '2 Kings 6'
 		},
 		{
-			week: 38,
+			week: 80,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Titus 10 Ch 4'
+			title: 'Knowing God Ch 15'
 		},
 		{
-			week: 38,
+			week: 80,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: '1 Corinthians 12'
+			title: '2 Kings 7'
 		},
 		{
-			week: 38,
+			week: 80,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: '1 Corinthians 13'
+			title: '2 Kings 8'
 		},
 		{
-			week: 38,
+			week: 80,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: '1 Corinthians 14'
+			title: '2 Kings 9'
 		},
 		{
-			week: 38,
+			week: 80,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: '1 Corinthians 15'
+			title: '2 Kings 10'
 		},
 		{
-			week: 38,
+			week: 80,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: '1 Corinthians 16'
+			title: '2 Kings 11'
 		},
 		{
-			week: 39,
+			week: 81,
 			dayOfWeek: 0,
 			kind: 'week',
-			title: 'Week 39'
+			title: 'Week 81'
 		},
 		{
-			week: 39,
+			week: 81,
 			dayOfWeek: 0,
 			kind: 'psalm',
-			title: 'Psalm 51'
+			title: 'Psalm 104'
 		},
 		{
-			week: 39,
+			week: 81,
 			dayOfWeek: 1,
 			kind: 'memory',
-			title: 'LCV: Eph 6:10-15'
+			title: 'LCV Ephesians 2:8-10'
 		},
 		{
-			week: 39,
+			week: 81,
 			dayOfWeek: 1,
 			kind: 'reading',
-			title: 'Deuteronomy 1'
+			title: '2 Kings 12'
 		},
 		{
-			week: 39,
+			week: 81,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Titus 10 Ch 5'
+			title: 'Knowing God Ch 16'
 		},
 		{
-			week: 39,
+			week: 81,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: 'Deuteronomy 2'
+			title: '2 Kings 13'
 		},
 		{
-			week: 39,
+			week: 81,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: 'Deuteronomy 3'
+			title: '2 Kings 14'
 		},
 		{
-			week: 39,
+			week: 81,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: 'Deuteronomy 4'
+			title: '2 Kings 15'
 		},
 		{
-			week: 39,
+			week: 81,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: 'Deuteronomy 5'
+			title: '2 Kings 16'
 		},
 		{
-			week: 39,
+			week: 81,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: 'Deuteronomy 6'
+			title: '2 Kings 17'
 		},
 		{
-			week: 40,
+			week: 82,
 			dayOfWeek: 0,
 			kind: 'week',
-			title: 'Week 40'
+			title: 'Week 82'
 		},
 		{
-			week: 40,
+			week: 82,
 			dayOfWeek: 0,
 			kind: 'psalm',
-			title: 'Psalm 52'
+			title: 'Psalm 105'
 		},
 		{
-			week: 40,
+			week: 82,
 			dayOfWeek: 1,
 			kind: 'memory',
-			title: 'LCV: Eph 6:10-16'
+			title: 'LCV 1 Corinthians 6:19,20'
 		},
 		{
-			week: 40,
+			week: 82,
 			dayOfWeek: 1,
 			kind: 'reading',
-			title: 'Deuteronomy 7'
+			title: '2 Kings 18'
 		},
 		{
-			week: 40,
+			week: 82,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Titus 10 Ch 6'
+			title: 'Knowing God Ch 17'
 		},
 		{
-			week: 40,
+			week: 82,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: 'Deuteronomy 8'
+			title: '2 Kings 19'
 		},
 		{
-			week: 40,
+			week: 82,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: 'Deuteronomy 31'
+			title: '2 Kings 20'
 		},
 		{
-			week: 40,
+			week: 82,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: 'Deuteronomy 34'
+			title: '2 Kings 21'
 		},
 		{
-			week: 40,
+			week: 82,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: 'Joshua 1'
+			title: '2 Kings 22'
 		},
 		{
-			week: 40,
+			week: 82,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: 'Joshua 2'
+			title: '2 Kings 23'
 		},
 		{
-			week: 41,
+			week: 83,
 			dayOfWeek: 0,
 			kind: 'week',
-			title: 'Week 41'
+			title: 'Week 83'
 		},
 		{
-			week: 41,
+			week: 83,
 			dayOfWeek: 0,
 			kind: 'psalm',
-			title: 'Psalm 53,54'
+			title: 'Psalm 106'
 		},
 		{
-			week: 41,
+			week: 83,
 			dayOfWeek: 1,
 			kind: 'memory',
-			title: 'LCV: Eph 6:10-17'
+			title: 'LCV Isaiah 41:10'
 		},
 		{
-			week: 41,
+			week: 83,
 			dayOfWeek: 1,
 			kind: 'reading',
-			title: 'Joshua 3'
+			title: '2 Kings 24'
 		},
 		{
-			week: 41,
+			week: 83,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Titus 10 Ch 7'
+			title: 'Knowing God Ch 18'
 		},
 		{
-			week: 41,
+			week: 83,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: 'Joshua 4'
+			title: '2 Kings 25'
 		},
 		{
-			week: 41,
+			week: 83,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: 'Joshua 5'
+			title: 'Ezra 1'
 		},
 		{
-			week: 41,
+			week: 83,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: 'Joshua 6'
+			title: 'Ezra 2'
 		},
 		{
-			week: 41,
+			week: 83,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: 'Joshua 7'
+			title: 'Ezra 3'
 		},
 		{
-			week: 41,
+			week: 83,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: 'Joshua 8'
+			title: 'Ezra 4'
 		},
 		{
-			week: 42,
+			week: 84,
 			dayOfWeek: 0,
 			kind: 'week',
-			title: 'Week 42'
+			title: 'Week 84'
 		},
 		{
-			week: 42,
+			week: 84,
 			dayOfWeek: 0,
 			kind: 'psalm',
-			title: 'Psalm 55'
+			title: 'Psalm 107'
 		},
 		{
-			week: 42,
+			week: 84,
 			dayOfWeek: 1,
 			kind: 'memory',
-			title: 'LCV: Eph 6:10-18'
+			title: 'LCV Isaiah 26:3'
 		},
 		{
-			week: 42,
+			week: 84,
 			dayOfWeek: 1,
 			kind: 'reading',
-			title: 'Joshua 9'
+			title: 'Ezra 5'
 		},
 		{
-			week: 42,
+			week: 84,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Titus 10 Ch 8'
+			title: 'Knowing God Ch 19'
 		},
 		{
-			week: 42,
+			week: 84,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: 'Joshua 10'
+			title: 'Ezra 6'
 		},
 		{
-			week: 42,
+			week: 84,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: 'Joshua 11'
+			title: 'Ezra 7'
 		},
 		{
-			week: 42,
+			week: 84,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: 'Joshua 12,13'
+			title: 'Ezra 8'
 		},
 		{
-			week: 42,
+			week: 84,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: 'Joshua 14'
+			title: 'Ezra 9'
 		},
 		{
-			week: 42,
+			week: 84,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: 'Joshua 22'
+			title: 'Ezra 10'
 		},
 		{
-			week: 43,
+			week: 85,
 			dayOfWeek: 0,
 			kind: 'week',
-			title: 'Week 43'
+			title: 'Week 85'
 		},
 		{
-			week: 43,
+			week: 85,
 			dayOfWeek: 0,
 			kind: 'psalm',
-			title: 'Psalm 56,57'
+			title: 'Psalm 108'
 		},
 		{
-			week: 43,
+			week: 85,
 			dayOfWeek: 1,
 			kind: 'memory',
-			title: 'LCV: Eph 6:10-20'
+			title: 'LCV 1 Corinthians 10:13'
 		},
 		{
-			week: 43,
+			week: 85,
 			dayOfWeek: 1,
 			kind: 'reading',
-			title: 'Joshua 23'
+			title: 'Colossians 1'
 		},
 		{
-			week: 43,
+			week: 85,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Titus 10 Ch 9'
+			title: 'Knowing God Ch 20'
 		},
 		{
-			week: 43,
+			week: 85,
 			dayOfWeek: 2,
 			kind: 'reading',
-			title: 'Joshua 24'
+			title: 'Colossians 2'
 		},
 		{
-			week: 43,
+			week: 85,
 			dayOfWeek: 3,
 			kind: 'reading',
-			title: 'Philippians 1'
+			title: 'Colossians 3'
 		},
 		{
-			week: 43,
+			week: 85,
 			dayOfWeek: 4,
 			kind: 'reading',
-			title: 'Philippians 2'
+			title: 'Colossians 4'
 		},
 		{
-			week: 43,
-			dayOfWeek: 4,
-			kind: 'book',
-			title: 'Titus 10 Ch 10'
-		},
-		{
-			week: 43,
+			week: 85,
 			dayOfWeek: 5,
 			kind: 'reading',
-			title: 'Philippians 3'
+			title: '1 Thessalonians 1'
 		},
 		{
-			week: 43,
+			week: 85,
 			dayOfWeek: 6,
 			kind: 'reading',
-			title: 'Philippians 4'
+			title: '1 Thessalonians 2'
+		},
+		{
+			week: 86,
+			dayOfWeek: 0,
+			kind: 'psalm',
+			title: 'Psalm 109'
+		},
+		{
+			week: 86,
+			dayOfWeek: 0,
+			kind: 'week',
+			title: 'Week 86'
+		},
+		{
+			week: 86,
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'LCV Matthew 6:33,34'
+		},
+		{
+			week: 86,
+			dayOfWeek: 1,
+			kind: 'reading',
+			title: '1 Thessalonians 3'
+		},
+		{
+			week: 86,
+			dayOfWeek: 1,
+			kind: 'book',
+			title: 'Knowing God Ch 21'
+		},
+		{
+			week: 86,
+			dayOfWeek: 2,
+			kind: 'reading',
+			title: '1 Thessalonians 4'
+		},
+		{
+			week: 86,
+			dayOfWeek: 3,
+			kind: 'reading',
+			title: '1 Thessalonians 5'
+		},
+		{
+			week: 86,
+			dayOfWeek: 4,
+			kind: 'reading',
+			title: '2 Thessalonians 1'
+		},
+		{
+			week: 86,
+			dayOfWeek: 5,
+			kind: 'reading',
+			title: '2 Thessalonians 2'
+		},
+		{
+			week: 86,
+			dayOfWeek: 6,
+			kind: 'reading',
+			title: '2 Thessalonians 3'
+		},
+		{
+			week: 87,
+			dayOfWeek: 0,
+			kind: 'week',
+			title: 'Week 87'
+		},
+		{
+			week: 87,
+			dayOfWeek: 1,
+			kind: 'memory',
+			title: 'Review LCV'
 		}
 	]
 };
