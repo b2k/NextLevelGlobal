@@ -3,6 +3,7 @@
 	import MenuItems from './MenuItems.svelte';
 	import type { NavLinkItem } from '$lib/config/navigation';
 	import { page } from '$app/state';
+	import { r } from '$lib/config/translations';
 
 	interface Props {
 		items: NavLinkItem[];
@@ -40,7 +41,7 @@
 				href={resolveWrapper(item.href)}
 				onclick={closeMenu}
 			>
-				<span>{item.label}</span>
+				<span>{r(item.label)}</span>
 				<span class="submenu-caret">›</span>
 			</a>
 
@@ -56,7 +57,7 @@
 				href={resolveWrapper(item.href)}
 				onclick={closeMenu}
 			>
-				{item.label}
+				{r(item.label)}
 			</a>
 		</li>
 	{/if}

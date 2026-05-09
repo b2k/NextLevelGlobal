@@ -6,6 +6,7 @@
 	import { titleCase } from '$lib/utils/formatters.js';
 	import Description from './Description.svelte';
 	import { dev } from '$app/environment';
+	import { r } from '$lib/config/translations';
 
 	let { data, params } = $props();
 
@@ -82,11 +83,11 @@
 					{#if data.page.title || data.page.subtitle}
 						<header class="group-page__header">
 							{#if data.page.title}
-								<h1>{data.page.title}</h1>
+								<h1>{r(data.page.title)}</h1>
 							{/if}
 
 							{#if data.page.subtitle}
-								<p>{data.page.subtitle}</p>
+								<p>{r(data.page.subtitle)}</p>
 							{/if}
 						</header>
 					{/if}
@@ -104,11 +105,11 @@
 			<!-- Calendar component will go here -->
 			<Calendar calendar={data?.page.calendar} path={params.path} />
 			<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-			<a href={calendarPath} class="btn btn--primary" data-sveltekit-reload>Download Calendar</a>
+			<a href={calendarPath} class="btn btn--primary" data-sveltekit-reload>{r('Download Calendar')}</a>
 
 			{#if subscribeUrl}
 				<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-				<a href={subscribeUrl} class="btn btn--secondary" data-sveltekit-reload>Subscribe</a>
+				<a href={subscribeUrl} class="btn btn--secondary" data-sveltekit-reload>{r('Subscribe')}</a>
 			{/if}
 		</div>
 	{/if}

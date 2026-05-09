@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { SectionItem } from '$lib/config/models/types';
+	import { r } from '$lib/config/translations';
 	import { itemHref, itemSecondaryHref, toYouTubeEmbedUrl } from '$lib/utils/linkHelpers';
 
 	let { item }: { item: SectionItem } = $props();
@@ -16,11 +17,11 @@
 				</a>
 			</div>
 		{:else}
-			<h3>{item.title}</h3>
+			<h3>{r(item.title)}</h3>
 		{/if}
 
 		{#if item.description}
-			<p>{item.description}</p>
+			<p>{r(item.description)}</p>
 		{/if}
 
 		{#if item.buyUrl || item.questionsPdf}
@@ -32,12 +33,12 @@
 						target="_blank"
 						rel="noopener"
 					>
-						Purchase
+						{r('Purchase')}
 					</a>
 				{/if}
 				{#if item.questionsPdf}
 					<a class="group-tile" href={itemSecondaryHref(item)} target="_blank" rel="noopener">
-						Questions PDF
+						{r('Questions PDF')}
 					</a>
 				{/if}
 			</div>
@@ -46,7 +47,7 @@
 {:else if item.type === 'video'}
 	<div class="section-video">
 		{#if item.title}
-			<h3>{item.title}</h3>
+			<h3>{r(item.title)}</h3>
 		{/if}
 
 		<div class="section-video__frame">
@@ -60,16 +61,16 @@
 		</div>
 
 		{#if item.description}
-			<p>{item.description}</p>
+			<p>{r(item.description)}</p>
 		{/if}
 	</div>
 {:else if item.type === 'link'}
 	<a class="group-tile" href={itemHref(item)} target={item.target}>
-		{item.title}
+		{r(item.title)}
 	</a>
 {:else}
 	<a class="group-tile" href={itemHref(item)} target="_blank" rel="noopener">
-		{item.title}
+		{r(item.title)}
 	</a>
 {/if}
 

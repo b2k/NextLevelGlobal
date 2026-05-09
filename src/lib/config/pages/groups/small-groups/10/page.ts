@@ -4,7 +4,11 @@ import { calendar } from './calendar';
 export const page: GroupPage = {
 	id: 'small-groups-10',
 	title: 'Small Groups 10',
-	description: 'Next Level 10 is the first in a series of three introductory small group discipleship programs. Each 10 week program is meant to build upon each other and is designed to get you ready to engage fully with the more expansive Next Level 3-year discipleship program.\n\nJoin us for a 10 week introduction to daily spiritual disciplines. We read the gospel of John, \"What Every Christian Ought to Know\" by Adrian Rogers, and memorize 10 life-changing scripture verses from the gospel of John. This is a great place to start if you are new to small groups or want to get started with the rhythm of Christian discipleship. \n\n<a href=\"/about-us/contact-us\">Contact us</a> to learn more about how to get involved in a Next Level 10 small group.',
+	description: `Next Level 10 is the first in a series of three introductory small group discipleship programs. Each 10 week program is meant to build upon each other and is designed to get you ready to engage fully with the more expansive Next Level 3-year discipleship program.
+
+Join us for a 10 week introduction to daily spiritual disciplines. We read the gospel of John, "What Every Christian Ought to Know" by Adrian Rogers, and memorize 10 life-changing scripture verses from the gospel of John. This is a great place to start if you are new to small groups or want to get started with the rhythm of Christian discipleship.
+
+<a href="/about-us/contact-us">Contact us</a> to learn more about how to get involved in a Next Level 10 small group.`,
 	menuTitle: '10',
 	parentPath: 'small-groups',
 	order: 1,

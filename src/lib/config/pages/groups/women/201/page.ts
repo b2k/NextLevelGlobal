@@ -9,5 +9,6 @@ export const page: GroupPage = {
 	order: 1,
 	heroImage: '/groups/women/201/hero.jpg',
 	theme: 'light',
+	sections: [],
 	calendar
 };

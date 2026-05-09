@@ -1,10 +1,12 @@
 <script lang="ts">
+	import { r } from "$lib/config/translations";
+
 	let { text } = $props<{ text: string }>();
 </script>
 
 <div class="group-section__description">
 	<!-- eslint-disable svelte/no-at-html-tags -->
-	{#each text.split('\n\n') as paragraph, i (i)}
+	{#each r(text).split('\n\n') as paragraph, i (i)}
 		<p>
 			{#each paragraph.split(/[\r\n]/) as line, j (j)}
 				{@html line}

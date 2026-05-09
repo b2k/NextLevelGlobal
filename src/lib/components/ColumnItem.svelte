@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { SectionItem } from '$lib/config/models/types';
+	import { r } from '$lib/config/translations';
 	import { itemHref, itemSecondaryHref, toYouTubeEmbedUrl } from '$lib/utils/linkHelpers';
 
 	let { item }: { item: SectionItem } = $props();
@@ -12,8 +13,8 @@
 		<div class="bullet">{item.bullet ?? '•'}</div>
 
 		<div class="content">
-			<span class="title">{item.title}</span>
-			<span class="description"> {item.description}</span>
+			<span class="title">{r(item.title)}</span>
+			<span class="description"> {r(item.description)}</span>
 		</div>
 	</div>
 {:else if item.type === 'book'}
@@ -25,27 +26,27 @@
 		{/if}
 
 		<a class="group-tile group-tile--primary" href={itemHref(item)} target="_blank" rel="noopener">
-			{item.title}
+			{r(item.title)}
 		</a>
 
 		<a class="group-tile" href={itemSecondaryHref(item)} target="_blank" rel="noopener">
-			Questions
+			{r('Questions')}
 		</a>
 	</article>
 {:else if item.type === 'link'}
 	<a class="group-tile" href={itemHref(item)} target={item.target}>
-		{item.title}
+		{r(item.title)}
 	</a>
 {:else if item.type === 'video'}
 	<div class="section-video">
 		{#if item.title}
-			<h3>{item.title}</h3>
+			<h3>{r(item.title)}</h3>
 		{/if}
 
 		<div class="section-video__frame">
 			<iframe
 				src={toYouTubeEmbedUrl(item.href)}
-				title={item.title ?? 'Video'}
+				title={r(item.title) ?? r('Video')}
 				loading="lazy"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 				allowfullscreen
@@ -53,7 +54,7 @@
 		</div>
 
 		{#if item.description}
-			<p>{item.description}</p>
+			<p>{r(item.description)}</p>
 		{/if}
 	</div>
 {:else}
@@ -63,7 +64,7 @@
 		target={item.type === 'pdf' ? '_blank' : '_self'}
 		rel="noopener"
 	>
-		{item.title}
+		{r(item.title)}
 	</a>
 {/if}
 

@@ -4,6 +4,7 @@
 	import Description from './Description.svelte';
 	import ColumnItem from './ColumnItem.svelte';
 	import SectionItem from './SectionItem.svelte';
+	import { r } from '$lib/config/translations';
 
 	let { section, pageTheme = 'light' } = $props<{ section: PageSection; pageTheme?: ThemeName }>();
 
@@ -32,10 +33,10 @@
 	>
 		{#if section.title || section.subtitle}
 			<header class="group-section__header">
-				<h2 class="group-section__title">{section.title}</h2>
+				<h2 class="group-section__title">{r(section.title)}</h2>
 
 				{#if section.subtitle}
-					<p class="group-section__subtitle">{section.subtitle}</p>
+					<p class="group-section__subtitle">{r(section.subtitle)}</p>
 				{/if}
 			</header>
 		{/if}
@@ -48,7 +49,7 @@
 				{#each section.columns as column, i (i)}
 					<div class="group-column">
 						{#if column.title}
-							<h3 class="group-column__title">{column.title}</h3>
+							<h3 class="group-column__title">{r(column.title)}</h3>
 						{/if}
 
 						<div class="group-column__items">

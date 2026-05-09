@@ -406,7 +406,7 @@
 
 		<p class="hint">
 			Use lines like <code>R|Matthew 1</code>, <code>B|Man Code CH 1</code>,
-			<code>M|LCV: Col. 3:1</code>, <code>P|Psalm 1 &amp; 2</code>, or
+			<code>L|LCV: Col. 3:1</code>, <code>P|Psalm 1 &amp; 2</code>, <code>M|Mtg 6:30pm MBC</code>, or
 			<code>W|Week 1</code>.
 		</p>
 

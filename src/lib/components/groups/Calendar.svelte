@@ -8,6 +8,7 @@
 	import { browser } from '$app/environment';
 	import { onMount } from 'svelte';
 	import { createCalendarByReferenceDate } from '$lib/config/models/calendars/generateCalendarEntries';
+	import { r } from '$lib/config/translations';
 
 	type Props = {
 		calendar: GroupCalendarConfig;
@@ -145,7 +146,7 @@
 		return calendarEntryColors[kind] ?? defaultEntryColor;
 	}
 
-	let generatedEntries = $state<CalendarEntry[]>(calendar.entries ?? []);
+	let generatedEntries = $state<CalendarEntry[]>([]);
 
 	$effect(() => {
 		const { entries } = createCalendarByReferenceDate(calendar, customStartDate, visibleMonth);
@@ -300,7 +301,7 @@
 <div class="calendar">
 	<div class="calendar-toolbar">
 		<div class="calendar-toolbar-left">
-			<button type="button" class="toolbar-btn today-btn" onclick={goToToday}>Today</button>
+			<button type="button" class="toolbar-btn today-btn" onclick={goToToday}>{r('Today')}</button>
 			<div class="month-nav">
 				<button
 					type="button"
@@ -319,7 +320,7 @@
 					‹
 				</button>
 			</div>
-			<h3 class="calendar-title">{formatMonth(visibleMonth)}</h3>
+			<h3 class="calendar-title">{r(formatMonth(visibleMonth))}</h3>
 			<button type="button" class="toolbar-btn nav-btn" onclick={nextMonth} aria-label="Next month">
 				›
 			</button>
@@ -328,7 +329,9 @@
 			</button>
 		</div>
 		<div class="calendar-toolbar-right">
-			<label for="custom-start-date" class="custom-start-date-label"> Custom Start Date </label>
+			<label for="custom-start-date" class="custom-start-date-label">
+				{r('Custom Start Date')}
+			</label>
 
 			<input
 				id="custom-start-date"
@@ -343,7 +346,7 @@
 
 	<div class="calendar-weekdays">
 		{#each weekdayLabels as label, w (w)}
-			<div class="calendar-weekday">{label}</div>
+			<div class="calendar-weekday">{r(label)}</div>
 		{/each}
 	</div>
 
@@ -365,10 +368,10 @@
 						{@const color = getEntryColor(event.kind)}
 						<div
 							class="calendar-event"
-							title={event.title}
+							title={r(event.title)}
 							style={`--entry-bg: ${color.bg}; --entry-text: ${color.text}; --entry-accent: ${color.accent};`}
 						>
-							{event.title}
+							{r(event.title)}
 						</div>
 					{/each}
 				</div>
@@ -409,8 +412,7 @@
 		color: #243247;
 	}
 
-	.month-nav,
-	.year-nav {
+	.month-nav {
 		display: flex;
 		align-items: center;
 		gap: 0.35rem;
