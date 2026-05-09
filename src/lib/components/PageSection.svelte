@@ -22,7 +22,14 @@
 </script>
 
 <section class="group-section {section.theme ?? pageTheme}" {style}>
-	<div class="group-section__inner">
+	<div
+		class={`group-section__inner 
+			${
+				section.title || section.subtitle
+					? 'group-section__inner--with-header'
+					: 'group-section__inner--no-header'
+			}`}
+	>
 		{#if section.title || section.subtitle}
 			<header class="group-section__header">
 				<h2 class="group-section__title">{section.title}</h2>
@@ -77,7 +84,13 @@
 	.group-section__inner {
 		max-width: 1200px;
 		margin: 0 auto;
+	}
+
+	.group-section__inner--with-header {
 		padding: 4rem 1.25rem;
+	}
+	.group-section__inner--no-header {
+		padding-top: 0;
 	}
 
 	.group-section__header {
@@ -147,8 +160,12 @@
 			gap: 3rem;
 		}
 
-		.group-section__inner {
+		.group-section__inner--with-header {
 			padding: 5rem 2rem;
+		}
+		.group-section__inner--no-header {
+			padding-top: 0;
+			padding-bottom: 5rem;
 		}
 	}
 </style>

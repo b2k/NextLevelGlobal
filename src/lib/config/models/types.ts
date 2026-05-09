@@ -20,8 +20,8 @@ export type SectionItem =
 	| {
 			type: 'book';
 			title: string;
-			buyUrl: string;
-			questionsPdf: string;
+			buyUrl?: string;
+			questionsPdf?: string;
 			image?: string;
 			description?: string;
 	  }

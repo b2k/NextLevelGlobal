@@ -23,19 +23,25 @@
 			<p>{item.description}</p>
 		{/if}
 
-		<div class="group-card__actions">
-			<a
-				class="group-tile group-tile--primary"
-				href={itemHref(item)}
-				target="_blank"
-				rel="noopener"
-			>
-				Purchase
-			</a>
-			<a class="group-tile" href={itemSecondaryHref(item)} target="_blank" rel="noopener">
-				Questions PDF
-			</a>
-		</div>
+		{#if item.buyUrl || item.questionsPdf}
+			<div class="group-card__actions">
+				{#if item.buyUrl}
+					<a
+						class="group-tile group-tile--primary"
+						href={itemHref(item)}
+						target="_blank"
+						rel="noopener"
+					>
+						Purchase
+					</a>
+				{/if}
+				{#if item.questionsPdf}
+					<a class="group-tile" href={itemSecondaryHref(item)} target="_blank" rel="noopener">
+						Questions PDF
+					</a>
+				{/if}
+			</div>
+		{/if}
 	</article>
 {:else if item.type === 'video'}
 	<div class="section-video">
