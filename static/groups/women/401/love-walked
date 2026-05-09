@@ -1,0 +1,2189 @@
+<!doctype html>
+<!-- fix conditional comment blocking and apply ie version specific and js classes -->
+<!--[if lt IE 6]><html lang="en-us" class="no-js img-1x lt-ie9 lt-ie8 lt-ie7 lt-ie6"><![endif]-->
+<!--[if IE 6]><html lang="en-us" class="no-js img-1x lt-ie9 lt-ie8 lt-ie7 ie6"><![endif]-->
+<!--[if IE 7]><html lang="en-us" class="no-js img-1x lt-ie9 lt-ie8 ie7"><![endif]-->
+<!--[if IE 8]><html lang="en-us" class="no-js img-1x lt-ie9 ie8"><![endif]-->
+<!--[if IE 9]><html lang="en-us" class="no-js img-1x ie9"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="en-us" class="no-js img-1x desktop "><!--<![endif]-->
+<head>
+<script>
+    window.dataLayer = window.dataLayer || [];
+</script>
+
+<script>
+    dataLayer.push({
+'theme_id':'1000001',
+'country_code':'US',
+'page_type': 'PRODUCT_PAGE_VIEW',
+'bloomreach_page_type': 'product',
+'product_id': '915678',
+'product_name': 'Love Walked Among Us: Learning to Love Like Jesus ',
+'product_price':'13.78',
+'product_image_url':'https://g.christianbook.com/dg/product/cbd/w500/915678.jpg',
+'product_avail':'Instock',
+'theme_host_basename':'www',
+'tracking_level': 'full',
+'is_tracking_limited': false,
+'is_ga4_enabled': '1',
+'ga4_measurement_id': 'G-LXWHLG8GST'
+});
+</script>
+
+<script>
+dataLayer.push({'ecommerce':null});
+dataLayer.push({"ecommerce":{"currency":"USD","value":13.78,"items":[{"item_brand":"NavPress","quantity":1,"price":13.78,"item_name":"Love Walked Among Us: Learning to Love Like Jesus","item_id":"915678"}]},"event":"view_item"});
+
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TTW83LT');</script>
+<!-- End Google Tag Manager -->
+
+    <title>Love Walked Among Us: Learning to Love Like Jesus:  Paul Miller: 9781612915678 - Christianbook.com</title>
+
+    <meta name="description" content="Discover the incomparable beauty of Jesus, see how lovely He is, enjoy His beauty, and let all that He is profoundly change how you personally receive His love and also share His love with others. Jesus was love personified - compassionate, honest, humble, powerful. How did he do it? And how can we learn to love as he did? Weaving Gospel stories with experiences from his own life, Miller explores how to be honest without judging, depend on God, let love be energized by faith, embrace the way of humility, and more. 272 pages, softcover from NavPress. Love Walked Among Us: Learning to Love Like Jesus (9781612915678) by Paul Miller" />
+    <meta name="keywords" content="Love Walked Among Us: Learning To Love Like Jesus,Navpress,1612915671,Miller,Paul Miller,2014,Trade Paperback,Books,christian book distributors,christian book,christian books, christian book store" />
+
+    <!-- explicitly declare meta charset to use utf-8 -->
+    <meta charset="utf-8" />
+
+    <!-- use chrome frame if it's available -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <!-- don't let the browser detect telephone numbers -->
+    <meta name="format-detection" content="telephone=no" />
+
+
+
+    <!-- title information for google -->
+    <meta name="title" content="Love Walked Among Us: Learning to Love Like Jesus - at Christianbook.com" />
+
+    
+        <meta  property="og:url" content="https://www.christianbook.com/love-walked-among-learning-like-jesus/paul-miller/9781612915678/pd/915678" />
+        <meta  property="og:title" content="Love Walked Among Us: Learning to Love Like Jesus" />
+        <meta  property="og:image" content="https://g.christianbook.com/dg/product/cbd/f450/915678.jpg" />
+        <meta  property="og:type" content="book" />
+        <meta  property="book:isbn" content="9781612915678" />
+
+
+<style>
+/* open-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//g.christianbook.com/ns/fonts/open-sans-v36-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//g.christianbook.com/ns/fonts/open-sans-v36-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+</style>
+
+    <script>(function(w,d,u){w.readyQ=[];w.bindReadyQ=[];function p(x,y){if(x=="ready"){w.bindReadyQ.push(y);}else{w.readyQ.push(x);}};var a={ready:p,bind:p};w.$=w.jQuery=function(f){if(f===d||f===u){return a}else{p(f)}}})(window,document)</script>
+
+    <script>/* Simple Modernizr replacement | no-js/js | img-1x/img-2x */(function(d,w){var e=d.getElementsByTagName("html")[0];e.className=e.className.replace(/no-js/,"js");if(w.devicePixelRatio>1){e.className=e.className.replace(/img-1x/,"img-2x")}})(document,window);</script>
+
+<script>/* Break out of frames */(function(d,w) {var toploc = document.location.toString();var re=/\https:\/\/(www|analytics)\.google\.com\/analytics/i;var isga = re.test(toploc);if (!isga) {if (w.top.location!==d.location) {try{w.top.location.href = d.location.href}catch( err ) {setTimeout(function(){ document.body.innerHTML = ""; }, 500); }}}} )(document,window);</script>
+
+<script>/* Global Christianbook variables */var gp='//g.christianbook.com/g/',_gaq=_gaq||[],websiteConfig={"cb_mini_cart_enabled": true,"apiHost":"api.christianbook.com","env":"production","site-code":"www","suppression-type":"","ps_engine":"legacy", "br": { "enabled": false  }, "cust_type": "standard"},userConfig={"visitorId":"pUtdkFL36KMWBBGx8RnXjPZnhRd3YYxgBFpjj0nvJJSNIY1D6cDwCOaynuSUkjxKW2RsCfZ4sKhexcKNfmEDqg"};</script>
+
+    <!-- favicon.ico is located at domain root -->
+    <!-- apple-touch-icon.png is located at domain root -->
+
+    <!-- canonical url for search engines -->
+    <link rel="canonical" href="https://www.christianbook.com/love-walked-among-learning-like-jesus/paul-miller/9781612915678/pd/915678" />
+
+    <!-- image information for google -->
+    <link rel="image_src" href="https://g.christianbook.com/dg/product/cbd/b180/915678.gif" />
+
+    <!-- resources to preload -->
+    
+        <link rel="preload" href="//g.christianbook.com/dg/product/cbd/f400/915678.jpg" fetchpriority="high" as="image"/>
+
+    <!-- Pre-packed CSS -->
+    
+        <link rel="stylesheet" href="//g.christianbook.com/ns/css/packed/common.css?v=7e57900cabc3918acc93dafae83da204" />
+        <link rel="stylesheet" href="//g.christianbook.com/ns/css/packed/socialshare.css?v=7e57900cabc3918acc93dafae83da204" />
+        <link rel="stylesheet" href="//g.christianbook.com/ns/css/packed/page/mobile_slideshow.css?v=7e57900cabc3918acc93dafae83da204" />
+        <link rel="stylesheet" href="//g.christianbook.com/ns/css/packed/page/product-ask-christianbook.css?v=7e57900cabc3918acc93dafae83da204" />
+        <link rel="stylesheet" href="//g.christianbook.com/ns/css/packed/page/product-reviews-form-controls.css?v=7e57900cabc3918acc93dafae83da204" />
+        <link rel="stylesheet" href="//g.christianbook.com/ns/css/packed/page/product-new.css?v=7e57900cabc3918acc93dafae83da204" />
+
+
+<style>
+div#container{ max-width: 1200px; }
+div#page-body{ width: 98%; max-width: 1180px; }
+</style>
+
+<!--- TODO add style conditional here for plus size website -->
+
+
+    <!-- use minified review-group.css that uses CSS::Minifier CPAN Module -->
+    
+
+
+
+
+
+<script type="application/ld+json">
+{
+   "sku" : "915678",
+   "brand" : {
+      "name" : "NavPress",
+      "@type" : "Brand"
+   },
+   "author" : {
+      "name" : "Paul Miller",
+      "@type" : "Person"
+   },
+   "aggregateRating" : {
+      "reviewCount" : "5",
+      "ratingValue" : "5",
+      "@type" : "AggregateRating"
+   },
+   "bookFormat" : "https://schema.org/Paperback",
+   "offers" : {
+      "seller" : {
+         "name" : "Christianbook.com",
+         "@type" : "Organization"
+      },
+      "availability" : "https://schema.org/InStock",
+      "priceCurrency" : "USD",
+      "url" : "https://www.christianbook.com/love-walked-among-learning-like-jesus/paul-miller/9781612915678/pd/915678",
+      "price" : "13.78",
+      "itemCondition" : "https://schema.org/NewCondition",
+      "@type" : "Offer"
+   },
+   "url" : "https://www.christianbook.com/love-walked-among-learning-like-jesus/paul-miller/9781612915678/pd/915678",
+   "isbn" : "9781612915678",
+   "publisher" : {
+      "name" : "NavPress",
+      "@type" : "Organization"
+   },
+   "@type" : [
+      "Product",
+      "Book"
+   ],
+   "name" : "Love Walked Among Us: Learning to Love Like Jesus",
+   "description" : "Discover the incomparable beauty of Jesus, see how lovely He is, enjoy His beauty, and let all that He is profoundly change how you personally receive His love and also share His love with others. Jesus was love personified - compassionate, honest, humble, powerful. How did he do it? And how can we learn to love as he did? Weaving Gospel stories with experiences from his own life, Miller explores how to be honest without judging, depend on God, let love be energized by faith, embrace the way of humility, and more. 272 pages, softcover from NavPress.",
+   "image" : "https://g.christianbook.com/dg/product/cbd/f450/915678.jpg",
+   "datePublished" : "2014",
+   "@context" : "https://schema.org",
+   "numberOfPages" : "272"
+}
+
+</script>
+
+
+<link rel="icon" type="image/png" href="https://g.christianbook.com/ns/img/favicon/fav.png" />
+
+
+    <!-- begin Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-285306-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-285306-1' ,{
+cookie_flags: 'secure',
+link_attribution: 'true'
+}
+ );
+</script>
+<!-- end Google Analytics -->
+
+<!-- Begin Monetate ExpressTag Async v6.2. -->
+<script class="cbd-monetate-tag" type="text/javascript">
+var monetateT = new Date().getTime();
+(function() {
+    var p = document.location.protocol;
+    if (p == "http:" || p == "https:") {
+        var m = document.createElement('script'); m.type = 'text/javascript'; m.async = true; m.src = "//se.monetate.net/js/2/a-0b30d44c/p/christianbook.com/custom.js";
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(m, s);
+    }
+})();
+</script>
+<!-- End Monetate tag. -->
+
+<script>
+function isCORSSupported() {var xhr = new window.XMLHttpRequest();return 'withCredentials' in xhr}
+
+function isPlatformSupported() {
+  return (
+    typeof window !== 'undefined' &&
+    typeof Array.prototype.forEach === 'function' &&
+    typeof JSON.stringify === 'function' &&
+    typeof Function.bind === 'function' &&
+    window.performance &&
+    typeof window.performance.now === 'function' &&
+    isCORSSupported()
+  )
+}
+
+(function(w,d,s){var f=d.getElementsByTagName(s)[0],j=d.createElement(s);
+j.async=true;j.crossOrigin="anonymous";j.type="text/javascript";
+if ( isPlatformSupported() ){j.src='//g.christianbook.com/ns/js/packed/base/apm.js?eaa20f67a66c2d74c3e831bdae373691';f.parentNode.insertBefore(j,f);}
+})(window,document,'script');
+</script>
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+fbq('init', '877865672326885');
+fbq('track', 'PageView', {}, { 'eventID': '1778294679.333409' });
+fbq('track', 'ViewContent', {"content_type":"product","content_name":"Love Walked Among Us: Learning to Love Like Jesus","content_ids":["915678"]}, { 'eventID': '1778294679.333406' });
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=877865672326885&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Pinterest Tag Code -->
+<script>
+!function(e){if(!window.pintrk){window.pintrk = function () {
+window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
+  n=window.pintrk;n.queue=[],n.version="3.0";var
+  t=document.createElement("script");t.async=!0,t.src=e;var
+  r=document.getElementsByTagName("script")[0];
+  r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+pintrk('load', '2613138305504');
+pintrk('page');
+ pintrk('track', 'pagevisit', { product_id: "915678" }
+);
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2613138305504&noscript=1" />
+<img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=2613138305504&event=pagevisit&noscript=1&ed[product_id]=915678" />
+</noscript>
+<!-- End Pinterest Tag Code -->
+
+
+<script async type="text/javascript" src="https://aodnc.christianbook.com/providers/atLabel/load" onError="var fallbackScript = document.createElement('script'); fallbackScript.src='https://cdn.attn.tv/christianbook/dtag.js'; document.head.appendChild(fallbackScript);"></script>
+
+
+
+
+  <style>
+   .CBD-PreviewGroup .CBD-PreviewGroupItems > .CBD-PreviewGroupItem > .CBD-PreviewGroupItemImage > .CBD-PreviewGroupItemFlag.CBD-PreviewGroupItemFlag-HMSGEN, .CBD-PreviewGroup .CBD-PreviewGroupItems > .CBD-PreviewGroupItem > .CBD-ContainerActions > .CBD-PreviewGroupItemImage > .CBD-PreviewGroupItemFlag.CBD-PreviewGroupItemFlag-HMSGEN { background-color: #993333; color: #FFFFFF;}.CBD-PreviewGroup .CBD-PreviewGroupItems > .CBD-PreviewGroupItem > .CBD-PreviewGroupItemImage > .CBD-PreviewGroupItemFlag.CBD-PreviewGroupItemFlag-HMSGEN:before, .CBD-PreviewGroup .CBD-PreviewGroupItems > .CBD-PreviewGroupItem > .CBD-ContainerActions > .CBD-PreviewGroupItemImage > .CBD-PreviewGroupItemFlag.CBD-PreviewGroupItemFlag-HMSGEN:before { border-color: #993333 transparent transparent #993333;}.CBD-PreviewGroup .CBD-PreviewGroupItems > .CBD-PreviewGroupItem > .CBD-PreviewGroupItemImage > .CBD-PreviewGroupItemFlag.CBD-PreviewGroupItemFlag-HMSGEN:after, .CBD-PreviewGroup .CBD-PreviewGroupItems > .CBD-PreviewGroupItem > .CBD-ContainerActions > .CBD-PreviewGroupItemImage > .CBD-PreviewGroupItemFlag.CBD-PreviewGroupItemFlag-HMSGEN:after { border-color: transparent transparent #993333 #993333;}.CB-ProductListItem .CB-ProductListItem-Flag.CBD-PreviewGroupItemFlag-HMSGEN{ background-color: #993333; color: #FFFFFF;}.CBD-PreviewGroup .CBD-PreviewGroupItems > .CBD-PreviewGroupItem > .CBD-PreviewGroupItemImage > .CBD-PreviewGroupItemFlag.CBD-PreviewGroupItemFlag-OFFER, .CBD-PreviewGroup .CBD-PreviewGroupItems > .CBD-PreviewGroupItem > .CBD-ContainerActions > .CBD-PreviewGroupItemImage > .CBD-PreviewGroupItemFlag.CBD-PreviewGroupItemFlag-OFFER { background-color: #6F7E02; color: #FFFFFF;}.CBD-PreviewGroup .CBD-PreviewGroupItems > .CBD-PreviewGroupItem > .CBD-PreviewGroupItemImage > .CBD-PreviewGroupItemFlag.CBD-PreviewGroupItemFlag-OFFER:before, .CBD-PreviewGroup .CBD-PreviewGroupItems > .CBD-PreviewGroupItem > .CBD-ContainerActions > .CBD-PreviewGroupItemImage > .CBD-PreviewGroupItemFlag.CBD-PreviewGroupItemFlag-OFFER:before { border-color: #6F7E02 transparent transparent #6F7E02;}.CBD-PreviewGroup .CBD-PreviewGroupItems > .CBD-PreviewGroupItem > .CBD-PreviewGroupItemImage > .CBD-PreviewGroupItemFlag.CBD-PreviewGroupItemFlag-OFFER:after, .CBD-PreviewGroup .CBD-PreviewGroupItems > .CBD-PreviewGroupItem > .CBD-ContainerActions > .CBD-PreviewGroupItemImage > .CBD-PreviewGroupItemFlag.CBD-PreviewGroupItemFlag-OFFER:after { border-color: transparent transparent #6F7E02 #6F7E02;}.CB-ProductListItem .CB-ProductListItem-Flag.CBD-PreviewGroupItemFlag-OFFER{ background-color: #6F7E02; color: #FFFFFF;}
+  </style>
+
+
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="9UP4W-7GF96-K3XPL-FPDPP-A5NNT",function(){function e(){if(!i){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.parentNode.appendChild(e),i=!0}}function t(e){i=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",o.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"9UP4W-7GF96-K3XPL-FPDPP-A5NNT";var o=document.currentScript||document.getElementsByTagName("script")[0],i=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!i)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="rt4b4oixyjubw2p6t6kq-f-ec66d0ea9-clientnsv4-s.akamaihd.net",o="false"=="true"?2:1,i={"ak.v":"41","ak.cp":"1526785","ak.ai":parseInt("971647",10),"ak.ol":"0","ak.cr":0,"ak.ipv":4,"ak.proto":"h2","ak.rid":"50291c6c","ak.r":51208,"ak.a2":n,"ak.m":"b","ak.n":"essl","ak.cport":34967,"ak.gh":"23.209.83.27","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"","ak.t":"1778294677","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==bgNhTBS16TISelqt2LxxeYK3hUoGaGV4BLgbeoNyv4rXenQxG8ec3XrcAUq4QMhW7oGX9XJySTFZuF2Hc2PmDH66B9jqHldAtp2IAJRoiGJfzExchD5/ZHkYTeh/2xyr9C/riAxvQbbPhHkI/rvhwwb+8hpVckDlLnCvaG98vcsjir7Dvycaco2focglf2mE66y7a9noU81SX8CtJB8TcAPV38KbKzzhDAWLm4mW65cUrZqMAErg/zOTOlZOSegB+Vywtqt8hkNYbLTOTeYXsBwMu4WTUdPCVGCIlTfeyH/FKPvwgtVhiGgPaRz/9WHkJ3H0GDmVcOV4i6X/hNBQjX9sg3D7jJssQTizkenR3dgZj0nkaUOrOGRDkSSY5J2UVVtcO5iz4tt4AbBzb3ghnh5wE7BJWNxlwEHeZGSya6E=","ak.pv":"29","ak.dpoabenc":"","ak.tf":o};if(""!==t)i["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head> 
+
+<body class="has_nav" data-top-level-domain="christianbook.com">
+<span class="sr-only">&nbsp;</span>
+<a href="#main-content" id="skip-to-content" class="sr-only">Skip to main content</a>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TTW83LT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+<style>
+.grecaptcha-badge {
+    z-index: 2;
+}
+</style>
+<script type="text/javascript">
+// Set up some objects to track reCAPTCHA responses.
+var doSubmit = false;
+var recaptchaResponses = new Object();
+var recaptchaErrorsDisplayed = new Object();
+var recaptchaErrorMessage = "<span class='recaptcha-error-message' style='color:red;font-size:14px;'>Please check the box to continue.</span>";
+
+// Add functions to be called when checkboxes are checked
+var captcha_nav_header_email_signup_render_callback = function(response) {
+	var element_id = 'captcha_nav_header_email_signup';
+	recaptchaResponses["captcha_nav_header_email_signup"] = response;
+	// If an error was previously displayed for not checking the box, remove it.
+	if ( recaptchaErrorsDisplayed.hasOwnProperty("captcha_nav_header_email_signup") === true ) {
+		delete recaptchaErrorsDisplayed["captcha_nav_header_email_signup"];
+		$("#captcha_nav_header_email_signup > div").css('border','none');
+		$(".recaptcha-error-message").hide();
+	}
+
+    // For invisible recaptchas, throw a GA event that an invisible recaptcha was completed,
+    // then submit the form.
+    if ( 'normal' === 'invisible' ) {
+	    gtag('event','InvisibleCaptchaCompleted', {
+		    'event_category': 'RecaptchaProtectedForm',
+		    'event_label': 'captcha_nav_header_email_signup',
+		    'value': 1
+	    });
+        doSubmit = true;
+        $("#captcha_nav_header_email_signup").closest('form').submit();
+        return true;
+    }
+    // For regular recaptchas, just throw the GA event
+    else {
+    	gtag('event','CaptchaCompleted', {
+	    	'event_category': 'RecaptchaProtectedForm',
+		    'event_label': 'captcha_nav_header_email_signup',
+		    'value': 1
+	    });
+    }
+}
+var captcha_nav_footer_email_signup_render_callback = function(response) {
+	var element_id = 'captcha_nav_footer_email_signup';
+	recaptchaResponses["captcha_nav_footer_email_signup"] = response;
+	// If an error was previously displayed for not checking the box, remove it.
+	if ( recaptchaErrorsDisplayed.hasOwnProperty("captcha_nav_footer_email_signup") === true ) {
+		delete recaptchaErrorsDisplayed["captcha_nav_footer_email_signup"];
+		$("#captcha_nav_footer_email_signup > div").css('border','none');
+		$(".recaptcha-error-message").hide();
+	}
+
+    // For invisible recaptchas, throw a GA event that an invisible recaptcha was completed,
+    // then submit the form.
+    if ( 'normal' === 'invisible' ) {
+	    gtag('event','InvisibleCaptchaCompleted', {
+		    'event_category': 'RecaptchaProtectedForm',
+		    'event_label': 'captcha_nav_footer_email_signup',
+		    'value': 1
+	    });
+        doSubmit = true;
+        $("#captcha_nav_footer_email_signup").closest('form').submit();
+        return true;
+    }
+    // For regular recaptchas, just throw the GA event
+    else {
+    	gtag('event','CaptchaCompleted', {
+	    	'event_category': 'RecaptchaProtectedForm',
+		    'event_label': 'captcha_nav_footer_email_signup',
+		    'value': 1
+	    });
+    }
+}
+var captcha_nav_footer_mobile_email_signup_render_callback = function(response) {
+	var element_id = 'captcha_nav_footer_mobile_email_signup';
+	recaptchaResponses["captcha_nav_footer_mobile_email_signup"] = response;
+	// If an error was previously displayed for not checking the box, remove it.
+	if ( recaptchaErrorsDisplayed.hasOwnProperty("captcha_nav_footer_mobile_email_signup") === true ) {
+		delete recaptchaErrorsDisplayed["captcha_nav_footer_mobile_email_signup"];
+		$("#captcha_nav_footer_mobile_email_signup > div").css('border','none');
+		$(".recaptcha-error-message").hide();
+	}
+
+    // For invisible recaptchas, throw a GA event that an invisible recaptcha was completed,
+    // then submit the form.
+    if ( 'normal' === 'invisible' ) {
+	    gtag('event','InvisibleCaptchaCompleted', {
+		    'event_category': 'RecaptchaProtectedForm',
+		    'event_label': 'captcha_nav_footer_mobile_email_signup',
+		    'value': 1
+	    });
+        doSubmit = true;
+        $("#captcha_nav_footer_mobile_email_signup").closest('form').submit();
+        return true;
+    }
+    // For regular recaptchas, just throw the GA event
+    else {
+    	gtag('event','CaptchaCompleted', {
+	    	'event_category': 'RecaptchaProtectedForm',
+		    'event_label': 'captcha_nav_footer_mobile_email_signup',
+		    'value': 1
+	    });
+    }
+}
+
+
+// Set up render functions to be called once core reCAPTCHA code is ready.
+var captchaOnloadCallback = function() {
+grecaptcha.render('captcha_nav_header_email_signup', {
+	'sitekey' : '6LdHeSgTAAAAAILCrXr9n2SzZECgMTIrN9nAG9oN',
+	'size' : 'normal',
+	'callback' : captcha_nav_header_email_signup_render_callback
+});
+grecaptcha.render('captcha_nav_footer_email_signup', {
+	'sitekey' : '6Lfz8ygTAAAAADxg9fPXRLodH4fEowjRwbzXNB5h',
+	'size' : 'normal',
+	'callback' : captcha_nav_footer_email_signup_render_callback
+});
+grecaptcha.render('captcha_nav_footer_mobile_email_signup', {
+	'sitekey' : '6LcC9CgTAAAAACZgVQQBm4NRpT1qZuw60D2WNYeF',
+	'size' : 'normal',
+	'callback' : captcha_nav_footer_mobile_email_signup_render_callback
+});
+
+};
+
+// Set up functions to be called when forms are submitted.
+$(document).ready(function(){
+	$("#captcha_nav_header_email_signup").closest('form').submit(function(e){
+    // For invisible recaptchas, we need to manually call grecaptcha.execute
+    // when the form is submitted.
+    var widgetSize = 'normal';
+    if ( widgetSize === 'invisible' ) {
+        if ( doSubmit ) {
+            doSubmit = false;
+        } else {
+            e.preventDefault();
+		    gtag('event','SubmitWithInvisibleCaptcha', {
+			    'event_category': 'RecaptchaProtectedForm',
+			    'event_label': 'captcha_nav_header_email_signup',
+			    'value': 1
+		    });
+            return grecaptcha.execute();
+        }
+    } else if ( recaptchaResponses.hasOwnProperty("captcha_nav_header_email_signup") === false ) {
+		e.preventDefault();
+		if ( recaptchaErrorsDisplayed.hasOwnProperty("captcha_nav_header_email_signup") === false ) {
+			$("#captcha_nav_header_email_signup > div").css('border','2px solid red');
+			$("#captcha_nav_header_email_signup").append(recaptchaErrorMessage);
+			recaptchaErrorsDisplayed["captcha_nav_header_email_signup"] = 1;
+		}
+		gtag('event','SubmitWithNoCaptcha', {
+			'event_category': 'RecaptchaProtectedForm',
+			'event_label': 'captcha_nav_header_email_signup',
+			'value': 1
+		});
+		return false;
+	} else {
+		gtag('event','SubmitWithCaptcha', {
+			'event_category': 'RecaptchaProtectedForm',
+			'event_label': 'captcha_nav_header_email_signup',
+			'value': 1
+		});
+		return true;
+	}
+});
+$("#captcha_nav_footer_email_signup").closest('form').submit(function(e){
+    // For invisible recaptchas, we need to manually call grecaptcha.execute
+    // when the form is submitted.
+    var widgetSize = 'normal';
+    if ( widgetSize === 'invisible' ) {
+        if ( doSubmit ) {
+            doSubmit = false;
+        } else {
+            e.preventDefault();
+		    gtag('event','SubmitWithInvisibleCaptcha', {
+			    'event_category': 'RecaptchaProtectedForm',
+			    'event_label': 'captcha_nav_footer_email_signup',
+			    'value': 1
+		    });
+            return grecaptcha.execute();
+        }
+    } else if ( recaptchaResponses.hasOwnProperty("captcha_nav_footer_email_signup") === false ) {
+		e.preventDefault();
+		if ( recaptchaErrorsDisplayed.hasOwnProperty("captcha_nav_footer_email_signup") === false ) {
+			$("#captcha_nav_footer_email_signup > div").css('border','2px solid red');
+			$("#captcha_nav_footer_email_signup").append(recaptchaErrorMessage);
+			recaptchaErrorsDisplayed["captcha_nav_footer_email_signup"] = 1;
+		}
+		gtag('event','SubmitWithNoCaptcha', {
+			'event_category': 'RecaptchaProtectedForm',
+			'event_label': 'captcha_nav_footer_email_signup',
+			'value': 1
+		});
+		return false;
+	} else {
+		gtag('event','SubmitWithCaptcha', {
+			'event_category': 'RecaptchaProtectedForm',
+			'event_label': 'captcha_nav_footer_email_signup',
+			'value': 1
+		});
+		return true;
+	}
+});
+$("#captcha_nav_footer_mobile_email_signup").closest('form').submit(function(e){
+    // For invisible recaptchas, we need to manually call grecaptcha.execute
+    // when the form is submitted.
+    var widgetSize = 'normal';
+    if ( widgetSize === 'invisible' ) {
+        if ( doSubmit ) {
+            doSubmit = false;
+        } else {
+            e.preventDefault();
+		    gtag('event','SubmitWithInvisibleCaptcha', {
+			    'event_category': 'RecaptchaProtectedForm',
+			    'event_label': 'captcha_nav_footer_mobile_email_signup',
+			    'value': 1
+		    });
+            return grecaptcha.execute();
+        }
+    } else if ( recaptchaResponses.hasOwnProperty("captcha_nav_footer_mobile_email_signup") === false ) {
+		e.preventDefault();
+		if ( recaptchaErrorsDisplayed.hasOwnProperty("captcha_nav_footer_mobile_email_signup") === false ) {
+			$("#captcha_nav_footer_mobile_email_signup > div").css('border','2px solid red');
+			$("#captcha_nav_footer_mobile_email_signup").append(recaptchaErrorMessage);
+			recaptchaErrorsDisplayed["captcha_nav_footer_mobile_email_signup"] = 1;
+		}
+		gtag('event','SubmitWithNoCaptcha', {
+			'event_category': 'RecaptchaProtectedForm',
+			'event_label': 'captcha_nav_footer_mobile_email_signup',
+			'value': 1
+		});
+		return false;
+	} else {
+		gtag('event','SubmitWithCaptcha', {
+			'event_category': 'RecaptchaProtectedForm',
+			'event_label': 'captcha_nav_footer_mobile_email_signup',
+			'value': 1
+		});
+		return true;
+	}
+});
+
+});
+
+</script>
+
+
+<a name="topofpage"></a>
+
+<div id="container">
+
+
+
+
+
+
+
+
+
+
+<nav id="nav-frame" aria-label="top" class=" updated-24" data-flyout-info="c36dc1ab5e8181ef3d6348ab08c46997" >
+  <div id="nav-content">
+    <header>
+      <div class="header-content">
+        <a id="top-nav-logo" class="logo" href="/?navcat=toplogo_b">
+          <img class="logo-image" src="//g.christianbook.com/ns/img/base/Christianbook_logo_new.png" style="height: 55px; width: 234px" alt="Christianbook Logo - Everything Christian for Less - Call us at 1-800-CHRISTIAN" />
+        </a>
+        <form id="search-form" class="top-nav-search-form" name="search-form" action="/apps/easyfind" role="search">
+          <div class="search-container">
+            <div class="search-container-field">
+              <input id="Ntt" name="Ntt" placeholder="Search by title, catalog stock #, author, isbn, etc." aria-label="Search by title, catalog stock #, author, isbn, etc." type="text" role="combobox" aria-expanded="false" aria-owns="predictive-search" aria-haspopup="listbox" aria-controls="predictive-search" aria-autocomplete="list" autocomplete="off" autocorrect="off" maxlength="100" class="search-container-Ntt  predictive_search_enable ps_keyword_enable ps_product_enable  ps_trending_enabled" value="love walked among "/>
+              
+              <ul id="pre-search-promo" class="predictive-search-enhanced-search predictive-search-container" role="listbox"></ul>
+              
+              
+              <ul id="ps-trending-search-terms" class="predictive-search-enhanced-search" role="listbox"></ul>
+              
+              <ul id="predictive-search" class="predictive-search-enhanced-search" role="listbox"></ul>
+              <div class="sr-only" id="ps-announcement-box" role="status" aria-atomic="true"></div>
+            </div>
+            <input type="hidden" name="Ntk" value="keywords" />
+            <input type="hidden" name="action" value="Search" />
+            <input type="hidden" name="Ne" value="0" />
+            <input type="hidden" name="event" value="ESRCN" />
+            <input type="hidden" name="nav_search" value="1" />
+            <input type="hidden" name="cms" value="1" />
+            <input type="hidden" name="ps_exit" value="" />
+            <input type="hidden" name="ps_domain" value="www" />
+            <span class="search-container-btn-wrapper"><button id="search" class="search-container-btn" name="search" type="submit">Search</button></span>
+          </div>
+        </form>
+        <div class='account-content'>
+          <a href="/apps/account?event=topaccount_b" id='top-nav-acc-toggle' aria-label="Account">
+            <span id='top-nav-acc-icon' aria-hidden='true'></span>
+            <span id='top-nav-acc-text'>Account</span>
+          </a>
+          <span id='top-nav-acc-indicator' aria-hidden='true'></span>
+          <div id='top-nav-acc-menu-container'>
+            <div id='top-nav-acc-menu-content'>
+              
+              <ul id='top-nav-account-links'>
+  <li><a href="/apps/account?event=accmenu_account">My Account</a></li>
+  <li><a href="/Christian/Books/wishlist?event=accmenu_wishlist">Wishlist</a></li>
+  <li><a href="/apps/order-status?event=accmenu_order">Order Status</a></li>
+  <li><a href="/apps/gift-card?event=accmenu_gc">Gift Cards</a></li>
+  <li><a href="https://www.christianbook.com/apps/login?navcat=toplogin_b" rel="nofollow">Sign In</a></li>
+</ul>
+
+            </div>
+          </div>
+        </div>
+        <div class='cart-checkout'>
+          <a id="top-nav-cart" href="/Christian/Books/bookbag?navcat=topcart_b" rel="nofollow">
+            <span id='top-nav-cart-img' class='cart'>
+              <span id="items">0</span>
+              <span class="cart-hidden-text"> items</span>
+            </span>
+            <span id='top-nav-cart-text'>Cart & <br/>Checkout</span> 
+          </a>
+          </div>
+          <div id="top-nav-email-signup-container">
+            <form tabindex="0" id="top-nav-email-signup-form" class="top-nav-email-signup-form" action="/Christian/Books/email_signup" method="POST" name="email-signup-form" role="dialog" aria-label="Email Signup Form Pop-Up">
+              <div id="quick-nav-email-signup" tabindex="0">
+                <div class="quick-nav-email-signup-message" tabindex="0">
+                  Hear about sales, receive special offers & more.<br />You can unsubscribe at any time.
+                </div>
+                <a href="javascript:;" id="close-email-signup-modal" tabindex="0" aria-label="Close Pop-Up Window">Close</a>
+                <div class="quick-nav-email-container">
+                  <div class="quick-nav-email-container-field">
+                    <label class="quick-nav-email-container-hint" id="nav-email-hint" for="nav-email-address">Enter email address</label>
+                    <input type="text" class="quick-nav-email-input" alt="Enter email address" name="nav-email-address" id="nav-email-address">
+                  </div>
+                </div>
+                <input type="hidden" name="recaptcha_element_id" value="captcha_nav_header_email_signup" />
+                <input type="hidden" name="form_name" id="top_nav_email_form_name" value="top-nav-email-signup-form" />
+                <input type="text" name="email_signup_address" style="display:none;" />
+
+                <div id="captcha_nav_header_email_signup"></div>
+                <span class="quick-nav-email-container-btn-wrapper">
+                  <input type="submit" name="signup" class="quick-nav-email-container-btn" id="signup" value="Sign up">
+                </span>
+                <div class="quick-nav-email-signup-message">
+                  
+                </div>
+              </div>
+            </form>
+          </div>
+      </div>
+    </header>
+<div id='flyout-indicator' class='sr-only' role='alert' aria-live='polite'></div>
+<style>
+  #nav-content .shop-all-nav-link{ cursor: pointer; padding-right: 25px; border-right: 1px solid rgba(255,255,255,0.5); }
+  #nav-content .shop-all-nav-link > span.main-nav-items-links:after{
+    position: relative;
+    content: '';
+    border-left: 5px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 10px solid #eeb31a;
+    right: px;
+    top: 15px;
+    right: -15px;
+  }
+  #nav-content .shop-all-nav-link > span.main-nav-items-links { text-transform: uppercase; font-weight: bold;}
+  #nav-content .shop-all-nav-link.active-tab > span.main-nav-items-links{ letter-spacing: 0; }
+
+  #nav-content .shop-all-nav-link > .flyout-section a,
+  #nav-content:has(.shop-all-nav-link) .nav-callout > .flyout-section a { font-weight: 400; padding: 10px 15px;}
+  #nav-content .flyout-section .flyout-item-border{ border-top: 1px solid rgba(0,0,0,0.2); }
+  
+  #nav-content .shop-all-nav-link > .flyout-section li:first-child a{ font-weight: bold; }
+  #nav-content:has(.shop-all-nav-link) .nav-callout{ background: none; color: #eeb31a; cursor: pointer; }
+  #nav-content:has(.shop-all-nav-link) .nav-callout.active-tab{ background: white; }
+  #nav-content:has(.shop-all-nav-link) .nav-callout span.main-nav-items-links{ color: #eeb31a; }
+  #nav-content:has(.shop-all-nav-link) .nav-callout.active-tab  span.main-nav-items-links{ color: #1077c4; }
+  .updated-24 #nav-content:has(.shop-all-nav-link) .main-nav li.nav-callout.main-nav-items{ margin: 0; padding: 5px 0; }
+  .updated-24 .shop-all-nav-link li.flyout-level1-list-item{ width: 225px; }
+  .updated-24 .shop-all-nav-link .col-num-2{ margin-left: 225px; }
+</style>
+<ul class="main-nav drops-enabled">
+<li class="main-nav-items sub-trigger shop-all-nav-link" id="cat-1013588"><span class="main-nav-items-links " >Shop All</span></li>
+
+<li class="main-nav-items sub-trigger" id="cat-1013589"><a class="main-nav-items-links " href="/page/christian-books?navcat=Books" aria-label="Visit the Books store">Books</a></li>
+
+<li class="main-nav-items sub-trigger" id="cat-1013590"><a class="main-nav-items-links " href="/page/bibles?navcat=Bibles" aria-label="Visit the Bibles store">Bibles</a></li>
+
+<li class="main-nav-items sub-trigger" id="cat-1013591"><a class="main-nav-items-links " href="/page/bible-studies?navcat=Bible-Study" aria-label="Visit the Bible Study store">Bible Study</a></li>
+
+<li class="main-nav-items sub-trigger" id="cat-1013592"><a class="main-nav-items-links " href="/page/church?navcat=Church-Supplies-and-Ministry" aria-label="Visit the Church Supplies &amp; Ministry store">Church Supplies &amp; Ministry</a></li>
+
+<li class="main-nav-items sub-trigger" id="cat-1013593"><a class="main-nav-items-links " href="/page/vbs?navcat=VBS" aria-label="Visit the VBS store">VBS</a></li>
+
+<li class="main-nav-items sub-trigger" id="cat-1013594"><a class="main-nav-items-links " href="/page/homeschool?navcat=Homeschool" aria-label="Visit the Homeschool store">Homeschool</a></li>
+
+<li class="main-nav-items sub-trigger" id="cat-1013595"><a class="main-nav-items-links " href="/page/kids?navcat=Kids" aria-label="Visit the Kids store">Kids</a></li>
+
+<li class="main-nav-items sub-trigger" id="cat-1013596"><a class="main-nav-items-links " href="/page/gifts?navcat=Gifts-Clothing-andx26-Decor" aria-label="Visit the Gifts, Clothing &#x26; Decor store">Gifts, Clothing &#x26; Decor</a></li>
+
+<li class="main-nav-items sub-trigger nav-callout" id="cat-1013597"><span class="main-nav-items-links " >Deal Center</span></li>
+
+<li class="filler"></li></ul>
+
+
+  </div>
+</nav>
+<!-- Nav Ad Would Go Below -->
+
+    <div role="region" aria-label="important-messages">
+            <div class="nav-ad-container" style="background-color:#efb21a; font-family:'Open Sans';font-size:20px;color:#1a1405;">
+  <a style="color:#1a1405;text-decoration:none" href="/page/promotion/nav-free-shipping">
+    <span class="nav-ad-headline">FREE SHIPPING</span> 
+    <span style="color:#1a1405;text-decoration:none">with code <span style="font-weight:bold">FREESHIP50</span> on U.S. Orders $50+ | See more&gt;</span>
+  </a>
+</div>
+
+    </div>
+
+<!-- Nav Ad Would Go Above -->
+
+
+<div id="main-frame">
+<div id="page-body">
+
+<div id="main-content" role="main" tabindex="-1">
+    <div id="CBD-PLARecommendationsPlaceHolder" style="display:none"> </div><div class='product-main-content'>
+<div class="CBD-TitleWrapper"> 
+    <div class="CBD-ProductDetailTitle CBD-TitleMediumSmall">Love Walked Among Us: Learning to Love Like Jesus</div>
+    <div class="CBD-ProductDetailAuthor CBD-TitleMediumSmall">    <div class="CBD-ProductDetailAuthor">By: <a class="CBD-ProductDetailAuthorLink" href="/apps/easyfind?Ntk=author&amp;Ntt=Paul%20Miller">Paul Miller</a></div>
+</div>
+    <div>
+    <div class="CBD-ProductDetailAction-Small CBD-ProductDetail-ItemNo" style="margin:0;">Stock No: WW915678</div>    </div>
+</div>
+<div id="CBD-ProductImage">
+    <div id="CBD-ProductThumbnailWrapper"></div>
+  <script id="slideshow-json" type="application/json">{"thumbnail_base_url":"//g.christianbook.com/dg/slideshow","items":[{"alt":"Front Cover","sort_order":"1","filename":"915678_1_ftc.jpg","image":"//g.christianbook.com/g/slideshow/9/915678/main/915678_1_ftc.jpg"},{"alt":"Table of Contents","sort_order":"2","filename":"915678_2_toc.jpg","image":"//g.christianbook.com/g/slideshow/9/915678/main/915678_2_toc.jpg"},{"alt":"Table of Contents","sort_order":"3","filename":"915678_3_toc.jpg","image":"//g.christianbook.com/g/slideshow/9/915678/main/915678_3_toc.jpg"},{"alt":"Excerpt","sort_order":"4","filename":"915678_4_exc.jpg","image":"//g.christianbook.com/g/slideshow/9/915678/main/915678_4_exc.jpg"},{"alt":"Excerpt","sort_order":"5","filename":"915678_5_exc.jpg","image":"//g.christianbook.com/g/slideshow/9/915678/main/915678_5_exc.jpg"},{"alt":"Excerpt","sort_order":"6","filename":"915678_6_exc.jpg","image":"//g.christianbook.com/g/slideshow/9/915678/main/915678_6_exc.jpg"},{"alt":"Excerpt","sort_order":"7","filename":"915678_7_exc.jpg","image":"//g.christianbook.com/g/slideshow/9/915678/main/915678_7_exc.jpg"},{"alt":"Excerpt","sort_order":"8","filename":"915678_8_exc.jpg","image":"//g.christianbook.com/g/slideshow/9/915678/main/915678_8_exc.jpg"},{"alt":"Excerpt","sort_order":"9","filename":"915678_9_exc.jpg","image":"//g.christianbook.com/g/slideshow/9/915678/main/915678_9_exc.jpg"},{"alt":"Excerpt","sort_order":"10","filename":"915678_10_exc.jpg","image":"//g.christianbook.com/g/slideshow/9/915678/main/915678_10_exc.jpg"},{"alt":"Back Cover","sort_order":"99","filename":"915678_99_bkc.jpg","image":"//g.christianbook.com/g/slideshow/9/915678/main/915678_99_bkc.jpg"}]}</script>  <div class='CBD-ProductImageContainer'>
+    <div class="CBD-ProductDetailImageWrap"><div data-CBD-ModalIdentifier="slideshow-lightbox-Modal" data-cbd-slideshow-location="/Christian/Books/product_slideshow?sku=915678&amp;actual_sku=915678" tabindex="0"> <img src="//g.christianbook.com/dg/product/cbd/f400/915678.jpg" alt="Love Walked Among Us: Learning to Love Like Jesus  -     By: Paul Miller
+" fetchpriority="high"/></div></div>
+    <div class="CBD-BelowImage  CBD-ExtraImageLink-Exists">
+        <div class="CBD-AdditionalViewsWrapper CBD-AdditionalView">
+              <style>
+            .CBD-AdditionalViews {
+                background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFIAAABTCAYAAAAMcFA%2BAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3ppVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw%2FeHBhY2tldCBiZWdpbj0i77u%2FIiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8%2BIDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDphMmNkNzFmMy0xNWQ5LTQyMDMtODIyYi1lMzA4OWNhOGUxYWYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUQ4QUZDMTk3NDUyMTFFNjk4NThDQjYyMkJFRkYxMjIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUQ4QUZDMTg3NDUyMTFFNjk4NThDQjYyMkJFRkYxMjIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoTWFjaW50b3NoKSI%2BIDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjA5YjJjMWMyLTg1NjUtNGQ5Zi1hZDA5LWJmZmRlZmZiZjMyMiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDphMmNkNzFmMy0xNWQ5LTQyMDMtODIyYi1lMzA4OWNhOGUxYWYiLz4gPC9yZGY6RGVzY3JpcHRpb24%2BIDwvcmRmOlJERj4gPC94OnhtcG1ldGE%2BIDw%2FeHBhY2tldCBlbmQ9InIiPz4UJUFSAAABnElEQVR42uzaPUoDQRjGcWdJoZLCRmzFxg%2FwBipo7wE8gtfxCp5DhaS1lnSWohZaCILN%2BAhTLCGuE3Z3nHn3%2F8DTZJPA%2Fnh3MpvEee9XSPtUEAAJJJAESCCBBJIACSSQBEgggQSSAAkkkEASIIG0kpGlk3HORT%2B3619PmcihTOQyU7bo5eqeeqIeq9vqEZd2XHbU8xreZu3YNWtkfD7VS3V3wbEpn9rxeVJP1ceUkMknsuWaF5sNdTz32Is6szaRvmXf1cNf3ntfvQtr42ttMqd9nlCpa%2BSX%2BtGAuKU%2Bq2fqW3hsYhmyy%2Bv8QL2dQ3wIx37WzLVeTyT1%2FyPDGuk7hmxCTHJnY2H7sxRiX4NTDQmxz1QgDhsyK8RSIf9CXA0b8qQZGZzEe3U9fHmRbjdS0PYn9nJufO%2Bhf2pntyaWCnmVM2JJkBfqTa6Ilm4R%2F32NtPgNeRI4a7eIrJFAEiCBBBJIUtg%2B0jORJIuJdEAWcsvGpQ0kkARIIIEkQAIJJJAESCCBJEACCSSQBEgggQSSAAkkkARIIIE0nm8BBgBS83CUJbxUqgAAAABJRU5ErkJggg%3D%3D) top center no-repeat;
+                    height: 60px;
+                    text-align: center;
+                    background-size: auto 100%;
+            }
+            .CBD-AdditionalViewsWrappers, .cbd-pd-additional-views {
+                height: 75px; 
+                width: 94px; 
+                display: block; 
+                text-align: center; 
+                margin: 0 auto;
+                margin-top: -20px;
+                cursor: pointer;
+                position: relative;
+            }
+            .CBD-AdditionalViewText{
+                color: black;
+                margin-top: -15px;
+            }
+        </style>
+         
+           <div class="CBD-AdditionalViewsWrappers" data-CBD-ModalIdentifier="slideshow-lightbox-Modal" data-cbd-slideshow-location="/Christian/Books/product_slideshow?sku=915678&actual_sku=915678" aria-label="Additional Views" role="button" tabindex="0">  
+           <div class="CBD-AdditionalViews"></div><div class="CBD-AdditionalViewText">Sample Pages</div>
+           </div>
+    </div>  </div>
+  </div>
+</div>
+<div id="CBD-ProductData">
+    <div class="CBD-ProductDetailInfo">
+       <h1 class="CBD-ProductDetailTitle">Love Walked Among Us: Learning to Love Like Jesus</h1>    <div class="CBD-ProductDetailAuthor">By: <a class="CBD-ProductDetailAuthorLink" href="/apps/easyfind?Ntk=author&amp;Ntt=Paul%20Miller">Paul Miller</a></div>
+<div class="CBD-ProductDetail-Medium CBD-ProductDetailPublisher">NavPress / 2014 / Paperback</div><div class="CBD-ProductDetail-Medium CBD-ProductDetailRating"  > <a class="CBD-ProductDetailRatingStars CBD-ProductDetailRatingStars-5-0" href="#customer_reviews"><span><span><span>5</span> out of <span>5</span> stars for Love Walked Among Us: Learning to Love Like Jesus</span></span><span class="sr-only"> - View reviews of this product, 5 total.</span> </a><a href="#customer_reviews" aria-hidden="true">(<span>5</span> Reviews)</a>
+<a class="CBD-ProductDetailRatingWrite" href="#write_review">Write a Review</a></div>
+<hr class="CBD-ProductDetailRule" />
+<div class="CBD-ProductDetail-Medium CBD-ProductDetailAvailability">In Stock</div><div class="CBD-ProductDetail-Medium CBD-ProductDetailSKU">Stock No: WW915678</div><hr class="CBD-ProductDetailRule" />
+
+    </div>
+</div>
+    <style>
+.CBD-ProductDetailAction {
+    margin-bottom: 10px !important;
+}
+</style><div id="CBD-ProductActions" class="has-smart-buttons">
+<div class="main-action-box">
+<div id="primary-action-box" class="CBD-ProductDetailAction CBD-ProductDetailActionPhysical">
+<form name="PDPPhysicalToBookbag" enctype="application/x-www-form-urlencoded" action="/Christian/Books/bookbag" method="post" novalidate/>
+    <div >
+            <span class="CBD-ProductDetailActionHeading">Buy Item</span>
+        <span class="CBD-ProductDetailPriceBox">
+            <span class="CBD-ProductDetailActionPrice"><span><span class="sr-only">Our Price</span>$13.78</span></span>            <span class="CBD-ProductDetailActionRetail">Retail: <del> $18.99 </del></span>            <span class="CBD-ProductDetailActionSavings">Save 27% ($5.21)</span>        </span>
+        <span class="CBD-ProductDetailQuantityBox">
+            <div class="CBD-ProductDetailAction-Small CBD-ProductDetailRating"><a class="CBD-ProductDetailRatingStars CBD-ProductDetailRatingStars-5-0" href="#customer_reviews"><span><span><span>5</span> out of <span>5</span> stars for Love Walked Among Us: Learning to Love Like Jesus</span></span><span class="sr-only"> - View reviews of this product, 5 total.</span> </a><a href="#customer_reviews" aria-hidden="true">(<em>5<span class='CBD-ProductDetailTitleReviewText'> Reviews</span></em>)</a>
+</div>            <div class="CBD-ProductDetailAction-Small CBD-ProductDetailAvailability">In Stock</div>            <div class="quantity"><div>Quantity:</div><input type="text" pattern="" value="1" name="quantity" aria-label="quantity"/><div class="CBD-SelectFrame CartDropDownQuantity" aria-label="Quantity">
+    <label for=""> </label>
+    <div class="CBD-SelectFrameSpacer">
+        <select name=""  aria-label="Quantity" required autocomplete="off">            <option value="1" selected>1</option>            <option value="2">2</option>            <option value="3">3</option>            <option value="4">4</option>            <option value="5">5</option>            <option value="6">6</option>            <option value="7">7</option>            <option value="8">8</option>            <option value="9">9</option>            <option value="10">10+</option>        </select>
+    </div></div>
+</div>            <span class="CBD-ProductDetailAction-Small CBD-ProductDetailSKU ">Stock No: WW915678</span>            <div class="CBD-ProductDetailAction-Small CBD-ProductDetailPublisher">NavPress / 2014 / Paperback</div>        </span>
+    <div class="CBD-ProductActions-Large CBD-ProductActions-Primary">
+        <div class="quantity"><div>Quantity:</div><input type="text" value="1" name="quantity" aria-label="quantity"/><div class="CBD-SelectFrame CartDropDownQuantity" aria-label="Quantity">
+    <label for=""> </label>
+    <div class="CBD-SelectFrameSpacer">
+        <select name=""  aria-label="Quantity" required autocomplete="off">            <option value="1" selected>1</option>            <option value="2">2</option>            <option value="3">3</option>            <option value="4">4</option>            <option value="5">5</option>            <option value="6">6</option>            <option value="7">7</option>            <option value="8">8</option>            <option value="9">9</option>            <option value="10">10+</option>        </select>
+    </div></div>
+</div><br>        <input type="hidden" value="Place in Bookbag" name="action"/>
+        <input type="hidden" value="915678" name="sku_list"/>
+        <input type="hidden" value="ESRCP" name="event"/>
+        <input type="hidden" value="WW" name="item_code"/>
+        <input type="hidden" value="" name="Referer"/>
+        <input type="hidden" name="wac" value="" />
+               <span class="CBD-ProductDetailActionButton ">
+            <span class="primary-button-text">Add To Cart</span>
+            <button type="submit" name="action" value="Place in Bookbag">Add To Cart</button>
+        </span>    </div>
+
+        <div class="CBD-ProductDetailActionMessage CBD-ProductActions-Large"  style="display:none" ><em id="CBD-ProductsInCart"></em> of These in Your <a href="/Christian/Books/bookbag">Cart</a></div>    </div>
+</form>
+<div class="CB-PayPal-Components CBD-ProductActions-Large CB-PayPal-Components-Medium">
+        <div class="CB-PayPal-SmartButton-Container">
+            <div class="CB-PayPal-BuyNowText">
+        <span class="CB-PayPal-BuyNowLine"></span>
+        <p>or checkout with</p>
+      </div>      <div class="CB-PayPal-SmartButton-Placeholder" id="pp-yhhJ3TaR" data-id="pp-yhhJ3TaR"
+         data-layout="vertical"         data-color="blue"         data-shape="rect"         data-buy-now-sku="915678"></div>
+    </div>        <div class="CB-PayPal-Message" data-pp-message
+         data-pp-placement="product"         data-pp-amount="13.78"         data-pp-style-layout="text"         data-pp-style-logo-type="alternative"         data-pp-style-logo-position="left"         data-pp-style-text-size=14         data-pp-style-text-align="center"></div>    <script src='https://www.paypal.com/sdk/js?client-id=AYRgY-nTQ3QYB8VCSDP-Njy9hherSjbECGyG7d3fH6kANYaVUimu-Sc9H3gs6vmjBs-jZSHtJiSP-aVc&components=buttons,messages&commit=false&intent=order&disable-funding=card'></script></div>
+<form name="PDPPhysicalToWishlist" enctype="application/x-www-form-urlencoded" action="/Christian/Books/wishlist" method="post" onsubmit="var Value=document.PDPPhysicalToBookbag[1].quantity.value;document.PDPPhysicalToWishlist[0].quantity.value=Value;" class="CBD-ProductActions-Large" />
+    <div>
+        <input type="hidden" value="1" name="add_to_wishlist.x"/>
+        <input type="hidden" value="1" name="add_to_wishlist.y"/>
+        <input type="hidden" value="1" name="quantity"/>
+        <input type="hidden" name="wac" value="" />
+        <input type="hidden" value="Add To Wishlist" name="action"/>
+        <input type="hidden" value="915678" name="sku_list"/>
+        <input type="hidden" value="ESRCP" name="event"/>
+        <input type="hidden" value="WW" name="item_code"/>
+        <input type="hidden" value="" name="Referer"/>
+        <span class="CBD-ProductDetailActionButton CBD-ProductDetailActionButton-ToLink">
+            Add To Wishlist
+            <button type="submit" name="action" value="Add To Wishlist">Add To Wishlist</button>
+        </span>
+    </div>
+</form></div>
+</div>
+<div class="CBD-SocialShare-Wrapper CBD-ProductActions-Large CBD-ProductActions-Large-NoMargin">
+    <style>
+.CBD-ProductDetailSocial li:first-child {
+    margin-left: 50px;
+}
+@media (max-width: 700px){
+    html.responsive .CBD-ProductDetailSocial li:first-child {
+        clear: both;
+        margin-left: 0px !important;
+        padding-left: 15px;
+    }
+    .CBD-ProductDetailSocial {
+        clear: both;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    html.responsive .CBD-ProductDetailSocial li {
+        margin: 0 20px;
+    }
+    .CBD-ProductDetailSocial li {
+            float: none;
+            display: inline-block;
+    }
+}
+</style>
+<ul class="CBD-ProductDetailSocial">
+	<li id="twitter-tweet">
+	<a href="https://twitter.com/intent/tweet?text=Just%20found%20this%20on%20@christianbook.com%20-%20https%3A%2F%2Fwww.christianbook.com%2FChristian%2FBooks%2Fproduct%3Fitem_no%3D915678%26event%3DSHARETW" target="_blank" rel="noopener" aria-label="Tweet this product (opens in a new window)">
+    <div></div>
+    </a></li>
+	<li id="facebook-like">
+    <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.christianbook.com%2Flove-walked-among-learning-like-jesus%2Fpaul-miller%2F9781612915678%2Fpd%2F915678%3Fevent%3DSHAREFB&t=Love%20Walked%20Among%20Us%3A%20Learning%20to%20Love%20Like%20Jesus%20-%20on%20Christianbook.com" target="_blank" rel="noopener" aria-label="Post this product on Facebook (opens in a new window)">
+    <div></div>
+    </a>
+	</li>
+    <li id="pinterest">
+    <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.christianbook.com%2Flove-walked-among-learning-like-jesus%2Fpaul-miller%2F9781612915678%2Fpd%2F915678%3Fevent%3DSHAREPIN&media=https%3A%2F%2Fg.christianbook.com%2Fdg%2Fproduct%2Fcbd%2Fw500%2F915678.jpg&description=Love%20Walked%20Among%20Us%3A%20Learning%20to%20Love%20Like%20Jesus" target="_blank" rel="noopener" class="pin-it-button" count-layout="none" aria-label="Pin this product (opens in a new window)">
+    <div></div>
+    </a>
+    </li>
+</ul>
+
+</div></div>
+
+<div class="CBD-ProductActions-Small CBD-ProductDetailActionPhysical has-smart-buttons">
+        <div class="CBD-ProductActionsBottom ">
+        <form name="PDPPhysicalToBookbag" enctype="application/x-www-form-urlencoded" action="/Christian/Books/bookbag" method="post"/>
+        <div class="quantity"><div>Quantity:</div><input type="text" value="1" name="quantity" aria-label="quantity"/><div class="CBD-SelectFrame CartDropDownQuantity" aria-label="Quantity">
+    <label for=""> </label>
+    <div class="CBD-SelectFrameSpacer">
+        <select name=""  aria-label="Quantity" required autocomplete="off">            <option value="1" selected>1</option>            <option value="2">2</option>            <option value="3">3</option>            <option value="4">4</option>            <option value="5">5</option>            <option value="6">6</option>            <option value="7">7</option>            <option value="8">8</option>            <option value="9">9</option>            <option value="10">10+</option>        </select>
+    </div></div>
+</div><br><br>        <input type="hidden" value="Place in Bookbag" name="action"/>
+        <input type="hidden" value="915678" name="sku_list"/>
+        <input type="hidden" value="ESRCP" name="event"/>
+        <input type="hidden" value="WW" name="item_code"/>
+        <input type="hidden" value="" name="Referer"/>
+        <input type="hidden" name="wac" value="" />
+               <span class="CBD-ProductDetailActionButton ">
+            <span class="primary-button-text">Add To Cart</span>
+            <button type="submit" name="action" value="Place in Bookbag">Add To Cart</button>
+        </span>        </form>
+    </div><div class="CB-PayPal-Components CBD-ProductActions-Small CB-PayPal-Components-Medium">
+        <div class="CB-PayPal-SmartButton-Container">
+            <div class="CB-PayPal-BuyNowText">
+        <span class="CB-PayPal-BuyNowLine"></span>
+        <p>or checkout with</p>
+      </div>      <div class="CB-PayPal-SmartButton-Placeholder" id="pp-hDUSQvLe" data-id="pp-hDUSQvLe"
+         data-layout="vertical"         data-color="blue"         data-shape="rect"         data-buy-now-sku="915678"></div>
+    </div>        <div class="CB-PayPal-Message" data-pp-message
+         data-pp-placement="product"         data-pp-amount="13.78"         data-pp-style-layout="text"         data-pp-style-logo-type="primary"         data-pp-style-logo-position="left"         data-pp-style-text-size=14         data-pp-style-text-align="center"></div></div>
+    <div class="CBD-WishlistAction">
+        <form name="PDPPhysicalToWishlist" enctype="application/x-www-form-urlencoded" action="/Christian/Books/wishlist" method="post" onsubmit="var Value=document.PDPPhysicalToBookbag[1].quantity.value;document.PDPPhysicalToWishlist[1].quantity.value=Value;"/>
+        <div>
+            <input type="hidden" value="1" name="add_to_wishlist.x"/>
+            <input type="hidden" value="1" name="add_to_wishlist.y"/>
+            <input type="hidden" value="1" name="quantity"/>
+            <input type="hidden" name="wac" value="" />
+            <input type="hidden" value="Add To Wishlist" name="action"/>
+            <input type="hidden" value="915678" name="sku_list"/>
+            <input type="hidden" value="ESRCP" name="event"/>
+            <input type="hidden" value="WW" name="item_code"/>
+            <input type="hidden" value="" name="Referer"/>
+            <span class="CBD-ProductDetailActionButton CBD-ProductDetailActionButton-ToLink">
+                Wishlist
+                <button type="submit" name="action" value="Add To Wishlist">Wishlist</button>
+            </span>
+        </div>
+    </form>    </div>
+    <div class="CBD-SocialShare-Wrapper CBD-ProductActions-Small">
+        <style>
+.CBD-ProductDetailSocial li:first-child {
+    margin-left: 50px;
+}
+@media (max-width: 700px){
+    html.responsive .CBD-ProductDetailSocial li:first-child {
+        clear: both;
+        margin-left: 0px !important;
+        padding-left: 15px;
+    }
+    .CBD-ProductDetailSocial {
+        clear: both;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    html.responsive .CBD-ProductDetailSocial li {
+        margin: 0 20px;
+    }
+    .CBD-ProductDetailSocial li {
+            float: none;
+            display: inline-block;
+    }
+}
+</style>
+<ul class="CBD-ProductDetailSocial">
+	<li id="twitter-tweet">
+	<a href="https://twitter.com/intent/tweet?text=Just%20found%20this%20on%20@christianbook.com%20-%20https%3A%2F%2Fwww.christianbook.com%2FChristian%2FBooks%2Fproduct%3Fitem_no%3D915678%26event%3DSHARETW" target="_blank" rel="noopener" aria-label="Tweet this product (opens in a new window)">
+    <div></div>
+    </a></li>
+	<li id="facebook-like">
+    <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.christianbook.com%2Flove-walked-among-learning-like-jesus%2Fpaul-miller%2F9781612915678%2Fpd%2F915678%3Fevent%3DSHAREFB&t=Love%20Walked%20Among%20Us%3A%20Learning%20to%20Love%20Like%20Jesus%20-%20on%20Christianbook.com" target="_blank" rel="noopener" aria-label="Post this product on Facebook (opens in a new window)">
+    <div></div>
+    </a>
+	</li>
+    <li id="pinterest">
+    <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.christianbook.com%2Flove-walked-among-learning-like-jesus%2Fpaul-miller%2F9781612915678%2Fpd%2F915678%3Fevent%3DSHAREPIN&media=https%3A%2F%2Fg.christianbook.com%2Fdg%2Fproduct%2Fcbd%2Fw500%2F915678.jpg&description=Love%20Walked%20Among%20Us%3A%20Learning%20to%20Love%20Like%20Jesus" target="_blank" rel="noopener" class="pin-it-button" count-layout="none" aria-label="Pin this product (opens in a new window)">
+    <div></div>
+    </a>
+    </li>
+</ul>
+
+    </div></div>
+
+<div id="CBD-PD-Is-Mobile" style="display:none;" data-is-mobile-enabled="0"></div>
+</div>
+<br style='clear:both'><style>.js .CBD-FormFrame > * { transition : none } </style> <input type='hidden' id='requires-geo-flag' value='0'/> <div class='CBD-TreeProductSubSection'> <div class='CBD-ProductDetail-Tree' role='navigation' aria-label='faceted-navigation'><a href="/page/promotion/current-promotions?event=TNRP&TPD=1" style="border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;border:1px solid #A3A4A8;display:block;float:left;margin-bottom:4px;background:url(//g.christianbook.com/g/current-promotions.jpg) no-repeat -1px -1px;" aria-label="Current Promotions"><img src="//g.christianbook.com/g/current-promotions.jpg" alt="Current Promotions" style="visibility:hidden;margin:-1px;display:block;" /></a>
+
+<div class="CBD-CategoryTree" data-CBD-ResponsiveTreeBehavior="tree">
+    
+    
+    <div class="CBD-TreeHeadingWrapper">
+      <div class="CBD-HeadingTree"><h3>Browse</h3></div>
+    <ul class="CBD-TreeCategories">
+<li><a href="/apps/easyfind?tree=All-Products&xfilter=1&TPD=1" style="margin-left:-1px;"><span class='CBD-TreeAll'>All Products</span></a>
+<ul><li><a href="/apps/easyfind?Ntt=915678&action=Search&Nu=product.endeca_rollup&Ntk=keywords&event=EBRN&TPD=1">Keywords: 915678</a>
+<ul><li><a class="category-crumb" href="/apps/easyfind?Ntt=915678&N=1014644&action=Search&Nu=product.endeca_rollup&Ne=5200+1000000+1001054+5300+10000&Ntk=keywords&event=EBRN&tree=Books-eBooks-and-Audio&TPD=1" aria-label="Books, eBooks & Audio: currently selected">
+Books, eBooks & Audio<span tabindex="0" role="link" aria-label="Remove this category" class="remove">&times;</span>
+</a>
+<ul><li><a class="category-crumb" href="/apps/easyfind?Ntt=915678&N=1014684&action=Search&Nu=product.endeca_rollup&Ne=5200+1000000+1001054+5300+10000&Ntk=keywords&event=EBRN&tree=Books-eBooks-and-Audio|Christian-Living&TPD=1" aria-label="Christian Living: currently selected">
+Christian Living<span tabindex="0" role="link" aria-label="Remove this category" class="remove">&times;</span>
+</a>
+<ul><li><a class="category-crumb" href="/apps/easyfind?Ntt=915678&N=1031297&action=Search&Nu=product.endeca_rollup&Ne=5200+1000000+1001054+5300+10000&Ntk=keywords&event=EBRN&tree=Books-eBooks-and-Audio|Christian-Living|Discipleship&TPD=1" aria-label="Discipleship: currently selected">
+Discipleship<span tabindex="0" role="link" aria-label="Remove this category" class="remove">&times;</span>
+</a>
+<ul><li><a class="category-crumb" href="/apps/easyfind?Ntt=915678&N=1001054&action=Search&Nu=product.endeca_rollup&Ne=5200+1000000+1001054+5300+10000&Ntk=keywords&event=EBRN&tree=Books-eBooks-and-Audio|Christian-Living|Discipleship|Knowing-God&TPD=1" aria-label="Knowing God: currently selected">
+Knowing God<span tabindex="0" role="link" aria-label="Remove this category" class="remove">&times;</span>
+ (1)</a>
+<ul class="sub-categories">
+
+</ul></li></ul></li></ul></li></ul></li></ul></li></ul></li>
+    </ul>
+</div>
+
+
+
+    
+        <div class="CBD-TreeHeadingWrapper CBD-TreeStaticLinks"><div class="CBD-HeadingTree"><h3>Advanced Search Links</h3></div>
+    <ul>
+        <li><a href="/apps/advanced-search?TPD=1">Advanced Search</a></li>
+                <li><a href="/apps/finder?type=Bible&TPD=1">Bible Finder</a></li>
+        <li><a href="/apps/finder?type=Homeschool&TPD=1">Homeschool Finder</a></li>
+        <li><a href="/Christian/Books/song_search?TPD=1">Song Search</a></li>
+
+    </ul>
+    </div>
+
+    
+</div>
+<div id='CB-TreeAd' style='margin-top: 10px;border-top: 1px solid rgba(0,0,0,0.2); padding-top: 15px;'><div class="CB-AdServer-Widget" data-reviveurl="servedby.revive-adserver.net">
+  <ins data-revive-zoneid="15735" data-revive-id="727bec5e09208690b050ccfc6a45d384" data-revive-event="AD"></ins>
+</div>
+</div></div><div class='CBD-ProductDetailSubSection '> <div class='CBD-Notifications'><a onclick="window.open( '/Christian/Books/oversize?sku=915678', 'o915678', 'width=450,height=450,toolbar=no,scrollbars=no,menubar=no,location=no,directories=no,status=no,resizable=no' )" href="#CURR">Product Close-up</a>
+</div><script id="CBD-AjaxType" style="display:none" data-ajax="1" type="cbd-product-detail/additional-data">
+      {"crossbox_total_tabs":1,"recommendations":{"recommendations_param":"recommendations","skus":["70178","779021","24995","957403","957427","74414","897044","81059","137924","143932","173418","146606","246407","547843","159529"],"event_code":"CFMON1","pla_skus":[]},"rec_token_map":{"159529":"rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjE1OTUyOSIsICIxNTk1MjkiLCA3Mjk2NSwgMTQsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ","957427":"rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjk1NzQyNyIsICI5NTc0MjciLCA3Mjk2NSwgNCwgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd","70178":"rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjcwMTc4IiwgIjcwMTc4IiwgNzMwMTIsIDAsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ","547843":"rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjU0Nzg0MyIsICI1NDc4NDMiLCA3Mjk2NSwgMTMsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ","81059":"rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjgxMDU5IiwgIjgxMDU5IiwgNzI5NjUsIDcsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ","146606":"rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjE0NjYwNiIsICIxNDY2MDYiLCA3Mjk2NSwgMTEsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ","897044":"rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjg5NzA0NCIsICI4OTcwNDQiLCA3Mjk2NSwgNiwgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd","74414":"rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjc0NDE0IiwgIjc0NDE0IiwgNzI5NjUsIDUsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ","137924":"rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjEzNzkyNCIsICIxMzc5MjQiLCA3Mjk2NSwgOCwgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd","957403":"rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjk1NzQwMyIsICI5NTc0MDMiLCA3Mjk2NSwgMywgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd","143932":"rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjE0MzkzMiIsICIxNDM5MzIiLCA3Mjk2NSwgOSwgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd","173418":"rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjE3MzQxOCIsICIxNzM0MTgiLCA3Mjk2NSwgMTAsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ","779021":"rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjc3OTAyMSIsICI3NzkwMjEiLCA3MzAxMSwgMSwgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd","246407":"rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjI0NjQwNyIsICIyNDY0MDciLCA3Mjk2NSwgMTIsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ","24995":"rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjI0OTk1IiwgIjI0OTk1IiwgNzMwMTEsIDIsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ"}} 
+</script>
+<form id="" class="CBD-FormFrame CBD-FormCrossBox CBD-FormFrame-Shown" action="" method="post" name="form" data-CBD-ResponsiveBehavior='crossbox' data-custom-validation="no">
+        
+    <div class="CBD-FieldsetFrame">
+    <div class="CBD-FormCrossbox " data-CBD-ResponsiveBehavior='crossbox'>
+  <div class="CBD-FormCrossbox-header">
+    <ul>
+            <li class="CBD-FormCrossbox-header-item active" style="display: list-item;"id="crossboxTab-1">
+          <button type="button" aria-label="View 15 Others Also Purchased" aria-current="true">Others Also Purchased (15)</button>
+      </li>    </ul>
+    <div class="CBD-FormCrossbox-actions">
+      <div class="CBD-FormCrossbox-actions-addToCart large">
+        <div class="CBD-ButtonFrame CBD-ButtonFrame-Primary CBD-ButtonFrame-" >
+    <button name="add_to_cart" type="submit"  value="add_to_cart">Add To Cart</button></div>
+
+      </div>
+      <div class="CBD-FormCrossbox-actions-detailPage">
+      </div>
+    </div>
+  </div>
+    <div class="CBD-FormCrossbox-content">
+    <div class="CBD-FormCrossbox-content-title mobile" id="crossboxTabMobile-1">
+      <span class="CBD-FormCrossbox-DownArrow active">&#9660</span><span class="CBD-FormCrossbox-UpArrow  active">&#9650</span>Others Also Purchased (15)
+    </div>
+    <div class="CBD-FormCrossbox-actions-addToCart active mobile" id="crossboxBtn-1">
+        <div class="CBD-ButtonFrame CBD-ButtonFrame-Primary CBD-ButtonFrame-" >
+    <button name="add_to_cart" type="submit"  value="add_to_cart">Add To Cart</button></div>
+
+    </div>
+    <div class="CBD-FormCrossbox-content-html CBD-FormCrossbox-Others-Also-Purchased-content-html active" id="crossboxHtml-1">
+      <div class="CBD-PreviewGroup CBD-PreviewGroup-Container CBD-PreviewGroup-ContainerCheckBox CBD-PreviewGroup-CPOF CBD-PreviewGroup-List CBD-PreviewGroup-BigImages" data-CBD-ResponsiveBehavior="cpof-big" data-CBD-ResponsiveMobileEnvironment="0"  method="post" action= enctype="application/x-www-form-urlencoded">
+  <div class="CBD-ContainerHeading" aria-hidden="true">
+      <div class="CBD-ContainerHeadingProduct">Description</div>      <div class="CBD-ContainerHeadingTitleAuthor">Availability</div>   <div class="CBD-ContainerHeadingPrice">Price</div>
+      <div class="CBD-ContainerHeadingQty">Add</div>   <div class="CBD-ContainerHeadingAmount">Include</div>
+  </div>
+  <div class="CBD-PreviewGroupMask">
+    <div class="CBD-PreviewGroupItems" role="table">
+      <div class="CBD-AriaTableHeadingsRow sr-only" role="row">
+                <span role="columnheader">Select this Item</span>        <span role="columnheader">Product</span>        <span role="columnheader">Title/Author</span>
+                        <span role="columnheader">Availability</span>        <span role="columnheader">Price</span>
+                <span role="columnheader">Quantity</span>      </div>
+                  <div class="CBD-PreviewGroupItem" role="row">
+                <span role="cell" class="CBD-PreviewGroupItemCheckboxContainer">
+            <input class="CBD-PreviewGroupItemCheckbox" type="checkbox"  value="70178" aria-label="Add The God Who Loves You: Love Divine, All Loves Excelling to your cart" name="add-to-cart-1"  />
+        </span>                <div class="CBD-ContainerActions" role="cell">
+          <a class="CBD-PreviewGroupItemImage" href="/loves-you-love-divine-all-excelling/peter-kreeft/9781586170172/pd/70178?event=CBMON1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjcwMTc4IiwgIjcwMTc4IiwgNzMwMTIsIDAsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ">
+                        <img src="//g.christianbook.com/dg/product/cbd/w75/70178.jpg" alt="The God Who Loves You: Love Divine, All Loves Excelling" title="The God Who Loves You: Love Divine, All Loves Excelling" loading="lazy" />          </a>
+        </div>        <div class="CBD-PreviewGroupDescription">
+          <div class="CBD-PreviewGroupItemData" role="cell">
+              <a class="CBD-PreviewGroupItemLink" href="/loves-you-love-divine-all-excelling/peter-kreeft/9781586170172/pd/70178?event=CBMON1" tabindex="-1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjcwMTc4IiwgIjcwMTc4IiwgNzMwMTIsIDAsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ">The God Who Loves You: Love Divine, All Loves Excelling
+            </a>
+        </div><!--end CBD-PreviewGroupItemData-->
+        <div class="CBD-PreviewGroupItemTotalPrice-Small" role="cell">$15.06</div>        <div role="cell" class="CBD-PreviewGroupItemAvailability">In Stock</div>        <div class="CBD-PreviewGroupItemPrice" role="cell">
+                    <div class="CBD-PreviewGroupItemPriceSale"><span class="sr-only">Our Price</span>$15.06</div>
+          <div><span class="CBD-PreviewGroupItemPriceRetail">Retail: <del>$17.95</del></span></div>                    <div class="CBD-ContainerActionsBig">
+            </div>          </div>
+          <div class="CBD-PreviewGroupQuantityandSale">
+                        <a class="CBD-PreviewGroupItemAddButton" href="/Christian/Books/bookbag?action=Place+in+Bookbag&amp;amp;sku_list=70178&amp;amp;quantity=1&amp;event=CBMON1" rel="nofollow" >Add To Cart</a>                                                <div class="CBD-CPOFQuantityControls" role="cell">
+                <button type="button" class="CBD-CPOFQuantityDecrease" aria-label="Decrease quantity of The God Who Loves You: Love Divine, All Loves Excelling"><span class='minus'></span></button>
+                <div class="CBD-CPOFQuantityValue"><input class="CBD-CPOFQuantityIndicator"type="tel" maxlength="4" size="4"  value="0" aria-label="Quantity for The God Who Loves You: Love Divine, All Loves Excelling"/></div>
+              <button type="button" class="CBD-CPOFQuantityIncrease" aria-label="Increase quantity of The God Who Loves You: Love Divine, All Loves Excelling"><span class='plus'>+</span></button>
+            </div>
+            <span role="cell"><input class="CBD-PreviewGroupItemQuantity" type="tel" value="0" name="70178_quantity" aria-label="Quantity for The God Who Loves You: Love Divine, All Loves Excelling" width="10" id="70178_quantity" maxlength="4" size="4" autocomplete="_quantity"/></span>            <div class="CBD-PreviewGroupItemTotalPrice" role="cell">$15.06</div>          </div>
+        </div>
+      </div>            <div class="CBD-PreviewGroupItem" role="row">
+                <span role="cell" class="CBD-PreviewGroupItemCheckboxContainer">
+            <input class="CBD-PreviewGroupItemCheckbox" type="checkbox"  value="779021" aria-label="Add Dark Journey, Deep Grace to your cart" name="add-to-cart-1"  />
+        </span>                <div class="CBD-ContainerActions" role="cell">
+          <a class="CBD-PreviewGroupItemImage" href="/dark-journey-deep-grace/roy-ratcliff/9780976779025/pd/779021?event=CBMON1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjc3OTAyMSIsICI3NzkwMjEiLCA3MzAxMSwgMSwgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd">
+                        <img src="//g.christianbook.com/dg/product/ingram/w75/779021.jpg" alt="Dark Journey, Deep Grace" title="Dark Journey, Deep Grace" loading="lazy" />          </a>
+        </div>        <div class="CBD-PreviewGroupDescription">
+          <div class="CBD-PreviewGroupItemData" role="cell">
+              <a class="CBD-PreviewGroupItemLink" href="/dark-journey-deep-grace/roy-ratcliff/9780976779025/pd/779021?event=CBMON1" tabindex="-1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjc3OTAyMSIsICI3NzkwMjEiLCA3MzAxMSwgMSwgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd">Dark Journey, Deep Grace
+            </a>
+        </div><!--end CBD-PreviewGroupItemData-->
+        <div class="CBD-PreviewGroupItemTotalPrice-Small" role="cell">$14.39</div>        <div role="cell" class="CBD-PreviewGroupItemAvailability">In Stock</div>        <div class="CBD-PreviewGroupItemPrice" role="cell">
+                    <div class="CBD-PreviewGroupItemPriceSale"><span class="sr-only">Our Price</span>$14.39</div>
+          <div><span class="CBD-PreviewGroupItemPriceRetail">Retail: <del>$15.99</del></span></div>                    <div class="CBD-ContainerActionsBig">
+            </div>          </div>
+          <div class="CBD-PreviewGroupQuantityandSale">
+                        <a class="CBD-PreviewGroupItemAddButton" href="/Christian/Books/bookbag?action=Place+in+Bookbag&amp;amp;sku_list=779021&amp;amp;quantity=1&amp;event=CBMON1" rel="nofollow" >Add To Cart</a>                                                <div class="CBD-CPOFQuantityControls" role="cell">
+                <button type="button" class="CBD-CPOFQuantityDecrease" aria-label="Decrease quantity of Dark Journey, Deep Grace"><span class='minus'></span></button>
+                <div class="CBD-CPOFQuantityValue"><input class="CBD-CPOFQuantityIndicator"type="tel" maxlength="4" size="4"  value="0" aria-label="Quantity for Dark Journey, Deep Grace"/></div>
+              <button type="button" class="CBD-CPOFQuantityIncrease" aria-label="Increase quantity of Dark Journey, Deep Grace"><span class='plus'>+</span></button>
+            </div>
+            <span role="cell"><input class="CBD-PreviewGroupItemQuantity" type="tel" value="0" name="779021_quantity" aria-label="Quantity for Dark Journey, Deep Grace" width="10" id="779021_quantity" maxlength="4" size="4" autocomplete="_quantity"/></span>            <div class="CBD-PreviewGroupItemTotalPrice" role="cell">$14.39</div>          </div>
+        </div>
+      </div>            <div class="CBD-PreviewGroupItem" role="row">
+                <span role="cell" class="CBD-PreviewGroupItemCheckboxContainer">
+            <input class="CBD-PreviewGroupItemCheckbox" type="checkbox"  value="24995" aria-label="Add John Wesley: A Biography to your cart" name="add-to-cart-1"  />
+        </span>                <div class="CBD-ContainerActions" role="cell">
+          <a class="CBD-PreviewGroupItemImage" href="/john-wesley-a-biography/stephen-tomkins/9780802824998/pd/24995?event=CBMON1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjI0OTk1IiwgIjI0OTk1IiwgNzMwMTEsIDIsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ">
+                        <img src="//g.christianbook.com/dg/product/cbd/w75/24995.jpg" alt="John Wesley: A Biography" title="John Wesley: A Biography" loading="lazy" />          </a>
+        </div>        <div class="CBD-PreviewGroupDescription">
+          <div class="CBD-PreviewGroupItemData" role="cell">
+              <a class="CBD-PreviewGroupItemLink" href="/john-wesley-a-biography/stephen-tomkins/9780802824998/pd/24995?event=CBMON1" tabindex="-1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjI0OTk1IiwgIjI0OTk1IiwgNzMwMTEsIDIsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ">John Wesley: A Biography
+            </a>
+        </div><!--end CBD-PreviewGroupItemData-->
+        <div class="CBD-PreviewGroupItemTotalPrice-Small" role="cell">$13.23</div>        <div role="cell" class="CBD-PreviewGroupItemAvailability">In Stock</div>        <div class="CBD-PreviewGroupItemPrice" role="cell">
+                    <div class="CBD-PreviewGroupItemPriceSale"><span class="sr-only">Our Price</span>$13.23</div>
+          <div><span class="CBD-PreviewGroupItemPriceRetail">Retail: <del>$22.99</del></span></div>                    <div class="CBD-ContainerActionsBig">
+            </div>          </div>
+          <div class="CBD-PreviewGroupQuantityandSale">
+                        <a class="CBD-PreviewGroupItemAddButton" href="/Christian/Books/bookbag?action=Place+in+Bookbag&amp;amp;sku_list=24995&amp;amp;quantity=1&amp;event=CBMON1" rel="nofollow" >Add To Cart</a>                                                <div class="CBD-CPOFQuantityControls" role="cell">
+                <button type="button" class="CBD-CPOFQuantityDecrease" aria-label="Decrease quantity of John Wesley: A Biography"><span class='minus'></span></button>
+                <div class="CBD-CPOFQuantityValue"><input class="CBD-CPOFQuantityIndicator"type="tel" maxlength="4" size="4"  value="0" aria-label="Quantity for John Wesley: A Biography"/></div>
+              <button type="button" class="CBD-CPOFQuantityIncrease" aria-label="Increase quantity of John Wesley: A Biography"><span class='plus'>+</span></button>
+            </div>
+            <span role="cell"><input class="CBD-PreviewGroupItemQuantity" type="tel" value="0" name="24995_quantity" aria-label="Quantity for John Wesley: A Biography" width="10" id="24995_quantity" maxlength="4" size="4" autocomplete="_quantity"/></span>            <div class="CBD-PreviewGroupItemTotalPrice" role="cell">$13.23</div>          </div>
+        </div>
+      </div>            <div class="CBD-PreviewGroupItem" role="row">
+                <span role="cell" class="CBD-PreviewGroupItemCheckboxContainer">
+            <input class="CBD-PreviewGroupItemCheckbox" type="checkbox"  value="957403" aria-label="Add One-Minute Inspirations for Women to your cart" name="add-to-cart-1"  />
+        </span>                <div class="CBD-ContainerActions" role="cell">
+          <a class="CBD-PreviewGroupItemImage" href="/one-minute-inspirations-for-women/elizabeth-george/9780736957403/pd/957403?event=CBMON1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjk1NzQwMyIsICI5NTc0MDMiLCA3Mjk2NSwgMywgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd">
+                        <img src="//g.christianbook.com/dg/product/cbd/w75/957403.jpg" alt="One-Minute Inspirations for Women" title="One-Minute Inspirations for Women" loading="lazy" />          </a>
+        </div>        <div class="CBD-PreviewGroupDescription">
+          <div class="CBD-PreviewGroupItemData" role="cell">
+              <a class="CBD-PreviewGroupItemLink" href="/one-minute-inspirations-for-women/elizabeth-george/9780736957403/pd/957403?event=CBMON1" tabindex="-1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjk1NzQwMyIsICI5NTc0MDMiLCA3Mjk2NSwgMywgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd">One-Minute Inspirations for Women
+            </a>
+        </div><!--end CBD-PreviewGroupItemData-->
+        <div class="CBD-PreviewGroupItemTotalPrice-Small" role="cell">$0.82</div>        <div role="cell" class="CBD-PreviewGroupItemAvailability">In Stock</div>        <div class="CBD-PreviewGroupItemPrice" role="cell">
+                    <div class="CBD-PreviewGroupItemPriceSale"><span class="sr-only">Our Price</span>$0.82</div>
+          <div><span class="CBD-PreviewGroupItemPriceRetail">Retail: <del>$4.99</del></span></div>                    <div class="CBD-ContainerActionsBig">
+            </div>          </div>
+          <div class="CBD-PreviewGroupQuantityandSale">
+                        <a class="CBD-PreviewGroupItemAddButton" href="/Christian/Books/bookbag?action=Place+in+Bookbag&amp;amp;sku_list=957403&amp;amp;quantity=1&amp;event=CBMON1" rel="nofollow" >Add To Cart</a>                                                <div class="CBD-CPOFQuantityControls" role="cell">
+                <button type="button" class="CBD-CPOFQuantityDecrease" aria-label="Decrease quantity of One-Minute Inspirations for Women"><span class='minus'></span></button>
+                <div class="CBD-CPOFQuantityValue"><input class="CBD-CPOFQuantityIndicator"type="tel" maxlength="4" size="4"  value="0" aria-label="Quantity for One-Minute Inspirations for Women"/></div>
+              <button type="button" class="CBD-CPOFQuantityIncrease" aria-label="Increase quantity of One-Minute Inspirations for Women"><span class='plus'>+</span></button>
+            </div>
+            <span role="cell"><input class="CBD-PreviewGroupItemQuantity" type="tel" value="0" name="957403_quantity" aria-label="Quantity for One-Minute Inspirations for Women" width="10" id="957403_quantity" maxlength="4" size="4" autocomplete="_quantity"/></span>            <div class="CBD-PreviewGroupItemTotalPrice" role="cell">$0.82</div>          </div>
+        </div>
+      </div>            <div class="CBD-PreviewGroupItem" role="row">
+                <span role="cell" class="CBD-PreviewGroupItemCheckboxContainer">
+            <input class="CBD-PreviewGroupItemCheckbox" type="checkbox"  value="957427" aria-label="Add One-Minute Insights for Men to your cart" name="add-to-cart-1"  />
+        </span>                <div class="CBD-ContainerActions" role="cell">
+          <a class="CBD-PreviewGroupItemImage" href="/one-minute-insights-for-men/jim-george/9780736957427/pd/957427?event=CBMON1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjk1NzQyNyIsICI5NTc0MjciLCA3Mjk2NSwgNCwgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd">
+                        <img src="//g.christianbook.com/dg/product/cbd/w75/957427.jpg" alt="One-Minute Insights for Men" title="One-Minute Insights for Men" loading="lazy" />          </a>
+        </div>        <div class="CBD-PreviewGroupDescription">
+          <div class="CBD-PreviewGroupItemData" role="cell">
+              <a class="CBD-PreviewGroupItemLink" href="/one-minute-insights-for-men/jim-george/9780736957427/pd/957427?event=CBMON1" tabindex="-1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjk1NzQyNyIsICI5NTc0MjciLCA3Mjk2NSwgNCwgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd">One-Minute Insights for Men
+            </a>
+        </div><!--end CBD-PreviewGroupItemData-->
+        <div class="CBD-PreviewGroupItemTotalPrice-Small" role="cell">$0.80</div>        <div role="cell" class="CBD-PreviewGroupItemAvailability">In Stock</div>        <div class="CBD-PreviewGroupItemPrice" role="cell">
+                    <div class="CBD-PreviewGroupItemPriceSale"><span class="sr-only">Our Price</span>$0.80</div>
+          <div><span class="CBD-PreviewGroupItemPriceRetail">Retail: <del>$4.99</del></span></div>                    <div class="CBD-ContainerActionsBig">
+            </div>          </div>
+          <div class="CBD-PreviewGroupQuantityandSale">
+                        <a class="CBD-PreviewGroupItemAddButton" href="/Christian/Books/bookbag?action=Place+in+Bookbag&amp;amp;sku_list=957427&amp;amp;quantity=1&amp;event=CBMON1" rel="nofollow" >Add To Cart</a>                                                <div class="CBD-CPOFQuantityControls" role="cell">
+                <button type="button" class="CBD-CPOFQuantityDecrease" aria-label="Decrease quantity of One-Minute Insights for Men"><span class='minus'></span></button>
+                <div class="CBD-CPOFQuantityValue"><input class="CBD-CPOFQuantityIndicator"type="tel" maxlength="4" size="4"  value="0" aria-label="Quantity for One-Minute Insights for Men"/></div>
+              <button type="button" class="CBD-CPOFQuantityIncrease" aria-label="Increase quantity of One-Minute Insights for Men"><span class='plus'>+</span></button>
+            </div>
+            <span role="cell"><input class="CBD-PreviewGroupItemQuantity" type="tel" value="0" name="957427_quantity" aria-label="Quantity for One-Minute Insights for Men" width="10" id="957427_quantity" maxlength="4" size="4" autocomplete="_quantity"/></span>            <div class="CBD-PreviewGroupItemTotalPrice" role="cell">$0.80</div>          </div>
+        </div>
+      </div>            <div class="CBD-PreviewGroupItem" role="row">
+                <span role="cell" class="CBD-PreviewGroupItemCheckboxContainer">
+            <input class="CBD-PreviewGroupItemCheckbox" type="checkbox"  value="74414" aria-label="Add A Shepherd Looks at Psalm 23, Mass Market Edition to your cart" name="add-to-cart-1"  />
+        </span>                <div class="CBD-ContainerActions" role="cell">
+          <a class="CBD-PreviewGroupItemImage" href="/shepherd-looks-psalm-mass-market-edition/w-keller/9780310274414/pd/74414?event=CBMON1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjc0NDE0IiwgIjc0NDE0IiwgNzI5NjUsIDUsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ">
+                        <img src="//g.christianbook.com/dg/product/cbd/w75/74414.jpg" alt="A Shepherd Looks at Psalm 23, Mass Market Edition" title="A Shepherd Looks at Psalm 23, Mass Market Edition" loading="lazy" />          </a>
+        </div>        <div class="CBD-PreviewGroupDescription">
+          <div class="CBD-PreviewGroupItemData" role="cell">
+              <a class="CBD-PreviewGroupItemLink" href="/shepherd-looks-psalm-mass-market-edition/w-keller/9780310274414/pd/74414?event=CBMON1" tabindex="-1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjc0NDE0IiwgIjc0NDE0IiwgNzI5NjUsIDUsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ">A Shepherd Looks at Psalm 23, Mass Market Edition
+            </a>
+        </div><!--end CBD-PreviewGroupItemData-->
+        <div class="CBD-PreviewGroupItemTotalPrice-Small" role="cell">$1.99</div>        <div role="cell" class="CBD-PreviewGroupItemAvailability">In Stock</div>        <div class="CBD-PreviewGroupItemPrice" role="cell">
+                    <div class="CBD-PreviewGroupItemPriceSale"><span class="sr-only">Our Price</span>$1.99</div>
+          <div><span class="CBD-PreviewGroupItemPriceRetail">Retail: <del>$7.99</del></span></div>                    <div class="CBD-ContainerActionsBig">
+            </div>          </div>
+          <div class="CBD-PreviewGroupQuantityandSale">
+                        <a class="CBD-PreviewGroupItemAddButton" href="/Christian/Books/bookbag?action=Place+in+Bookbag&amp;amp;sku_list=74414&amp;amp;quantity=1&amp;event=CBMON1" rel="nofollow" >Add To Cart</a>                                                <div class="CBD-CPOFQuantityControls" role="cell">
+                <button type="button" class="CBD-CPOFQuantityDecrease" aria-label="Decrease quantity of A Shepherd Looks at Psalm 23, Mass Market Edition"><span class='minus'></span></button>
+                <div class="CBD-CPOFQuantityValue"><input class="CBD-CPOFQuantityIndicator"type="tel" maxlength="4" size="4"  value="0" aria-label="Quantity for A Shepherd Looks at Psalm 23, Mass Market Edition"/></div>
+              <button type="button" class="CBD-CPOFQuantityIncrease" aria-label="Increase quantity of A Shepherd Looks at Psalm 23, Mass Market Edition"><span class='plus'>+</span></button>
+            </div>
+            <span role="cell"><input class="CBD-PreviewGroupItemQuantity" type="tel" value="0" name="74414_quantity" aria-label="Quantity for A Shepherd Looks at Psalm 23, Mass Market Edition" width="10" id="74414_quantity" maxlength="4" size="4" autocomplete="_quantity"/></span>            <div class="CBD-PreviewGroupItemTotalPrice" role="cell">$1.99</div>          </div>
+        </div>
+      </div>            <div class="CBD-PreviewGroupItem CBD-PreviewGroupCPOFHide" role="row">
+                <span role="cell" class="CBD-PreviewGroupItemCheckboxContainer">
+            <input class="CBD-PreviewGroupItemCheckbox" type="checkbox"  value="897044" aria-label="Add 199 Promises of God to your cart" name="add-to-cart-1"  />
+        </span>                <div class="CBD-ContainerActions" role="cell">
+          <a class="CBD-PreviewGroupItemImage" href="/199-promises-of-god/9781597897044/pd/897044?event=CBMON1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjg5NzA0NCIsICI4OTcwNDQiLCA3Mjk2NSwgNiwgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd">
+                        <img src="//g.christianbook.com/dg/product/cbd/w75/897044.jpg" alt="199 Promises of God" title="199 Promises of God" loading="lazy" />          </a>
+        </div>        <div class="CBD-PreviewGroupDescription">
+          <div class="CBD-PreviewGroupItemData" role="cell">
+              <a class="CBD-PreviewGroupItemLink" href="/199-promises-of-god/9781597897044/pd/897044?event=CBMON1" tabindex="-1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjg5NzA0NCIsICI4OTcwNDQiLCA3Mjk2NSwgNiwgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd">199 Promises of God
+            </a>
+        </div><!--end CBD-PreviewGroupItemData-->
+        <div class="CBD-PreviewGroupItemTotalPrice-Small" role="cell">$0.84</div>        <div role="cell" class="CBD-PreviewGroupItemAvailability">In Stock</div>        <div class="CBD-PreviewGroupItemPrice" role="cell">
+                    <div class="CBD-PreviewGroupItemPriceSale"><span class="sr-only">Our Price</span>$0.84</div>
+          <div><span class="CBD-PreviewGroupItemPriceRetail">Retail: <del>$2.49</del></span></div>                    <div class="CBD-ContainerActionsBig">
+            </div>          </div>
+          <div class="CBD-PreviewGroupQuantityandSale">
+                        <a class="CBD-PreviewGroupItemAddButton" href="/Christian/Books/bookbag?action=Place+in+Bookbag&amp;amp;sku_list=897044&amp;amp;quantity=1&amp;event=CBMON1" rel="nofollow" >Add To Cart</a>                                                <div class="CBD-CPOFQuantityControls" role="cell">
+                <button type="button" class="CBD-CPOFQuantityDecrease" aria-label="Decrease quantity of 199 Promises of God"><span class='minus'></span></button>
+                <div class="CBD-CPOFQuantityValue"><input class="CBD-CPOFQuantityIndicator"type="tel" maxlength="4" size="4"  value="0" aria-label="Quantity for 199 Promises of God"/></div>
+              <button type="button" class="CBD-CPOFQuantityIncrease" aria-label="Increase quantity of 199 Promises of God"><span class='plus'>+</span></button>
+            </div>
+            <span role="cell"><input class="CBD-PreviewGroupItemQuantity" type="tel" value="0" name="897044_quantity" aria-label="Quantity for 199 Promises of God" width="10" id="897044_quantity" maxlength="4" size="4" autocomplete="_quantity"/></span>            <div class="CBD-PreviewGroupItemTotalPrice" role="cell">$0.84</div>          </div>
+        </div>
+      </div>            <div class="CBD-PreviewGroupItem CBD-PreviewGroupCPOFHide" role="row">
+                <span role="cell" class="CBD-PreviewGroupItemCheckboxContainer">
+            <input class="CBD-PreviewGroupItemCheckbox" type="checkbox"  value="81059" aria-label="Add The Bible Promise Book, KJV to your cart" name="add-to-cart-1"  />
+        </span>                <div class="CBD-ContainerActions" role="cell">
+          <a class="CBD-PreviewGroupItemImage" href="/the-bible-promise-book-kjv/9781557481054/pd/81059?event=CBMON1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjgxMDU5IiwgIjgxMDU5IiwgNzI5NjUsIDcsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ">
+                        <img src="//g.christianbook.com/dg/product/cbd/w75/81059.jpg" alt="The Bible Promise Book, KJV" title="The Bible Promise Book, KJV" loading="lazy" />          </a>
+        </div>        <div class="CBD-PreviewGroupDescription">
+          <div class="CBD-PreviewGroupItemData" role="cell">
+              <a class="CBD-PreviewGroupItemLink" href="/the-bible-promise-book-kjv/9781557481054/pd/81059?event=CBMON1" tabindex="-1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjgxMDU5IiwgIjgxMDU5IiwgNzI5NjUsIDcsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ">The Bible Promise Book, KJV
+            </a>
+        </div><!--end CBD-PreviewGroupItemData-->
+        <div class="CBD-PreviewGroupItemTotalPrice-Small" role="cell">$0.99</div>        <div role="cell" class="CBD-PreviewGroupItemAvailability">In Stock</div>        <div class="CBD-PreviewGroupItemPrice" role="cell">
+                    <div class="CBD-PreviewGroupItemPriceSale"><span class="sr-only">Our Price</span>$0.99</div>
+          <div><span class="CBD-PreviewGroupItemPriceRetail">Retail: <del>$2.49</del></span></div>                    <div class="CBD-ContainerActionsBig">
+            </div>          </div>
+          <div class="CBD-PreviewGroupQuantityandSale">
+                        <a class="CBD-PreviewGroupItemAddButton" href="/Christian/Books/bookbag?action=Place+in+Bookbag&amp;amp;sku_list=81059&amp;amp;quantity=1&amp;event=CBMON1" rel="nofollow" >Add To Cart</a>                                                <div class="CBD-CPOFQuantityControls" role="cell">
+                <button type="button" class="CBD-CPOFQuantityDecrease" aria-label="Decrease quantity of The Bible Promise Book, KJV"><span class='minus'></span></button>
+                <div class="CBD-CPOFQuantityValue"><input class="CBD-CPOFQuantityIndicator"type="tel" maxlength="4" size="4"  value="0" aria-label="Quantity for The Bible Promise Book, KJV"/></div>
+              <button type="button" class="CBD-CPOFQuantityIncrease" aria-label="Increase quantity of The Bible Promise Book, KJV"><span class='plus'>+</span></button>
+            </div>
+            <span role="cell"><input class="CBD-PreviewGroupItemQuantity" type="tel" value="0" name="81059_quantity" aria-label="Quantity for The Bible Promise Book, KJV" width="10" id="81059_quantity" maxlength="4" size="4" autocomplete="_quantity"/></span>            <div class="CBD-PreviewGroupItemTotalPrice" role="cell">$0.99</div>          </div>
+        </div>
+      </div>            <div class="CBD-PreviewGroupItem CBD-PreviewGroupCPOFHide" role="row">
+                <span role="cell" class="CBD-PreviewGroupItemCheckboxContainer">
+            <input class="CBD-PreviewGroupItemCheckbox" type="checkbox"  value="137924" aria-label="Add Pocket Prayers: 40 Simple Prayers That Bring Peace and Rest, Value Edition to your cart" name="add-to-cart-1"  />
+        </span>                <div class="CBD-ContainerActions" role="cell">
+          <a class="CBD-PreviewGroupItemImage" href="/pocket-prayers-simple-peace-value-edition/max-lucado/9781404106574/pd/137924?event=CBMON1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjEzNzkyNCIsICIxMzc5MjQiLCA3Mjk2NSwgOCwgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd">
+                        <img src="//g.christianbook.com/dg/product/cbd/w75/137924.jpg" alt="Pocket Prayers: 40 Simple Prayers That Bring Peace and Rest, Value Edition" title="Pocket Prayers: 40 Simple Prayers That Bring Peace and Rest, Value Edition" loading="lazy" />          </a>
+        </div>        <div class="CBD-PreviewGroupDescription">
+          <div class="CBD-PreviewGroupItemData" role="cell">
+              <a class="CBD-PreviewGroupItemLink" href="/pocket-prayers-simple-peace-value-edition/max-lucado/9781404106574/pd/137924?event=CBMON1" tabindex="-1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjEzNzkyNCIsICIxMzc5MjQiLCA3Mjk2NSwgOCwgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd">Pocket Prayers: 40 Simple Prayers That Bring Peace and Rest, Value Edition
+            </a>
+        </div><!--end CBD-PreviewGroupItemData-->
+        <div class="CBD-PreviewGroupItemTotalPrice-Small" role="cell">$1.99</div>        <div role="cell" class="CBD-PreviewGroupItemAvailability">In Stock</div>        <div class="CBD-PreviewGroupItemPrice" role="cell">
+                    <div class="CBD-PreviewGroupItemPriceSale"><span class="sr-only">Our Price</span>$1.99</div>
+          <div><span class="CBD-PreviewGroupItemPriceRetail">Retail: <del>$2.99</del></span></div>                    <div class="CBD-ContainerActionsBig">
+            </div>          </div>
+          <div class="CBD-PreviewGroupQuantityandSale">
+                        <a class="CBD-PreviewGroupItemAddButton" href="/Christian/Books/bookbag?action=Place+in+Bookbag&amp;amp;sku_list=137924&amp;amp;quantity=1&amp;event=CBMON1" rel="nofollow" >Add To Cart</a>                                                <div class="CBD-CPOFQuantityControls" role="cell">
+                <button type="button" class="CBD-CPOFQuantityDecrease" aria-label="Decrease quantity of Pocket Prayers: 40 Simple Prayers That Bring Peace and Rest, Value Edition"><span class='minus'></span></button>
+                <div class="CBD-CPOFQuantityValue"><input class="CBD-CPOFQuantityIndicator"type="tel" maxlength="4" size="4"  value="0" aria-label="Quantity for Pocket Prayers: 40 Simple Prayers That Bring Peace and Rest, Value Edition"/></div>
+              <button type="button" class="CBD-CPOFQuantityIncrease" aria-label="Increase quantity of Pocket Prayers: 40 Simple Prayers That Bring Peace and Rest, Value Edition"><span class='plus'>+</span></button>
+            </div>
+            <span role="cell"><input class="CBD-PreviewGroupItemQuantity" type="tel" value="0" name="137924_quantity" aria-label="Quantity for Pocket Prayers: 40 Simple Prayers That Bring Peace and Rest, Value Edition" width="10" id="137924_quantity" maxlength="4" size="4" autocomplete="_quantity"/></span>            <div class="CBD-PreviewGroupItemTotalPrice" role="cell">$1.99</div>          </div>
+        </div>
+      </div>            <div class="CBD-PreviewGroupItem CBD-PreviewGroupCPOFHide" role="row">
+                <span role="cell" class="CBD-PreviewGroupItemCheckboxContainer">
+            <input class="CBD-PreviewGroupItemCheckbox" type="checkbox"  value="143932" aria-label="Add Following Jesus: 7 Essentials to Following Jesus to your cart" name="add-to-cart-1"  />
+        </span>                <div class="CBD-ContainerActions" role="cell">
+          <a class="CBD-PreviewGroupItemImage" href="/following-jesus-7-essentials-to/samuel-deuth/9780998008806/pd/143932?event=CBMON1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjE0MzkzMiIsICIxNDM5MzIiLCA3Mjk2NSwgOSwgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd">
+                        <img src="//g.christianbook.com/dg/product/web/w75/143932.jpg" alt="Following Jesus: 7 Essentials to Following Jesus" title="Following Jesus: 7 Essentials to Following Jesus" loading="lazy" />          </a>
+        </div>        <div class="CBD-PreviewGroupDescription">
+          <div class="CBD-PreviewGroupItemData" role="cell">
+              <a class="CBD-PreviewGroupItemLink" href="/following-jesus-7-essentials-to/samuel-deuth/9780998008806/pd/143932?event=CBMON1" tabindex="-1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjE0MzkzMiIsICIxNDM5MzIiLCA3Mjk2NSwgOSwgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd">Following Jesus: 7 Essentials to Following Jesus
+            </a>
+        </div><!--end CBD-PreviewGroupItemData-->
+        <div class="CBD-PreviewGroupItemTotalPrice-Small" role="cell">$3.84</div>        <div role="cell" class="CBD-PreviewGroupItemAvailability">In Stock</div>        <div class="CBD-PreviewGroupItemPrice" role="cell">
+                    <div class="CBD-PreviewGroupItemPriceSale"><span class="sr-only">Our Price</span>$3.84</div>
+          <div><span class="CBD-PreviewGroupItemPriceRetail">Retail: <del>$5.99</del></span></div>                    <div class="CBD-ContainerActionsBig">
+            </div>          </div>
+          <div class="CBD-PreviewGroupQuantityandSale">
+                        <a class="CBD-PreviewGroupItemAddButton" href="/Christian/Books/bookbag?action=Place+in+Bookbag&amp;amp;sku_list=143932&amp;amp;quantity=1&amp;event=CBMON1" rel="nofollow" >Add To Cart</a>                                                <div class="CBD-CPOFQuantityControls" role="cell">
+                <button type="button" class="CBD-CPOFQuantityDecrease" aria-label="Decrease quantity of Following Jesus: 7 Essentials to Following Jesus"><span class='minus'></span></button>
+                <div class="CBD-CPOFQuantityValue"><input class="CBD-CPOFQuantityIndicator"type="tel" maxlength="4" size="4"  value="0" aria-label="Quantity for Following Jesus: 7 Essentials to Following Jesus"/></div>
+              <button type="button" class="CBD-CPOFQuantityIncrease" aria-label="Increase quantity of Following Jesus: 7 Essentials to Following Jesus"><span class='plus'>+</span></button>
+            </div>
+            <span role="cell"><input class="CBD-PreviewGroupItemQuantity" type="tel" value="0" name="143932_quantity" aria-label="Quantity for Following Jesus: 7 Essentials to Following Jesus" width="10" id="143932_quantity" maxlength="4" size="4" autocomplete="_quantity"/></span>            <div class="CBD-PreviewGroupItemTotalPrice" role="cell">$3.84</div>          </div>
+        </div>
+      </div>            <div class="CBD-PreviewGroupItem CBD-PreviewGroupCPOFHide" role="row">
+                <span role="cell" class="CBD-PreviewGroupItemCheckboxContainer">
+            <input class="CBD-PreviewGroupItemCheckbox" type="checkbox"  value="173418" aria-label="Add The Freedom of Self-Forgetfulness: The Path to True Christian Joy to your cart" name="add-to-cart-1"  />
+        </span>                <div class="CBD-ContainerActions" role="cell">
+          <a class="CBD-PreviewGroupItemImage" href="/freedom-self-forgetfulness-path-true-christian/timothy-keller/9781906173418/pd/173418?event=CBMON1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjE3MzQxOCIsICIxNzM0MTgiLCA3Mjk2NSwgMTAsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ">
+                        <img src="//g.christianbook.com/dg/product/cbd/w75/173418.jpg" alt="The Freedom of Self-Forgetfulness: The Path to True Christian Joy" title="The Freedom of Self-Forgetfulness: The Path to True Christian Joy" loading="lazy" />          </a>
+        </div>        <div class="CBD-PreviewGroupDescription">
+          <div class="CBD-PreviewGroupItemData" role="cell">
+              <a class="CBD-PreviewGroupItemLink" href="/freedom-self-forgetfulness-path-true-christian/timothy-keller/9781906173418/pd/173418?event=CBMON1" tabindex="-1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjE3MzQxOCIsICIxNzM0MTgiLCA3Mjk2NSwgMTAsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ">The Freedom of Self-Forgetfulness: The Path to True Christian Joy
+            </a>
+        </div><!--end CBD-PreviewGroupItemData-->
+        <div class="CBD-PreviewGroupItemTotalPrice-Small" role="cell">$1.99</div>        <div role="cell" class="CBD-PreviewGroupItemAvailability">In Stock</div>        <div class="CBD-PreviewGroupItemPrice" role="cell">
+                    <div class="CBD-PreviewGroupItemPriceSale"><span class="sr-only">Our Price</span>$1.99</div>
+          <div><span class="CBD-PreviewGroupItemPriceRetail">Retail: <del>$4.99</del></span></div>                    <div class="CBD-ContainerActionsBig">
+            </div>          </div>
+          <div class="CBD-PreviewGroupQuantityandSale">
+                        <a class="CBD-PreviewGroupItemAddButton" href="/Christian/Books/bookbag?action=Place+in+Bookbag&amp;amp;sku_list=173418&amp;amp;quantity=1&amp;event=CBMON1" rel="nofollow" >Add To Cart</a>                                                <div class="CBD-CPOFQuantityControls" role="cell">
+                <button type="button" class="CBD-CPOFQuantityDecrease" aria-label="Decrease quantity of The Freedom of Self-Forgetfulness: The Path to True Christian Joy"><span class='minus'></span></button>
+                <div class="CBD-CPOFQuantityValue"><input class="CBD-CPOFQuantityIndicator"type="tel" maxlength="4" size="4"  value="0" aria-label="Quantity for The Freedom of Self-Forgetfulness: The Path to True Christian Joy"/></div>
+              <button type="button" class="CBD-CPOFQuantityIncrease" aria-label="Increase quantity of The Freedom of Self-Forgetfulness: The Path to True Christian Joy"><span class='plus'>+</span></button>
+            </div>
+            <span role="cell"><input class="CBD-PreviewGroupItemQuantity" type="tel" value="0" name="173418_quantity" aria-label="Quantity for The Freedom of Self-Forgetfulness: The Path to True Christian Joy" width="10" id="173418_quantity" maxlength="4" size="4" autocomplete="_quantity"/></span>            <div class="CBD-PreviewGroupItemTotalPrice" role="cell">$1.99</div>          </div>
+        </div>
+      </div>            <div class="CBD-PreviewGroupItem CBD-PreviewGroupCPOFHide" role="row">
+                <span role="cell" class="CBD-PreviewGroupItemCheckboxContainer">
+            <input class="CBD-PreviewGroupItemCheckbox" type="checkbox"  value="146606" aria-label="Add The Woman God Sees, Prayer Journal and Pen Gift Set, ESV to your cart" name="add-to-cart-1"  />
+        </span>                <div class="CBD-ContainerActions" role="cell">
+          <a class="CBD-PreviewGroupItemImage" href="/woman-sees-prayer-journal-gift-esv/9781943216178/pd/146606?event=CBMON1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjE0NjYwNiIsICIxNDY2MDYiLCA3Mjk2NSwgMTEsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ">
+                        <img src="//g.christianbook.com/dg/product/web/w75/146606.jpg" alt="The Woman God Sees, Prayer Journal and Pen Gift Set, ESV" title="The Woman God Sees, Prayer Journal and Pen Gift Set, ESV" loading="lazy" />          </a>
+        </div>        <div class="CBD-PreviewGroupDescription">
+          <div class="CBD-PreviewGroupItemData" role="cell">
+              <a class="CBD-PreviewGroupItemLink" href="/woman-sees-prayer-journal-gift-esv/9781943216178/pd/146606?event=CBMON1" tabindex="-1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjE0NjYwNiIsICIxNDY2MDYiLCA3Mjk2NSwgMTEsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ">The Woman God Sees, Prayer Journal and Pen Gift Set, ESV
+            </a>
+        </div><!--end CBD-PreviewGroupItemData-->
+        <div class="CBD-PreviewGroupItemTotalPrice-Small" role="cell">$3.61</div>        <div role="cell" class="CBD-PreviewGroupItemAvailability">In Stock</div>        <div class="CBD-PreviewGroupItemPrice" role="cell">
+                    <div class="CBD-PreviewGroupItemPriceSale"><span class="sr-only">Our Price</span>$3.61</div>
+          <div><span class="CBD-PreviewGroupItemPriceRetail">Retail: <del>$8.99</del></span></div>                    <div class="CBD-ContainerActionsBig">
+            </div>          </div>
+          <div class="CBD-PreviewGroupQuantityandSale">
+                        <a class="CBD-PreviewGroupItemAddButton" href="/Christian/Books/bookbag?action=Place+in+Bookbag&amp;amp;sku_list=146606&amp;amp;quantity=1&amp;event=CBMON1" rel="nofollow" >Add To Cart</a>                                                <div class="CBD-CPOFQuantityControls" role="cell">
+                <button type="button" class="CBD-CPOFQuantityDecrease" aria-label="Decrease quantity of The Woman God Sees, Prayer Journal and Pen Gift Set, ESV"><span class='minus'></span></button>
+                <div class="CBD-CPOFQuantityValue"><input class="CBD-CPOFQuantityIndicator"type="tel" maxlength="4" size="4"  value="0" aria-label="Quantity for The Woman God Sees, Prayer Journal and Pen Gift Set, ESV"/></div>
+              <button type="button" class="CBD-CPOFQuantityIncrease" aria-label="Increase quantity of The Woman God Sees, Prayer Journal and Pen Gift Set, ESV"><span class='plus'>+</span></button>
+            </div>
+            <span role="cell"><input class="CBD-PreviewGroupItemQuantity" type="tel" value="0" name="146606_quantity" aria-label="Quantity for The Woman God Sees, Prayer Journal and Pen Gift Set, ESV" width="10" id="146606_quantity" maxlength="4" size="4" autocomplete="_quantity"/></span>            <div class="CBD-PreviewGroupItemTotalPrice" role="cell">$3.61</div>          </div>
+        </div>
+      </div>            <div class="CBD-PreviewGroupItem CBD-PreviewGroupCPOFHide" role="row">
+                <span role="cell" class="CBD-PreviewGroupItemCheckboxContainer">
+            <input class="CBD-PreviewGroupItemCheckbox" type="checkbox"  value="246407" aria-label="Add Joy in the Journey Prayer Journal (KJV) to your cart" name="add-to-cart-1"  />
+        </span>                <div class="CBD-ContainerActions" role="cell">
+          <a class="CBD-PreviewGroupItemImage" href="/joy-in-the-journey-prayer-journal/pd/246407?event=CBMON1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjI0NjQwNyIsICIyNDY0MDciLCA3Mjk2NSwgMTIsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ">
+                        <img src="//g.christianbook.com/dg/product/web/w75/246407.jpg" alt="Joy in the Journey Prayer Journal (KJV)" title="Joy in the Journey Prayer Journal (KJV)" loading="lazy" />          </a>
+        </div>        <div class="CBD-PreviewGroupDescription">
+          <div class="CBD-PreviewGroupItemData" role="cell">
+              <a class="CBD-PreviewGroupItemLink" href="/joy-in-the-journey-prayer-journal/pd/246407?event=CBMON1" tabindex="-1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjI0NjQwNyIsICIyNDY0MDciLCA3Mjk2NSwgMTIsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ">Joy in the Journey Prayer Journal (KJV)
+            </a>
+        </div><!--end CBD-PreviewGroupItemData-->
+        <div class="CBD-PreviewGroupItemTotalPrice-Small" role="cell">$2.49</div>        <div role="cell" class="CBD-PreviewGroupItemAvailability">In Stock</div>        <div class="CBD-PreviewGroupItemPrice" role="cell">
+                    <div class="CBD-PreviewGroupItemPriceSale"><span class="sr-only">Our Price</span>$2.49</div>
+          <div><span class="CBD-PreviewGroupItemPriceRetail">Retail: <del>$4.99</del></span></div>                    <div class="CBD-ContainerActionsBig">
+            </div>          </div>
+          <div class="CBD-PreviewGroupQuantityandSale">
+                        <a class="CBD-PreviewGroupItemAddButton" href="/Christian/Books/bookbag?action=Place+in+Bookbag&amp;amp;sku_list=246407&amp;amp;quantity=1&amp;event=CBMON1" rel="nofollow" >Add To Cart</a>                                                <div class="CBD-CPOFQuantityControls" role="cell">
+                <button type="button" class="CBD-CPOFQuantityDecrease" aria-label="Decrease quantity of Joy in the Journey Prayer Journal (KJV)"><span class='minus'></span></button>
+                <div class="CBD-CPOFQuantityValue"><input class="CBD-CPOFQuantityIndicator"type="tel" maxlength="4" size="4"  value="0" aria-label="Quantity for Joy in the Journey Prayer Journal (KJV)"/></div>
+              <button type="button" class="CBD-CPOFQuantityIncrease" aria-label="Increase quantity of Joy in the Journey Prayer Journal (KJV)"><span class='plus'>+</span></button>
+            </div>
+            <span role="cell"><input class="CBD-PreviewGroupItemQuantity" type="tel" value="0" name="246407_quantity" aria-label="Quantity for Joy in the Journey Prayer Journal (KJV)" width="10" id="246407_quantity" maxlength="4" size="4" autocomplete="_quantity"/></span>            <div class="CBD-PreviewGroupItemTotalPrice" role="cell">$2.49</div>          </div>
+        </div>
+      </div>            <div class="CBD-PreviewGroupItem CBD-PreviewGroupCPOFHide" role="row">
+                <span role="cell" class="CBD-PreviewGroupItemCheckboxContainer">
+            <input class="CBD-PreviewGroupItemCheckbox" type="checkbox"  value="547843" aria-label="Add Praying the Bible to your cart" name="add-to-cart-1"  />
+        </span>                <div class="CBD-ContainerActions" role="cell">
+          <a class="CBD-PreviewGroupItemImage" href="/praying-the-bible-donald-whitney/9781433547843/pd/547843?event=CBMON1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjU0Nzg0MyIsICI1NDc4NDMiLCA3Mjk2NSwgMTMsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ">
+                        <img src="//g.christianbook.com/dg/product/cbd/w75/547843.jpg" alt="Praying the Bible" title="Praying the Bible" loading="lazy" />          </a>
+        </div>        <div class="CBD-PreviewGroupDescription">
+          <div class="CBD-PreviewGroupItemData" role="cell">
+              <a class="CBD-PreviewGroupItemLink" href="/praying-the-bible-donald-whitney/9781433547843/pd/547843?event=CBMON1" tabindex="-1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjU0Nzg0MyIsICI1NDc4NDMiLCA3Mjk2NSwgMTMsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ">Praying the Bible
+            </a>
+        </div><!--end CBD-PreviewGroupItemData-->
+        <div class="CBD-PreviewGroupItemTotalPrice-Small" role="cell">$4.99</div>        <div role="cell" class="CBD-PreviewGroupItemAvailability">In Stock</div>        <div class="CBD-PreviewGroupItemPrice" role="cell">
+                    <div class="CBD-PreviewGroupItemPriceSale"><span class="sr-only">Our Price</span>$4.99</div>
+          <div><span class="CBD-PreviewGroupItemPriceRetail">Retail: <del>$14.99</del></span></div>                    <div class="CBD-ContainerActionsBig">
+            </div>          </div>
+          <div class="CBD-PreviewGroupQuantityandSale">
+                        <a class="CBD-PreviewGroupItemAddButton" href="/Christian/Books/bookbag?action=Place+in+Bookbag&amp;amp;sku_list=547843&amp;amp;quantity=1&amp;event=CBMON1" rel="nofollow" >Add To Cart</a>                                                <div class="CBD-CPOFQuantityControls" role="cell">
+                <button type="button" class="CBD-CPOFQuantityDecrease" aria-label="Decrease quantity of Praying the Bible"><span class='minus'></span></button>
+                <div class="CBD-CPOFQuantityValue"><input class="CBD-CPOFQuantityIndicator"type="tel" maxlength="4" size="4"  value="0" aria-label="Quantity for Praying the Bible"/></div>
+              <button type="button" class="CBD-CPOFQuantityIncrease" aria-label="Increase quantity of Praying the Bible"><span class='plus'>+</span></button>
+            </div>
+            <span role="cell"><input class="CBD-PreviewGroupItemQuantity" type="tel" value="0" name="547843_quantity" aria-label="Quantity for Praying the Bible" width="10" id="547843_quantity" maxlength="4" size="4" autocomplete="_quantity"/></span>            <div class="CBD-PreviewGroupItemTotalPrice" role="cell">$4.99</div>          </div>
+        </div>
+      </div>            <div class="CBD-PreviewGroupItem CBD-PreviewGroupCPOFHide" role="row">
+                <span role="cell" class="CBD-PreviewGroupItemCheckboxContainer">
+            <input class="CBD-PreviewGroupItemCheckbox" type="checkbox"  value="159529" aria-label="Add The Red Sea Rules to your cart" name="add-to-cart-1"  />
+        </span>                <div class="CBD-ContainerActions" role="cell">
+          <a class="CBD-PreviewGroupItemImage" href="/the-red-sea-rules/robert-morgan/9781404119017/pd/159529?event=CBMON1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjE1OTUyOSIsICIxNTk1MjkiLCA3Mjk2NSwgMTQsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ">
+                        <img src="//g.christianbook.com/dg/product/web/w75/159529.jpg" alt="The Red Sea Rules" title="The Red Sea Rules" loading="lazy" />          </a>
+        </div>        <div class="CBD-PreviewGroupDescription">
+          <div class="CBD-PreviewGroupItemData" role="cell">
+              <a class="CBD-PreviewGroupItemLink" href="/the-red-sea-rules/robert-morgan/9781404119017/pd/159529?event=CBMON1" tabindex="-1" data-rectoken="rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjE1OTUyOSIsICIxNTk1MjkiLCA3Mjk2NSwgMTQsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ">The Red Sea Rules
+            </a>
+        </div><!--end CBD-PreviewGroupItemData-->
+        <div class="CBD-PreviewGroupItemTotalPrice-Small" role="cell">$3.99</div>        <div role="cell" class="CBD-PreviewGroupItemAvailability">In Stock</div>        <div class="CBD-PreviewGroupItemPrice" role="cell">
+                    <div class="CBD-PreviewGroupItemPriceSale"><span class="sr-only">Our Price</span>$3.99</div>
+          <div><span class="CBD-PreviewGroupItemPriceRetail">Retail: <del>$10.99</del></span></div>                    <div class="CBD-ContainerActionsBig">
+            </div>          </div>
+          <div class="CBD-PreviewGroupQuantityandSale">
+                        <a class="CBD-PreviewGroupItemAddButton" href="/Christian/Books/bookbag?action=Place+in+Bookbag&amp;amp;sku_list=159529&amp;amp;quantity=1&amp;event=CBMON1" rel="nofollow" >Add To Cart</a>                                                <div class="CBD-CPOFQuantityControls" role="cell">
+                <button type="button" class="CBD-CPOFQuantityDecrease" aria-label="Decrease quantity of The Red Sea Rules"><span class='minus'></span></button>
+                <div class="CBD-CPOFQuantityValue"><input class="CBD-CPOFQuantityIndicator"type="tel" maxlength="4" size="4"  value="0" aria-label="Quantity for The Red Sea Rules"/></div>
+              <button type="button" class="CBD-CPOFQuantityIncrease" aria-label="Increase quantity of The Red Sea Rules"><span class='plus'>+</span></button>
+            </div>
+            <span role="cell"><input class="CBD-PreviewGroupItemQuantity" type="tel" value="0" name="159529_quantity" aria-label="Quantity for The Red Sea Rules" width="10" id="159529_quantity" maxlength="4" size="4" autocomplete="_quantity"/></span>            <div class="CBD-PreviewGroupItemTotalPrice" role="cell">$3.99</div>          </div>
+        </div>
+      </div>    </div>
+    <input type="hidden" value="15" name="num-fields">
+  </div>
+</div>
+
+      <input type="hidden" name="include-product" value="" />
+      <input type="hidden" name="event-code" value="CBMON1" />
+    </div>
+    <div class="CBD-FormCrossbox-footer active" id="crossboxFooter-1">
+            <button type="button" class="CBD-FormCrossbox-footer-text"><span class="CBD-FormCrossbox-DownArrow"></span>View All 15 Products </button>
+      <input type="hidden" name="crossbox-amount-1" value="15" />
+      <input type="hidden" name="is_cpof" value="" />      <div class="CBD-FormCrossbox-actions-addToCart">
+          <div class="CBD-ButtonFrame CBD-ButtonFrame-Primary CBD-ButtonFrame-" >
+    <button name="add_to_cart" type="submit"  value="add_to_cart">Add To Cart</button></div>
+
+      </div>
+    </div>
+  </div>
+  <input type="hidden" name="page-type" value="CROSSBOX" />
+  <input type="hidden" name="detail-page-sku" value="915678" />
+  <input type="hidden" name="has-single-content" value="" />
+</div>
+
+    </div>
+</form>
+
+<div id="CBD-MediaPlayer-PlaceHolder" style="display:none"></div><div class="CBD-SectionHeading CBD-SectionHeading-Level1" id="CBD-PD-Description"><div class="CBD-SectionHeadingText"><h2 class="CBD-SectionHeadingContent" id="CBD-PD-Description-text">Product Description</h2><span class="CBD-SectionHeading-DownArrow">&#9660</span><span class="CBD-SectionHeading-UpArrow">&#9650</span></div></div>
+<div class="CBD-TextContent  CBD-PD-SubSection CBD-PD-Description CBD-TextContent-SingleColumn" data-cbd-responsivebehavior="text" ><div class="CBD-TextContent-Text"><div class="CBD-TextContent-Columns"><div style="padding:0px 0px 20px 0px;" ><P>Discover the incomparable beauty of Jesus, see how lovely He is, enjoy His beauty, and let all that He is profoundly change how you personally receive His love and also share His love with others.</p><p>Jesus was love personified - compassionate, honest, humble, powerful. How did he do it? And how can we learn to love as he did? Weaving Gospel stories with experiences from his own life, Miller explores how to be honest without judging, depend on God, let love be energized by faith, embrace the way of humility, and more. 272 pages, softcover from NavPress.</p></div>
+</div></div></div><div class="CBD-TextContent-Clear"></div>
+
+<div class="CBD-SectionHeading CBD-SectionHeading-Level1" id="section-heading-Product-Information"><div class="CBD-SectionHeadingText"><h2 class="CBD-SectionHeadingContent" id="section-heading-Product-Information-text">Product Information</h2><span class="CBD-SectionHeading-DownArrow">&#9660</span><span class="CBD-SectionHeading-UpArrow">&#9650</span></div></div>
+<div class="CBD-TextContent  CBD-PD-SubSection CBD-TextContent-SingleColumn" data-cbd-responsivebehavior="text" ><div class="CBD-TextContent-Text"><div class="CBD-TextContent-Columns"><table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation"><tr><td valign="top" width="50%"><strong>Title:</strong> Love Walked Among Us: Learning to Love Like Jesus<br><strong>By:</strong> Paul Miller<br><strong>Format:</strong> Paperback<br><strong>Number of Pages:</strong> 272<br><strong>Vendor:</strong> NavPress<br><strong>Publication Date:</strong> 2014<br></td><td valign="top" width="50%"><strong>Dimensions:</strong> 8.25 X 5.50 (inches)<br><strong>Weight:</strong> 10 ounces<br><strong>ISBN:</strong> 1612915671<br><strong>ISBN-13:</strong> 9781612915678<br><strong>Stock No:</strong> WW915678<br></td></tr></table>
+</div></div></div><div class="CBD-TextContent-Clear"></div>
+
+<div id="CBD-RecommendationsPlaceHolder" style="display:none"> </div><div class="CBD-SectionHeading CBD-SectionHeading-Level1" id="section-heading-Related-Products"><div class="CBD-SectionHeadingText"><h2 class="CBD-SectionHeadingContent" id="section-heading-Related-Products-text">Related Products</h2></div></div>
+<div id="pdp-related-products-slider" class="CBD-PreviewGroup CBD-PreviewGroup-Slider CBD-PreviewGroup-MediumImages" data-CBD-ResponsiveBehavior="slider-medium" data-CBD-ResponsiveMobileEnvironment="0" data-event-code="CF">
+  <div class="CBD-PreviewGroupMask">
+    <ol class="CBD-PreviewGroupItems"><li  data-sku="466830" class="CBD-PreviewGroupItem CBD-PreviewGroupFirstItem">        <a class="CBD-PreviewGroupItemImage " href="/praying-connecting-distracting-world-2nd-edition/paul-miller/9781631466830/pd/466830?event=CF" >
+                <img  src="//g.christianbook.com/dg/product/cbd/w163/466830.jpg" alt="A Praying Life: Connecting with God in a Distracting World,  2nd Edition" title="A Praying Life: Connecting with God in a Distracting World,  2nd Edition" loading="lazy" /></a>
+                <div class="CBD-PreviewGroupItemActions">
+                        <a class="CBD-PreviewGroupItemAddButton" href="/Christian/Books/bookbag?action=Place+in+Bookbag&amp;amp;sku_list=466830&amp;amp;quantity=1&amp;event=CF" rel="nofollow"  aria-label="Add A Praying Life: Connecting with God in a Distracting World,  2nd Edition to your cart">Add To Cart</a>
+            <a class="CBD-PreviewGroupItemWishlistButton" href="/Christian/Books/wishlist?action=add&amp;sku_list=466830" rel="nofollow" aria-label="Add A Praying Life: Connecting with God in a Distracting World,  2nd Edition to your wishlist">Add To Wishlist</a>        </div>        <div class="CBD-PreviewGroupItemData CBD-PreviewGroupItemData-WithRatings CBD-PreviewGroupItemHasRatingText CBD-PreviewGroupItemData-WithSavings">
+            <a class="CBD-PreviewGroupItemLink" href="/praying-connecting-distracting-world-2nd-edition/paul-miller/9781631466830/pd/466830?event=CF"  tabindex="-1" aria-hidden="true">A Praying Life: Connecting with God<span class="CBD-PreviewGroupItemLink-Truncated"> in a Distracting World,  2nd Edition</span></a>
+                    <div class="CBD-PreviewGroupItemAuthor">Paul Miller<span class="CBD-PreviewGroupItemAdditionalAuthors">, David Powlison</span></div>                    <div class="CBD-PreviewGroupItemAuthorLink"><a href="/apps/easyfind?Ntk=author&amp;Ntt=Paul Miller">Paul Miller<span class="CBD-PreviewGroupItemAdditionalAuthors">, David Powlison</span></a></div>          <div class="CBD-PreviewGroupItemPublisher">NavPress / 2017 / Trade Paperback</div>                    <div class="CBD-PreviewGroupItemPrice">
+              <span class="CBD-PreviewGroupItemPriceSale"><span class="sr-only">Our Price</span>$13.43</span>
+             <span class="CBD-PreviewGroupItemPriceRetailText" aria-hidden="true">Retail: </span><del class="CBD-PreviewGroupItemPriceRetail"><span class="sr-only">Retail Price</span>$18.99</del>                 <span class="CBD-PreviewGroupItemPriceSavings">Save 29%</span> 
+                                              <span class="CBD-PreviewGroupItemPriceSavingsAmount">($5.56)</span>          </div>                    <a class="CBD-PreviewGroupItemRating " href="/praying-connecting-distracting-world-2nd-edition/paul-miller/9781631466830/product-reviews/466830?event=CF"><span class="CBD-PreviewGroupItemRatingScale"><span class="CBD-PreviewGroupItemRatingStars CBD-PreviewGroupItemRatingStars-5">4.9 out of 5 stars for A Praying Life: Connecting with God in a Distracting World,  2nd Edition. View reviews of this product.</span></span> <span class="CBD-PreviewGroupItemRatingCount">34 Reviews</span><span class="CBD-PreviewGroupItemRatingText" aria-hidden="true">4.9<span class="CBD-PreviewGroupTotalReviews"> (34)</span></span></a>        </div></li></ol>
+  </div>
+  <div class="preview-group-live-region sr-only" role="status" aria-atomic="true" aria-live="polite"></div>
+</div>
+
+<div class="CBD-SectionHeading CBD-SectionHeading-Level1" id="CBD-PD-Publisher-Description"><div class="CBD-SectionHeadingText"><h2 class="CBD-SectionHeadingContent" id="CBD-PD-Publisher-Description-text">Publisher's Description</h2><span class="CBD-SectionHeading-DownArrow">&#9660</span><span class="CBD-SectionHeading-UpArrow">&#9650</span></div></div>
+<div class="CBD-TextContent  CBD-PD-SubSection CBD-PD-Publisher-Description CBD-TextContent-SingleColumn" data-cbd-responsivebehavior="text" ><div class="CBD-TextContent-Text"><div class="CBD-TextContent-Columns"><p><a name="publisherscopy"></a><div style="padding:0px 0px 20px 0px;" ><p><strong>Who Is Jesus?</strong><br/>His name is recognized the world over. But how many of us fully understand what He was like as a person? Honest, powerful, humble, full of mercy and light&#151;Jesus was love personified, the full potential of what we were intended to be.</p><p>Get to know Jesus and witness His love unfold in the Gospels in a new and insightful way. In this encouraging and convicting look at Jesus&#146; life on earth, Paul Miller investigates the answers to questions such as:</p><ul><li>How do you love someone when you get no love in return?</li><li>How do you love without being trapped or used?</li><li>How do you love when you have your own baggage?</li><li>When do you take care of yourself?</li><li>How do you love with both compassion and honesty?</li></ul><p>The Gospel accounts, combined with Miller&#146;s own life stories, will uplift your spirit, give you a new perspective, and encourage you to love like Jesus.</p><p><strong>&#147;For a glimpse of our great Savior, open this book! You&#146;ll be glad you did. I was!&#148; &#151;Max Lucado, bestselling author</strong></p><p>&#147;To see Jesus is to see what love looks like. Paul Miller gives us a fresh look in this wonderful book.&#148; &#151;Joni Eareckson Tada</p><p>&#147;If Jesus or Jesus&#146; saving grace is just an abstraction to you, Paul Miller will be a great help in making His love a living reality to your heart.&#148; &#151;Timothy Keller, pastor</p><p>&#147;<em>Love Walked among Us</em> is authentic &#145;shoe leather&#146; Christianity. Anyone who wants to grow in his or her relationship with God and other people will profit from this book.&#148; &#151;Jerry Bridges, author and speaker</p>
+</div></p>
+</div></div></div><div class="CBD-TextContent-Clear"></div>
+
+<div id="CBD-CustomerReviews-PlaceHolder" style="display:none" ></div><div class="CBD-SectionHeading CBD-SectionHeading-Level1" id="ask_christianbook"><div class="CBD-SectionHeadingText"><h3 class="CBD-SectionHeadingContent" id="ask_christianbook-text">Ask a Question</h3><span class="CBD-SectionHeading-DownArrow">&#9660</span><span class="CBD-SectionHeading-UpArrow">&#9650</span></div></div>
+<div class='CBD-AskChristianbook-PD CBD-PD-SubSection'>            
+            <a href="javascript:;" id="ask-christianbook-link" data-cbd-modalidentifier="ask-christianbook-Modal">Have a question about this product? Ask us here.</a>
+
+</div>
+<div class="CBD-SectionHeading CBD-SectionHeading-Level1" id="section-heading-Find-Related-Products"><div class="CBD-SectionHeadingText"><h2 class="CBD-SectionHeadingContent" id="section-heading-Find-Related-Products-text">Find Related Products</h2><span class="CBD-SectionHeading-DownArrow">&#9660</span><span class="CBD-SectionHeading-UpArrow">&#9650</span></div></div>
+<div class="CBD-TextContent  CBD-PD-SubSection CBD-TextContent-SingleColumn" data-cbd-responsivebehavior="text" ><div class="CBD-TextContent-Text"><div class="CBD-TextContent-Columns"><p><br /><ul><li><a href="/apps/easyfind?N=1014644&amp;Ne=10000">Books, eBooks &amp; Audio</a> >> <a href="/apps/easyfind?N=1014684&amp;Ne=10000">Christian Living</a> >> <a href="/apps/easyfind?N=1031297&amp;Ne=10000">Discipleship</a> >> <a href="/apps/easyfind?N=1001054&amp;Ne=10000">Knowing God</a></li></ul></p>
+</div></div></div><div class="CBD-TextContent-Clear"></div>
+
+<div class="CBD-SectionHeading CBD-SectionHeading-Level1" id="section-heading-Author-Artist-Review"><div class="CBD-SectionHeadingText"><h2 class="CBD-SectionHeadingContent" id="section-heading-Author-Artist-Review-text">Author/Artist Review</h2><span class="CBD-SectionHeading-DownArrow">&#9660</span><span class="CBD-SectionHeading-UpArrow">&#9650</span></div></div>
+<div class="CBD-TextContent  CBD-PD-SubSection CBD-TextContent-SingleColumn" data-cbd-responsivebehavior="text" ><div class="CBD-TextContent-Text"><div class="CBD-TextContent-Columns"><p><center><a href="/apps/author-review?sku=915678">I'm the author/artist and I want to review <u>Love Walked Among Us: Learning to Love Like Jesus</u>.</a></center> </p>
+</div></div></div><div class="CBD-TextContent-Clear"></div>
+
+</div></div><div id="slideshow-lightbox-Modal" class="CBD-Modal -ResponsiveToWindow CBD-ModalHidden"  data-CBD-ResponsiveModalBehavior="lightbox"><div class="CBD-ModalBackground" ></div><div id="slideshow-lightbox" class="CBD-ModalContainer" ><div class="CBD-ModalContent" tabindex='-1' aria-label="Product slideshow, lightbox" role="dialog" aria-modal="true"><div class="CBD-ModalContentCloseSidePanel"><span class="CBD-ModalCloseBackButton">Back</span></div><button class="CBD-ModalContentCloseLightBox" type="button" aria-label="Close dialog"><span aria-hidden="true" class="CBD-ModalCloseXButton">&times;</span></button></div></div></div>
+<div id="ask-christianbook-Modal" class="CBD-Modal -ResponsiveToWindow CBD-ModalHidden"  data-CBD-ResponsiveModalBehavior="lightbox"><div class="CBD-ModalBackground" ></div><div id="ask-christianbook" class="CBD-ModalContainer" ><div class="CBD-ModalContent" tabindex='-1' aria-label="Ask A Question Lightbox" role="dialog" aria-modal="true"><div class="CBD-ModalContentCloseSidePanel"><span class="CBD-ModalCloseBackButton">Back</span></div><button class="CBD-ModalContentCloseLightBox" type="button" aria-label="Close dialog"><span aria-hidden="true" class="CBD-ModalCloseXButton">&times;</span></button><div id="ask-christianbook-container">
+<h3 class="CBD-ProductDetailTitle">Ask a Question</h3>
+<div id="ask-christianbook-content-container" tabindex="-1">
+
+<p>What would you like to know about this product? Please enter your name, your email and your question regarding the product in the fields below, and we'll answer you in the next 24-48 hours.</p>
+<p>If you need immediate assistance regarding this product or any other, please call 1-800-CHRISTIAN to speak directly with a customer service representative.</p>
+
+
+<form action="#" method="post" name="ask-christianbook-form" id="ask-christianbook-form">
+<div id="messages" name="messages" style="display:none;" tabindex="-1">
+</div>
+  <div class="CBD-FieldFrame">
+      <label for="name">Name </label>
+                        <input type="text" name="name" id="name" autocomplete="off" autocorrect="off" autocapitalize="off" required />
+  </div>
+
+  <div class="CBD-FieldFrame">
+      <label for="email">Email </label>
+                        <input type="email" name="email" id="email" autocomplete="email" autocorrect="off" autocapitalize="off" pattern="^\S+@\S+\.\S+$" title="An Email Address (your.email@email.provider)" required />
+  </div>
+
+  <div class="CBD-FieldFrame">
+      <label for="question">Question </label>
+                        <textarea name="question" id="question" autocomplete="off" autocorrect="off" autocapitalize="off" required></textarea>
+  </div>
+
+<input type="hidden" name="sku" id="sku" value="915678" />
+<div class="CBD-ButtonFrame CBD-ButtonFrame-Secondary CBD-AskChristianbook-button CBD-ButtonFrame-" >
+    <button name="ask-christianbook-submit" type="submit"  value="submit">Submit</button></div>
+
+<div class="CBD-ButtonFrame CBD-ButtonFrame-Secondary CBD-AskChristianbook-button CBD-ButtonFrame-" >
+    <button name="ask-christianbook-edit" type="submit"  value="submit">Edit</button></div>
+
+<div class="CBD-ButtonFrame CBD-ButtonFrame-Secondary CBD-AskChristianbook-button CBD-ButtonFrame-" >
+    <button name="ask-christianbook-confirm" type="submit"  value="submit">Confirm</button></div>
+
+</form>
+
+</div>
+</div>
+<div style="clear: both;"></div>
+</div></div></div>
+
+</div>
+
+
+
+	</div>
+
+
+
+<div class="CBD-footer CBD-footer-outer-container " id="footer" role="navigation" aria-label="footer-navigation">
+    
+    
+    <div class="CBD-footer-inner-container ">
+    
+    
+        <div class="col-2 email-bar">
+            <div class="email-message mobile-hide">
+                <p>Sign Up To Receive<br/> Exclusive Email Offers<br/><span>You can unsubscribe at any time</span></p>
+                
+            </div>
+           <div class="email-form">
+                <form id="footer-email-signup-form" action="/Christian/Books/email_signup" method="POST" name="email-signup-form">
+                    <div class="active-email-message">
+                        <p>Sign Up To Receive Exclusive Email Offers<br/><span>You can unsubscribe at any time</span></p>
+                    </div>
+                    <input type="email" placeholder="Enter Email Address" class="email-input" name="nav-email-address" aria-label="Enter Email Address"/> 
+                    <!--[if lte IE 9]>
+                         <p class="ie-input-label">Enter Email Address</p>
+                    <![endif]-->
+                    <input type="hidden" name="recaptcha_element_id" value="captcha_nav_footer_email_signup"/>
+                    <input type="hidden" id="desktop_footer_form_name" name="form_name" value="desktop-footer-email-signup"/>
+                    <div class="email-btn">Sign Up</div>
+                    <input type="text" name="email_signup_address" style="display:none;" />
+
+                <div id="captcha_nav_footer_email_signup" style="display: none;"></div>
+                <input type="submit" name='signup' value="Sign Up" class="email-submit"/>
+                <button type="button" id="footer-email-form-close" aria-label="Close email signup form">Close</button>
+                </form>
+            </div>
+        </div>
+        
+        <style>
+        .footer-cb-ic{ color: #2D557D; display: inline-block; vertical-align: middle; fill: currentColor; }
+        .CBD-footer#footer .footer-icon{ display: block; top: 0; }
+        .CBD-footer#footer .social.mobile-hide .social-links-wrapper { display: inline-flex; gap: 15px; left: 0;}
+        .CBD-footer#footer .footer-icon{ width: 40px; height: 40px; margin: 0;}
+        .CBD-footer#footer > .CBD-footer-inner-container .social.mobile-hide{ display: flex; align-items: center; justify-content: center; }
+        .CBD-footer#footer > .CBD-footer-inner-container .social > p{ top: 0; margin-right: 15px; }
+        </style>
+        
+        <div class="c"></div>
+        <div class="col-2 social mobile-hide"><p><span>Connect With Us</span></p>
+            <div class="social-links-wrapper">
+                <a href="https://www.facebook.com/Christianbook/" target="_blank" rel="noopener" aria-label="Visit us on Facebook (opens in a new window)">
+                <svg class="footer-icon footer-cb-ic" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                  <use href="#cb-i-fb" x="6" y="6" width="12" height="12" />
+                </svg>
+                </a>
+                <a href="https://twitter.com/Christianbook" target="_blank" rel="noopener" aria-label="Follow us on Twitter (opens in a new window)">
+                <svg class="footer-icon footer-cb-ic" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                  <use href="#cb-i-twitter" x="6" y="6" width="12" height="12"/>
+                </svg>
+                </a>
+                <a href="https://www.pinterest.com/christianbook/" target="_blank" rel="noopener" aria-label="Visit us on Pinterest (opens in a new window)">
+                <svg class="footer-icon footer-cb-ic" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                  <use href="#cb-i-pinterest" x="6" y="6" height="12" width="12"/>
+                </svg>
+                </a>
+                <a href="https://instagram.com/christianbook/" target="_blank" rel="noopener" aria-label="Check us out on Instagram (opens in a new window)">
+                <svg class="footer-icon footer-cb-ic" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                  <use href="#cb-i-instagram" x="6" y="6" width="12" height="12"/>
+                </svg>
+                </a>
+                <a href="https://www.youtube.com/christianbook/" target="_blank" rel="noopener" aria-label="Subscribe to our YouTube Channel (opens in a new window)">
+                <svg class="footer-icon footer-cb-ic" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                  <use href="#cb-i-youtube" x="6" y="6" width="12" height="12"/>
+                </svg>
+                </a>
+            </div>
+        </div>
+        
+        <div class="top-clear"></div>
+        
+        <div class="footer-nav-column mobile-only">
+            <ul class="footer-nav">
+                <li class="footer-nav-title last"> <h2><button aria-expanded="false" aria-controls="footer-shop-links"><span id="footer-shops-title">Shops<div class="footer-arrow-down" aria-hidden="true">&#9660</div><div class="footer-arrow-up" aria-hidden="true">&#9650</div></span></button></h2>
+                    <ul id="footer-shop-links" aria-describedby="footer-shops-title">
+                        
+    <li><a href="/page/bibles?event=FOOT" aria-label="Visit the Bibles store">Bibles</a></li>
+    <li><a href="/page/gifts?event=FOOT" aria-label="Visit the Gifts store">Gifts</a></li>
+    <li><a href="/page/bargains?event=FOOT" aria-label="Visit the Bargains store">Bargains</a></li>
+    <li><a href="/page/kids/toys?event=FOOT" aria-label="Visit the Toys store">Toys</a></li>
+    <li><a href="/page/homeschool?event=FOOT" aria-label="Visit the Homeschool store">Homeschool</a></li>
+    <li><a href="/page/vbs?event=FOOT" aria-label="Visit the VBS store">VBS</a></li>
+    <li><a href="/page/christian-living?event=FOOT" aria-label="Visit the Christian Living store">Christian Living</a></li>
+    <li><a href="/page/church-supplies?event=FOOT" aria-label="Visit the Church Supplies store">Church Supplies</a></li>
+    <li><a href="/page/bible-studies?event=FOOT" aria-label="Visit the Bible Studies store">Bible Studies</a></li>
+    <li><a href="/page/kids?event=FOOT" aria-label="Visit the Kids store">Kids</a></li>
+    <li><a href="/page/dvds?event=FOOT" aria-label="Visit the DVDs store">DVDs</a></li>
+    <li><a href="/page/fiction?event=FOOT" aria-label="Visit the Fiction store">Fiction</a></li>
+    <li><a href="/page/music?event=FOOT" aria-label="Visit the Music store">Music</a></li>
+    <li><a href="/page/academic?event=FOOT" aria-label="Visit the Academics store">Academics</a></li>
+
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+		<span class="footer-nav-column-section">
+        <div class="footer-nav-column">
+            <ul class="footer-nav">
+                <li class="footer-nav-title"> 
+                    <span class="mobile-hide">Account</span>
+                    <h2 class="mobile-only"><button aria-expanded="false" aria-controls="footer-account-links"><span id="footer-account-title">Account<div class="footer-arrow-down" aria-hidden="true">&#9660</div><div class="footer-arrow-up" aria-hidden="true">&#9650</div></span></button></h2>
+                    <ul id="footer-account-links" aria-describedby="footer-account-title">
+                        <li><a href="/Christian/Books/bookbag?co=1" rel="nofollow">Checkout</a></li>
+                        <li><a href="https://www.christianbook.com/apps/account/" rel="nofollow">Account</a></li>
+                        <li><a href="https://www.christianbook.com/apps/account/order_history" rel="nofollow">Order History</a></li>
+                        <li><a href="/Christian/Books/wishlist" rel="nofollow">Wishlist</a></li>
+                        <li><a href="/Christian/Books/bookbag" rel="nofollow">Cart</a></li>
+                        <li><a href="https://www.christianbook.com/apps/account/email_preferences">Subscribe Email</a></li>
+                        <li><a href="https://www.christianbook.com/Christian/Books/subscription_management">Unsubscribe Email</a></li>
+                    </ul>
+                </li>
+                <li class="footer-nav-title"> 
+                    <span class="mobile-hide">Shipping & Returns</span>
+                    <h2 class="mobile-only"><button aria-expanded="false" aria-controls="footer-shipping-links"><span id="footer-shipping-title">Shipping & Returns<div class="footer-arrow-down" aria-hidden="true">&#9660</div><div class="footer-arrow-up" aria-hidden="true">&#9650</div></span></button></h2>
+                    <ul id="footer-shipping-links" aria-describedby="footer-shipping-title">
+                        <li><a href="/Christian/Books/shipping_handling_chart">Shipping & Handling Rates</a></li>
+                        <li><a href="/page/info/returns">Easy Returns</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="footer-nav-column">
+            <ul class="footer-nav">
+                <li class="footer-nav-title"> 
+                    <span class="mobile-hide">Services</span>
+                    <h2 class="mobile-only"><button aria-expanded="false" aria-controls="footer-services-links"><span id="footer-services-title">Services<div class="footer-arrow-down" aria-hidden="true">&#9660</div><div class="footer-arrow-up" aria-hidden="true">&#9650</div></span></button></h2>
+
+                    <ul id="footer-services-links" aria-describedby="footer-services-title">
+                        
+                        <li><a href="/page/christianbookrewards">Christianbook Rewards</a></li>
+                        
+                        
+                        <li><a href="/apps/giveback/register">GiveBack Program</a></li>
+                        <li><a href="https://partners.christianbook.com/">Affiliate Program</a></li>
+                        
+                        
+                        <li><a href="/page/autoship-and-save">Autoship</a></li>
+                        <li><a href="/apps/gift-card">Gift Cards</a></li>
+                        <li><a href="/apps/membership">Membership</a></li>
+                        
+                        <li><a href="/selfpublish">Self-Publishing</a></li>
+                    </ul>
+                </li>
+                <li class="footer-nav-title"> 
+                    <span class="mobile-hide">Catalog</span>
+                    <h2 class="mobile-only"><button aria-expanded="false" aria-controls="footer-catalog-links"><span id="footer-catalog-title">Catalog<div class="footer-arrow-down" aria-hidden="true">&#9660</div><div class="footer-arrow-up" aria-hidden="true">&#9650</div></span></button></h2>
+                    <ul id="footer-catalog-links" aria-describedby="footer-catalog-title">
+                       <li><a href="/apps/catalog_quick_shop">Catalog Quick Shop</a></li>
+                        <li><a href="/page/online-catalog">Online Catalogs</a></li>
+                        <li><a href="/apps/catalog-request" class='CBD-CatalogRequest-Footer'>Request our Catalogs</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+            </span>
+            <span class="footer-nav-column-section">
+		
+        <div class="footer-nav-column">
+            <ul class="footer-nav">
+             
+                <li class="footer-nav-title"> 
+                    <span class="mobile-hide">Community</span>
+                    <h2 class="mobile-only"><button aria-expanded="false" aria-controls="footer-community-links"><span id="footer-community-title">Community<div class="footer-arrow-down" aria-hidden="true">&#9660</div><div class="footer-arrow-up" aria-hidden="true">&#9650</div></span></button></h2>
+                    <ul id="footer-community-links" aria-describedby="footer-community-title">
+                        <li><a href="/page/community">Social Media</a></li>
+                        <li><a href="/page/edified">Podcast</a></li>
+                        <li><a href="/blog" target="_blank" rel="noopener">Blog<span class='sr-only'> (Opens in a new tab)</span></a></li>
+                        <li><a href="https://homeschoolcompass.com/" target="_blank" rel="noopener">Homeschool Compass<span class='sr-only'> (Opens in a new tab)</span></a></li>
+                        <li><a href="/page/community/prayer-wall">Prayer Wall</a></li>
+                        <li><a href="/page/promotion/social-promotion/christianbook-free-downloads-and-printables">Free Resources</a></li>
+                        <li><a href="/page/christian-authors">Author Profiles</a></li>
+                    </ul>
+                </li>
+              
+                <li class="footer-nav-title"> 
+                    <span class="mobile-hide">About Us</span>
+                    <h2 class="mobile-only"><button aria-expanded="false" aria-controls="footer-about-links"><span id="footer-about-title">About Us<div class="footer-arrow-down" aria-hidden="true">&#9660</div><div class="footer-arrow-up" aria-hidden="true">&#9650</div></span></button></h2>
+                    <ul id="footer-about-links" aria-describedby="footer-about-title">
+                        <li><a href="/page/about-us">Company Info</a></li>
+                        
+                        <li><a href="/page/charitable-giving">Charitable Giving</a></li>
+                        <li><a href="/page/info/job-opportunities">Job Opportunities</a></li>
+                        
+                    </ul>
+                </li>
+                <li class="footer-nav-title "> 
+                    <span class="mobile-hide">Help</span>
+                    <h2 class="mobile-only"><button aria-expanded="false" aria-controls="footer-help-links"><span id="footer-help-title">Help<div class="footer-arrow-down" aria-hidden="true">&#9660</div><div class="footer-arrow-up" aria-hidden="true">&#9650</div></span></button></h2>
+                    <ul id="footer-help-links"  aria-describedby="footer-help-title">
+                        <li><a href="/page/info/customer-service">Customer Service</a></li>
+                        
+                        <li><a href="/page/info/faqs">FAQ</a></li>
+                        <li><a href="/apps/privacy/regions">Your State-Specific Privacy Choices <img src="//g.christianbook.com/g//privacy/privacy-options.png" alt="" class="privacy-options-icon"/></a></li>
+                    </ul>
+                </li>
+                
+                <li class="footer-nav-title footer-nav-active mobile-only" id="footer-email-signup">
+                  <span>Email Signup</span>
+                   <ul class="nav-toggle">
+                      <li>
+                         <form id="mob-email-signup-form" action="/Christian/Books/email_signup" method="POST" name="email-signup-form">
+                            <input type="email" placeholder="Enter Email Address" class="email-input" name="nav-email-address" aria-label="Enter Email Address" style="font-size:16px;">
+                            <input type="hidden" name="form_name" id="mobile_footer_form_name" value="mobile-footer-email-signup"/>
+                            <input type="hidden" name="recaptcha_element_id" value="captcha_nav_footer_mobile_email_signup">
+                         <div id="captcha_nav_footer_mobile_email_signup" style="display: block;margin-left:0px"></div>
+                            <input type="submit" value="Sign Up" class="email-btn" name="signup">
+                            <input type="text" name="email_signup_address" style="display:none;" />
+
+                         </form>
+                         <p>Sign up to receive exclusive email offers<br><span>You can unsubscribe at any time</span></p>
+                      </li>
+                   </ul>
+                </li>
+                
+            </ul>
+        </div>
+        
+        <div class="footer-nav-column mobile-hide">
+            <ul class="footer-nav">
+                <li class="footer-nav-title last"> <span>Shops</span>
+                    <ul>
+                        
+    <li><a href="/page/bibles?event=FOOT" aria-label="Visit the Bibles store">Bibles</a></li>
+    <li><a href="/page/gifts?event=FOOT" aria-label="Visit the Gifts store">Gifts</a></li>
+    <li><a href="/page/bargains?event=FOOT" aria-label="Visit the Bargains store">Bargains</a></li>
+    <li><a href="/page/kids/toys?event=FOOT" aria-label="Visit the Toys store">Toys</a></li>
+    <li><a href="/page/homeschool?event=FOOT" aria-label="Visit the Homeschool store">Homeschool</a></li>
+    <li><a href="/page/vbs?event=FOOT" aria-label="Visit the VBS store">VBS</a></li>
+    <li><a href="/page/christian-living?event=FOOT" aria-label="Visit the Christian Living store">Christian Living</a></li>
+    <li><a href="/page/church-supplies?event=FOOT" aria-label="Visit the Church Supplies store">Church Supplies</a></li>
+    <li><a href="/page/bible-studies?event=FOOT" aria-label="Visit the Bible Studies store">Bible Studies</a></li>
+    <li><a href="/page/kids?event=FOOT" aria-label="Visit the Kids store">Kids</a></li>
+    <li><a href="/page/dvds?event=FOOT" aria-label="Visit the DVDs store">DVDs</a></li>
+    <li><a href="/page/fiction?event=FOOT" aria-label="Visit the Fiction store">Fiction</a></li>
+    <li><a href="/page/music?event=FOOT" aria-label="Visit the Music store">Music</a></li>
+    <li><a href="/page/academic?event=FOOT" aria-label="Visit the Academics store">Academics</a></li>
+
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+		</span>
+        <div class="footer-nav-column mobile-only">
+            <ul class="footer-nav no-toggle">
+                <li class="footer-nav-title"><a href="https://www.christianbook.com/apps/login?navcat=toplogin_b" rel="nofollow">Sign In</a></li>
+                <li class="footer-nav-title"><a href="/apps/product?item_no=915678&product_redirect=1&search_term=love%2520walked%2520among%2520&Ntt=915678&item_code=&ps_exit=PRODUCT%7Clegacy&Ntk=keywords&event=ESRCP&display_full_site=1&xfilter=1" rel="nofollow">Desktop Site</a></li>
+            </ul>
+        </div>
+    
+      <div class="c"></div>
+      <style>.mobile .social.mobile-only{ display: flex!important; align-items: center; justify-content: center; gap: 20px; padding: 10px 0!important; }</style>
+      <div class="col-2 social mobile-only">
+          <a href="https://www.facebook.com/Christianbook/" target="_blank" rel="noopener" aria-label="Visit us on Facebook (opens in a new window)">
+          <svg class="footer-icon footer-cb-ic" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2.5"/>
+            <use href="#cb-i-fb" x="6" y="6" width="12" height="12"/>
+          </svg>
+          </a>
+          <a href="https://twitter.com/Christianbook" target="_blank" rel="noopener" aria-label="Follow us on Twitter (opens in a new window)">
+          <svg class="footer-icon footer-cb-ic" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2.5"/>
+            <use href="#cb-i-twitter" x="6" y="6" width="12" height="12"/>
+          </svg>
+          </a>
+          <a href="https://www.pinterest.com/christianbook/" target="_blank" rel="noopener" aria-label="Visit us on Pinterest (opens in a new window)">
+          <svg class="footer-icon footer-cb-ic" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2.5"/>
+            <use href="#cb-i-pinterest" x="6" y="6" width="12" height="12"/>
+          </svg>
+          </a>
+          <a href="https://instagram.com/christianbook/" target="_blank" rel="noopener" aria-label="Check us out on Instagram (opens in a new window)">
+          <svg class="footer-icon footer-cb-ic" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2.5"/>
+            <use href="#cb-i-instagram" x="6" y="6" width="12" height="12"/>
+          </svg>
+          </a>
+          <a href="https://www.youtube.com/christianbook/" target="_blank" rel="noopener" aria-label="Subscribe to our YouTubeChannel (opens in a new window)">
+          <svg class="footer-icon footer-cb-ic" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2.5"/>
+            <use href="#cb-i-youtube" x="6" y="6" width="12" height="12"/>
+          </svg>
+          </a>
+      </div>
+    
+    </div>
+    <div class="contact-info-wrapper">
+        <div id="image" class="contact-item contact-sets">
+            <img src="//g.christianbook.com/g/templates/themes/1000001/FooterLogo.png" alt="Christianbook.com Logo" loading="lazy"/>
+        </div>
+        <div class="contact-info">
+            <div class="set-1 contact-sets">
+                <div id="phone-number" class="contact-item">
+                    <div class="contact-icon" style="vertical-align: top;margin-right: 10px; top: 13px;"><a href="tel:18002474784" aria-label="Call us at 1-800-CHRISTIAN" aria-hidden="true" tabindex="-1" style="width: 25px; height: 25px;">
+                        <svg class="footer-cb-ic" viewBox="0 0 24 24" style="transform: rotate(20deg)"><use href="#cb-i-phone"/></svg>
+                    </a></div><p><a href="tel:18002474784" href="1-800-CHRISTIAN" aria-label="Call us at 1-800-CHRISTIAN, Dial 1-800-247-4784">1-800-CHRISTIAN <br class="mobile-only"/><br/><span>1-800-247-4784</span></a><br class="mobile-only"/><br/><span>(Outside the United States<br />and Canada Call: <a href="tel:9789775000" aria-label="Outside the United States and Canada call 978-977-5000">978-977-5000</a>)</span></p>
+                </div>
+            </div>
+            <div class="set-2 contact-sets">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                      <a href="/apps/feedback" aria-label="Email Us" tabindex="-1" aria-hidden="true">
+                        <svg class="footer-cb-ic" viewBox="0 0 24 24"><use href="#cb-i-email"/></svg>
+                      </a>
+                    </div><a href="/apps/feedback" aria-label="Email Us"">Email Us</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                      <a href="http://maps.apple.com/?address=140 Summit St. Peabody, MA 01960" aria-label="140 Summit Street, Peabody, MA 01960" aria-hidden="true" tabindex="-1">
+                        <svg class="footer-cb-ic" viewBox="0 0 24 24"><use href="#cb-i-address"/></svg>
+                      </a>
+                    </div><a href="http://maps.apple.com/?address=140 Summit St. Peabody, MA 01960" aria-label="140 Summit Street, Peabody, MA 01960"><span>140 Summit St. Peabody, MA 01960</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="meta">
+        <li><a href="/page/info/faqs/sales-tax-faqs">Tax Information for AL Residents</a></li>
+        <li><a href="/page/info/california-b2b-privacy-notice">California B2B Privacy Notice</a></li>
+        <li><a href="/page/info/terms-and-conditions">Terms &amp; Conditions</a></li>
+        <li><a href="/page/info/privacy-notice">Privacy Notice</a></li>
+        <li><a href="/page/info/accessibility-statement">Accessibility Statement</a></li>
+        
+        <li><a href="/sitemap/">Sitemap</a></li>
+        
+        <li class="meta-non-links">
+			<ul>
+				<li>&copy; 2026 Christianbook, LLC</li>
+        		<li class="machine">* 60 *</li>
+			</ul>
+		</li>
+    </ul>
+    <ul class="badges mobile-hide">
+        <li><a style="position:relative;top:10px;" name="bizrate-ratings" href="#bizrate-ratings" onclick="window.open('http://www.bizrate.com/ratings_guide/cust_reviews__mid--19843.html')">
+        <img src="//g.christianbook.com/g/bizrate_dynamic_medal.gif" alt="This website is Bizrate Customer Certified" width="125" height="73" border="0" loading="lazy" /></a></li>
+        <li>
+    
+        <a href="#norton-seal" class="norton-seal" onclick="window.open('http://seal.digicert.com/seals/popup/?tag=uq4AFkGH&url=www.christianbook.com&lang=en&cbr=1736887309874');">
+             <img src="//g.christianbook.com/g/www_norton_seal.png" alt="This website is secured by Norton and DigiCert" loading="lazy"/>
+             </a>
+        </a>
+    
+
+</li>
+        <li><a name="bizrate-circle-of-excellence" href="#bizrate-circle-of-excellence" onclick="window.open('http://www.bizrate.com/ratings_guide/merchant_detail__mid--19843.html')">
+        <img src="//g.christianbook.com/ns/img/base/bizrate_2022.png" border="0" alt="This website is a Bizrate Circle of Excellence award winner for 2022" loading="lazy" /></a></li>
+        <li>
+        <img src="//g.christianbook.com/ns/img/base/TopPlacesToWork2021.png" border="0" style="width: 150px; height: auto; border-radius: 0 0 10px 10px;" alt="One of the Boston Globe's Top Places to Work for 2021" loading="lazy"/>
+        </li>
+    </ul><script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"4047320",cookieFlags: "SameSite=None;Secure"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+<script>
+     window.uetq = window.uetq || [];
+    window.uetq.push('event', '', {'ecomm_pagetype':'product', 'ecomm_prodid':'915678'});
+</script>
+
+
+
+
+</div>
+
+
+
+
+
+
+<!-- svg sprites -->
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden;" aria-hidden="true">
+  <symbol id="cb-i-fb" viewBox="0 0 24 24" fill="currentColor"><path d="M8.258,4.458c0-0.144,0.02-0.455,0.06-0.931c0.043-0.477,0.223-0.976,0.546-1.5c0.32-0.522,0.839-0.991,1.561-1.406 C11.144,0.208,12.183,0,13.539,0h3.82v4.163h-2.797c-0.277,0-0.535,0.104-0.768,0.309c-0.231,0.205-0.35,0.4-0.35,0.581v2.59h3.914 c-0.041,0.507-0.086,1-0.138,1.476l-0.155,1.258c-0.062,0.425-0.125,0.819-0.187,1.182h-3.462v11.542H8.258V11.558H5.742V7.643 h2.516V4.458z"/></symbol>
+  <symbol id="cb-i-twitter" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></symbol>
+  <symbol id="cb-i-pinterest" viewBox="0 0 256 256" fill="currentColor"><g transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"><path d="M 25.334 90 c 3.415 -2.853 8.943 -12.256 10.189 -17.048 c 0.671 -2.581 3.437 -13.114 3.437 -13.114 c 1.799 3.43 7.054 6.334 12.644 6.334 c 16.638 0 28.626 -15.301 28.626 -34.312 C 80.229 13.636 65.357 0 46.22 0 C 22.415 0 9.771 15.981 9.771 33.382 c 0 8.091 4.307 18.164 11.198 21.371 c 1.045 0.486 1.604 0.272 1.845 -0.738 c 0.183 -0.767 1.113 -4.513 1.532 -6.256 c 0.134 -0.557 0.068 -1.036 -0.383 -1.582 c -2.279 -2.764 -4.105 -7.848 -4.105 -12.589 c 0 -12.167 9.213 -23.94 24.909 -23.94 c 13.552 0 23.042 9.235 23.042 22.443 c 0 14.923 -7.536 25.261 -17.341 25.261 c -5.415 0 -9.469 -4.478 -8.169 -9.968 c 1.555 -6.558 4.569 -13.634 4.569 -18.367 c 0 -4.237 -2.274 -7.771 -6.98 -7.771 c -5.536 0 -9.982 5.727 -9.982 13.397 c 0 4.886 1.65 8.19 1.65 8.19 s -5.467 23.115 -6.469 27.421 c -1.109 4.764 -0.674 11.476 -0.191 15.84 L 25.334 90 z"/></g></symbol>
+  <symbol id="cb-i-instagram" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.849.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.849.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></symbol>
+  <symbol id="cb-i-youtube" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></symbol>
+  <symbol id="cb-i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.4 11.4 0 0 0 3.58.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.24 1.01z"/></symbol>
+  <symbol id="cb-i-email" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></symbol>
+  <symbol id="cb-i-address" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a8 8 0 0 0-8 8c0 5.5 8 12 8 12s8-6.5 8-12a8 8 0 0 0-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></symbol>
+</svg>
+
+<script id="CBD-PreviewGroupItem-Template" type="text/x-mustache-template"><li{{#previewGroupItemDataSku}} data-sku="{{previewGroupItemDataSku}}"{{/previewGroupItemDataSku}} class="CBD-PreviewGroupItem{{#previewGroupFirstItem}} CBD-PreviewGroupFirstItem{{/previewGroupFirstItem}}{{^previewGroupItemImage}} CBD-PreviewGroupItem-Loading{{/previewGroupItemImage}}">{{#previewGroupItemImage}}
+<{{^previewGroupItemNoLinks}}a{{/previewGroupItemNoLinks}}{{#previewGroupItemNoLinks}}span{{/previewGroupItemNoLinks}} class="CBD-PreviewGroupItemImage {{#previewGroupItemImageClass}}{{previewGroupItemImageClass}}{{/previewGroupItemImageClass}}" href="{{previewGroupItemLink}}" {{^previewGroupItemNoLinks}}{{#previewGroupItemRecToken}}data-rectoken="{{previewGroupItemRecToken}}"{{/previewGroupItemRecToken}}{{/previewGroupItemNoLinks}}><img src="{{previewGroupItemImage}}" alt="{{previewGroupItemText}}{{#previewGroupItemTruncatedText}}{{previewGroupItemTruncatedText}}{{/previewGroupItemTruncatedText}}" title="{{previewGroupItemText}}{{#previewGroupItemTruncatedText}}{{previewGroupItemTruncatedText}}{{/previewGroupItemTruncatedText}}" />{{#previewPlayButtonImageOverlay}}<span class="CBD-PlayButtonOverlay"></span>{{/previewPlayButtonImageOverlay}}{{#previewGroupItemFlagText}}<span class="CBD-PreviewGroupItemFlag{{#previewGroupItemFlagClass}} {{previewGroupItemFlagClass}}{{/previewGroupItemFlagClass}}" aria-hidden="true">{{previewGroupItemFlagText}}</span><span class="sr-only">{{previewGroupItemFlagAccessibleText}}</span>{{/previewGroupItemFlagText}}</{{^previewGroupItemNoLinks}}a{{/previewGroupItemNoLinks}}{{#previewGroupItemNoLinks}}span{{/previewGroupItemNoLinks}}>
+        {{#previewGroupItemCartLink}}
+        <div class="CBD-PreviewGroupItemActions">
+            {{^previewGroupPromoOffer}}
+            <a class="CBD-PreviewGroupItemAddButton{{#previewGroupNoCartButton}} CBD-PreviewGroupItemAddButton-HideButton{{/previewGroupNoCartButton}}{{#previewGroupItemCartClass}} {{previewGroupItemCartClass}}{{/previewGroupItemCartClass}}" href="{{previewGroupItemCartLink}}" rel="nofollow" {{#previewGroupItemCartAriaLabel}} aria-label="{{previewGroupItemCartAriaLabel}}"{{/previewGroupItemCartAriaLabel}}>{{#previewGroupItemCartText}}{{previewGroupItemCartText}}{{/previewGroupItemCartText}}{{^previewGroupItemCartText}}Add To Cart{{/previewGroupItemCartText}}</a>
+            {{^previewGroupNoWishlistButton}}<a class="CBD-PreviewGroupItemWishlistButton{{#previewGroupItemWishlistClass}} {{previewGroupItemWishlistClass}}{{/previewGroupItemWishlistClass}}" href="{{previewGroupItemWishlistLink}}" rel="nofollow" aria-label="Add {{previewGroupItemText}}{{#previewGroupItemTruncatedText}}{{previewGroupItemTruncatedText}}{{/previewGroupItemTruncatedText}} to your wishlist">{{#previewGroupItemWishlistText}}{{previewGroupItemWishlistText}}{{/previewGroupItemWishlistText}}{{^previewGroupItemWishlistText}}Add To Wishlist{{/previewGroupItemWishlistText}}</a>{{/previewGroupNoWishlistButton}}
+            {{/previewGroupPromoOffer}}
+            {{#previewGroupPromoOffer}}
+            <button type="submit" name="checkout_discount_sku" value="{{previewGroupItemDataSku}}" class="CBD-PreviewGroupItemAddButton" rel="nofollow" aria-label="Add {{#previewGroupItemText}}{{previewGroupItemText}}{{#previewGroupItemTruncatedText}}{{previewGroupItemTruncatedText}}{{/previewGroupItemTruncatedText}}{{/previewGroupItemText}} to your order">Add to Order</button>
+            {{/previewGroupPromoOffer}}
+        </div>
+        {{/previewGroupItemCartLink}}
+        {{#previewGroupItemRank}}<div class="CBD-PreviewGroupItemRank">{{previewGroupItemRank}}</div>{{/previewGroupItemRank}}
+        <div class="CBD-PreviewGroupItemData{{#previewGroupNoRatings}} CBD-PreviewGroupItemData-HideRatings{{/previewGroupNoRatings}}{{#previewGroupItemRatingLink}} CBD-PreviewGroupItemData-WithRatings{{#previewGroupItemRating}} CBD-PreviewGroupItemHasRatingText{{/previewGroupItemRating}}{{/previewGroupItemRatingLink}}{{#previewGroupNoSavings}} CBD-PreviewGroupItemData-HideSavings{{/previewGroupNoSavings}}{{^previewGroupNoSavings}}{{#previewGroupNoPrice}} CBD-PreviewGroupItemData-HideSavings{{/previewGroupNoPrice}}{{/previewGroupNoSavings}}{{#previewGroupItemSavings}} CBD-PreviewGroupItemData-WithSavings{{/previewGroupItemSavings}}">
+            <{{^previewGroupItemNoLinks}}a{{/previewGroupItemNoLinks}}{{#previewGroupItemNoLinks}}span{{/previewGroupItemNoLinks}} class="CBD-PreviewGroupItemLink{{#previewGroupNoTitle}} CBD-PreviewGroupItemLink-HideTitle{{/previewGroupNoTitle}}{{^previewGroupItemSalePrice}} CBD-PreviewGroupItemLink-Center{{/previewGroupItemSalePrice}}" href="{{previewGroupItemLink}}" {{^previewGroupItemNoLinks}}{{#previewGroupItemRecToken}}data-rectoken="{{previewGroupItemRecToken}}"{{/previewGroupItemRecToken}}{{/previewGroupItemNoLinks}} tabindex="-1" aria-hidden="true">{{{previewGroupItemText}}}{{#previewGroupItemTruncatedText}}<span class="CBD-PreviewGroupItemLink-Truncated">{{{previewGroupItemTruncatedText}}}</span>{{/previewGroupItemTruncatedText}}</{{^previewGroupItemNoLinks}}a{{/previewGroupItemNoLinks}}{{#previewGroupItemNoLinks}}span{{/previewGroupItemNoLinks}}>
+          {{#previewGroupItemAuthor}}
+            <div class="CBD-PreviewGroupItemAuthor{{#previewGroupNoAuthor}} CBD-PreviewGroupItem-HideAuthor{{/previewGroupNoAuthor}}">{{previewGroupItemAuthor}}{{#previewGroupItemAdditionalAuthors}}<span class="CBD-PreviewGroupItemAdditionalAuthors">, {{previewGroupItemAdditionalAuthors}}</span>{{/previewGroupItemAdditionalAuthors}}</div>
+          {{/previewGroupItemAuthor}}
+          {{#previewGroupItemAuthorLink}}
+            <div class="CBD-PreviewGroupItemAuthorLink{{#previewGroupNoAuthor}} CBD-PreviewGroupItem-HideAuthor{{/previewGroupNoAuthor}}"><a href="{{previewGroupItemAuthorLink}}">{{previewGroupItemAuthor}}{{#previewGroupItemAdditionalAuthors}}<span class="CBD-PreviewGroupItemAdditionalAuthors">, {{previewGroupItemAdditionalAuthors}}</span>{{/previewGroupItemAdditionalAuthors}}</a></div>
+          {{/previewGroupItemAuthorLink}}
+          {{#previewGroupItemProductDetails}}<div class="CBD-PreviewGroupItemPublisher">{{previewGroupItemProductDetails}}</div>{{/previewGroupItemProductDetails}}
+          <div class="CBD-PreviewGroupItemPrice{{#previewGroupNoPrice}} CBD-PreviewGroupItemPrice-HidePrice{{/previewGroupNoPrice}}">
+              {{#previewGroupItemSalePrice}}   <{{^previewGroupItemPromoPrice}}span{{/previewGroupItemPromoPrice}}{{#previewGroupItemPromoPrice}}del{{/previewGroupItemPromoPrice}} class="CBD-PreviewGroupItemPriceSale"><span class="sr-only">Our Price</span>{{previewGroupItemSalePrice}}</{{^previewGroupItemPromoPrice}}span{{/previewGroupItemPromoPrice}}{{#previewGroupItemPromoPrice}}del{{/previewGroupItemPromoPrice}}> {{/previewGroupItemSalePrice}}
+              {{#previewGroupItemRetailPrice}} <span class="CBD-PreviewGroupItemPriceRetailText" aria-hidden="true">Retail: </span><del class="CBD-PreviewGroupItemPriceRetail"><span class="sr-only">Retail Price</span>{{previewGroupItemRetailPrice}}</del>{{/previewGroupItemRetailPrice}}
+            {{#previewGroupItemSavings}}     <span class="CBD-PreviewGroupItemPriceSavings{{#previewGroupNoSavings}} CBD-PreviewGroupItemPriceSavings-HideSavings{{/previewGroupNoSavings}}">{{previewGroupItemSavings}}</span>
+                                             {{#previewGroupItemSavingsAmount}} <span class="CBD-PreviewGroupItemPriceSavingsAmount">({{previewGroupItemSavingsAmount}})</span> {{/previewGroupItemSavingsAmount}}{{/previewGroupItemSavings}}
+             {{#previewGroupItemPromoPrice}}
+             <div class="CBD-PreviewGroupItemPromoPrice"><span class="sr-only">Offer Price </span>{{previewGroupItemPromoPrice}}</div>
+             {{/previewGroupItemPromoPrice}}
+          </div>
+          {{#previewGroupItemRatingLink}}
+          <{{^previewGroupItemNoLinks}}a{{/previewGroupItemNoLinks}}{{#previewGroupItemNoLinks}}span{{/previewGroupItemNoLinks}} class="CBD-PreviewGroupItemRating {{#previewGroupNoRatings}}CBD-PreviewGroupItemData-HideRatings{{/previewGroupNoRatings}}" href="{{previewGroupItemRatingLink}}"><span class="CBD-PreviewGroupItemRatingScale"><span class="CBD-PreviewGroupItemRatingStars CBD-PreviewGroupItemRatingStars-{{previewGroupItemStars}}{{#previewGroupItemHalfStar}}-5{{/previewGroupItemHalfStar}}">{{#previewGroupItemRating}}{{previewGroupItemRating}}{{/previewGroupItemRating}}{{^previewGroupItemRating}}{{previewGroupItemStars}}{{#previewGroupItemHalfStar}}.5{{/previewGroupItemHalfStar}}{{/previewGroupItemRating}} out of 5 Stars for {{previewGroupItemText}}{{#previewGroupItemTruncatedText}}{{previewGroupItemTruncatedText}}{{/previewGroupItemTruncatedText}}. View reviews of this product.</span></span>{{#previewGroupItemReviews}} <span class="CBD-PreviewGroupItemRatingCount">{{previewGroupItemReviews}} Reviews</span>{{/previewGroupItemReviews}}{{#previewGroupItemRating}}<span class="CBD-PreviewGroupItemRatingText" aria-hidden="true">{{previewGroupItemRating}}{{#previewGroupItemReviewsFormatted}}<span class='CBD-PreviewGroupTotalReviews'> ({{previewGroupItemReviewsFormatted}})</span>{{/previewGroupItemReviewsFormatted}}</span>{{/previewGroupItemRating}}</{{^previewGroupItemNoLinks}}a{{/previewGroupItemNoLinks}}{{#previewGroupItemNoLinks}}span{{/previewGroupItemNoLinks}}>
+          {{/previewGroupItemRatingLink}}
+          {{#previewGroupItemAvail}}<div class="CBD-PreviewGroupItemAvailability">Availability: {{{previewGroupItemAvail}}}</div>{{/previewGroupItemAvail}}
+          {{#previewGroupItemSku}}<div class="CBD-PreviewGroupItemSKU">Stock No: {{previewGroupItemCatalogPrefix}}{{previewGroupItemSku}}</div>{{/previewGroupItemSku}}
+        {{#video_button}}<button class="CBD-PreviewGroupVideoButton{{#previewGroupNoVideoButton}} CBD-PreviewGroupItem-HideVideoButton{{/previewGroupNoVideoButton}}" data-video-sku="{{video_button}}" aria-label="Play product video{{#previewGroupItemText}} for {{previewGroupItemText}}{{#previewGroupItemTruncatedText}}{{previewGroupItemTruncatedText}}{{/previewGroupItemTruncatedText}}{{/previewGroupItemText}}" type="button"><span class="CBD-PreviewGroupVideoButtonIcon"><span class="CBD-PreviewGroupVideoButtonArrow"></span></span>Video</button>{{/video_button}}
+        {{#previewGroupItemBadge}}<div class="CBD-PreviewGroupItemBadge">{{{previewGroupItemBadge}}}</div>{{/previewGroupItemBadge}}
+        </div>
+      {{/previewGroupItemImage}}</li>
+</script>
+<script id="CBD-PreviewGroupSliderButtons-Template" type="text/x-mustache-template"><button type="button" class="CBD-PreviewGroupNextButton" aria-label="Next slide"><span class="CBD-PreviewGroupNextButtonIcon"></span></button><button type="button" class="CBD-PreviewGroupPreviousButton" aria-label="Previous slide"><span class="CBD-PreviewGroupPreviousButtonIcon"></span></button>
+</script>
+<script id="CBD-Modal-Template" type="text/x-mustache-template"><div id="{{modalIdentifier}}-Modal" class="CBD-Modal -ResponsiveToWindow CBD-ModalHidden" {{#hidden}}data-CBD-ShowImmediate="1"{{/hidden}} data-CBD-ResponsiveModalBehavior="{{behavior}}"><div class="CBD-ModalBackground" ></div><div {{#containerIdentifier}}id="{{containerIdentifier}}"{{/containerIdentifier}} class="CBD-ModalContainer" {{#width}}data-CBD-CustomModalWidth="{{width}}"{{/width}}{{#height}}data-CBD-CustomModalHeight="{{height}}"{{/height}}><div class="CBD-ModalContent" tabindex='-1' {{#aria_label}}aria-label="{{aria_label}}"{{/aria_label}} role="dialog" aria-modal="true"><div class="CBD-ModalContentCloseSidePanel"><span class="CBD-ModalCloseBackButton">Back</span></div><button class="CBD-ModalContentCloseLightBox" type="button" aria-label="Close dialog"><span aria-hidden="true" class="CBD-ModalCloseXButton">&times;</span></button>{{#html_content}}{{{html_content}}}{{/html_content}}</div></div></div>
+</script>
+<script id="CBD-Form-Template" type="text/x-mustache-template">{{#useUpdatedMessages}}
+<div class="CB-26-Messages">
+{{{successes}}}
+{{{infos}}}
+{{{errors}}}
+</div>
+{{/useUpdatedMessages}}
+<form id="{{formId}}" class="CBD-FormFrame {{additionalClasses}}{{#is_checkout}} CBD-Form-Checkout{{/is_checkout}}" action="{{action}}" method="{{method}}" name="{{name}}" data-CBD-ResponsiveBehavior='{{behavior}}'{{#noValidate}} novalidate{{/noValidate}}{{#customValidation}} data-custom-validation="{{customValidation}}"{{#validateOnLoad}} validate-on-load="{{validateOnLoad}}"{{/validateOnLoad}}{{/customValidation}}>
+    {{^useUpdatedMessages}}
+    {{{errors}}}
+    {{{infos}}}
+    {{{successes}}}
+    {{/useUpdatedMessages}}
+    <div class="CBD-FieldsetFrame">
+    {{#is_checkout}}
+    <div class="CBD-Form-CheckoutHeader{{#topSubmitButton}} header-actions{{/topSubmitButton}}">
+        <div class="CBD-Form-CheckoutHeader-legend" role="heading" aria-level="1">
+            {{{legend}}}
+        </div>
+        {{#topSubmitButton}}
+        <div class='top-submit'>
+        {{{topSubmitButton}}}
+        </div>
+        {{/topSubmitButton}}
+    </div>
+    {{/is_checkout}}
+    {{^is_checkout}}
+        {{#legend}}
+        <legend role="heading" aria-level="1">{{{legend}}}</legend>
+        {{/legend}}
+        {{#topSubmitButton}}
+        {{{topSubmitButton}}}
+        {{/topSubmitButton}}
+    {{/is_checkout}}
+    {{#topAdditionalHTML}}
+    {{{topAdditionalHTML}}}
+    {{/topAdditionalHTML}}
+    {{{html}}}
+    {{#bottomAdditionalHTML}}
+    {{{bottomAdditionalHTML}}}
+    {{/bottomAdditionalHTML}}
+    {{#bottomSubmitButton}}
+    {{#is_checkout}}
+    <div class="CBD-Form-CheckoutFooter">
+    {{/is_checkout}}
+        {{{bottomSubmitButton}}}
+    {{#is_checkout}}
+    </div>
+    {{/is_checkout}}
+    {{/bottomSubmitButton}}
+    </div>
+</form>
+</script>
+<script id="CBD-NavFlyout-Template" type="text/x-mustache-template"><div id="flyout-{{parent_id}}" class="flyout-section" data-columns={{num_of_columns}} data-node-id="{{node_id}}">
+   <ul class="flyout-list">
+   {{#flyout_cats}} 
+      <li class="flyout-level1-list-item {{#hasBorder}}flyout-item-border {{/hasBorder}}{{#column}}col-num-{{column}}{{/column}}{{#reset}} column-reset{{/reset}}">
+      {{#reset}}<div class="column-line"></div>{{/reset}}
+      <a href="{{link}}">{{{name}}}</a>
+         <ul class='flyout-level2'>
+         {{#flyout_sub_cats}}
+            <li class='flyout-level2-list-item'>
+               <a href="{{link}}">{{{name}}}</a>
+            </li>
+         {{/flyout_sub_cats}}
+         </ul>
+      </li>
+   {{/flyout_cats}}
+   {{#ad}}
+     <li class='flyout-ad column-reset'>
+        <div class="column-line"></div>
+       <a href="{{link}}"><img src="{{image}}" alt="{{alt}}" style="max-width:100%"/></a>
+     </li>
+   {{/ad}}
+      <li class="flyout-spacer"></li>
+   </ul>
+</div>
+</script>
+<script id="CBD-MediaPlayerErrMessage-Template" type="text/x-mustache-template"><div class='CBD-VideoMediaPlayer' {{#playerId}}id = '{{playerId}}'{{/playerId}}><div class='CBD-FallBackMessage'>This page contains interactive audio and video content that requires Adobe Flash Player. If you would like to view this content please <a target='_blank' href='http://www.macromedia.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash'>download Flash</a> and reload this page.</div></div>
+</script>
+
+
+<!-- Embed data about pre-packed JavaScript -->
+<script>
+(function(q,r){var k=document,g=k.getElementsByTagName("script"),m=g[g.length-1],t=m.innerHTML.replace(/^\s+|\s+$/g,"");if(!q.ljs){var d=m.src.match(/checkLoaded/)?1:0,w=k.getElementsByTagName("head")[0]||k.documentElement,u=function(a){var b={};b.u=a.replace(/#(=)?([^#]*)?/g,function(a,e,h){b[e?"f":"i"]=h;return""});return b},n=function(a,b,c){var e=k.createElement(a),h;c&&(e.readyState?e.onreadystatechange=function(){if("loaded"===e.readyState||"complete"===e.readyState)e.onreadystatechange=null,c()}:e.onload=c);for(h in b)try{b[h]&&e.setAttribute(h,b[h])}catch(y){b[h]&&(e[h]=b[h])}w.appendChild(e)},x=function(a,b){if(this.aliases&&this.aliases[a]){var c=this.aliases[a].slice(0);c instanceof Array||(c=[c]);b&&c.push(b);return this.load.apply(this,c)}if(a instanceof Array){for(c=a.length;c--;)this.load(a[c]);b&&a.push(b);return this.load.apply(this,a)}return a.match(/\.css\b/)?this.loadcss(a,b):this.loadjs(a,b)},f={},p={aliases:{},loadjs:function(a,b){var c=u(a);a=c.u;if(!0===f[a])return b&& b(),this;if(f[a]!==r)return b&&(f[a]=function(a,b){return function(){a&&a();b&&b()}}(f[a],b)),this;f[a]=function(b){return function(){f[a]=!0;b&&b()}}(b);n("script",{type:"text/javascript",crossorigin:"anonymous",src:a,id:c.i},function(){f[a]()});return this},loadcss:function(a,b){var c=u(a);a=c.u;f[a]||n("link",{type:"text/css",rel:"stylesheet",href:a,id:c.i});f[a]=!0;b&&b();return this},load:function(){var a=arguments,b=a.length;if(1===b&&a[0]instanceof(Function||Array))return a[0](),this;x.call(this,a[0],1>=b?r:function(){p.load.apply(p,[].slice.call(a,1))});return this},addAliases:function(a){for(var b in a)this.aliases[b]=a[b]instanceof Array?a[b].slice(0):a[b];return this}};if(d){var l,v;d=0;for(l=g.length;d<l;d++)(v=g[d].getAttribute("src"))&&(f[v.replace(/#.*$/,"")]=!0);g=k.getElementsByTagName("link");d=0;for(l=g.length;d<l;d++)"stylesheet"!==g[d].rel&&"text/css"!==g[d].type||(f[g[d].getAttribute("href").replace(/#.*$/,"")]=!0)}q.ljs=p}m.src&&t&&n("script",{innerHTML:t})})(window);
+    var packed_js_urls = ["//g.christianbook.com/ns/js/packed/common.js?v=eaa20f67a66c2d74c3e831bdae373691","//g.christianbook.com/ns/js/packed/jwplayer/jwplayer.js?v=eaa20f67a66c2d74c3e831bdae373691","//g.christianbook.com/ns/js/packed/jwplayer/jwplayerkey.js?v=eaa20f67a66c2d74c3e831bdae373691","//g.christianbook.com/ns/js/packed/page/product.js?v=eaa20f67a66c2d74c3e831bdae373691","//g.christianbook.com/ns/js/packed/page/mobile_slideshow.js?v=eaa20f67a66c2d74c3e831bdae373691","//g.christianbook.com/ns/js/packed/page/product-ask-christianbook.js?v=eaa20f67a66c2d74c3e831bdae373691","//g.christianbook.com/ns/js/packed/page/product-reviews-form-controls.js?v=eaa20f67a66c2d74c3e831bdae373691"];
+</script>
+
+
+    <script type="text/javascript">
+            var commonJs = packed_js_urls.shift();
+        var jwplayerJs;
+        var jwplayerKeyJs;
+        /* check for jwplayer files
+        *  store the path and remove them from the array
+        *  then make sure to load them before common
+        */
+        for(var i = 0; i < packed_js_urls.length; i++){
+            if( packed_js_urls && packed_js_urls[i] && packed_js_urls[i].match(/jwplayer.js/) ){
+                jwplayerJs = packed_js_urls.splice(i, 1);
+            }
+            if( packed_js_urls && packed_js_urls[i] && packed_js_urls[i].match(/jwplayerkey/)){
+                jwplayerKeyJs = packed_js_urls.splice(i, 1);
+            }
+            /* break out of the loop if
+            * we've already found the jwplayer files */
+            if( jwplayerJs && jwplayerKeyJs ){
+                break;
+            }
+        }
+        if(jwplayerJs && jwplayerKeyJs){
+          ljs.load(jwplayerJs, jwplayerKeyJs, commonJs, packed_js_urls, 
+          
+          function(){ });  
+        }
+        else{
+          ljs.load(commonJs, packed_js_urls, 
+          
+          function(){ });
+        }
+    
+
+    </script>
+
+
+
+    <!-- begin Certona -->
+<script class="cbd-certona-tag" type="text/javascript">
+    var resx = new Object();
+    resx.appid = 'christianbook01';
+    resx.event = 'product'; 
+    resx.itemid = '915678'; 
+
+</script>
+<!-- end Certona -->
+<!-- Begin Monetate -->
+<script type="text/javascript">
+window.monetateQ = window.monetateQ || [];
+window.monetateQ.push(["setPageType", "product"]);
+window.monetateQ.push(["setCustomVariables", [{"value":"US","name":"country"},{"value":1000001,"name":"site_id"}]]);
+window.monetateQ.push(['reportRecImpressions', ["rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjcwMTc4IiwgIjcwMTc4IiwgNzMwMTIsIDAsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjc3OTAyMSIsICI3NzkwMjEiLCA3MzAxMSwgMSwgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjI0OTk1IiwgIjI0OTk1IiwgNzMwMTEsIDIsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjk1NzQwMyIsICI5NTc0MDMiLCA3Mjk2NSwgMywgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjk1NzQyNyIsICI5NTc0MjciLCA3Mjk2NSwgNCwgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjc0NDE0IiwgIjc0NDE0IiwgNzI5NjUsIDUsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjg5NzA0NCIsICI4OTcwNDQiLCA3Mjk2NSwgNiwgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjgxMDU5IiwgIjgxMDU5IiwgNzI5NjUsIDcsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjEzNzkyNCIsICIxMzc5MjQiLCA3Mjk2NSwgOCwgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjE0MzkzMiIsICIxNDM5MzIiLCA3Mjk2NSwgOSwgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjE3MzQxOCIsICIxNzM0MTgiLCA3Mjk2NSwgMTAsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjE0NjYwNiIsICIxNDY2MDYiLCA3Mjk2NSwgMTEsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjI0NjQwNyIsICIyNDY0MDciLCA3Mjk2NSwgMTIsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjU0Nzg0MyIsICI1NDc4NDMiLCA3Mjk2NSwgMTMsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNCwgbnVsbCwgIjE1OTUyOSIsICIxNTk1MjkiLCA3Mjk2NSwgMTQsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNywgbnVsbCwgIjI3Nzk0MCIsICIyNzc5NDAiLCA3MjYxMywgMCwgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNywgbnVsbCwgIjI1NTM0NCIsICIyNTUzNDQiLCA3MjYxOCwgMSwgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNywgbnVsbCwgIjY2NDgyOSIsICI2NjQ4MjkiLCA3MjYxOCwgMiwgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNywgbnVsbCwgIjM1ODcyNjkiLCAiMzU4NzI2OSIsIDcyNjE4LCAzLCAiMjAyNi0wNS0wOVQwMjo0NDozNy41OTc4MjVaIl0","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNywgbnVsbCwgIjYxNTAzM0NTIiwgIjYxNTAzM0NTIiwgNzI2MTgsIDQsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNywgbnVsbCwgIjAyNTUzMjAiLCAiMDI1NTMyMCIsIDcyNjE4LCA1LCAiMjAyNi0wNS0wOVQwMjo0NDozNy41OTc4MjVaIl0","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNywgbnVsbCwgIjI1MTk5NiIsICIyNTE5OTYiLCA3MjYxOCwgNiwgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNywgbnVsbCwgIjY3MzY3OCIsICI2NzM2NzgiLCA3MjYxOCwgNywgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNywgbnVsbCwgIjM1MTg5MyIsICIzNTE4OTMiLCA3MjYxOCwgOCwgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNywgbnVsbCwgIjYzNDg3NyIsICI2MzQ4NzciLCA3MjYxOCwgOSwgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNywgbnVsbCwgIjY1MzA5MCIsICI2NTMwOTAiLCA3MjYxOCwgMTAsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNywgbnVsbCwgIjU5MzQ4MiIsICI1OTM0ODIiLCA3MjYxOCwgMTEsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNywgbnVsbCwgIjYxNTAzMyIsICI2MTUwMzMiLCA3MjYxOCwgMTIsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNywgbnVsbCwgIjYwMDg0MzkiLCAiNjAwODQzOSIsIDcyNjE4LCAxMywgIjIwMjYtMDUtMDlUMDI6NDQ6MzcuNTk3ODI1WiJd","rt.2.WyJwcm9kdWN0IiwgNTEwMzUxNywgbnVsbCwgIjI1NTMzWCIsICIyNTUzM1giLCA3MjYxOCwgMTQsICIyMDI2LTA1LTA5VDAyOjQ0OjM3LjU5NzgyNVoiXQ"]]);
+window.monetateQ.push(["addProductDetails", [{"productId":"915678"}]]);
+window.monetateQ.push(["trackData"]);
+</script>
+<!-- End Monetate -->
+
+<!-- begin apm -->
+<script type="text/javascript">
+    setTimeout( function(){
+        if ( typeof ( elasticApm ) !== 'undefined' ){
+     var apmPageName = window.location.pathname; 
+     elasticApm.init({
+        serviceName: 'apm-rum',
+        serverUrl: 'https://apm.christianbook.com',
+        serviceVersion: 'eaa20f67a66c2d74c3e831bdae373691',
+        environment : 'prod',
+        pageLoadTransactionName: apmPageName 
+      });
+      elasticApm.addLabels({
+          'theme' : "www",
+          'status_code' : 200, 
+          'server' : "* 60 *",
+          'mvt_data' : "",
+          'mk_email' : '',
+          'http_headers' : ""
+      });
+
+      function CBGetStatusMsgsToLog(selector, type){
+          let containers = document.querySelectorAll(selector);
+          if(containers && containers.length ){
+              /* legacy support as well */
+              let msgs = [];
+              for( let i = 0; i < containers.length; i++ ){
+                  let container = containers[0];
+                  if( container.querySelector('ul') ){
+                      container.querySelectorAll('ul li').forEach( item => { 
+                          msgs.push( type + ': ' + item.textContent.replace(/,/g, '').replace(/^\s+/g, '').replace(/X$/g, '')) 
+                       });
+                  } else{
+                      msgs.push(type + ': ' + container.textContent);
+                  }
+              }
+              return msgs;
+          }
+      }
+      
+      let CBErrMsgsArr = CBGetStatusMsgsToLog('.CB-26-Messages .CB-ErrorStatusMessage-Container', 'ERROR') || [],
+          CBOldErrMsgsArr = CBGetStatusMsgsToLog('.CB-ErrorStatusMessage', 'OLD ERR') || [],
+          CBInfoMsgsArr = CBGetStatusMsgsToLog('.CB-26-Messages .CB-InformationalStatusMessage-Container', 'INFO') || [],
+          CBSuccessMsgsArr = CBGetStatusMsgsToLog('.CB-26-Messages .CB-SuccessStatusMessage-Container', 'SUCCESS') || [],
+          CBStatusMsgsToLog = [ ...CBErrMsgsArr, ...CBOldErrMsgsArr, ...CBInfoMsgsArr, ...CBSuccessMsgsArr ];
+      if( CBStatusMsgsToLog.length ){
+          elasticApm.addLabels({
+            'error_message': CBStatusMsgsToLog.join()
+          });
+      }
+
+    elasticApm.setUserContext({"id" : "3618794306"});
+      elasticApm.addLabels({
+          'ctype' : "standard" 
+      });
+    elasticApm.addLabels({ 
+        'event' : 'product', 
+        'itemid' : '915678' 
+    });
+        }
+    }, 1000);
+</script>
+<!-- end apm -->
+
+
+
+
+</body>
+
+</html>

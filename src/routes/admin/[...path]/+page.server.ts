@@ -17,7 +17,8 @@ const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Frida
 const typeToCode = {
 	reading: 'R',
 	book: 'B',
-	memory: 'M',
+	memory: 'L',
+	meeting: 'M',
 	event: 'E',
 	psalm: 'P',
 	week: 'W'
@@ -26,7 +27,8 @@ const typeToCode = {
 const codeToType = {
 	R: 'reading',
 	B: 'book',
-	M: 'memory',
+	L: 'memory',
+	M: 'meeting',
 	E: 'event',
 	P: 'psalm',
 	W: 'week'
