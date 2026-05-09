@@ -64,8 +64,8 @@ export const page: GroupPage = {
 		items: [
 			{
 				type: 'link',
-				title: 'Contact Us',
-				href: '/about-us/contact-us'
+				title: 'Escríbenos',
+				href: 'mailto:info@nextlevelglobal.org'
 			},
 			{
 				type: 'pdf',
