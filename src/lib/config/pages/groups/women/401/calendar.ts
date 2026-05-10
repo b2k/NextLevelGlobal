@@ -934,7 +934,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 169,
 			dayOfWeek: 6,
 			kind: 'book',
-			title: 'Beyond the Masquerade Ch 1'
+			title: 'Beyond the Masq Ch 1'
 		},
 		{
 			week: 170,
@@ -1030,7 +1030,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 171,
 			dayOfWeek: 5,
 			kind: 'book',
-			title: 'Beyond the Masquerade Ch 2'
+			title: 'Beyond the Masq Ch 2'
 		},
 		{
 			week: 171,
@@ -1054,7 +1054,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 172,
 			dayOfWeek: 0,
 			kind: 'book',
-			title: 'Read Beyond the Masquerade Ch 2'
+			title: 'Beyond the Masq Ch 2'
 		},
 		{
 			week: 172,
@@ -1132,7 +1132,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 173,
 			dayOfWeek: 4,
 			kind: 'book',
-			title: 'Beyond the Masquerade Ch 3'
+			title: 'Beyond the Masq Ch 3'
 		},
 		{
 			week: 173,
@@ -1234,7 +1234,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 175,
 			dayOfWeek: 4,
 			kind: 'book',
-			title: 'Beyond the Masquerade Ch 4'
+			title: 'Beyond the Masq Ch 4'
 		},
 		{
 			week: 175,
@@ -1336,7 +1336,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 177,
 			dayOfWeek: 4,
 			kind: 'book',
-			title: 'Beyond the Masquerade Ch 5'
+			title: 'Beyond the Masq Ch 5'
 		},
 		{
 			week: 177,
@@ -1438,7 +1438,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 179,
 			dayOfWeek: 4,
 			kind: 'book',
-			title: 'Beyond the Masquerade Ch 6'
+			title: 'Beyond the Masq Ch 6'
 		},
 		{
 			week: 179,
@@ -1588,7 +1588,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 182,
 			dayOfWeek: 4,
 			kind: 'book',
-			title: 'Beyond the Masquerade Ch 7'
+			title: 'Beyond the Masq Ch 7'
 		},
 		{
 			week: 182,
@@ -1690,7 +1690,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 184,
 			dayOfWeek: 4,
 			kind: 'book',
-			title: 'Beyond the Masquerade Ch 8'
+			title: 'Beyond the Masq Ch 8'
 		},
 		{
 			week: 184,
@@ -1792,7 +1792,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 186,
 			dayOfWeek: 4,
 			kind: 'book',
-			title: 'Beyond the Masquerade Ch 9'
+			title: 'Beyond the Masq Ch 9'
 		},
 		{
 			week: 186,
