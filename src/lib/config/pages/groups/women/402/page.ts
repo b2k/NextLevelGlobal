@@ -1,4 +1,5 @@
 import type { GroupPage } from '$lib/config/models/types';
+import { calendar } from './calendar';
 
 export const page: GroupPage = {
 	id: 'groups-women-402',
@@ -39,5 +40,6 @@ export const page: GroupPage = {
 				}
 			]
 		}
-	]
+	],
+	calendar
 };

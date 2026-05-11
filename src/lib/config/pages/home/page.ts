@@ -39,7 +39,7 @@ export const page: GroupPage = {
 			title: 'What is Next Level Global?',
 			description: `Next Level Global is an accountability group for believers who want to live Christ-centered lives. Through the use of the spiritual disciplines of daily Bible reading, Bible internalization, and insightful Christian literature, we gather in community to share the transformational power of Christ in our lives. The desire of Next Level Global is to make an impact in the lives of believers so that they may become fully mature in Christ.
 
-Next Level was started out of much prayer and preparation to see men become fully devoted disciples of Christ. Next Level began as an extension of Men's Breakfast at Willow Creek Community Church Chicago Campus in January, 2008.  Since that time Next Level Men has added groups at Midwest Bible Church of Chicago, IL.  and City Lights Church of Chicago, IL.`,
+Next Level was started out of much prayer and preparation to see men become fully devoted disciples of Christ. Next Level began as an extension of Men's Breakfast at Willow Creek Community Church Chicago, Illinois Campus in January, 2008. Since that time Next Level Men now has groups at Midwest Bible Church of Chicago, IL., New Life Community Church, Midway Campus, Chicago, IL and Orchard Community Church, Live Oak, Florida.`,
 			theme: 'light'
 		},
 		{
