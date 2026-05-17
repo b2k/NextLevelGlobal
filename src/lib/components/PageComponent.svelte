@@ -35,7 +35,7 @@
 	let subscribeUrl = $state('');
 	$effect(() => {
 		if (typeof window !== 'undefined') {
-			subscribeUrl = `${window.location.origin}${calendarPath}`.replace(/^http/, 'webcal');
+			subscribeUrl = `${window.location.origin}${calendarPath}`.replace(/^https?:/, 'webcal:');
 		}
 	});
 
@@ -112,7 +112,9 @@
 
 			{#if subscribeUrl}
 				<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-				<a href={subscribeUrl} class="btn btn--secondary" data-sveltekit-reload>{r('Subscribe', lang.current)}</a>
+				<a href={subscribeUrl} class="btn btn--secondary" data-sveltekit-reload
+					>{r('Subscribe', lang.current)}</a
+				>
 			{/if}
 		</div>
 	{/if}
