@@ -9,6 +9,7 @@
 	import { onMount } from 'svelte';
 	import { createCalendarByReferenceDate } from '$lib/config/models/calendars/generateCalendarEntries';
 	import { r } from '$lib/config/translations';
+	import { lang } from '$lib/stores/lang.svelte';
 
 	type Props = {
 		calendar: GroupCalendarConfig;
@@ -292,16 +293,41 @@
 
 	let monthDays = $derived(buildMonthGrid(visibleMonth, normalizedEntries));
 
+	let expandedDateKey = $state<string | null>(null);
+
+	function dateKey(date: Date): string {
+		const y = date.getFullYear();
+		const m = String(date.getMonth() + 1).padStart(2, '0');
+		const d = String(date.getDate()).padStart(2, '0');
+		return `${y}-${m}-${d}`;
+	}
+
 	function selectDate(date: Date) {
 		selectedDate = date;
 		onselect?.(date);
+	}
+
+	function toggleDate(date: Date) {
+		selectDate(date);
+
+		const key = dateKey(date);
+		expandedDateKey = expandedDateKey === key ? null : key;
+	}
+
+	function handleDayKeydown(event: KeyboardEvent, date: Date) {
+		if (event.key !== 'Enter' && event.key !== ' ') return;
+
+		event.preventDefault();
+		toggleDate(date);
 	}
 </script>
 
 <div class="calendar">
 	<div class="calendar-toolbar">
 		<div class="calendar-toolbar-left">
-			<button type="button" class="toolbar-btn today-btn" onclick={goToToday}>{r('Today')}</button>
+			<button type="button" class="toolbar-btn today-btn" onclick={goToToday}
+				>{r('Today', lang.current)}</button
+			>
 			<div class="month-nav">
 				<button
 					type="button"
@@ -320,7 +346,7 @@
 					‹
 				</button>
 			</div>
-			<h3 class="calendar-title">{r(formatMonth(visibleMonth))}</h3>
+			<h3 class="calendar-title">{r(formatMonth(visibleMonth), lang.current)}</h3>
 			<button type="button" class="toolbar-btn nav-btn" onclick={nextMonth} aria-label="Next month">
 				›
 			</button>
@@ -330,7 +356,7 @@
 		</div>
 		<div class="calendar-toolbar-right">
 			<label for="custom-start-date" class="custom-start-date-label">
-				{r('Custom Start Date')}
+				{r('Custom Start Date', lang.current)}
 			</label>
 
 			<input
@@ -352,30 +378,47 @@
 
 	<div class="calendar-grid">
 		{#each monthDays as day, d (d)}
-			<button
-				type="button"
+			{@const isSelected = sameDay(day.date, parseDate(selectedDate))}
+			{@const isExpanded = expandedDateKey === dateKey(day.date)}
+			<div
 				class="calendar-day"
 				class:outside-month={!day.inMonth}
-				class:selected={sameDay(day.date, parseDate(selectedDate)) && day.inMonth}
-				class:today={sameDay(day.date, today) && !sameDay(day.date, parseDate(selectedDate))}
-				onclick={() => selectDate(day.date)}
-				aria-pressed={sameDay(day.date, parseDate(selectedDate))}
+				class:selected={isSelected && day.inMonth}
+				class:expanded={isExpanded}
+				class:today={sameDay(day.date, today) && !isSelected}
+				role="button"
+				tabindex="0"
+				aria-label={`${isExpanded ? r('Shrink', lang.current) : r('Enlarge', lang.current)} day for ${day.date.toLocaleDateString()}`}
+				aria-expanded={isExpanded}
+				onclick={() => toggleDate(day.date)}
+				onkeydown={(event) => handleDayKeydown(event, day.date)}
 			>
-				<div class="calendar-day-number">{day.date.getDate()}</div>
+				<div class="calendar-day-header">
+					<div class="calendar-day-number">{day.date.getDate()}</div>
+				</div>
 
 				<div class="calendar-events">
 					{#each day.events as event, e (e)}
 						{@const color = getEntryColor(event.kind)}
-						<div
+						<button
+							type="button"
 							class="calendar-event"
-							title={r(event.title)}
+							class:expanded-event={isExpanded}
+							title={r(event.title, lang.current)}
 							style={`--entry-bg: ${color.bg}; --entry-text: ${color.text}; --entry-accent: ${color.accent};`}
+							onclick={(event) => {
+								event.stopPropagation();
+								toggleDate(day.date);
+							}}
 						>
-							{r(event.title)}
-						</div>
+							{#if isExpanded}
+								<span class="calendar-event-kind">{r(event.kind, lang.current)}</span>
+							{/if}
+							<span class="calendar-event-title">{r(event.title, lang.current)}</span>
+						</button>
 					{/each}
 				</div>
-			</button>
+			</div>
 		{/each}
 	</div>
 </div>
@@ -473,13 +516,22 @@
 		border: 0;
 		border-right: 1px solid #d9dee7;
 		border-bottom: 1px solid #d9dee7;
+		border-radius: 0 !important;
+		box-shadow: none;
 		background: #fff;
 		text-align: left;
 		cursor: pointer;
 	}
-	.calendar-day {
-		border-radius: 0 !important;
-		box-shadow: none;
+
+	.calendar-day:focus-visible {
+		outline: 3px solid rgba(47, 111, 237, 0.35);
+		outline-offset: -3px;
+	}
+
+	.calendar-day.expanded {
+		grid-column: span 2;
+		min-height: 260px;
+		z-index: 1;
 	}
 	.calendar-day:nth-child(7n) {
 		border-right: 0;
@@ -504,6 +556,14 @@
 		color: #fff;
 	}
 
+	.calendar-day-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.5rem;
+		margin-bottom: 0.45rem;
+	}
+
 	.calendar-day-number {
 		display: inline-flex;
 		align-items: center;
@@ -515,7 +575,6 @@
 		font-size: 0.95rem;
 		font-weight: 700;
 		color: #223046;
-		margin-bottom: 0.45rem;
 	}
 
 	.calendar-events {
@@ -526,17 +585,53 @@
 	}
 
 	.calendar-event {
+		display: block;
+		width: 100%;
 		padding: 0.28rem 0.45rem;
-		border-radius: 0.35rem;
+		border: 0;
 		border-left: 4px solid var(--entry-accent);
+		border-radius: 0.35rem;
 		background: var(--entry-bg);
 		color: var(--entry-text);
+		font: inherit;
 		font-size: 0.8rem;
+		font-weight: 600;
 		line-height: 1.25;
+		text-align: left;
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
-		font-weight: 600;
+		cursor: pointer;
+	}
+
+	.calendar-event:hover,
+	.calendar-event:focus-visible {
+		filter: brightness(0.98);
+		outline: 2px solid var(--entry-accent);
+		outline-offset: 1px;
+	}
+
+	.calendar-event.expanded-event {
+		display: flex;
+		align-items: flex-start;
+		gap: 0.5rem;
+		white-space: normal;
+		overflow: visible;
+		text-overflow: unset;
+	}
+
+	.calendar-event-kind {
+		flex: 0 0 auto;
+		min-width: 4.4rem;
+		font-size: 0.7rem;
+		font-weight: 800;
+		text-transform: uppercase;
+		letter-spacing: 0.03em;
+		opacity: 0.8;
+	}
+
+	.calendar-event-title {
+		min-width: 0;
 	}
 
 	.calendar-toolbar-right {
@@ -609,6 +704,10 @@
 		.calendar-weekdays,
 		.calendar-grid {
 			min-width: 840px;
+		}
+
+		.calendar-day.expanded {
+			grid-column: 1 / -1;
 		}
 	}
 </style>

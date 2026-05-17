@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { SectionItem } from '$lib/config/models/types';
 	import { r } from '$lib/config/translations';
+	import { lang } from '$lib/stores/lang.svelte';
 	import { itemHref, itemSecondaryHref, toYouTubeEmbedUrl } from '$lib/utils/linkHelpers';
 
 	let { item }: { item: SectionItem } = $props();
@@ -17,11 +18,11 @@
 				</a>
 			</div>
 		{:else}
-			<h3>{r(item.title)}</h3>
+			<h3>{r(item.title, lang.current)}</h3>
 		{/if}
 
 		{#if item.description}
-			<p>{r(item.description)}</p>
+			<p>{r(item.description, lang.current)}</p>
 		{/if}
 
 		{#if item.buyUrl || item.questionsPdf}
@@ -33,12 +34,12 @@
 						target="_blank"
 						rel="noopener"
 					>
-						{r('Purchase')}
+						{r('Purchase', lang.current)}
 					</a>
 				{/if}
 				{#if item.questionsPdf}
 					<a class="group-tile" href={itemSecondaryHref(item)} target="_blank" rel="noopener">
-						{r('Questions PDF')}
+						{r('Questions PDF', lang.current)}
 					</a>
 				{/if}
 			</div>
@@ -47,7 +48,7 @@
 {:else if item.type === 'video'}
 	<div class="section-video">
 		{#if item.title}
-			<h3>{r(item.title)}</h3>
+			<h3>{r(item.title, lang.current)}</h3>
 		{/if}
 
 		<div class="section-video__frame">
@@ -61,16 +62,16 @@
 		</div>
 
 		{#if item.description}
-			<p>{r(item.description)}</p>
+			<p>{r(item.description, lang.current)}</p>
 		{/if}
 	</div>
 {:else if item.type === 'link'}
 	<a class="group-tile" href={itemHref(item)} target={item.target}>
-		{r(item.title)}
+		{r(item.title, lang.current)}
 	</a>
 {:else}
 	<a class="group-tile" href={itemHref(item)} target="_blank" rel="noopener">
-		{r(item.title)}
+		{r(item.title, lang.current)}
 	</a>
 {/if}
 

@@ -1,12 +1,13 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import Calendar from './groups/Calendar.svelte';
-	import GroupSection from './PageSection.svelte';
+	import PageSection from './PageSection.svelte';
 	import { getTheme } from '$lib/config/models/themes';
 	import { titleCase } from '$lib/utils/formatters.js';
 	import Description from './Description.svelte';
 	import { dev } from '$app/environment';
 	import { r } from '$lib/config/translations';
+	import { lang } from '$lib/stores/lang.svelte';
 
 	let { data, params } = $props();
 
@@ -47,7 +48,7 @@
 </script>
 
 <svelte:head>
-	<title>{data.page.title} | Next Level Global</title>
+	<title>{r(data.page.title, lang.current)} | Next Level Global</title>
 </svelte:head>
 
 <div class="group-page {pageTheme}" {style}>
@@ -83,11 +84,11 @@
 					{#if data.page.title || data.page.subtitle}
 						<header class="group-page__header">
 							{#if data.page.title}
-								<h1>{r(data.page.title)}</h1>
+								<h1>{r(data.page.title, lang.current)}</h1>
 							{/if}
 
 							{#if data.page.subtitle}
-								<p>{r(data.page.subtitle)}</p>
+								<p>{r(data.page.subtitle, lang.current)}</p>
 							{/if}
 						</header>
 					{/if}
@@ -105,18 +106,20 @@
 			<!-- Calendar component will go here -->
 			<Calendar calendar={data?.page.calendar} path={params.path} />
 			<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-			<a href={calendarPath} class="btn btn--primary" data-sveltekit-reload>{r('Download Calendar')}</a>
+			<a href={calendarPath} class="btn btn--primary" data-sveltekit-reload
+				>{r('Download Calendar', lang.current)}</a
+			>
 
 			{#if subscribeUrl}
 				<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-				<a href={subscribeUrl} class="btn btn--secondary" data-sveltekit-reload>{r('Subscribe')}</a>
+				<a href={subscribeUrl} class="btn btn--secondary" data-sveltekit-reload>{r('Subscribe', lang.current)}</a>
 			{/if}
 		</div>
 	{/if}
 
 	<div class="group-page__sections">
 		{#each data.page.sections as section, i (i)}
-			<GroupSection {section} pageTheme={data.page.theme} />
+			<PageSection {section} pageTheme={data.page.theme} />
 		{/each}
 	</div>
 </div>

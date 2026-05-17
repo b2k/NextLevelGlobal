@@ -1,13 +1,15 @@
 <script lang="ts">
 	import favicon from '$lib/assets/favicon.svg';
 	import Menu from '$lib/components/Menu.svelte';
-	import { browser } from '$app/environment';
 	import '../styles/global.css';
 
+	import { setLang } from '$lib/stores/lang.svelte';
+	import { page } from '$app/state';
+
 	let { children } = $props();
-	if (browser) {
-		localStorage?.setItem('lang', 'en');
-	}
+	$effect(() => {
+		setLang(page.url.pathname.startsWith('/grupos-en-espanol') ? 'es' : 'en');
+	});
 </script>
 
 <svelte:head>

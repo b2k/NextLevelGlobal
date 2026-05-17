@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { r } from "$lib/config/translations";
-
+import { lang } from '$lib/stores/lang.svelte';
   /* eslint-disable svelte/no-navigation-without-resolve */
   type ActionVariant =
     | 'outline-light'
@@ -33,7 +33,7 @@
       rel={action.rel}
       class="action action--{action.variant ?? 'outline-light'}"
     >
-      {r(action.text)}
+      {r(action.text, lang.current)}
     </a>
   {/each}
 </nav>
