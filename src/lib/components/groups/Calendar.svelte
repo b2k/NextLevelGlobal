@@ -372,7 +372,7 @@
 
 	<div class="calendar-weekdays">
 		{#each weekdayLabels as label, w (w)}
-			<div class="calendar-weekday">{r(label)}</div>
+			<div class="calendar-weekday">{r(label, lang.current)}</div>
 		{/each}
 	</div>
 

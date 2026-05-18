@@ -5,13 +5,22 @@
 	import { getTheme } from '$lib/config/models/themes';
 	import { titleCase } from '$lib/utils/formatters.js';
 	import Description from './Description.svelte';
-	import { dev } from '$app/environment';
+	import { browser, dev } from '$app/environment';
 	import { r } from '$lib/config/translations';
 	import { lang } from '$lib/stores/lang.svelte';
 
 	let { data, params } = $props();
 
 	let pageTheme = $derived(data.page.theme ?? 'light');
+
+	let editPath = $derived.by(() => {
+		if (!browser) return null;
+		return data.path
+			? `/admin/${data.path}`
+			: location.pathname.replace(/\/$/, '') === ''
+				? '/admin/home'
+				: `/admin${location.pathname.replace(/\/$/, '')}`;
+	});
 
 	const resolvedTheme = $derived(getTheme(pageTheme));
 
@@ -48,10 +57,14 @@
 </script>
 
 <svelte:head>
-	<title>{r(data.page.title, lang.current)} | Next Level Global</title>
+	<title>Next Level Global | {r(data.page.title, lang.current)}</title>
 </svelte:head>
 
 <div class="group-page {pageTheme}" {style}>
+	{#if dev}
+		<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+		<a class="page__edit" href={editPath}>{r('Edit', lang.current)}</a>
+	{/if}
 	{#if data.page.title || data.page.subtitle || data.page.description}
 		<div
 			class={`group-page__hero ${data.page.heroImage ? 'hero-image' : ''}`}
@@ -69,14 +82,6 @@
 										<a href={resolve('/groups/[...path]', { path: crumb.href })}>{crumb.label}</a>
 									</li>
 								{/each}
-								{#if dev}
-									<li>
-										<a
-											class="breadcrumb__edit"
-											href={resolve('/admin/[...path]', { path: `${data.path}` })}>Edit</a
-										>
-									</li>
-								{/if}
 							</ol>
 						</nav>
 					{/if}
@@ -100,7 +105,6 @@
 			</div>
 		</div>
 	{/if}
-
 	{#if data.page.calendar}
 		<div class="group-page__actions">
 			<!-- Calendar component will go here -->
@@ -191,12 +195,18 @@
 	.breadcrumb__sep {
 		opacity: 0.65;
 	}
-	.breadcrumb__edit {
+	.page__edit {
 		font-size: 0.875rem;
 		padding: 0.25rem 0.5rem;
-		background: rgba(255, 255, 255, 0.15);
-		color: rgba(255, 255, 255, 0.9);
+		background: rgba(255, 255, 255, 0.5);
+		color: rgba(0, 0, 0, 0.9);
 		border-radius: 0.25rem;
+		position: absolute;
+		top: 10rem;
+		left: 2.7rem;
+		text-decoration: none;
+		transition: background-color 0.15s ease;
+		z-index: 100;
 	}
 
 	.group-page__header {

@@ -167,7 +167,7 @@ export function t(phrase: string, lang?: string) {
 	return translations[resolvedLang]?.exact?.[phrase] ?? phrase;
 }
 
-export function r(phrase: string | undefined, lang?: string) {
+export function r(phrase: string | undefined, lang: string) {
 	const resolvedLang =
 		lang ??
 		(globalThis?.localStorage?.getItem('lang') ||
