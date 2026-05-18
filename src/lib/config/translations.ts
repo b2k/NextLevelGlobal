@@ -12,9 +12,9 @@ export type TranslationDictionary = {
 export const translations: TranslationDictionary = {
 	en: {
 		exact: {
-			'Next Level Global | Next Level Global': 'Next Level Global',
+			'Next Level Global | Next Level Global': 'Next Level Global'
 		},
-		partial: [],
+		partial: [{ pattern: /Next Level Global \|\s*$/gi, replacement: 'Next Level Global' }]
 	},
 	es: {
 		exact: {
@@ -31,12 +31,13 @@ export const translations: TranslationDictionary = {
 			Commitment: 'Compromiso',
 			'Download Calendar': 'Descargar calendario',
 			Subscribe: 'Suscribirse',
-            'Purchase': 'Comprar',
-            'Questions PDF': 'Preguntas PDF',
-			'Next Level Global | Next Level Global': 'Siguiente Nivel Global',
+			Purchase: 'Comprar',
+			'Questions PDF': 'Preguntas PDF',
+			'Next Level Global | Next Level Global': 'Siguiente Nivel Global'
 		},
 		partial: [
 			{ pattern: /\bNext\s*Level\b/gi, replacement: 'Siguiente Nivel' },
+			{ pattern: /Next Level Global \|\s*$/gi, replacement: 'Siguiente Nivel Global' }
 			// Old Testament
 			{ pattern: /\bGenesis\b/gi, replacement: 'Génesis' },
 			{ pattern: /\bExodus\b/gi, replacement: 'Éxodo' },
