@@ -57,7 +57,7 @@
 </script>
 
 <svelte:head>
-	<title>Next Level Global | {r(data.page.title, lang.current)}</title>
+	<title>{r(`Next Level Global | ${data.page.title}`, lang.current)}</title>
 </svelte:head>
 
 <div class="group-page {pageTheme}" {style}>
