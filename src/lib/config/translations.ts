@@ -37,7 +37,7 @@ export const translations: TranslationDictionary = {
 		},
 		partial: [
 			{ pattern: /\bNext\s*Level\b/gi, replacement: 'Siguiente Nivel' },
-			{ pattern: /Next Level Global \|\s*$/gi, replacement: 'Siguiente Nivel Global' }
+			{ pattern: /Next Level Global \|\s*$/gi, replacement: 'Siguiente Nivel Global' },
 			// Old Testament
 			{ pattern: /\bGenesis\b/gi, replacement: 'Génesis' },
 			{ pattern: /\bExodus\b/gi, replacement: 'Éxodo' },
