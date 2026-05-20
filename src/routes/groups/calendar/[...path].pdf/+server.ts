@@ -26,12 +26,16 @@ export async function GET({ params, url, cookies }) {
 	if (!page?.calendar) {
 		throw error(404, `Calendar not found: ${configPath}`);
 	}
+	const visibleYear = url.searchParams.get('year')
+		? Number(url.searchParams.get('year'))
+		: new Date().getFullYear();
 
 	const customStartDate = cookies.get(`customStartDate:${cookiesPath}`);
 
 	const startDate = resolveCalendarStartDate(
 		page.calendar.defaultStartDate,
-		customStartDate || url.searchParams.get('start-date')
+		customStartDate || url.searchParams.get('start-date'),
+		new Date(visibleYear, 0, 1)
 	);
 	const lang = url.searchParams.get('lang') || 'en';
 

@@ -17,6 +17,7 @@
 		selectedDate?: string | Date | null;
 		path: string;
 		onselect?: (date: Date) => void;
+		visibleYear: number;
 	};
 
 	let {
@@ -24,7 +25,8 @@
 		currentDate = new SvelteDate(),
 		selectedDate = $bindable<Date | null>(null),
 		path,
-		onselect
+		onselect,
+		visibleYear = $bindable<number>(new Date().getFullYear())
 	}: Props = $props();
 
 	const cookieName = $derived(`customStartDate:${path}`);
@@ -170,6 +172,10 @@
 	});
 
 	let today = $derived(parseDate(currentDate) ?? stripTime(new SvelteDate()));
+
+	$effect(() => {
+			visibleYear = visibleMonth.getFullYear();
+	});
 	function monthKey(date: Date): number {
 		return date.getFullYear() * 12 + date.getMonth();
 	}

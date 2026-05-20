@@ -37,8 +37,9 @@
 	`
 	);
 
+	let visibleYear = $state(new Date().getFullYear());
 	const calendarPath = $derived(
-		`/groups/calendar/${data.path}.pdf?start-date=${data.page.calendar?.defaultStartDate ?? ''}&lang=${lang.current}`
+		`/groups/calendar/${data.path}.pdf?start-date=${data.page.calendar?.defaultStartDate ?? ''}&lang=${lang.current}&year=${visibleYear}`
 	);
 
 	let subscribeUrl = $state('');
@@ -108,9 +109,9 @@
 	{#if data.page.calendar}
 		<div class="group-page__actions">
 			<!-- Calendar component will go here -->
-			<Calendar calendar={data?.page.calendar} path={params.path} />
+			<Calendar calendar={data?.page.calendar} path={params.path} bind:visibleYear />
 			<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-			<a href={calendarPath} class="btn btn--primary" data-sveltekit-reload
+			<a href={calendarPath} target="_blank" class="btn btn--primary" data-sveltekit-reload
 				>{r('Download Calendar', lang.current)}</a
 			>
 
