@@ -5,9 +5,10 @@
 	import { getTheme } from '$lib/config/models/themes';
 	import { titleCase } from '$lib/utils/formatters.js';
 	import Description from './Description.svelte';
-	import { browser, dev } from '$app/environment';
+	import { browser } from '$app/environment';
 	import { r } from '$lib/config/translations';
 	import { lang } from '$lib/stores/lang.svelte';
+	import { page } from '$app/state';
 
 	let { data, params } = $props();
 
@@ -21,6 +22,8 @@
 				? '/admin/home'
 				: `/admin${location.pathname.replace(/\/$/, '')}`;
 	});
+
+	const dev = $derived(page.url.hostname === 'localhost' || page.url.hostname === '127.0.0.1');
 
 	const resolvedTheme = $derived(getTheme(pageTheme));
 
