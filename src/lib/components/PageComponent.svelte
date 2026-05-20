@@ -38,7 +38,7 @@
 	);
 
 	const calendarPath = $derived(
-		`/groups/calendar/${data.path}.pdf?start-date=${data.page.calendar?.defaultStartDate ?? ''}`
+		`/groups/calendar/${data.path}.pdf?start-date=${data.page.calendar?.defaultStartDate ?? ''}&lang=${lang.current}`
 	);
 
 	let subscribeUrl = $state('');

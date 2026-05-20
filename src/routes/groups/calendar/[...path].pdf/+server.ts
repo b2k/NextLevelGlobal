@@ -6,6 +6,7 @@ import { generateCalendarEntries } from '$lib/config/models/calendars/generateCa
 import path from 'node:path';
 import { PDFDocument, StandardFonts, rgb } from 'pdf-lib';
 import type { CalendarEntry } from '$lib/config/models/calendars/groupCalendars.js';
+import { r } from '$lib/config/translations';
 
 const PAGE_WIDTH = 792; // 11in
 const PAGE_HEIGHT = 612; // 8.5in
@@ -32,6 +33,7 @@ export async function GET({ params, url, cookies }) {
 		page.calendar.defaultStartDate,
 		customStartDate || url.searchParams.get('start-date')
 	);
+	const lang = url.searchParams.get('lang') || 'en';
 
 	const entries = startDate ? generateCalendarEntries(page.calendar, startDate) : [];
 
@@ -41,7 +43,8 @@ export async function GET({ params, url, cookies }) {
 	const pdfBytes = await buildCalendarPdf({
 		title: page.calendar.title,
 		description: page.calendar.description,
-		entries: page.calendar.entries
+		entries: page.calendar.entries,
+		lang
 	});
 
 	return new Response(Buffer.from(pdfBytes), {
@@ -57,9 +60,10 @@ type CalendarPdfParams = {
 	title: string;
 	description?: string;
 	entries: CalendarEntry[];
+	lang: string;
 };
 
-async function buildCalendarPdf({ title, description, entries }: CalendarPdfParams) {
+async function buildCalendarPdf({ title, description, entries, lang }: CalendarPdfParams) {
 	const pdf = await PDFDocument.create();
 
 	const font = await pdf.embedFont(StandardFonts.Helvetica);
@@ -82,12 +86,12 @@ async function buildCalendarPdf({ title, description, entries }: CalendarPdfPara
 		const cellWidth = gridWidth / 7;
 		const cellHeight = (gridHeight - weekdayHeight) / 6;
 
-		const monthName = monthDate.toLocaleString('en-US', {
+		const monthName = monthDate.toLocaleString(lang, {
 			month: 'long',
 			year: 'numeric'
 		});
 
-		page.drawText(title ?? 'Calendar', {
+		page.drawText(r(title ?? 'Calendar', lang), {
 			x: margin,
 			y: PAGE_HEIGHT - 38,
 			size: 18,
@@ -95,7 +99,7 @@ async function buildCalendarPdf({ title, description, entries }: CalendarPdfPara
 			color: rgb(0.12, 0.12, 0.12)
 		});
 
-		page.drawText(monthName, {
+		page.drawText(r(monthName, lang), {
 			x: margin,
 			y: PAGE_HEIGHT - 58,
 			size: 13,
@@ -104,7 +108,7 @@ async function buildCalendarPdf({ title, description, entries }: CalendarPdfPara
 		});
 
 		if (description) {
-			page.drawText(String(description).slice(0, 90), {
+			page.drawText(String(r(description, lang)).slice(0, 90), {
 				x: PAGE_WIDTH / 2,
 				y: PAGE_HEIGHT - 38,
 				size: 9,
@@ -128,7 +132,7 @@ async function buildCalendarPdf({ title, description, entries }: CalendarPdfPara
 				borderWidth: 0.5
 			});
 
-			page.drawText(weekdays[col], {
+			page.drawText(r(weekdays[col], lang), {
 				x: x + 6,
 				y: gridTop - 15,
 				size: 9,
@@ -185,7 +189,7 @@ async function buildCalendarPdf({ title, description, entries }: CalendarPdfPara
 					opacity: 0.85
 				});
 
-				page.drawText(truncate(entry.title, 34), {
+				page.drawText(r(truncate(entry.title, 34), lang), {
 					x: x + 7,
 					y: itemY,
 					size: 6.5,
