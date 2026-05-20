@@ -8,7 +8,9 @@
 	import { browser } from '$app/environment';
 	import { r } from '$lib/config/translations';
 	import { lang } from '$lib/stores/lang.svelte';
-	import { page } from '$app/state';
+	import { PUBLIC_SHOW_ADMIN_EDIT } from '$env/static/public';
+
+	const showEdit = PUBLIC_SHOW_ADMIN_EDIT === 'true';
 
 	let { data, params } = $props();
 
@@ -22,8 +24,6 @@
 				? '/admin/home'
 				: `/admin${location.pathname.replace(/\/$/, '')}`;
 	});
-
-	const dev = $derived(page.url.hostname === 'localhost' || page.url.hostname === '127.0.0.1');
 
 	const resolvedTheme = $derived(getTheme(pageTheme));
 
@@ -65,6 +65,10 @@
 </svelte:head>
 
 <div class="group-page {pageTheme}" {style}>
+	{#if showEdit}
+		<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+		<a class="page__edit" href={editPath}>{r('Edit', lang.current)}</a>
+	{/if}
 	{#if data.page.title || data.page.subtitle || data.page.description}
 		<div
 			class={`group-page__hero ${data.page.heroImage ? 'hero-image' : ''}`}
