@@ -4,7 +4,7 @@ export const calendar: GroupCalendarConfig = {
 	title: 'Next Level 102',
 	defaultStartDate: '2025-06-29',
 	startingWeek: 24,
-	description: 'Draft normalized from legacy ics using the 2022 James/Exodus/Galatians + Psalm cycle, with current Fight Like Man and LCV cycles.',
+	description: 'Calendar for Next Level 100 Summer Men\'s Group',
 	entries: [
 		{
 			week: 24,

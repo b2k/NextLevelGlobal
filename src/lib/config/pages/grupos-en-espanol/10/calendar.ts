@@ -4,7 +4,7 @@ export const calendar: GroupCalendarConfig = {
 	title: 'Next Level 10',
 	defaultStartDate: '2025-01-12',
 	startingWeek: 1,
-	description: 'Draft normalized from legacy ics: Sunday weekly track plus daily John reading track.',
+	description: "Calendar for Next Level 10 Men's Group",
 	entries: [
 		{
 			week: 1,

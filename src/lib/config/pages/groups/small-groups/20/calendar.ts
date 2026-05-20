@@ -4,7 +4,7 @@ export const calendar: GroupCalendarConfig = {
 	title: 'Next Level 20',
 	defaultStartDate: '2025-03-30',
 	startingWeek: 1,
-	description: 'Draft normalized from legacy ics: annual Next Level 20 reading track with LCV and Search CH entries.',
+	description: 'Calendar for Next Level 20 Small Group',
 	entries: [
 		{
 			week: 1,

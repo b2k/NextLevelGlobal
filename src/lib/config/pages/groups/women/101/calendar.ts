@@ -4,7 +4,7 @@ export const calendar: GroupCalendarConfig = {
 	title: 'Next Level Women 101',
 	defaultStartDate: '2022-01-16',
 	startingWeek: 1,
-	description: 'Normalized from the legacy NLW 101 PDF calendar using the standard group calendar template.',
+	description: 'Calendar for Next Level Women 101 Group',
 	entries: [
 		{
 			week: 1,

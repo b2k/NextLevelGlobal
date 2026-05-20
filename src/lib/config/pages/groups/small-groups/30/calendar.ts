@@ -4,7 +4,7 @@ export const calendar: GroupCalendarConfig = {
 	title: 'Next Level 30',
 	defaultStartDate: '2026-09-06',
 	startingWeek: 1,
-	description: 'Draft normalized from legacy ics: annual Next Level 30 Romans reading track with LCV and True/Spirit entries.',
+	description: 'Calendar for Next Level 30 Small Group',
 	entries: [
 		{
 			week: 1,

@@ -1,10 +1,10 @@
 import type { GroupCalendarConfig } from '$lib/config/models/calendars/groupCalendars';
 
 export const calendar: GroupCalendarConfig = {
-	title: 'Next Level 302',
+	title: 'Next Level 303',
 	defaultStartDate: '2026-09-06',
 	startingWeek: 121,
-	description: 'Normalized from the uploaded Next Level 302 Google Calendar ICS. Dates are relative to the 2026-04-12 start date.',
+	description: 'Calendar for Next Level 303 Men\'s Group',
 	entries: [
 		{
 			week: 121,

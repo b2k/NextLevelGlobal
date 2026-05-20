@@ -1,10 +1,10 @@
 import type { GroupCalendarConfig } from '$lib/config/models/calendars/groupCalendars';
 
 export const calendar: GroupCalendarConfig = {
-	title: 'Next Level 102',
+	title: 'Next Level 200 Summer',
 	defaultStartDate: '2026-06-21',
 	startingWeek: 67,
-	description: 'Draft normalized from legacy ics using the 2022 James/Exodus/Galatians + Psalm cycle, with current Fight Like Man and LCV cycles.',
+	description: 'Calendar for Next Level 200 Summer Men\'s Group',
 	entries: [
 		{
 			week: 67,

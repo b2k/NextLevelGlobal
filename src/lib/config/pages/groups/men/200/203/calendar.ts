@@ -4,7 +4,7 @@ export const calendar: GroupCalendarConfig = {
 	title: 'Next Level 203',
 	defaultStartDate: '2026-09-06',
 	startingWeek: 76,
-	description: '203-Level Group Calendar',
+	description: 'Calendar for Next Level 203 Men\'s Group',
 	entries: [
 		{
 			week: 76,

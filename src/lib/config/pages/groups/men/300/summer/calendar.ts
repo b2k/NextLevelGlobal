@@ -1,10 +1,10 @@
 import type { GroupCalendarConfig } from '$lib/config/models/calendars/groupCalendars';
 
 export const calendar: GroupCalendarConfig = {
-	title: 'Next Level Summer 301',
+	title: 'Next Level 300 Summer',
 	defaultStartDate: '2026-06-21',
 	startingWeek: 110,
-	description: '',
+	description: 'Calendar for Next Level 300 Summer Men\'s Group',
 	entries: [
 		{
 			week: 110,

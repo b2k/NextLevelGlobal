@@ -4,7 +4,7 @@ export const calendar: GroupCalendarConfig = {
 	title: 'Next Level 201',
 	defaultStartDate: '2026-01-04',
 	startingWeek: 44,
-	description: 'Draft normalized from legacy ics using the 2023 Luke/Judges/1 Samuel + Psalm + LCV + Experiencing God cycle.',
+	description: 'Calendar for Next Level 201 Men\'s Group',
 	entries: [
 		{
 			week: 44,

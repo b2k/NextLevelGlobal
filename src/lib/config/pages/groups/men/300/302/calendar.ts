@@ -4,7 +4,7 @@ export const calendar: GroupCalendarConfig = {
 	title: 'Next Level 302',
 	defaultStartDate: '2026-04-12',
 	startingWeek: 100,
-	description: 'Normalized from the uploaded Next Level 302 Google Calendar ICS. Dates are relative to the 2026-04-12 start date.',
+	description: 'Calendar for Next Level 302 Men\'s Group',
 	entries: [
 		{
 			week: 100,

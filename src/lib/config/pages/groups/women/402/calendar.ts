@@ -4,7 +4,7 @@ export const calendar: GroupCalendarConfig = {
 	title: 'Women 402',
 	defaultStartDate: '2026-01-04',
 	startingWeek: 209,
-	description: 'Normalized from the NLW 402 calendar PDF using the standard group calendar format.',
+	description: 'Calendar for Next Level Women 402 Group',
 	entries: [
 		{
 			week: 209,

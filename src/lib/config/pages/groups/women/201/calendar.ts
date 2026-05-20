@@ -4,7 +4,7 @@ export const calendar: GroupCalendarConfig = {
 	title: 'Women 201',
 	defaultStartDate: '2025-01-05',
 	startingWeek: 53,
-	description: 'Draft normalized from the 2025 NLW 201 PDF calendar using the standard group calendar format.',
+	description: 'Calendar for Next Level Women 201 Group',
 	entries: [
 		{
 			week: 53,

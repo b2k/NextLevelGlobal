@@ -4,7 +4,7 @@ export const calendar: GroupCalendarConfig = {
 	title: 'Next Level 101',
 	defaultStartDate: '2022-01-09',
 	startingWeek: 1,
-	description: 'Draft normalized from legacy ics using the 2022 Matthew/Genesis + Psalm + LCV + Ortberg cycle.',
+	description: 'Calendar for Next Level 101 Men\'s Group',
 	entries: [
 		{
 			week: 1,

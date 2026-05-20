@@ -1,10 +1,10 @@
 import type { GroupCalendarConfig } from '$lib/config/models/calendars/groupCalendars';
 
 export const calendar: GroupCalendarConfig = {
-	title: 'Next Level 201',
+	title: 'Next Level 202',
 	defaultStartDate: '2026-04-12',
 	startingWeek: 57,
-	description: '201-Level Group Calendar',
+	description: 'Calendar for Next Level 202 Men\'s Group',
 	entries: [
 		{
 			week: 57,
