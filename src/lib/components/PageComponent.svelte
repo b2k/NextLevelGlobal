@@ -65,10 +65,6 @@
 </svelte:head>
 
 <div class="group-page {pageTheme}" {style}>
-	{#if dev}
-		<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-		<a class="page__edit" href={editPath}>{r('Edit', lang.current)}</a>
-	{/if}
 	{#if data.page.title || data.page.subtitle || data.page.description}
 		<div
 			class={`group-page__hero ${data.page.heroImage ? 'hero-image' : ''}`}
