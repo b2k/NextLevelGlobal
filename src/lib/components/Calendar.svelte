@@ -176,19 +176,6 @@
 	$effect(() => {
 		visibleYear = visibleMonth.getFullYear();
 	});
-	function monthKey(date: Date): number {
-		return date.getFullYear() * 12 + date.getMonth();
-	}
-
-	function clampMonth(date: Date, min: Date, max: Date): Date {
-		const key = monthKey(date);
-		const minKey = monthKey(min);
-		const maxKey = monthKey(max);
-
-		if (key < minKey) return startOfMonth(min);
-		if (key > maxKey) return startOfMonth(max);
-		return startOfMonth(date);
-	}
 
 	let minVisibleMonth = $derived.by(() => {
 		const configured = parseDate((calendar as { startDate?: string | Date }).startDate);
