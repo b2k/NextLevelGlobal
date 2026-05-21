@@ -34,12 +34,6 @@ export const page: GroupPage = {
 							title: 'What does it require of me?',
 							description:
 								'We have found that you get out of the program what you put into it. If you want to see real positive growth, then you will need to decide how important that is to you and then chase after it with all your heart.'
-						},
-						{
-							type: 'item',
-							title: 'Which Churches incorporate Next Level?',
-							description:
-								'Currently Next Level meets in person at Midwest Bible Church in Chicago. We also meet virtually nationwide over Zoom.'
 						}
 					]
 				},
@@ -91,33 +85,33 @@ export const page: GroupPage = {
 		{
 			id: 'board-of-reference',
 			title: 'Board of Reference',
-			subtitle: 'Next Level Global is grateful for the wise counsel and support of our Board of Reference.',
+			subtitle:
+				'Next Level Global is grateful for the wise counsel and support of our Board of Reference.',
 			theme: 'light',
-			columns: [{
-				title: '',
-				items: [
-					{
-						type: 'item',
-						title: 'Gene Brush, Founder of Next Level Global, Chicago, IL'
-					},
-					{
-						type: 'item',
-						title: 'Marco David, Pastor of Midwest Bible Church, Chicago, IL'
-					}]
-			},
-			{
-				title: '',
-				items: [
-					{
-						type: 'item',
-						title: 'John Thompson, Navigators Church Ministry, Chicago, IL'
-					},
-					{
-						type: 'item',
-						title: 'Jose Figueroa, Family Pastor, Chicago Tabernacle, Chicago, IL'
-					}
-				]
-			}]
+			columns: [
+				{
+					title: '',
+					items: [
+						{
+							type: 'item',
+							title: 'Gene Brush, Founder of Next Level Global, Chicago, IL'
+						},
+						{
+							type: 'item',
+							title: 'Marco David, Pastor of Midwest Bible Church, Chicago, IL'
+						}
+					]
+				},
+				{
+					title: '',
+					items: [
+						{
+							type: 'item',
+							title: 'Jose Figueroa, Family Pastor, Chicago Tabernacle, Chicago, IL'
+						}
+					]
+				}
+			]
 		}
 	],
 	heroTextColor: ''

@@ -174,7 +174,7 @@
 	let today = $derived(parseDate(currentDate) ?? stripTime(new SvelteDate()));
 
 	$effect(() => {
-			visibleYear = visibleMonth.getFullYear();
+		visibleYear = visibleMonth.getFullYear();
 	});
 	function monthKey(date: Date): number {
 		return date.getFullYear() * 12 + date.getMonth();
@@ -229,14 +229,15 @@
 		customStartDate = readCookie(cookieName);
 	});
 
-	async function handleCustomStartDateChange() {
+	async function handleCustomStartDateChange(event: Event) {
+		const input = event.target as HTMLInputElement;
+		console.log('Custom start date changed:', input.value);
+		customStartDate = input.value;
 		if (customStartDate) {
 			writeCookie(cookieName, customStartDate);
 		} else {
 			deleteCookie(cookieName);
 		}
-
-		location.reload();
 	}
 	function previousMonth() {
 		visibleMonth = addMonths(visibleMonth, -1);
@@ -255,7 +256,7 @@
 	}
 
 	function goToToday() {
-		const target = clampMonth(startOfMonth(today), minVisibleMonth, maxVisibleMonth);
+		const target = startOfMonth(today);
 		visibleMonth = target;
 
 		if (today >= minVisibleMonth && today <= endOfMonth(maxVisibleMonth)) {

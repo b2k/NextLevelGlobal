@@ -6,6 +6,8 @@ import { getPageByPath } from '$lib/config/models/pages';
 import path from 'node:path';
 
 export function load({ url, params, cookies }) {
+	console.log('Loading page with params:', params);
+
 	const configPath = path.join('groups', ...(params.path?.split('/') ?? []).filter(Boolean));
 	const cookiesPath = path.join(...(params.path?.split('/') ?? []).filter(Boolean));
 	if (!configPath) {

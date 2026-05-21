@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
-	import Calendar from './groups/Calendar.svelte';
+	import Calendar from './Calendar.svelte';
 	import PageSection from './PageSection.svelte';
 	import { getTheme } from '$lib/config/models/themes';
 	import { titleCase } from '$lib/utils/formatters.js';
