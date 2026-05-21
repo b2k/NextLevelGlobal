@@ -108,6 +108,10 @@ export const page: GroupPage = {
 						{
 							type: 'item',
 							title: 'Jose Figueroa, Family Pastor, Chicago Tabernacle, Chicago, IL'
+						},
+						{
+							type: 'item',
+							title: 'Brian Marquis, Elder, Park Community Church, Chicago, IL'
 						}
 					]
 				}
