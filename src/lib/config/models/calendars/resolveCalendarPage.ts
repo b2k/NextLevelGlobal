@@ -1,6 +1,6 @@
 import { jsonClone } from '$lib/utils/jsonClone';
 import { error } from 'console';
-import type path from 'path';
+import path from 'path';
 import { pageByPath } from '../pages';
 import { createCalendarByReferenceDate } from './generateCalendarEntries';
 

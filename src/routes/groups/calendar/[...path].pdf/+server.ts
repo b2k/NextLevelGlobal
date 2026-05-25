@@ -1,54 +1,23 @@
 import { error } from '@sveltejs/kit';
-import { pageByPath } from '$lib/config/models/pages';
-import { jsonClone } from '$lib/utils/jsonClone.js';
-import { resolveCalendarStartDate } from '$lib/config/models/calendars/resolveCalendarStartDate';
-import { generateCalendarEntries } from '$lib/config/models/calendars/generateCalendarEntries';
-import path from 'node:path';
 import { PDFDocument, StandardFonts, rgb } from 'pdf-lib';
 import type { CalendarEntry } from '$lib/config/models/calendars/groupCalendars.js';
 import { r } from '$lib/config/translations';
+import { resolveCalendarPage } from '$lib/config/models/calendars/resolveCalendarPage';
 
 const PAGE_WIDTH = 792; // 11in
 const PAGE_HEIGHT = 612; // 8.5in
 
 export async function GET({ params, url, cookies }) {
-	let configPath = params.path;
-	const cookiesPath = path.join(...(params.path?.split('/') ?? []).filter(Boolean));
-
-	if (!configPath) throw error(404, 'Calendar not found');
-
-	if (configPath.endsWith('.pdf')) {
-		configPath = configPath.slice(0, -4);
-	}
-
-	const page = jsonClone(pageByPath.get(configPath));
-
+	const { page, configPath } = resolveCalendarPage({ params, cookies, url });
 	if (!page?.calendar) {
 		throw error(404, `Calendar not found: ${configPath}`);
 	}
-	const visibleYear = url.searchParams.get('year')
-		? Number(url.searchParams.get('year'))
-		: new Date().getFullYear();
-
-	const customStartDate = cookies.get(`customStartDate:${cookiesPath}`);
-
-	const startDate = resolveCalendarStartDate(
-		page.calendar.defaultStartDate,
-		customStartDate || url.searchParams.get('start-date'),
-		new Date(visibleYear, 0, 1)
-	);
-	const lang = url.searchParams.get('lang') || 'en';
-
-	const entries = startDate ? generateCalendarEntries(page.calendar, startDate) : [];
-
-	page.calendar.defaultStartDate = startDate ?? page.calendar.defaultStartDate;
-	page.calendar.entries = entries;
 
 	const pdfBytes = await buildCalendarPdf({
 		title: page.calendar.title,
 		description: page.calendar.description,
 		entries: page.calendar.entries,
-		lang
+		lang: url.searchParams.get('lang') || 'en'
 	});
 
 	return new Response(Buffer.from(pdfBytes), {
