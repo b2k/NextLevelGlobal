@@ -44,11 +44,12 @@
 	const calendarPath = $derived(
 		`/groups/calendar/${data.path}.pdf?start-date=${data.page.calendar?.defaultStartDate ?? ''}&lang=${lang.current}&year=${visibleYear}`
 	);
+	const iCalPath = $derived(calendarPath.replace('.pdf', '.ics'));
 
 	let subscribeUrl = $state('');
 	$effect(() => {
 		if (typeof window !== 'undefined') {
-			subscribeUrl = `${window.location.origin}${calendarPath}`.replace(/^https?:/, 'webcal:');
+			subscribeUrl = `${window.location.origin}${iCalPath}`.replace(/^https?:/, 'webcal:');
 		}
 	});
 
