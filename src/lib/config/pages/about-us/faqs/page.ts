@@ -99,6 +99,10 @@ export const page: GroupPage = {
 						{
 							type: 'item',
 							title: 'Marco David, Pastor of Midwest Bible Church, Chicago, IL'
+						},
+						{
+							type: 'item',
+							title: 'Jose Figueroa, Family Pastor, Chicago Tabernacle, Chicago, IL'
 						}
 					]
 				},
@@ -107,7 +111,8 @@ export const page: GroupPage = {
 					items: [
 						{
 							type: 'item',
-							title: 'Jose Figueroa, Family Pastor, Chicago Tabernacle, Chicago, IL'
+							title:
+								'Wilson Geong, Vice President, Finance & Administration, Prison Fellowship International'
 						},
 						{
 							type: 'item',
