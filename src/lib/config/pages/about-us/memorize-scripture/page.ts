@@ -108,7 +108,7 @@ export const page: GroupPage = {
 				{
 					type: 'link',
 					title: 'FAQ',
-					href: '/about-us/faqs'
+					href: '/about-us/faq'
 				}
 			]
 		}
