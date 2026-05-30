@@ -17,7 +17,7 @@ export const page: GroupPage = {
 				type: 'book',
 				title: 'The Titus Ten',
 				description: 'Timothy Keller',
-				image: '/groups/men/300/303/static/groups/men/300/303/titus-ten-book-cover.jpg',
+				image: '/groups/men/300/303/titus-ten-book-cover.jpg',
 				buyUrl: 'https://www.christianbook.com/titus-ten-foundations-for-godly-manhood/j-smith/9781087752396/pd/752396?event=BRSRCP%7CPSEN&ps_exit=PRODUCT%7Clegacy&search_term=titus%20ten&Ntt=752396&product_redirect=1',
 				questionsPdf: '/groups/men/300/303/titus_ten_questions.pdf'
 			}
