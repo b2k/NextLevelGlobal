@@ -42,7 +42,7 @@ export function generateCalendarEntries(
 
 	return template.entries
 		.map((entry) => {
-			if (entry.kind === 'event' && !entry.week) {
+			if (entry.kind === 'event' && !entry.week && entry.date) {
 				return entry; // don't calculate date for events without a week number
 			}
 			const weekOffset = (entry.week as number) - template.startingWeek;
@@ -54,7 +54,7 @@ export function generateCalendarEntries(
 				localDate = formatLocalDate(date);
 			} catch (error) {
 				console.error('Error formatting date:', date, error);
-				throw error;
+				return null; // skip this entry if date is invalid
 			}
 			const result: CalendarEntry = {
 				...template,
@@ -74,5 +74,6 @@ export function generateCalendarEntries(
 
 			return result;
 		})
+		.filter((entry): entry is CalendarEntry => entry !== null)
 		.sort((a, b) => a.date?.localeCompare(b.date ?? '') ?? 0);
 }
