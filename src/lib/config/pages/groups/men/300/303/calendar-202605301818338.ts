@@ -34,7 +34,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 121,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Titus Ten Intro'
+			title: 'Man Code Ch 1'
 		},
 		{
 			week: 121,
@@ -50,6 +50,12 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 121,
+			dayOfWeek: 3,
+			kind: 'book',
+			title: 'Man Code Ch 2'
+		},
+		{
+			week: 121,
 			dayOfWeek: 4,
 			kind: 'reading',
 			title: 'Revelation 4'
@@ -59,6 +65,12 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 5,
 			kind: 'reading',
 			title: 'Revelation 5'
+		},
+		{
+			week: 121,
+			dayOfWeek: 5,
+			kind: 'book',
+			title: 'Man Code Ch 3'
 		},
 		{
 			week: 121,
@@ -94,7 +106,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 122,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Titus Ten Ch 1'
+			title: 'Man Code Ch 4'
 		},
 		{
 			week: 122,
@@ -110,6 +122,12 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 122,
+			dayOfWeek: 3,
+			kind: 'book',
+			title: 'Man Code Ch 5'
+		},
+		{
+			week: 122,
 			dayOfWeek: 4,
 			kind: 'reading',
 			title: 'Revelation 10'
@@ -119,6 +137,12 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 5,
 			kind: 'reading',
 			title: 'Revelation 11'
+		},
+		{
+			week: 122,
+			dayOfWeek: 5,
+			kind: 'book',
+			title: 'Man Code Ch 6'
 		},
 		{
 			week: 122,
@@ -154,7 +178,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 123,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Titus Ten Ch 2'
+			title: 'Man Code Ch 7'
 		},
 		{
 			week: 123,
@@ -170,6 +194,12 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 123,
+			dayOfWeek: 3,
+			kind: 'book',
+			title: 'Man Code Ch 8'
+		},
+		{
+			week: 123,
 			dayOfWeek: 4,
 			kind: 'reading',
 			title: 'Revelation 16'
@@ -179,6 +209,12 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 5,
 			kind: 'reading',
 			title: 'Revelation 17'
+		},
+		{
+			week: 123,
+			dayOfWeek: 5,
+			kind: 'book',
+			title: 'Man Code Ch 9'
 		},
 		{
 			week: 123,
@@ -214,7 +250,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 124,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Titus Ten Ch 3'
+			title: 'Man Code Ch 10'
 		},
 		{
 			week: 124,
@@ -230,6 +266,12 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 124,
+			dayOfWeek: 3,
+			kind: 'book',
+			title: 'Man Code Ch 11'
+		},
+		{
+			week: 124,
 			dayOfWeek: 4,
 			kind: 'reading',
 			title: 'Revelation 22'
@@ -239,6 +281,12 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 5,
 			kind: 'reading',
 			title: 'Hosea 1,2'
+		},
+		{
+			week: 124,
+			dayOfWeek: 5,
+			kind: 'book',
+			title: 'Man Code Ch 12'
 		},
 		{
 			week: 124,
@@ -274,7 +322,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 125,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Titus Ten Ch 4'
+			title: 'Man Code Ch 13'
 		},
 		{
 			week: 125,
@@ -290,6 +338,12 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 125,
+			dayOfWeek: 3,
+			kind: 'book',
+			title: 'Man Code Ch 14'
+		},
+		{
+			week: 125,
 			dayOfWeek: 4,
 			kind: 'reading',
 			title: 'Hosea 8'
@@ -299,6 +353,12 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 5,
 			kind: 'reading',
 			title: 'Hosea 9'
+		},
+		{
+			week: 125,
+			dayOfWeek: 5,
+			kind: 'book',
+			title: 'Man Code Ch 15'
 		},
 		{
 			week: 125,
@@ -334,7 +394,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 126,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Titus Ten Ch 5'
+			title: 'Man Code Ch 16'
 		},
 		{
 			week: 126,
@@ -350,6 +410,12 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 126,
+			dayOfWeek: 3,
+			kind: 'book',
+			title: 'Man Code Ch 17'
+		},
+		{
+			week: 126,
 			dayOfWeek: 4,
 			kind: 'reading',
 			title: 'Hosea 14'
@@ -359,6 +425,12 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 5,
 			kind: 'reading',
 			title: 'Jonah 1'
+		},
+		{
+			week: 126,
+			dayOfWeek: 5,
+			kind: 'book',
+			title: 'Man Code Ch 18'
 		},
 		{
 			week: 126,
@@ -394,7 +466,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 127,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Titus Ten Ch 6'
+			title: 'Man Code Ch 19'
 		},
 		{
 			week: 127,
@@ -410,6 +482,12 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 127,
+			dayOfWeek: 3,
+			kind: 'book',
+			title: 'Man Code Ch 20'
+		},
+		{
+			week: 127,
 			dayOfWeek: 4,
 			kind: 'reading',
 			title: '1 John 3'
@@ -419,6 +497,12 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 5,
 			kind: 'reading',
 			title: '1 John 4'
+		},
+		{
+			week: 127,
+			dayOfWeek: 5,
+			kind: 'book',
+			title: 'Man Code Ch 21'
 		},
 		{
 			week: 127,
@@ -454,7 +538,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 128,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Titus Ten Ch 7'
+			title: 'Man Code Ch 22'
 		},
 		{
 			week: 128,
@@ -470,6 +554,12 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 128,
+			dayOfWeek: 3,
+			kind: 'book',
+			title: 'Man Code Ch 23'
+		},
+		{
+			week: 128,
 			dayOfWeek: 4,
 			kind: 'reading',
 			title: 'Nahum 2'
@@ -479,6 +569,12 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 5,
 			kind: 'reading',
 			title: 'Nahum 3'
+		},
+		{
+			week: 128,
+			dayOfWeek: 5,
+			kind: 'book',
+			title: 'Man Code Ch 24'
 		},
 		{
 			week: 128,
@@ -514,7 +610,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 129,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Titus Ten Ch 8'
+			title: 'Man Code Ch 25'
 		},
 		{
 			week: 129,
@@ -530,6 +626,12 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 129,
+			dayOfWeek: 3,
+			kind: 'book',
+			title: 'Man Code Ch 26'
+		},
+		{
+			week: 129,
 			dayOfWeek: 4,
 			kind: 'reading',
 			title: 'Zephaniah 2'
@@ -539,6 +641,12 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 5,
 			kind: 'reading',
 			title: 'Zephaniah 3'
+		},
+		{
+			week: 129,
+			dayOfWeek: 5,
+			kind: 'book',
+			title: 'Man Code Ch 27'
 		},
 		{
 			week: 129,
@@ -574,7 +682,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 130,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Titus Ten Ch 9'
+			title: 'Man Code Ch 28'
 		},
 		{
 			week: 130,
@@ -590,6 +698,12 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 130,
+			dayOfWeek: 3,
+			kind: 'book',
+			title: 'Man Code Ch 29'
+		},
+		{
+			week: 130,
 			dayOfWeek: 4,
 			kind: 'reading',
 			title: 'Malachi 3'
@@ -599,6 +713,12 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 5,
 			kind: 'reading',
 			title: 'Malachi 4'
+		},
+		{
+			week: 130,
+			dayOfWeek: 5,
+			kind: 'book',
+			title: 'Man Code Ch 30'
 		},
 		{
 			week: 130,
@@ -634,7 +754,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 131,
 			dayOfWeek: 1,
 			kind: 'book',
-			title: 'Titus Ten Ch 10'
+			title: 'Man Code Ch 31'
 		},
 		{
 			week: 131,
@@ -650,6 +770,12 @@ export const calendar: GroupCalendarConfig = {
 		},
 		{
 			week: 131,
+			dayOfWeek: 3,
+			kind: 'book',
+			title: 'Man Code Ch 32'
+		},
+		{
+			week: 131,
 			dayOfWeek: 4,
 			kind: 'reading',
 			title: 'Esther 5,6'
@@ -659,6 +785,12 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 5,
 			kind: 'reading',
 			title: 'Esther 7,8'
+		},
+		{
+			week: 131,
+			dayOfWeek: 5,
+			kind: 'book',
+			title: 'Man Code Ch 333'
 		},
 		{
 			week: 131,
@@ -767,13 +899,6 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 5,
 			kind: 'psalm',
 			title: 'Proverbs 30,31'
-		},
-		{
-			kind: 'event',
-			title: 'Graduation 9:30am-noon',
-			date: '2026-12-05',
-			startTime: '9:30am',
-			endTime: '12:00pm'
 		}
 	]
 };

@@ -42,14 +42,24 @@ export function generateCalendarEntries(
 
 	return template.entries
 		.map((entry) => {
+			if (entry.kind === 'event' && !entry.week) {
+				return entry; // don't calculate date for events without a week number
+			}
 			const weekOffset = (entry.week as number) - template.startingWeek;
 			const offset = weekOffset * 7 + (entry.dayOfWeek as number);
 			const date = addDays(anchor, offset);
 
+			let localDate: string;
+			try {
+				localDate = formatLocalDate(date);
+			} catch (error) {
+				console.error('Error formatting date:', date, error);
+				throw error;
+			}
 			const result: CalendarEntry = {
 				...template,
 				...entry,
-				date: formatLocalDate(date)
+				date: localDate
 			};
 
 			if (entry.startTime && entry.endTime) {

@@ -15,11 +15,11 @@ export const page: GroupPage = {
 		items: [
 			{
 				type: 'book',
-				title: 'The Titus Ten',
+				title: 'The Man Code',
 				description: 'Timothy Keller',
-				image: '/groups/men/300/303/titus_ten_questions.jpg',
-				buyUrl: 'https://www.christianbook.com/titus-ten-foundations-for-godly-manhood/j-smith/9781087752396/pd/752396?event=BRSRCP%7CPSEN&ps_exit=PRODUCT%7Clegacy&search_term=titus%20ten&Ntt=752396&product_redirect=1',
-				questionsPdf: '/groups/men/300/303/titus_ten_questions.pdf'
+				image: '/groups/men/300/303/man-code.jpg',
+				buyUrl: 'https://www.christianbook.com/man-code-priorities-every-needs-know/9780736990035/pd/990037?event=ESRCG',
+				questionsPdf: '/groups/men/300/303/man-code.pdf'
 			}
 		]
 	},
