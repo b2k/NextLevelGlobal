@@ -2771,6 +2771,13 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 0,
 			kind: 'week',
 			title: 'Week 207'
+		},
+		{
+			kind: 'event',
+			title: 'Graduation 9:30am-noon',
+			date: '2026-12-05',
+			startTime: '9:30am',
+			endTime: '12:00pm'
 		}
 	]
 };

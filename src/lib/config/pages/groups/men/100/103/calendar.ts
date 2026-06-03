@@ -611,6 +611,13 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 6,
 			kind: 'reading',
 			title: 'Philippians 4'
+		},
+		{
+			kind: 'event',
+			title: 'Graduation 9:30am-noon',
+			date: '2026-12-05',
+			startTime: '9:30am',
+			endTime: '12:00pm'
 		}
 	]
 };

@@ -2783,6 +2783,13 @@ export const calendar: GroupCalendarConfig = {
 			dayOfWeek: 6,
 			kind: 'psalm',
 			title: 'Psalm 149-150'
+		},
+		{
+			kind: 'event',
+			title: 'Graduation 9:30am-noon',
+			date: '2026-12-05',
+			startTime: '9:30am',
+			endTime: '12:00pm'
 		}
 	]
 };
