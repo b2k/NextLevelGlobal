@@ -111,6 +111,10 @@ export const page: GroupPage = {
 					items: [
 						{
 							type: 'item',
+							title: 'Eligia David, Director of Next Level Women, Chicago, IL'
+						},
+						{
+							type: 'item',
 							title:
 								'Wilson Geong, Vice President, Finance & Administration, Prison Fellowship International'
 						},
