@@ -46,7 +46,7 @@ export const page: GroupPage = {
 		]
 	},
 	{
-		title: 'Scripture Summaries & Questions',
+		title: 'Scripture Memorization',
 		theme: 'dark',
 		columns: [
 			{

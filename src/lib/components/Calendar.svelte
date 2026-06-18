@@ -1,4 +1,6 @@
 <script lang="ts">
+	/* eslint-disable svelte/no-navigation-without-resolve */
+	/* eslint-disable svelte/no-at-html-tags */
 	import type {
 		CalendarEntry,
 		CalendarEntryKind,
@@ -10,6 +12,14 @@
 	import { createCalendarByReferenceDate } from '$lib/config/models/calendars/generateCalendarEntries';
 	import { r } from '$lib/config/translations';
 	import { lang } from '$lib/stores/lang.svelte';
+	import {
+		Button,
+		Modal,
+		ModalBody,
+		ModalFooter,
+		ModalHeader,
+		Spinner
+	} from '@sveltestrap/sveltestrap';
 
 	type Props = {
 		calendar: GroupCalendarConfig;
@@ -88,6 +98,16 @@
 		title: string;
 		kind: CalendarEntryKind;
 		raw: CalendarEntry;
+	};
+
+	type ScripturePassage = {
+		reference: string;
+		translation?: string;
+		text?: string;
+		html?: string;
+		copyright?: string;
+		source?: string;
+		error?: string;
 	};
 
 	type CalendarEntryColor = {
@@ -314,6 +334,67 @@
 		event.preventDefault();
 		toggleDate(date);
 	}
+	let scriptureModalOpen = $state(false);
+	let selectedScriptureEntry = $state<NormalizedEntry | null>(null);
+	let selectedPassage = $state<ScripturePassage | null>(null);
+	let scriptureLoading = $state(false);
+	let scriptureError = $state('');
+
+	function isScriptureEntry(entry: NormalizedEntry): boolean {
+		return entry.kind === 'reading' || entry.kind === 'memory' || entry.kind === 'psalm';
+	}
+
+	function getScriptureReference(entry: NormalizedEntry): string {
+		const raw = entry.raw as CalendarEntry & { scripture?: { reference?: string } };
+		return raw.scripture?.reference || entry.title;
+	}
+
+	function getScriptureTranslation(entry: NormalizedEntry): string {
+		const raw = entry.raw as CalendarEntry & { scripture?: { translation?: string } };
+		return raw.scripture?.translation || (lang.current === 'es' ? 'RVR60' : 'ESV');
+	}
+
+	function getExternalPassageUrl(entry: NormalizedEntry): string {
+		const reference = getScriptureReference(entry);
+		const translation = getScriptureTranslation(entry);
+
+		return `https://www.biblegateway.com/passage/?search=${encodeURIComponent(reference)}&version=${encodeURIComponent(translation)}`;
+	}
+
+	function closeScripture() {
+		scriptureModalOpen = false;
+		selectedScriptureEntry = null;
+		selectedPassage = null;
+		scriptureError = '';
+	}
+
+	async function openScripture(entry: NormalizedEntry) {
+		selectedScriptureEntry = entry;
+		selectedPassage = null;
+		scriptureError = '';
+		scriptureLoading = true;
+		scriptureModalOpen = true;
+
+		const params = new URLSearchParams({
+			ref: getScriptureReference(entry),
+			translation: getScriptureTranslation(entry)
+		});
+
+		try {
+			const response = await fetch(`/api/scripture?${params.toString()}`);
+
+			if (!response.ok) {
+				throw new Error(await response.text());
+			}
+
+			selectedPassage = await response.json();
+		} catch (error) {
+			console.error(error);
+			scriptureError = 'Passage text is not available for this translation.';
+		} finally {
+			scriptureLoading = false;
+		}
+	}
 </script>
 
 <div class="calendar">
@@ -398,16 +479,26 @@
 							type="button"
 							class="calendar-event"
 							class:expanded-event={isExpanded}
-							title={r(event.title, lang.current)}
+							class:scripture-link={isExpanded && isScriptureEntry(event)}
+							title={isExpanded && isScriptureEntry(event)
+								? r('View Scripture', lang.current)
+								: r(event.title, lang.current)}
 							style={`--entry-bg: ${color.bg}; --entry-text: ${color.text}; --entry-accent: ${color.accent};`}
-							onclick={(event) => {
-								event.stopPropagation();
+							onclick={(clickEvent) => {
+								clickEvent.stopPropagation();
+
+								if (isExpanded && isScriptureEntry(event)) {
+									openScripture(event);
+									return;
+								}
+
 								toggleDate(day.date);
 							}}
 						>
 							{#if isExpanded}
 								<span class="calendar-event-kind">{r(event.kind, lang.current)}</span>
 							{/if}
+
 							<span class="calendar-event-title">{r(event.title, lang.current)}</span>
 						</button>
 					{/each}
@@ -416,6 +507,65 @@
 		{/each}
 	</div>
 </div>
+
+<Modal isOpen={scriptureModalOpen} toggle={closeScripture} size="lg">
+	<ModalHeader toggle={closeScripture}>
+		{selectedPassage?.reference ??
+			(selectedScriptureEntry
+				? getScriptureReference(selectedScriptureEntry)
+				: r('Scripture', lang.current))}
+	</ModalHeader>
+
+	<ModalBody>
+		{#if scriptureLoading}
+			<div class="d-flex align-items-center gap-2 text-muted">
+				<Spinner size="sm" />
+				<span>{r('Loading passage...', lang.current)}</span>
+			</div>
+		{:else if selectedPassage?.html}
+			<div class="scripture-passage">
+				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+				{@html selectedPassage.html}
+			</div>
+		{:else if selectedPassage?.text}
+			<p class="scripture-text mb-0">{selectedPassage.text}</p>
+		{:else}
+			<p class="text-muted">
+				{scriptureError || r('Passage text is not available for this translation.', lang.current)}
+			</p>
+
+			{#if selectedScriptureEntry}
+				<a
+					class="btn btn-outline-primary btn-sm"
+					href={getExternalPassageUrl(selectedScriptureEntry)}
+					target="_blank"
+					rel="noreferrer"
+				>
+					{r('Open passage online', lang.current)}
+				</a>
+			{/if}
+		{/if}
+
+		{#if selectedPassage?.copyright}
+			<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+			<div class="small text-muted mt-3">{@html selectedPassage.copyright}</div>
+		{/if}
+	</ModalBody>
+
+	<ModalFooter>
+		{#if selectedScriptureEntry && (selectedPassage?.text || selectedPassage?.html)}
+			<a
+				class="btn btn-outline-primary"
+				href={getExternalPassageUrl(selectedScriptureEntry)}
+				target="_blank"
+				rel="noreferrer"
+			>
+				{r('Open online', lang.current)}
+			</a>
+		{/if}
+		<Button color="secondary" onclick={closeScripture}>{r('Close', lang.current)}</Button>
+	</ModalFooter>
+</Modal>
 
 <style>
 	.calendar {
@@ -663,6 +813,25 @@
 		color: #243247;
 		white-space: nowrap;
 	}
+
+	.calendar-event.scripture-link .calendar-event-title {
+		text-decoration: underline;
+		text-underline-offset: 0.15rem;
+	}
+
+	.calendar-event.scripture-link {
+		cursor: pointer;
+	}
+
+	.scripture-text {
+		white-space: pre-line;
+	}
+
+	.scripture-passage :global(.v),
+	.scripture-passage :global(.verse) {
+		font-weight: 600;
+	}
+
 	@media (max-width: 700px) {
 		.calendar-toolbar {
 			align-items: flex-start;
