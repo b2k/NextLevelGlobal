@@ -44,7 +44,7 @@ export const page: GroupPage = {
 		{
 			id: 'additional-resources',
 			title: 'Additional Resources',
-			theme: 'light',
+			theme: 'dark',
 			items: [
 				{
 					type: 'pdf',
