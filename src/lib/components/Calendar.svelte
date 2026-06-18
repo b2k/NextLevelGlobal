@@ -240,7 +240,8 @@
 
 		if (browser) {
 			preferredScriptureTranslation =
-				localStorage.getItem(scriptureTranslationStorageKey) || (lang.current === 'es' ? 'RVR60' : 'ESV');
+				localStorage.getItem(scriptureTranslationStorageKey) ||
+				(lang.current === 'es' ? 'RVR60' : 'ESV');
 		}
 	});
 
@@ -354,12 +355,18 @@
 
 	function getScriptureReference(entry: NormalizedEntry): string {
 		const raw = entry.raw as CalendarEntry & { scripture?: { reference?: string } };
-		return raw.scripture?.reference || entry.title;
+		return (raw.scripture?.reference || entry.title).replace(/LCV[:\s]*/i, '').trim();
 	}
 
 	function getScriptureTranslation(entry?: NormalizedEntry | null): string {
-		const raw = entry?.raw as (CalendarEntry & { scripture?: { translation?: string } }) | undefined;
-		return raw?.scripture?.translation || preferredScriptureTranslation || (lang.current === 'es' ? 'RVR60' : 'ESV');
+		const raw = entry?.raw as
+			| (CalendarEntry & { scripture?: { translation?: string } })
+			| undefined;
+		return (
+			raw?.scripture?.translation ||
+			preferredScriptureTranslation ||
+			(lang.current === 'es' ? 'RVR60' : 'ESV')
+		);
 	}
 
 	function handlePreferredTranslationChange(event: Event) {
@@ -416,7 +423,6 @@
 			scriptureLoading = false;
 		}
 	}
-
 </script>
 
 <div class="calendar">
@@ -530,12 +536,14 @@
 	</div>
 </div>
 
-
 <Modal isOpen={scriptureModalOpen} toggle={closeScripture} size="lg">
 	<ModalHeader toggle={closeScripture}>
 		<div class="scripture-modal-header">
 			<span class="scripture-modal-title">
-				{selectedPassage?.reference ?? (selectedScriptureEntry ? getScriptureReference(selectedScriptureEntry) : r('Scripture', lang.current))}
+				{selectedPassage?.reference ??
+					(selectedScriptureEntry
+						? getScriptureReference(selectedScriptureEntry)
+						: r('Scripture', lang.current))}
 			</span>
 
 			<select

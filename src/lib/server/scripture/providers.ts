@@ -51,15 +51,33 @@ export async function getFromBibleApi(
 	assertOk(response, 'Bible API');
 
 	const data = await response.json();
-
 	return {
 		reference: data.reference ?? reference,
 		translation,
-		text: data.text ?? '',
+		html:
+			data.verses
+				?.map(
+					(v: { verse: number; text: string }) =>
+						`<p><sup class="verse-num"><b>${v.verse}</b></sup> ${escapeHtml(v.text.trim())}</p>`
+				)
+				.join('') ?? '',
 		source: 'bible-api'
 	};
+	// return {
+	// 	reference: data.reference ?? reference,
+	// 	translation,
+	// 	text: data.text ?? '',
+	// 	source: 'bible-api'
+	// };
 }
-
+function escapeHtml(value: string) {
+	return value
+		.replaceAll('&', '&amp;')
+		.replaceAll('<', '&lt;')
+		.replaceAll('>', '&gt;')
+		.replaceAll('"', '&quot;')
+		.replaceAll("'", '&#039;');
+}
 function apiBibleId(translation: Translation) {
 	switch (translation) {
 		case 'RVR60':
