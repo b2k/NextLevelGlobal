@@ -14,13 +14,17 @@ function assertOk(response: Response, provider: string) {
 }
 
 export async function getFromCrossway(reference: string): Promise<ScriptureResult> {
-	const url = new URL('https://api.esv.org/v3/passage/text/');
+
+	const url = new URL('https://api.esv.org/v3/passage/html/');
 	url.searchParams.set('q', reference);
 	url.searchParams.set('include-footnotes', 'false');
 	url.searchParams.set('include-headings', 'true');
-	url.searchParams.set('include-passage-references', 'true');
+	url.searchParams.set('include-passage-references', 'false');
 	url.searchParams.set('include-verse-numbers', 'true');
 	url.searchParams.set('include-short-copyright', 'true');
+	url.searchParams.set('include-audio-link', 'false');
+	url.searchParams.set('wrapping-div', 'true');
+	url.searchParams.set('div-classes', 'scripture-passage');
 
 	const response = await fetch(url, {
 		headers: {
@@ -35,7 +39,7 @@ export async function getFromCrossway(reference: string): Promise<ScriptureResul
 	return {
 		reference: data.canonical ?? reference,
 		translation: 'ESV',
-		text: data.passages?.join('\n\n') ?? '',
+		html: data.passages?.join('\n\n') ?? '',
 		source: 'crossway'
 	};
 }

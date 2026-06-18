@@ -40,6 +40,8 @@
 	}: Props = $props();
 
 	const cookieName = $derived(`customStartDate:${path}`);
+	const scriptureTranslationStorageKey = $derived(`scriptureTranslation:${path}`);
+	const scriptureTranslations = ['ESV', 'KJV', 'WEB', 'RVR60', 'NVI'];
 	const weekdayLabels = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 	function stripTime(date: Date): Date {
@@ -216,6 +218,7 @@
 	let visibleMonth = $state(startOfMonth(stripTime(new SvelteDate())));
 
 	let customStartDate = $state('');
+	let preferredScriptureTranslation = $state('');
 
 	function readCookie(name: string): string {
 		if (!browser) return '';
@@ -234,6 +237,11 @@
 
 	onMount(() => {
 		customStartDate = readCookie(cookieName);
+
+		if (browser) {
+			preferredScriptureTranslation =
+				localStorage.getItem(scriptureTranslationStorageKey) || (lang.current === 'es' ? 'RVR60' : 'ESV');
+		}
 	});
 
 	async function handleCustomStartDateChange(event: Event) {
@@ -349,9 +357,22 @@
 		return raw.scripture?.reference || entry.title;
 	}
 
-	function getScriptureTranslation(entry: NormalizedEntry): string {
-		const raw = entry.raw as CalendarEntry & { scripture?: { translation?: string } };
-		return raw.scripture?.translation || (lang.current === 'es' ? 'RVR60' : 'ESV');
+	function getScriptureTranslation(entry?: NormalizedEntry | null): string {
+		const raw = entry?.raw as (CalendarEntry & { scripture?: { translation?: string } }) | undefined;
+		return raw?.scripture?.translation || preferredScriptureTranslation || (lang.current === 'es' ? 'RVR60' : 'ESV');
+	}
+
+	function handlePreferredTranslationChange(event: Event) {
+		const translation = (event.target as HTMLSelectElement).value;
+		preferredScriptureTranslation = translation;
+
+		if (browser) {
+			localStorage.setItem(scriptureTranslationStorageKey, translation);
+		}
+
+		if (selectedScriptureEntry) {
+			openScripture(selectedScriptureEntry, translation);
+		}
 	}
 
 	function getExternalPassageUrl(entry: NormalizedEntry): string {
@@ -368,7 +389,7 @@
 		scriptureError = '';
 	}
 
-	async function openScripture(entry: NormalizedEntry) {
+	async function openScripture(entry: NormalizedEntry, translationOverride?: string) {
 		selectedScriptureEntry = entry;
 		selectedPassage = null;
 		scriptureError = '';
@@ -377,7 +398,7 @@
 
 		const params = new URLSearchParams({
 			ref: getScriptureReference(entry),
-			translation: getScriptureTranslation(entry)
+			translation: translationOverride || getScriptureTranslation(entry)
 		});
 
 		try {
@@ -395,6 +416,7 @@
 			scriptureLoading = false;
 		}
 	}
+
 </script>
 
 <div class="calendar">
@@ -508,12 +530,26 @@
 	</div>
 </div>
 
+
 <Modal isOpen={scriptureModalOpen} toggle={closeScripture} size="lg">
 	<ModalHeader toggle={closeScripture}>
-		{selectedPassage?.reference ??
-			(selectedScriptureEntry
-				? getScriptureReference(selectedScriptureEntry)
-				: r('Scripture', lang.current))}
+		<div class="scripture-modal-header">
+			<span class="scripture-modal-title">
+				{selectedPassage?.reference ?? (selectedScriptureEntry ? getScriptureReference(selectedScriptureEntry) : r('Scripture', lang.current))}
+			</span>
+
+			<select
+				class="form-select form-select-sm scripture-translation-select"
+				aria-label={r('Scripture translation', lang.current)}
+				value={getScriptureTranslation(selectedScriptureEntry)}
+				onchange={handlePreferredTranslationChange}
+				onclick={(event) => event.stopPropagation()}
+			>
+				{#each scriptureTranslations as translation}
+					<option value={translation}>{translation}</option>
+				{/each}
+			</select>
+		</div>
 	</ModalHeader>
 
 	<ModalBody>
@@ -524,7 +560,6 @@
 			</div>
 		{:else if selectedPassage?.html}
 			<div class="scripture-passage">
-				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 				{@html selectedPassage.html}
 			</div>
 		{:else if selectedPassage?.text}
@@ -547,7 +582,6 @@
 		{/if}
 
 		{#if selectedPassage?.copyright}
-			<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 			<div class="small text-muted mt-3">{@html selectedPassage.copyright}</div>
 		{/if}
 	</ModalBody>
@@ -821,6 +855,26 @@
 
 	.calendar-event.scripture-link {
 		cursor: pointer;
+	}
+
+	.scripture-modal-header {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		width: 100%;
+	}
+
+	.scripture-modal-title {
+		font-weight: 600;
+		min-width: 0;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	.scripture-translation-select {
+		width: auto;
+		min-width: 6.5rem;
 	}
 
 	.scripture-text {
