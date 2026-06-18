@@ -1,9 +1,4 @@
-import {
-	ESV_API_KEY,
-	API_BIBLE_KEY,
-	API_BIBLE_RVR60_ID,
-	API_BIBLE_NVI_ID
-} from '$env/static/private';
+import { env } from '$env/dynamic/private';
 
 import type { ScriptureResult, Translation } from './types';
 
@@ -14,7 +9,6 @@ function assertOk(response: Response, provider: string) {
 }
 
 export async function getFromCrossway(reference: string): Promise<ScriptureResult> {
-
 	const url = new URL('https://api.esv.org/v3/passage/html/');
 	url.searchParams.set('q', reference);
 	url.searchParams.set('include-footnotes', 'false');
@@ -28,7 +22,7 @@ export async function getFromCrossway(reference: string): Promise<ScriptureResul
 
 	const response = await fetch(url, {
 		headers: {
-			Authorization: `Token ${ESV_API_KEY}`
+			Authorization: `Token ${env.ESV_API_KEY}`
 		}
 	});
 
@@ -67,9 +61,9 @@ export async function getFromBibleApi(
 function apiBibleId(translation: Translation) {
 	switch (translation) {
 		case 'RVR60':
-			return API_BIBLE_RVR60_ID;
+			return env.API_BIBLE_RVR60_ID;
 		case 'NVI':
-			return API_BIBLE_NVI_ID;
+			return env.API_BIBLE_NVI_ID;
 		default:
 			throw new Error(`Unsupported API.Bible translation: ${translation}`);
 	}
@@ -94,7 +88,7 @@ export async function getFromApiBible(
 
 	const response = await fetch(url, {
 		headers: {
-			'api-key': API_BIBLE_KEY
+			'api-key': env.API_BIBLE_KEY
 		}
 	});
 
