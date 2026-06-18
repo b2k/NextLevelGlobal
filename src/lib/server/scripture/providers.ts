@@ -20,6 +20,8 @@ export async function getFromCrossway(reference: string): Promise<ScriptureResul
 	url.searchParams.set('wrapping-div', 'true');
 	url.searchParams.set('div-classes', 'scripture-passage');
 
+	console.log(`Fetching ESV passage ${reference} from Crossway API using token ${env.ESV_API_KEY}`);
+
 	const response = await fetch(url, {
 		headers: {
 			Authorization: `Token ${env.ESV_API_KEY}`
