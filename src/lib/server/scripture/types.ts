@@ -1,4 +1,4 @@
-export type Translation = 'ESV' | 'KJV' | 'WEB' | 'RVR60' | 'NVI';
+export type Translation = 'ESV' | 'KJV' | 'WEB' | 'RVR60' | 'NVI' | 'NIV' | 'NKJV';
 
 export type ScriptureResult = {
 	reference: string;

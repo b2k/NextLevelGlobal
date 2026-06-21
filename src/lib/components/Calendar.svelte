@@ -41,7 +41,7 @@
 
 	const cookieName = $derived(`customStartDate:${path}`);
 	const scriptureTranslationStorageKey = $derived(`scriptureTranslation:${path}`);
-	const scriptureTranslations = ['ESV', 'KJV', 'WEB', 'RVR60', 'NVI'];
+	const scriptureTranslations = ['ESV', 'KJV', 'WEB', 'NIV', 'NKJV', 'RVR60', 'NVI'];
 	const weekdayLabels = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 	function stripTime(date: Date): Date {
@@ -542,7 +542,7 @@
 			<span class="scripture-modal-title">
 				{selectedPassage?.reference ??
 					(selectedScriptureEntry
-						? getScriptureReference(selectedScriptureEntry)
+						? r(getScriptureReference(selectedScriptureEntry), lang.current)
 						: r('Scripture', lang.current))}
 			</span>
 
@@ -553,7 +553,7 @@
 				onchange={handlePreferredTranslationChange}
 				onclick={(event) => event.stopPropagation()}
 			>
-				{#each scriptureTranslations as translation}
+				{#each scriptureTranslations as translation, t (t)}
 					<option value={translation}>{translation}</option>
 				{/each}
 			</select>
@@ -590,7 +590,9 @@
 		{/if}
 
 		{#if selectedPassage?.copyright}
-			<div class="small text-muted mt-3">{@html selectedPassage.copyright}</div>
+			<div class="scripture-copyright small text-muted mt-3">
+				{@html selectedPassage.copyright}
+			</div>
 		{/if}
 	</ModalBody>
 
@@ -890,8 +892,15 @@
 	}
 
 	.scripture-passage :global(.v),
-	.scripture-passage :global(.verse) {
+	.scripture-passage :global(.verse),
+	.scripture-passage :global(.verse-num) {
 		font-weight: 600;
+	}
+
+	.scripture-copyright {
+		border-top: 1px solid #e5e7eb;
+		padding-top: 0.75rem;
+		line-height: 1.4;
 	}
 
 	@media (max-width: 700px) {

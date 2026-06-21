@@ -2,6 +2,329 @@ import { env } from '$env/dynamic/private';
 
 import type { ScriptureResult, Translation } from './types';
 
+type BibleApiTranslation = Extract<Translation, 'KJV' | 'WEB'>;
+type LocalTranslation = Extract<Translation, 'NIV' | 'NKJV' | 'RVR60' | 'NVI'>;
+
+type LocalBibleBook = Record<string, Record<string, string>>;
+
+type ParsedReference = {
+	book: number;
+	chapter: number;
+	startVerse?: number;
+	endChapter: number;
+	endVerse?: number;
+};
+
+const localBibleBooks = import.meta.glob('./{NIV,NKJV,RVR60,NVI}/*.json') as Record<
+	string,
+	() => Promise<{ default: LocalBibleBook }>
+>;
+
+const localBookCache = new Map<string, LocalBibleBook>();
+
+export const translationCopyright: Record<Translation, string> = {
+	KJV: 'King James Version (KJV). Public Domain.',
+	WEB: 'World English Bible (WEB). Public Domain.',
+	ESV: 'Scripture quotations are from the ESV® Bible (The Holy Bible, English Standard Version®), copyright © 2001 by Crossway, a publishing ministry of Good News Publishers. Used by permission. All rights reserved.',
+	NIV: 'Scripture quotations taken from the Holy Bible, New International Version® NIV®. Copyright © Biblica, Inc. Used by permission. All rights reserved worldwide.',
+	NKJV: 'Scripture quotations are from the New King James Version®. Copyright © 1982 by Thomas Nelson. Used by permission. All rights reserved.',
+	RVR60:
+		'Reina-Valera 1960®. © Sociedades Bíblicas en América Latina, 1960. Derechos renovados 1988, Sociedades Bíblicas Unidas. Usado con permiso.',
+	NVI: 'La Santa Biblia, Nueva Versión Internacional® NVI®. Copyright © 1999, 2015 by Biblica, Inc.® Usado con permiso. Todos los derechos reservados mundialmente.'
+};
+
+const bookMap: Record<string, number> = {
+	genesis: 1,
+	gen: 1,
+	génesis: 1,
+	exodus: 2,
+	exod: 2,
+	exo: 2,
+	éxodo: 2,
+	exodo: 2,
+	leviticus: 3,
+	lev: 3,
+	levítico: 3,
+	levitico: 3,
+	numbers: 4,
+	num: 4,
+	nums: 4,
+	números: 4,
+	numeros: 4,
+	deuteronomy: 5,
+	deut: 5,
+	deu: 5,
+	deuteronomio: 5,
+	joshua: 6,
+	josh: 6,
+	jos: 6,
+	josué: 6,
+	josue: 6,
+	judges: 7,
+	judg: 7,
+	jdg: 7,
+	jueces: 7,
+	jue: 7,
+	ruth: 8,
+	rut: 8,
+	'1 samuel': 9,
+	'1 sam': 9,
+	'1samuel': 9,
+	'1sam': 9,
+	'1º samuel': 9,
+	'1 samuel': 9,
+	'2 samuel': 10,
+	'2 sam': 10,
+	'2samuel': 10,
+	'2sam': 10,
+	'2º samuel': 10,
+	'1 kings': 11,
+	'1 kgs': 11,
+	'1king': 11,
+	'1kings': 11,
+	'1kgs': 11,
+	'1 reyes': 11,
+	'1º reyes': 11,
+	'2 kings': 12,
+	'2 kgs': 12,
+	'2king': 12,
+	'2kings': 12,
+	'2kgs': 12,
+	'2 reyes': 12,
+	'2º reyes': 12,
+	'1 chronicles': 13,
+	'1 chr': 13,
+	'1chronicles': 13,
+	'1chr': 13,
+	'1 crónicas': 13,
+	'1 cronicas': 13,
+	'1º crónicas': 13,
+	'1º cronicas': 13,
+	'2 chronicles': 14,
+	'2 chr': 14,
+	'2chronicles': 14,
+	'2chr': 14,
+	'2 crónicas': 14,
+	'2 cronicas': 14,
+	'2º crónicas': 14,
+	'2º cronicas': 14,
+	ezra: 15,
+	esdras: 15,
+	esd: 15,
+	nehemiah: 16,
+	neh: 16,
+	nehemías: 16,
+	nehemias: 16,
+	esther: 17,
+	esth: 17,
+	ester: 17,
+	job: 18,
+	psalms: 19,
+	psalm: 19,
+	ps: 19,
+	psa: 19,
+	salmos: 19,
+	salmo: 19,
+	sal: 19,
+	proverbs: 20,
+	prov: 20,
+	pro: 20,
+	proverbios: 20,
+	ecclesiastes: 21,
+	ecc: 21,
+	eccl: 21,
+	eclesiastés: 21,
+	eclesiastes: 21,
+	'song of solomon': 22,
+	'song of songs': 22,
+	song: 22,
+	sos: 22,
+	'cantar de los cantares': 22,
+	cantares: 22,
+	isaiah: 23,
+	isa: 23,
+	isaías: 23,
+	isaias: 23,
+	jeremiah: 24,
+	jer: 24,
+	jeremías: 24,
+	jeremias: 24,
+	lamentations: 25,
+	lam: 25,
+	lamentaciones: 25,
+	ezekiel: 26,
+	ezek: 26,
+	eze: 26,
+	ezequiel: 26,
+	daniel: 27,
+	dan: 27,
+	hosea: 28,
+	hos: 28,
+	oseas: 28,
+	joel: 29,
+	amos: 30,
+	amo: 30,
+	amós: 30,
+	obadiah: 31,
+	obad: 31,
+	oba: 31,
+	abdías: 31,
+	abdias: 31,
+	jonah: 32,
+	jon: 32,
+	jonás: 32,
+	jonas: 32,
+	micah: 33,
+	mic: 33,
+	miqueas: 33,
+	nahum: 34,
+	nah: 34,
+	habakkuk: 35,
+	hab: 35,
+	habacuc: 35,
+	zephaniah: 36,
+	zeph: 36,
+	zep: 36,
+	sofonías: 36,
+	sofonias: 36,
+	haggai: 37,
+	hag: 37,
+	hageo: 37,
+	zechariah: 38,
+	zech: 38,
+	zec: 38,
+	zacarías: 38,
+	zacarias: 38,
+	malachi: 39,
+	mal: 39,
+	malaquías: 39,
+	malaquias: 39,
+	matthew: 40,
+	matt: 40,
+	mat: 40,
+	mateo: 40,
+	mark: 41,
+	mrk: 41,
+	marcos: 41,
+	luke: 42,
+	luk: 42,
+	lucas: 42,
+	john: 43,
+	jhn: 43,
+	juan: 43,
+	acts: 44,
+	act: 44,
+	hechos: 44,
+	romans: 45,
+	rom: 45,
+	romanos: 45,
+	'1 corinthians': 46,
+	'1 cor': 46,
+	'1corinthians': 46,
+	'1cor': 46,
+	'1 corintios': 46,
+	'1º corintios': 46,
+	'2 corinthians': 47,
+	'2 cor': 47,
+	'2corinthians': 47,
+	'2cor': 47,
+	'2 corintios': 47,
+	'2º corintios': 47,
+	galatians: 48,
+	gal: 48,
+	gálatas: 48,
+	galatas: 48,
+	ephesians: 49,
+	eph: 49,
+	efesios: 49,
+	philippians: 50,
+	phil: 50,
+	php: 50,
+	filipenses: 50,
+	colossians: 51,
+	col: 51,
+	colosenses: 51,
+	'1 thessalonians': 52,
+	'1 thess': 52,
+	'1thessalonians': 52,
+	'1thess': 52,
+	'1 thes': 52,
+	'1thes': 52,
+	'1 tesalonicenses': 52,
+	'1º tesalonicenses': 52,
+	'2 thessalonians': 53,
+	'2 thess': 53,
+	'2thessalonians': 53,
+	'2thess': 53,
+	'2 thes': 53,
+	'2thes': 53,
+	'2 tesalonicenses': 53,
+	'2º tesalonicenses': 53,
+	'1 timothy': 54,
+	'1 tim': 54,
+	'1timothy': 54,
+	'1tim': 54,
+	'1 timoteo': 54,
+	'1º timoteo': 54,
+	'2 timothy': 55,
+	'2 tim': 55,
+	'2timothy': 55,
+	'2tim': 55,
+	'2 timoteo': 55,
+	'2º timoteo': 55,
+	titus: 56,
+	tit: 56,
+	tito: 56,
+	philemon: 57,
+	philem: 57,
+	phm: 57,
+	filemón: 57,
+	filemon: 57,
+	hebrews: 58,
+	heb: 58,
+	hebreos: 58,
+	james: 59,
+	jas: 59,
+	santiago: 59,
+	'1 peter': 60,
+	'1 pet': 60,
+	'1peter': 60,
+	'1pet': 60,
+	'1 pedro': 60,
+	'1º pedro': 60,
+	'2 peter': 61,
+	'2 pet': 61,
+	'2peter': 61,
+	'2pet': 61,
+	'2 pedro': 61,
+	'2º pedro': 61,
+	'1 john': 62,
+	'1john': 62,
+	'1 jn': 62,
+	'1jn': 62,
+	'1 juan': 62,
+	'1º juan': 62,
+	'2 john': 63,
+	'2john': 63,
+	'2 jn': 63,
+	'2jn': 63,
+	'2 juan': 63,
+	'2º juan': 63,
+	'3 john': 64,
+	'3john': 64,
+	'3 jn': 64,
+	'3jn': 64,
+	'3 juan': 64,
+	'3º juan': 64,
+	jude: 65,
+	judas: 65,
+	revelation: 66,
+	rev: 66,
+	apocalypse: 66,
+	apocalipsis: 66,
+	apoc: 66
+};
+
 function assertOk(response: Response, provider: string) {
 	if (!response.ok) {
 		throw new Error(`${provider} failed: ${response.status} ${response.statusText}`);
@@ -20,8 +343,6 @@ export async function getFromCrossway(reference: string): Promise<ScriptureResul
 	url.searchParams.set('wrapping-div', 'true');
 	url.searchParams.set('div-classes', 'scripture-passage');
 
-	console.log(`Fetching ESV passage ${reference} from Crossway API using token ${env.ESV_API_KEY}`);
-
 	const response = await fetch(url, {
 		headers: {
 			Authorization: `Token ${env.ESV_API_KEY}`
@@ -36,13 +357,14 @@ export async function getFromCrossway(reference: string): Promise<ScriptureResul
 		reference: data.canonical ?? reference,
 		translation: 'ESV',
 		html: data.passages?.join('\n\n') ?? '',
+		copyright: translationCopyright.ESV,
 		source: 'crossway'
 	};
 }
 
 export async function getFromBibleApi(
 	reference: string,
-	translation: Extract<Translation, 'KJV' | 'WEB'> = 'WEB'
+	translation: BibleApiTranslation = 'WEB'
 ): Promise<ScriptureResult> {
 	const url = new URL(`https://bible-api.com/${encodeURIComponent(reference)}`);
 	url.searchParams.set('translation', translation.toLowerCase());
@@ -51,6 +373,7 @@ export async function getFromBibleApi(
 	assertOk(response, 'Bible API');
 
 	const data = await response.json();
+
 	return {
 		reference: data.reference ?? reference,
 		translation,
@@ -61,15 +384,142 @@ export async function getFromBibleApi(
 						`<p><sup class="verse-num"><b>${v.verse}</b></sup> ${escapeHtml(v.text.trim())}</p>`
 				)
 				.join('') ?? '',
+		copyright: translationCopyright[translation],
 		source: 'bible-api'
 	};
-	// return {
-	// 	reference: data.reference ?? reference,
-	// 	translation,
-	// 	text: data.text ?? '',
-	// 	source: 'bible-api'
-	// };
 }
+
+export async function getFromLocalJson(
+	reference: string,
+	translation: LocalTranslation
+): Promise<ScriptureResult> {
+	const parsed = parseReference(reference);
+
+	if (!parsed) {
+		throw new Error(`Unsupported ${translation} reference format: ${reference}`);
+	}
+
+	const book = await loadLocalBook(translation, parsed.book);
+	const html = renderLocalPassage(book, parsed);
+
+	return {
+		reference,
+		translation,
+		html,
+		copyright: translationCopyright[translation],
+		source: `${translation.toLowerCase()}-json`
+	};
+}
+
+export function getFromNivJson(reference: string) {
+	return getFromLocalJson(reference, 'NIV');
+}
+
+export function getFromNkjvJson(reference: string) {
+	return getFromLocalJson(reference, 'NKJV');
+}
+
+export function getFromRvr60Json(reference: string) {
+	return getFromLocalJson(reference, 'RVR60');
+}
+
+export function getFromNviJson(reference: string) {
+	return getFromLocalJson(reference, 'NVI');
+}
+
+async function loadLocalBook(translation: LocalTranslation, book: number) {
+	const bookFile = `${book.toString().padStart(2, '0')}.json`;
+	const path = `./${translation}/${bookFile}`;
+	const cacheKey = `${translation}:${bookFile}`;
+
+	const cached = localBookCache.get(cacheKey);
+	if (cached) return cached;
+
+	const loader = localBibleBooks[path];
+
+	if (!loader) {
+		throw new Error(
+			`Missing local scripture book file: src/lib/server/scripture/${translation}/${bookFile}`
+		);
+	}
+
+	const module = await loader();
+	localBookCache.set(cacheKey, module.default);
+
+	return module.default;
+}
+
+function renderLocalPassage(book: LocalBibleBook, parsed: ParsedReference) {
+	const paragraphs: string[] = [];
+
+	for (let chapter = parsed.chapter; chapter <= parsed.endChapter; chapter++) {
+		const verses = book[String(chapter)];
+
+		if (!verses) continue;
+
+		const verseNumbers = Object.keys(verses)
+			.map(Number)
+			.filter((verse) => {
+				if (chapter === parsed.chapter && parsed.startVerse && verse < parsed.startVerse) {
+					return false;
+				}
+
+				if (chapter === parsed.endChapter && parsed.endVerse && verse > parsed.endVerse) {
+					return false;
+				}
+
+				return true;
+			})
+			.sort((a, b) => a - b);
+
+		for (const verse of verseNumbers) {
+			paragraphs.push(
+				`<p><sup class="verse-num"><b>${verse}</b></sup> ${escapeHtml(verses[String(verse)].trim())}</p>`
+			);
+		}
+	}
+
+	return paragraphs.join('');
+}
+
+function parseReference(reference: string): ParsedReference | null {
+	const normalized = normalizeReference(reference);
+
+	const match = normalized.match(/^(.+?)\s+(\d+)(?::(\d+))?(?:\s*[-–—]\s*(?:(\d+):)?(\d+))?$/i);
+
+	if (!match) return null;
+
+	const [, rawBook, rawChapter, rawStartVerse, rawEndChapter, rawEndVerse] = match;
+	const book = bookMap[normalizeBookName(rawBook)];
+
+	if (!book) return null;
+
+	const chapter = Number(rawChapter);
+	const startVerse = rawStartVerse ? Number(rawStartVerse) : undefined;
+	const endChapter = rawEndChapter ? Number(rawEndChapter) : chapter;
+	const endVerse = rawEndVerse ? Number(rawEndVerse) : startVerse;
+
+	return {
+		book,
+		chapter,
+		startVerse,
+		endChapter,
+		endVerse
+	};
+}
+
+function normalizeReference(reference: string) {
+	return reference
+		.trim()
+		.replace(/\s+/g, ' ')
+		.replace(/^[“”"']+|[“”"']+$/g, '')
+		.replace(/ [PQ]-?(\d+)$/g, '');
+}
+
+function normalizeBookName(book: string) {
+	return book.toLowerCase().replace(/\./g, '').replace(/\s+/g, ' ').trim();
+}
+
 function escapeHtml(value: string) {
 	return value
 		.replaceAll('&', '&amp;')
@@ -77,51 +527,4 @@ function escapeHtml(value: string) {
 		.replaceAll('>', '&gt;')
 		.replaceAll('"', '&quot;')
 		.replaceAll("'", '&#039;');
-}
-function apiBibleId(translation: Translation) {
-	switch (translation) {
-		case 'RVR60':
-			return env.API_BIBLE_RVR60_ID;
-		case 'NVI':
-			return env.API_BIBLE_NVI_ID;
-		default:
-			throw new Error(`Unsupported API.Bible translation: ${translation}`);
-	}
-}
-
-/**
- * API.Bible requires passage IDs like JHN.3.16-JHN.3.18.
- * So for API.Bible, store canonical passageId separately when possible.
- */
-export async function getFromApiBible(
-	passageId: string,
-	translation: Extract<Translation, 'RVR60' | 'NVI'>
-): Promise<ScriptureResult> {
-	const bibleId = apiBibleId(translation);
-
-	const url = new URL(`https://rest.api.bible/v1/bibles/${bibleId}/passages/${passageId}`);
-	url.searchParams.set('content-type', 'html');
-	url.searchParams.set('include-notes', 'false');
-	url.searchParams.set('include-titles', 'true');
-	url.searchParams.set('include-chapter-numbers', 'false');
-	url.searchParams.set('include-verse-numbers', 'true');
-
-	const response = await fetch(url, {
-		headers: {
-			'api-key': env.API_BIBLE_KEY
-		}
-	});
-
-	assertOk(response, 'API.Bible');
-
-	const json = await response.json();
-	const data = json.data;
-
-	return {
-		reference: data.reference ?? passageId,
-		translation,
-		html: data.content ?? '',
-		copyright: data.copyright,
-		source: 'api-bible'
-	};
 }

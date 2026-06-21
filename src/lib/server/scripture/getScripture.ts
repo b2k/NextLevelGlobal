@@ -1,5 +1,14 @@
 import type { ScriptureResult, Translation } from './types';
-import { getFromApiBible, getFromBibleApi, getFromCrossway } from './providers';
+import {
+	getFromApiBible,
+	getFromBibleApi,
+	getFromCrossway,
+	getFromNivJson,
+	getFromNkjvJson,
+	getFromNviJson,
+	getFromRvr60Json
+} from './providers';
+import { r } from '$lib/config/translations';
 
 export async function getScripture(args: {
 	reference: string;
@@ -16,14 +25,15 @@ export async function getScripture(args: {
 		case 'WEB':
 			return getFromBibleApi(args.reference, translation);
 
-		case 'RVR60':
-		case 'NVI':
-			if (!args.passageId) {
-				throw new Error(
-					`${translation} requires an API.Bible passageId, for example JHN.3.16-JHN.3.18`
-				);
-			}
+		case 'NIV':
+			return getFromNivJson(args.reference);
 
-			return getFromApiBible(args.passageId, translation);
+		case 'NKJV':
+			return getFromNkjvJson(args.reference);
+
+		case 'RVR60':
+			return getFromRvr60Json(r(args.reference, 'es') ?? args.reference);
+		case 'NVI':
+			return getFromNviJson(r(args.reference, 'es') ?? args.reference);
 	}
 }
