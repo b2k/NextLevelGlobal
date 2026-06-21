@@ -156,9 +156,9 @@
 			accent: '#EF4444'
 		},
 		event: {
-			bg: '',
-			text: '',
-			accent: ''
+			bg: '#FFF1F2',
+			text: '#BE123C',
+			accent: '#F43F5E'
 		},
 		other: {
 			bg: '',
@@ -895,6 +895,19 @@
 	.scripture-passage :global(.verse),
 	.scripture-passage :global(.verse-num) {
 		font-weight: 600;
+		color: #2f6fed;
+	}
+	.scripture-passage :global(h1),
+	.scripture-passage :global(h2),
+	.scripture-passage :global(h3),
+	.scripture-passage :global(h4),
+	.scripture-passage :global(h5),
+	.scripture-passage :global(h6) {
+		font-weight: 700;
+		color: #1e40af;
+	}
+	.scripture-passage :global(p) {
+		color: #374151;
 	}
 
 	.scripture-copyright {
