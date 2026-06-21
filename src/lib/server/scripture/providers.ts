@@ -67,7 +67,6 @@ const bookMap: Record<string, number> = {
 	jue: 7,
 	ruth: 8,
 	rut: 8,
-	'1 samuel': 9,
 	'1 sam': 9,
 	'1samuel': 9,
 	'1sam': 9,

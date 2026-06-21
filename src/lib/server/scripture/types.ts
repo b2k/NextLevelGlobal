@@ -6,5 +6,5 @@ export type ScriptureResult = {
 	text?: string;
 	html?: string;
 	copyright?: string;
-	source: 'crossway' | 'bible-api' | 'api-bible';
+	source: 'crossway' | 'bible-api' | 'api-bible' | string;
 };
