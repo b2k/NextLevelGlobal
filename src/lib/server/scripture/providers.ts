@@ -7,14 +7,6 @@ type LocalTranslation = Extract<Translation, 'NIV' | 'NKJV' | 'RVR60' | 'NVI'>;
 
 type LocalBibleBook = Record<string, Record<string, string>>;
 
-type ParsedReference = {
-	book: number;
-	chapter: number;
-	startVerse?: number;
-	endChapter: number;
-	endVerse?: number;
-};
-
 const localBibleBooks = import.meta.glob('./{NIV,NKJV,RVR60,NVI}/*.json') as Record<
 	string,
 	() => Promise<{ default: LocalBibleBook }>
@@ -365,46 +357,92 @@ export async function getFromBibleApi(
 	reference: string,
 	translation: BibleApiTranslation = 'WEB'
 ): Promise<ScriptureResult> {
-	const url = new URL(`https://bible-api.com/${encodeURIComponent(reference)}`);
-	url.searchParams.set('translation', translation.toLowerCase());
+	const segments = parseReference(reference);
 
-	const response = await fetch(url);
-	assertOk(response, 'Bible API');
+	if (!segments.length) {
+		throw new Error(`Unsupported ${translation} reference format: ${reference}`);
+	}
 
-	const data = await response.json();
+	const htmlParts = await Promise.all(
+		segments.map(async (segment) => {
+			const segmentReference = formatBibleApiReference(segment);
+
+			const url = new URL(`https://bible-api.com/${encodeURIComponent(segmentReference)}`);
+			url.searchParams.set('translation', translation.toLowerCase());
+
+			const response = await fetch(url);
+			assertOk(response, `Bible API ${segmentReference}`);
+
+			const data = await response.json();
+			const title = segments.length > 1 ? `<h3>${properCase(segmentReference)}</h3>` : '';
+
+			return `${title}${
+				data.verses
+					?.map(
+						(v: { verse: number; text: string }) =>
+							`<p><sup class="verse-num"><b>${v.verse}</b></sup> ${escapeHtml(v.text.trim())}</p>`
+					)
+					.join('') ?? ''
+			}`;
+		})
+	);
 
 	return {
-		reference: data.reference ?? reference,
+		reference,
 		translation,
-		html:
-			data.verses
-				?.map(
-					(v: { verse: number; text: string }) =>
-						`<p><sup class="verse-num"><b>${v.verse}</b></sup> ${escapeHtml(v.text.trim())}</p>`
-				)
-				.join('') ?? '',
+		html: htmlParts.join('\n'),
 		copyright: translationCopyright[translation],
 		source: 'bible-api'
 	};
+}
+
+function formatBibleApiReference(segment: ParsedReferenceSegment): string {
+	const start = segment.startVerse
+		? `${segment.chapter}:${segment.startVerse}`
+		: `${segment.chapter}`;
+
+	if (!segment.endVerse) {
+		return `${segment.book} ${start}`;
+	}
+
+	const endChapter = segment.endChapter ?? segment.chapter;
+
+	if (endChapter !== segment.chapter) {
+		return `${segment.book} ${start}-${endChapter}:${segment.endVerse}`;
+	}
+
+	return `${segment.book} ${start}-${segment.endVerse}`;
 }
 
 export async function getFromLocalJson(
 	reference: string,
 	translation: LocalTranslation
 ): Promise<ScriptureResult> {
-	const parsed = parseReference(reference);
+	const segments = parseReference(reference);
 
-	if (!parsed) {
+	if (!segments.length) {
 		throw new Error(`Unsupported ${translation} reference format: ${reference}`);
 	}
 
-	const book = await loadLocalBook(translation, parsed.book);
-	const html = renderLocalPassage(book, parsed);
+	const books = new Map<string, Awaited<ReturnType<typeof loadLocalBook>>>();
+
+	const htmlParts = await Promise.all(
+		segments.map(async (segment) => {
+			const bookNumber = bookMap[normalizeBookName(segment.book)];
+			let book = books.get(segment.book);
+			if (!book) {
+				book = await loadLocalBook(translation, bookNumber);
+				books.set(segment.book, book);
+			}
+
+			return renderLocalPassage(book, segment, segments.length > 1);
+		})
+	);
 
 	return {
 		reference,
 		translation,
-		html,
+		html: htmlParts.join('\n'),
 		copyright: translationCopyright[translation],
 		source: `${translation.toLowerCase()}-json`
 	};
@@ -448,10 +486,15 @@ async function loadLocalBook(translation: LocalTranslation, book: number) {
 	return module.default;
 }
 
-function renderLocalPassage(book: LocalBibleBook, parsed: ParsedReference) {
+function renderLocalPassage(
+	book: LocalBibleBook,
+	parsed: ParsedReferenceSegment,
+	includeTitle: boolean = false
+): string {
 	const paragraphs: string[] = [];
+	const lastChapter = parsed.endChapter ?? parsed.chapter;
 
-	for (let chapter = parsed.chapter; chapter <= parsed.endChapter; chapter++) {
+	for (let chapter = parsed.chapter; chapter <= lastChapter; chapter++) {
 		const verses = book[String(chapter)];
 
 		if (!verses) continue;
@@ -463,7 +506,7 @@ function renderLocalPassage(book: LocalBibleBook, parsed: ParsedReference) {
 					return false;
 				}
 
-				if (chapter === parsed.endChapter && parsed.endVerse && verse > parsed.endVerse) {
+				if (chapter === lastChapter && parsed.endVerse && verse > parsed.endVerse) {
 					return false;
 				}
 
@@ -478,33 +521,73 @@ function renderLocalPassage(book: LocalBibleBook, parsed: ParsedReference) {
 		}
 	}
 
+	if (includeTitle) {
+		paragraphs.unshift(
+			`<h3>${properCase(parsed.book)} ${parsed.chapter}${parsed.startVerse ? `:${parsed.startVerse}` : ''}${parsed.endVerse ? `-${parsed.endChapter !== parsed.chapter ? parsed.endChapter + ':' : ''}${parsed.endVerse}` : ''}</h3>`
+		);
+	}
+
 	return paragraphs.join('');
 }
+function properCase(str: string): string {
+	return str
+		.split(' ')
+		.map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+		.join(' ');
+}
+export type ParsedReferenceSegment = {
+	book: string;
+	chapter: number;
+	startVerse?: number;
+	endChapter?: number;
+	endVerse?: number;
+};
 
-function parseReference(reference: string): ParsedReference | null {
-	const normalized = normalizeReference(reference);
+export function parseReference(reference: string): ParsedReferenceSegment[] {
+	const normalized = normalizeReference(reference)
+		.replace(/[–—]/g, '-')
+		.replace(/\s+/g, ' ')
+		.trim();
 
-	const match = normalized.match(/^(.+?)\s+(\d+)(?::(\d+))?(?:\s*[-–—]\s*(?:(\d+):)?(\d+))?$/i);
+	const segments: ParsedReferenceSegment[] = [];
+	let currentBook: number | undefined;
+	let currentChapter: number | undefined;
 
-	if (!match) return null;
+	for (const part of normalized.split(/\s*;\s*/)) {
+		for (const rawPiece of part.split(/\s*,\s*/)) {
+			const piece = rawPiece.trim();
+			if (!piece) continue;
 
-	const [, rawBook, rawChapter, rawStartVerse, rawEndChapter, rawEndVerse] = match;
-	const book = bookMap[normalizeBookName(rawBook)];
+			const match = piece.match(/^(?:(.+?)\s+)?(\d+)(?::(\d+))?(?:\s*-\s*(?:(\d+):)?(\d+))?$/i);
 
-	if (!book) return null;
+			if (!match) return [];
 
-	const chapter = Number(rawChapter);
-	const startVerse = rawStartVerse ? Number(rawStartVerse) : undefined;
-	const endChapter = rawEndChapter ? Number(rawEndChapter) : chapter;
-	const endVerse = rawEndVerse ? Number(rawEndVerse) : startVerse;
+			const [, rawBook, rawChapter, rawStartVerse, rawEndChapter, rawEndVerse] = match;
 
-	return {
-		book,
-		chapter,
-		startVerse,
-		endChapter,
-		endVerse
-	};
+			if (rawBook) {
+				currentBook = bookMap[normalizeBookName(rawBook)];
+				if (!currentBook) return [];
+			}
+
+			if (!currentBook) return [];
+
+			currentChapter = Number(rawChapter);
+
+			const startVerse = rawStartVerse ? Number(rawStartVerse) : undefined;
+			const endChapter = rawEndChapter ? Number(rawEndChapter) : currentChapter;
+			const endVerse = rawEndVerse ? Number(rawEndVerse) : startVerse;
+
+			segments.push({
+				book: rawBook ?? Object.keys(bookMap).find((key) => bookMap[key] === currentBook) ?? '',
+				chapter: currentChapter,
+				startVerse,
+				endChapter,
+				endVerse
+			});
+		}
+	}
+
+	return segments;
 }
 
 function normalizeReference(reference: string) {
