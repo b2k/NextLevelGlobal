@@ -6,6 +6,7 @@ export type SectionItem =
 	| {
 			type: 'item';
 			title?: string;
+			subtitle?: string;
 			description?: string;
 			bullet?: string;
 			href?: string;
@@ -14,12 +15,14 @@ export type SectionItem =
 	| {
 			type: 'pdf';
 			title: string;
+			subtitle?: string;
 			pdf: string;
 			description?: string;
 	  }
 	| {
 			type: 'book';
 			title: string;
+			subtitle?: string;
 			buyUrl?: string;
 			questionsPdf?: string;
 			image?: string;
@@ -28,6 +31,7 @@ export type SectionItem =
 	| {
 			type: 'link';
 			title: string;
+			subtitle?: string;
 			href: string;
 			target?: '_self' | '_blank' | '_parent' | '_top';
 			description?: string;
@@ -35,6 +39,7 @@ export type SectionItem =
 	| {
 			type: 'video';
 			title?: string;
+			subtitle?: string;
 			description?: string;
 			href: string;
 	  };
