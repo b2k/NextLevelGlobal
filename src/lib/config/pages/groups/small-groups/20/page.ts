@@ -54,6 +54,11 @@ export const page: GroupPage = {
 				type: 'pdf',
 				title: 'ESV',
 				pdf: '/groups/small-groups/20/lcv-esv-20.pdf'
+			},
+			{
+				type: 'pdf',
+				title: 'KJV',
+				pdf: '/groups/small-groups/20/lcv-kjv-20.pdf'
 			}
 		]
 	},
