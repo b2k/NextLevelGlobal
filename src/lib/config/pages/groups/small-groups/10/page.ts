@@ -53,7 +53,7 @@ Join us for a 10 week introduction to daily spiritual disciplines. We read the g
 		items: [
 			{
 				type: 'pdf',
-				title: 'NIV',
+				title: 'ESV',
 				pdf: '/groups/small-groups/10/lcv-10-esv.pdf'
 			},
 			{

@@ -47,8 +47,13 @@ export const page: GroupPage = {
 		items: [
 			{
 				type: 'pdf',
-				title: 'Download Verses',
-				pdf: '/groups/small-groups/20/lcv-20.pdf'
+				title: 'NIV',
+				pdf: '/groups/small-groups/20/lcv-niv-20.pdf'
+			},
+			{
+				type: 'pdf',
+				title: 'ESV',
+				pdf: '/groups/small-groups/20/lcv-esv-20.pdf'
 			}
 		]
 	},
