@@ -16,19 +16,19 @@ export const calendar: GroupCalendarConfig = {
 			week: 76,
 			dayOfWeek: 0,
 			kind: 'reading',
-			title: 'Psalm 103'
+			title: 'John 15:1-17'
 		},
 		{
 			week: 76,
 			dayOfWeek: 1,
 			kind: 'memory',
-			title: 'Review'
+			title: 'Review 201 & 202 LCVs'
 		},
 		{
 			week: 76,
 			dayOfWeek: 1,
 			kind: 'reading',
-			title: 'John 15:1-17'
+			title: 'Psalm 103'
 		},
 		{
 			week: 76,
