@@ -16,7 +16,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 76,
 			dayOfWeek: 0,
 			kind: 'reading',
-			title: 'Psalm 103:1-2'
+			title: 'Psalm 103'
 		},
 		{
 			week: 76,
