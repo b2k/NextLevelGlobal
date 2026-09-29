@@ -112,7 +112,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 78,
 			dayOfWeek: 1,
 			kind: 'memory',
-			title: 'LCV Philippians 4:6,7'
+			title: 'LCV Philippians 4:6-7'
 		},
 		{
 			week: 78,
