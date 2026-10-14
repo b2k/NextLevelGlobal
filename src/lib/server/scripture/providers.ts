@@ -364,7 +364,7 @@ export async function getFromBibleApi(
 	}
 
 	const htmlParts = await Promise.all(
-		segments.map(async (segment) => {
+		segments.map(async (segment, index) => {
 			const segmentReference = formatBibleApiReference(segment);
 
 			const url = new URL(`https://bible-api.com/${encodeURIComponent(segmentReference)}`);
@@ -374,7 +374,9 @@ export async function getFromBibleApi(
 			assertOk(response, `Bible API ${segmentReference}`);
 
 			const data = await response.json();
-			const title = segments.length > 1 ? `<h3>${properCase(segmentReference)}</h3>` : '';
+			const title = shouldIncludePassageTitle(segments, index)
+				? `<h3>${properCase(segmentReference)}</h3>`
+				: '';
 
 			return `${title}${
 				data.verses
@@ -394,6 +396,25 @@ export async function getFromBibleApi(
 		copyright: translationCopyright[translation],
 		source: 'bible-api'
 	};
+}
+
+function shouldIncludePassageTitle(segments: ParsedReferenceSegment[], index: number): boolean {
+	const first = segments[0];
+	const spansChapters = segments.some(
+		(segment) =>
+			bookMap[normalizeBookName(segment.book)] !== bookMap[normalizeBookName(first.book)] ||
+			segment.chapter !== first.chapter ||
+			(segment.endChapter ?? segment.chapter) !== first.chapter
+	);
+	if (segments.length < 2 || !spansChapters) return false;
+	if (index === 0) return true;
+
+	const previous = segments[index - 1];
+	const current = segments[index];
+	return (
+		bookMap[normalizeBookName(current.book)] !== bookMap[normalizeBookName(previous.book)] ||
+		current.chapter !== (previous.endChapter ?? previous.chapter)
+	);
 }
 
 function formatBibleApiReference(segment: ParsedReferenceSegment): string {
@@ -431,7 +452,7 @@ export async function getFromLocalJson(
 	const books = new Map<string, Awaited<ReturnType<typeof loadLocalBook>>>();
 
 	const htmlParts = await Promise.all(
-		segments.map(async (segment) => {
+		segments.map(async (segment, index) => {
 			const bookNumber = bookMap[normalizeBookName(segment.book)];
 			let book = books.get(segment.book);
 			if (!book) {
@@ -439,7 +460,7 @@ export async function getFromLocalJson(
 				books.set(segment.book, book);
 			}
 
-			return renderLocalPassage(book, segment, segments.length > 1);
+			return renderLocalPassage(book, segment, shouldIncludePassageTitle(segments, index));
 		})
 	);
 
