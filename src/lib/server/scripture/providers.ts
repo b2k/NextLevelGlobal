@@ -411,6 +411,10 @@ function formatBibleApiReference(segment: ParsedReferenceSegment): string {
 		return `${segment.book} ${start}-${endChapter}:${segment.endVerse}`;
 	}
 
+	if (segment.endVerse === segment.startVerse) {
+		return `${segment.book} ${start}`;
+	}
+
 	return `${segment.book} ${start}-${segment.endVerse}`;
 }
 
@@ -523,7 +527,7 @@ function renderLocalPassage(
 
 	if (includeTitle) {
 		paragraphs.unshift(
-			`<h3>${properCase(parsed.book)} ${parsed.chapter}${parsed.startVerse ? `:${parsed.startVerse}` : ''}${parsed.endVerse ? `-${parsed.endChapter !== parsed.chapter ? parsed.endChapter + ':' : ''}${parsed.endVerse}` : ''}</h3>`
+			`<h3>${properCase(formatBibleApiReference(parsed))}</h3>`
 		);
 	}
 
@@ -554,6 +558,7 @@ export function parseReference(reference: string): ParsedReferenceSegment[] {
 	let currentChapter: number | undefined;
 
 	for (const part of normalized.split(/\s*;\s*/)) {
+		let verseContext = false;
 		for (const rawPiece of part.split(/\s*,\s*/)) {
 			const piece = rawPiece.trim();
 			if (!piece) continue;
@@ -571,9 +576,16 @@ export function parseReference(reference: string): ParsedReferenceSegment[] {
 
 			if (!currentBook) return [];
 
-			currentChapter = Number(rawChapter);
+			// A bare number after a verse is another verse in the same chapter.
+			const isVerseContinuation = !rawBook && !rawStartVerse && verseContext;
+			if (!isVerseContinuation) currentChapter = Number(rawChapter);
+			if (currentChapter === undefined) return [];
 
-			const startVerse = rawStartVerse ? Number(rawStartVerse) : undefined;
+			const startVerse = isVerseContinuation
+				? Number(rawChapter)
+				: rawStartVerse
+					? Number(rawStartVerse)
+					: undefined;
 			const endChapter = rawEndChapter ? Number(rawEndChapter) : currentChapter;
 			const endVerse = rawEndVerse ? Number(rawEndVerse) : startVerse;
 
@@ -584,6 +596,7 @@ export function parseReference(reference: string): ParsedReferenceSegment[] {
 				endChapter,
 				endVerse
 			});
+			verseContext = startVerse !== undefined;
 		}
 	}
 
