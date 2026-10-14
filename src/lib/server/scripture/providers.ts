@@ -327,7 +327,7 @@ export async function getFromCrossway(reference: string): Promise<ScriptureResul
 	url.searchParams.set('q', reference);
 	url.searchParams.set('include-footnotes', 'false');
 	url.searchParams.set('include-headings', 'true');
-	url.searchParams.set('include-passage-references', 'false');
+	url.searchParams.set('include-passage-references', 'true');
 	url.searchParams.set('include-verse-numbers', 'true');
 	url.searchParams.set('include-short-copyright', 'true');
 	url.searchParams.set('include-audio-link', 'false');
@@ -399,14 +399,6 @@ export async function getFromBibleApi(
 }
 
 function shouldIncludePassageTitle(segments: ParsedReferenceSegment[], index: number): boolean {
-	const first = segments[0];
-	const spansChapters = segments.some(
-		(segment) =>
-			bookMap[normalizeBookName(segment.book)] !== bookMap[normalizeBookName(first.book)] ||
-			segment.chapter !== first.chapter ||
-			(segment.endChapter ?? segment.chapter) !== first.chapter
-	);
-	if (segments.length < 2 || !spansChapters) return false;
 	if (index === 0) return true;
 
 	const previous = segments[index - 1];
