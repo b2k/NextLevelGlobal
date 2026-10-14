@@ -329,7 +329,8 @@ export async function getFromCrossway(reference: string): Promise<ScriptureResul
 	url.searchParams.set('include-headings', 'true');
 	url.searchParams.set('include-passage-references', 'true');
 	url.searchParams.set('include-verse-numbers', 'true');
-	url.searchParams.set('include-short-copyright', 'true');
+	// The full copyright notice is displayed once below the passage by the modal.
+	url.searchParams.set('include-short-copyright', 'false');
 	url.searchParams.set('include-audio-link', 'false');
 	url.searchParams.set('wrapping-div', 'true');
 	url.searchParams.set('div-classes', 'scripture-passage');
@@ -345,7 +346,7 @@ export async function getFromCrossway(reference: string): Promise<ScriptureResul
 	const data = await response.json();
 
 	return {
-		reference: data.canonical ?? reference,
+		reference,
 		translation: 'ESV',
 		html: data.passages?.join('\n\n') ?? '',
 		copyright: translationCopyright.ESV,
