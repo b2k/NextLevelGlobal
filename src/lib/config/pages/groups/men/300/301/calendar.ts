@@ -442,7 +442,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 93,
 			dayOfWeek: 0,
 			kind: 'memory',
-			title: 'LCV: Romans 4:20,21'
+			title: 'LCV: Romans 4:20-21'
 		},
 		{
 			week: 93,

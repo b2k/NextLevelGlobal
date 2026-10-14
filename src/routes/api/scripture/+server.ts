@@ -19,7 +19,7 @@ export async function GET({ url, setHeaders }) {
 		});
 
 		setHeaders({
-			'cache-control': 'public, max-age=3600'
+			'cache-control': 'no-store'
 		});
 
 		return json(result);

@@ -409,7 +409,7 @@
 		});
 
 		try {
-			const response = await fetch(`/api/scripture?${params.toString()}`);
+			const response = await fetch(`/api/scripture?${params.toString()}`, { cache: 'no-store' });
 
 			if (!response.ok) {
 				throw new Error(await response.text());

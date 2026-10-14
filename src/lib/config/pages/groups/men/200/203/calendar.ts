@@ -232,7 +232,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 80,
 			dayOfWeek: 1,
 			kind: 'memory',
-			title: 'LCV Hebrews 10:24,25'
+			title: 'LCV Hebrews 10:24-25'
 		},
 		{
 			week: 80,
@@ -352,7 +352,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 82,
 			dayOfWeek: 1,
 			kind: 'memory',
-			title: 'LCV 1 Corinthians 6:19,20'
+			title: 'LCV 1 Corinthians 6:19-20'
 		},
 		{
 			week: 82,
@@ -592,7 +592,7 @@ export const calendar: GroupCalendarConfig = {
 			week: 86,
 			dayOfWeek: 1,
 			kind: 'memory',
-			title: 'LCV Matthew 6:33,34'
+			title: 'LCV Matthew 6:33-34'
 		},
 		{
 			week: 86,
