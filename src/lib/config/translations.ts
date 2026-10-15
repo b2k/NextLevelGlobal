@@ -18,6 +18,14 @@ export const translations: TranslationDictionary = {
 	},
 	es: {
 		exact: {
+			week: 'Semana',
+			reading: 'Lectura',
+			memory: 'Memorización',
+			psalm: 'Salmo',
+			book: 'Libro',
+			meeting: 'Reunión',
+			event: 'Evento',
+			other: 'Otro',
 			'Download the weekly discussion questions PDF.':
 				'Descargue el PDF de las preguntas de discusión semanales.',
 			'Scripture Summaries & Questions': 'Resumenes y preguntas de las Escrituras',

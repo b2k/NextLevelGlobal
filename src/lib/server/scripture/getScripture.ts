@@ -1,6 +1,5 @@
 import type { ScriptureResult, Translation } from './types';
 import {
-	getFromApiBible,
 	getFromBibleApi,
 	getFromCrossway,
 	getFromNivJson,

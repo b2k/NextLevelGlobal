@@ -540,9 +540,7 @@ function renderLocalPassage(
 	}
 
 	if (includeTitle) {
-		paragraphs.unshift(
-			`<h3>${properCase(formatBibleApiReference(parsed))}</h3>`
-		);
+		paragraphs.unshift(`<h3>${properCase(formatBibleApiReference(parsed))}</h3>`);
 	}
 
 	return paragraphs.join('');
@@ -591,11 +589,11 @@ export function parseReference(reference: string): ParsedReferenceSegment[] {
 			if (!currentBook) return [];
 
 			// A bare number after a verse is another verse in the same chapter.
-			const isVerseContinuation = !rawBook && !rawStartVerse && verseContext;
+			const isVerseContinuation: boolean = !rawBook && !rawStartVerse && verseContext;
 			if (!isVerseContinuation) currentChapter = Number(rawChapter);
 			if (currentChapter === undefined) return [];
 
-			const startVerse = isVerseContinuation
+			const startVerse: number | undefined = isVerseContinuation
 				? Number(rawChapter)
 				: rawStartVerse
 					? Number(rawStartVerse)
@@ -622,6 +620,7 @@ function normalizeReference(reference: string) {
 		.trim()
 		.replace(/\s+/g, ' ')
 		.replace(/^[“”"']+|[“”"']+$/g, '')
+		.replace(/^(?:Mem\.?|Memorizar|LCV|VCM)[:\s]+/i, '')
 		.replace(/ [PQ]-?(\d+)$/g, '');
 }
 
